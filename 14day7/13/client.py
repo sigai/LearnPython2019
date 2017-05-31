@@ -5,7 +5,7 @@ __author__ = "Sigai"
 import socket
 
 c = socket.socket()
-c.connect(("localhost",6969))
+c.connect(("localhost",9999))
 while True:
 	msg = input(">>:").strip()
 	c.send(msg.encode('utf-8'))
