@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form enctype="multipart/form-data">
+        <div>
+            <input type="text" name="user">
+            <p>请选择性别：</p>
+            男：<input type="radio" name="gender" value="m"/>
+            女：<input type="radio" name="gender" value="f"/>
+            密：<input type="radio" name="gender" value="s" checked="checked"/>
+            <br>
+            <p>爱好</p>
+            篮球：<input type="checkbox" name="hobits" value="1" checked="checked"/>
+            足球：<input type="checkbox" name="hobits" value="2"/>
+            排球：<input type="checkbox" name="hobits" value="3"/>
+            冰球：<input type="checkbox" name="hobits" value="4"/>
+            地球：<input type="checkbox" name="hobits" value="5"/>
+            <p>语言技能</p>
+            英语：<input type="checkbox" name="skills" value="a" checked="checked"/>
+            日语：<input type="checkbox" name="skills" value="b"/>
+            法语：<input type="checkbox" name="skills" value="c"/>
+            韩语：<input type="checkbox" name="skills" value="d"/>
+            <p>文件</p>
+            上传文件：<input type="file">
+            <input type="reset" value="重置">
+            <br>
+            <textarea name="text">default</textarea>
+            <br>
+            <select name="city" multiple="multiple" size="10">
+                <option value="beijing">北京</option>
+                <option value="shanghai" selected="selected">上海</option>
+                <option value="guangzhou">广州</option>
+            </select>
+            <select>
+                <optgroup label="河北省">hebei</optgroup>
+                <option>石家庄</option>
+                <optgroup label="河南省">henan</optgroup>
+                <option>郑州</option>
+                <option>驻马店</option>
+                <optgroup label="湖北省">hubei</optgroup>
+                <option>武汉</option>
+            </select>
+
+
+            <br>
+            <input type="submit" value="提交"/>
+        </div>
+    </form>
+    <!--<form action="https://www.baidu.com/s" method="get">-->
+        <!--<input type="text" name="wd">-->
+        <!--<input type="submit" value="Search">-->
+        <!--<input type="text" name="user"/>-->
+        <!--<input type="email" name="email" />-->
+        <!--<input type="password" name="pwd" />-->
+        <!--<input type="button" value="登陆" />-->
+        <!--<input type="submit" value="登陆" />-->
+    <!--</form>-->
+    
+</body>
+</html>
