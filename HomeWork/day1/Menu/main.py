@@ -4,11 +4,11 @@ __author__ = "Sigai"
 
 china={
     '北京':{
-        '通州区':['永顺镇', '梨园镇', '宋庄镇', '漷县镇', '张家湾镇', '马驹桥镇', '西集镇', '永乐店镇', '潞城镇', '台湖镇', '于家务乡', '中仓街道', '新华街道', '玉桥街道', '北苑街道'],
+        '通州区':['永顺镇', '梨园镇', '宋庄镇', '漷县镇', '张家湾镇', '玉桥街道', '北苑街道'],
         '海淀区':['四季青镇', '东升镇', '海淀镇', '西北旺镇', '温泉镇', '苏家坨镇', '上庄镇'],
-        '东城区':['安定门街道', '建国门街道', '朝阳门街道', '东直门街道', '东华门街道', '和平里街道', '北新桥街道', '交道口街道', '景山街道', '东四街道', '天坛街道', '东花市街道', '前门街道', '龙潭街道', '永定门外街道', '崇文门外街道', '体育馆路街道'],
-        '朝阳区':['南磨房地区', '高碑店地区', '将台地区', '太阳宫地区', '小红门地区', '十八里店地区', '三间房地区', '东风地区', '常营地区', '管庄地区', '孙河地区', '王四营地区', '东坝地区', '黑庄户地区', '崔各庄地区', '豆各庄地区', '金盏地区', '平房地区', '来广营地区'],
-        '丰台区':['右安门街道', '太平桥街道', '西罗园街道', '大红门街道', '南苑街道', '东高地街道', '东铁匠营街道', '卢沟桥街道', '丰台街道', '新村街道', '长辛店街道', '云岗街道', '方庄地区', '宛平城地区', '马家堡街道', '和义街道', '长辛店镇', '王佐镇', '卢沟桥乡（地区）', '花乡（地区）', '南苑乡（地区）'],
+        '东城区':['安定门街道', '建国门街道', '朝阳门街道', '永定门外街道', '崇文门外街道', '体育馆路街道'],
+        '朝阳区':['南磨房地区', '高碑店地区', '王四营地区', '东坝地区', '金盏地区', '平房地区', '来广营地区'],
+        '丰台区':['右安门街道', '太平桥街道', '西罗园街道', '王佐镇', '卢沟桥乡（地区）', '南苑乡（地区）'],
     },
     '天津':{
         '和平区':['梨园镇','张家湾'],
@@ -47,3 +47,50 @@ china={
     },
 }
 
+tips = "请输入[]中的数字选择选项，b返回，q退出：\n>>>:请输入您的操作:"
+flag = True
+while flag:
+    citys= list(china.keys())
+    for i, option in enumerate(citys):
+        print('[{no:d}] : {option:s}'.format(no=i,option=option))
+    user_input1 = input(tips)
+    if user_input1 == 'q':
+        flag = False
+        break
+    elif user_input1 == 'b':
+        continue
+    elif user_input1 not in [str(i) for i in range(len(citys))]:
+        print("请输入有效操作！")
+        continue
+    else:
+        choosen1 = citys[int(user_input1)]
+        towns = list(china[choosen1].keys())
+
+        while True:
+            for i,option in enumerate(towns):
+                print('[{no:d}] : {option:s}'.format(no=i, option=option))
+            user_input2 = input(tips)
+            if user_input2 == 'q':
+                flag = False
+                break
+            elif user_input2 == 'b':
+                break
+            elif user_input2 not in [str(i) for i in range(len(towns))]:
+                print("请输入有效操作！")
+                continue
+            else:
+                choosen2 = towns[int(user_input2)]
+                valages = china[choosen1][choosen2]
+
+                while True:
+                    for i, option in enumerate(valages):
+                        print('[{no:d}] : {option:s}'.format(no=i, option=option))
+                    user_input3 = input(tips)
+                    if user_input3 == 'q':
+                        flag = False
+                        break
+                    elif user_input3 == 'b':
+                        break
+                    else:
+                        print("请输入有效操作！")
+                        continue
