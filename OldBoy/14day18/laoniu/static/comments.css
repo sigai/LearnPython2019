@@ -1,0 +1,11 @@
+body{
+    background: #eeeeee;
+}
+label{
+    width:80px;
+    text-align: right;
+    display: inline-block;
+}
+fieldset{
+    margin: 0;
+}
