@@ -57,52 +57,49 @@ def prime(n):
     return True
 
 
+def display_spiral(n,m):
+    pos2no = spiral(n, m)
+    for i in range(m):
+        for j in range(n):
+            print(pos2no[(j, i)], end='\t', )
+        print('\n')
+    print('-' * 5 * n)
+
+
 class Uzimaki(object):
     def __init__(self, n, m):
         self.n = n
         self.m = m
+        self.rank={}
         self.spiral = spiral(self.n, self.m)
 
-    def display_spiral(self):
-        pos2no = spiral(self.n, self.m)
-        for i in range(self.m):
-            for j in range(self.n):
-                print(pos2no[(j, i)], end='\t', )
-            print('\n')
-        print('-' * 5 * self.n)
-
-    # @timer
-    def neighbors(self, n):
-        # n_pos = {v: (x, y) for (x, y), v in self.spiral.items()}[n]# 字典转换为列表效率低
-        n_pos = dict(zip(self.spiral.values(), self.spiral.keys()))[n]
-        nbs_pos = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1] if x != 0 or y != 0]
-        nbs = []
-        for x, y in nbs_pos:
-            nbs.append(self.spiral.get((n_pos[0] + x, n_pos[1] + y), None))
-        result = list(set(nbs))
-        return result
-
-    # @timer
-    def get_prime_neighbors(self, n):
-        tmp = []
-        for i in self.neighbors(n):
-            if prime(i):
-                tmp.append(i)
-        return tmp
 
     @timer
-    def get_most_prime_neighbors(self):
-        rank = []
+    def get_prime_neighbors(self):
+
+        nbs_pos = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1] if x != 0 or y != 0]  # 邻居相对向量
+
         for i in range(1, self.n * self.m+1):
-            rank.append((i, len(self.get_prime_neighbors(i))))
-        rank = sorted(rank, key=itemgetter(1), reverse=True)
-        print("在给定%d行和%d列的螺旋矩阵中，%d拥有的质数邻居最多,它有%d个质数邻居." % (self.n, self.m, rank[0][0], rank[0][1]))
-        end = time.clock()
-        return rank[0]
+            i_pos = dict(zip(self.spiral.values(), self.spiral.keys()))[i]#得到i的坐标
+            nbs = []#i的邻居数字
+            for x, y in nbs_pos:
+                num = self.spiral.get((i_pos[0] + x, i_pos[1] + y), None)
+                nbs.append(num)
+            tmp = []
+            for j in nbs:
+                if prime(j):
+                    tmp.append(j)
+            self.rank[i] = len(tmp)
+        #print(self.rank)
+        top = sorted(self.rank.items(), key=itemgetter(1), reverse=True)[0]
+        print("在给定%d行和%d列的螺旋矩阵中，%d拥有的质数邻居最多,它有%d个质数邻居." % (self.n, self.m, top[0], top[1]))
+        return top
+
 
 
 # Uzimaki(10, 100).display_spiral()
 # Uzimaki(4, 4).neighbors(14)
 # Uzimaki(4, 4).get_prime_neighbors(14)
 if __name__ == '__main__':
-    Uzimaki(4, 4).get_most_prime_neighbors()
+    display_spiral(4,4)
+    Uzimaki(400, 100).get_prime_neighbors()
