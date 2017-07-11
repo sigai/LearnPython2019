@@ -3,9 +3,9 @@
 __author__ = "Sigai"
 import os
 import logging
-# from conf import settings  # for release
+from conf import settings  # for release
+# from Atm.conf import settings   # for test
 
-from Atm.conf import settings   # for test
 
 def get_logger(log_type):
     logger = logging.getLogger(log_type)
@@ -16,7 +16,7 @@ def get_logger(log_type):
 
     # 防止意外用os模块拼接路径
     log_path = os.path.join(settings.BASE_DIR, 'logs', settings.LOG_TYPES[log_type])
-    print(log_path) # for test
+    # print(log_path) # for test
     fh = logging.FileHandler(log_path)
     fh.setLevel(settings.LOG_LEVEL)
 

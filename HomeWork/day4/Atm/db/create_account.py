@@ -7,7 +7,7 @@ import random
 
 
 account_sample = {
-    'id' : '4024023882430545',
+    'id' : '123456',
     'password':'123456',
     'credit': 15000,
     'balance': 15000,
@@ -17,7 +17,8 @@ account_sample = {
     'billing_date':'22',
     'status':0 # current account 0, delinquent account 1,
 }
-id = random.randrange(6222578900000000,6222579000000000)
+#id = random.randrange(6222578900000000,6222579000000000)
+id = 123456
 account_sample['id'] = str(id)
 with open(os.path.join('accounts',str(account_sample['id'])+'.json'),'w',encoding='utf-8') as j:
     json.dump(account_sample, j, indent=4, separators=(',', ': '))
