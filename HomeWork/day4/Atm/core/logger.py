@@ -1,25 +1,35 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
-
+import os
 import logging
-import time
+# from conf import settings  # for release
 
-logger = logging.getLogger('TEST-LOG')
-logger.setLevel(logging.DEBUG)
+from Atm.conf import settings   # for test
 
-ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
+def get_logger(log_type):
+    logger = logging.getLogger(log_type)
+    logger.setLevel(settings.LOG_LEVEL)
 
-fh = logging.FileHandler('test.log')
-fh.setLevel(logging.WARNING)
+    ch = logging.StreamHandler()
+    ch.setLevel(settings.LOG_LEVEL)
 
-formatter = logging.Formatter("")
+    # 防止意外用os模块拼接路径
+    log_path = os.path.join(settings.BASE_DIR, 'logs', settings.LOG_TYPES[log_type])
+    print(log_path) # for test
+    fh = logging.FileHandler(log_path)
+    fh.setLevel(settings.LOG_LEVEL)
 
-ch.setFormatter(formatter)
-fh.setFormatter(formatter)
+    formatter = logging.Formatter('%(asctime)s\t%(name)s\t%(levelname)s\t%(message)s')
 
-logger.addHandler(ch)
-logger.addHandler(fh)
+    ch.setFormatter(formatter)
+    fh.setFormatter(formatter)
 
-logger.critical(time.ctime())
+    logger.addHandler(ch)
+    logger.addHandler(fh)
+
+    return logger
+
+
+if __name__ == '__main__':
+    get_logger('transaction').critical('test transaction message')

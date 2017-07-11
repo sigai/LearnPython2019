@@ -1,0 +1,11 @@
+{
+    "id": 6222578976367995,
+    "password": "123456",
+    "credit": 15000,
+    "balance": 15000,
+    "cardholder": "Jhon Smith",
+    "enroll_date": "2016-01-01",
+    "expire_date": "2021-01-01",
+    "pay_day": "22",
+    "status": 0
+}
