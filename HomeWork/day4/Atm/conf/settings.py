@@ -6,6 +6,7 @@ import logging
 
 BASE_DIR = os.path.dirname(os.path.dirname((os.path.abspath(__file__))))
 
+# 账户信息存储设置
 DATABASE ={
     'engine': 'file_storage',
     'name': 'accounts',

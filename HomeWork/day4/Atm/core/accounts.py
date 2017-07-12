@@ -10,6 +10,11 @@ from conf import settings      # for release
 
 
 def load_current_balance(account_id):
+    '''
+    读取最新数据
+    :param account_id:
+    :return:
+    '''
     db_path = db_handler.db_handler(settings.DATABASE)
     account_file = os.path.join(db_path,"%s.json"%account_id)
     with open(account_file,'r',encoding='utf-8') as f:
