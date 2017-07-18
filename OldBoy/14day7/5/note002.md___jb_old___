@@ -1,13 +1,15 @@
 #类和对象
 
 https://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python#
+*元类的声明在Python3中略有不同, 需要在定义类的时候给关键字参数指定元类的名字*
+class Foo(object) 就应该是class Foo(metaclass = MetaSingleton)
 在理解元类之前,你需要掌握Python的类, Python借用了Smalltalk中的类特别的创意.
 大多数编程语言中, 类就是用来描述如何创建对象的代码块. Python中也是这样的:
 
 ```
 >>> class ObjectCreator(object):
 ...       pass
-...       
+...
 >>> my_object = ObjectCreator()
 >>> print(my_object)
 <__main__.ObjectCreator object at 0x000001A3258982B0>
@@ -460,6 +462,5 @@ Python中一切皆是对象. 不是类的实例, 就是元类的实例.
 其次, 元类是很复杂的. 你不应该为了做简单的类的修改而使用元类, 修改类可以使用另外两个技术:
 1. 猴子补丁
 1. 类装饰器
-
 99%的需要修改类的情况,都最好用这两个方法.
 但是99%的情况, 你根本都不需要修改类.

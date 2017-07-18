@@ -11,4 +11,5 @@ class UpperAttrMetaclass(type):
         # 直接用`type.__new__方法
         # 这是标准的面向对象编程, 没有任何特殊方法
         return type.__new__(upperattr_metaclass, future_class_name, future_class_parents, uppercase_attr)
-        
+
+
