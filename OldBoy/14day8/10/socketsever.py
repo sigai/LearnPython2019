@@ -21,5 +21,5 @@ class MyTCPServerHandler(socketserver.BaseRequestHandler):
 
 if __name__ == "__main__":
     host, port = "127.0.0.1", 6969
-    server = socketserver.TCPServer((host, port), MyTCPServerHandler)
+    server = socketserver.ThreadingTCPServer((host, port), MyTCPServerHandler)
     server.serve_forever()
