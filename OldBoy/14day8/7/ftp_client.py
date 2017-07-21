@@ -13,7 +13,7 @@ __author__ = "Sigai"
 问题出在有中文, 中文在bytes和str中的len不一样......
 '''
 
-import socket
+import socket, hashlib
 
 IP = 'localhost'
 PORT = 6969
@@ -25,17 +25,31 @@ c.connect((IP, PORT))
 while True:
     cmd = input(">>:").strip()
     if len(cmd)==0:continue
-    c.send(bytes(cmd, encoding='utf-8'))
-
-    len_data = c.recv(SIZE)
-    len_res = str(len_data, encoding='utf-8')
-    print("命令结果长度:%s"%len_res)
-    c.send(bytes('收到数据大小:%s'%len_res, encoding='utf-8'))
-    received = ""
-
-    while len(received) != int(len_res):
-        data = c.recv(SIZE)
-        res = str(data,encoding='utf-8')
-        received = received + res
-        #print(len(received), len_res)
-    print(received)
+    if cmd.startswith("get"):
+        c.send(bytes(cmd, encoding='utf-8'))
+        file_size = str(c.recv(SIZE), encoding='utf-8')
+        print("文件大小:", file_size)
+        c.send(bytes("准备接收文件...", encoding='utf-8'))
+        total_size = int(file_size)
+        received_size = 0
+        _, filename = cmd.strip().split()
+        m = hashlib.md5()
+        with open(filename + ".new", 'wb') as f:
+            while received_size < total_size:
+                if total_size - received_size > 1024:
+                    size = 1024
+                else:
+                    size = total_size - received_size
+                    print(size)
+                data = c.recv(size)
+                m.update(data)
+                received_size += len(data)
+                f.write(data)
+            else:
+                print("接收结束")
+                c.send(b'All Received')
+        md5_client = m.hexdigest()
+        m_server = c.recv(SIZE)
+        md5_server = str(m_server, encoding='utf-8')
+        if md5_client == md5_server:
+            print("验证成功")
