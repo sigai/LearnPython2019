@@ -23,14 +23,15 @@ class MyThread(threading.Thread):
 
 if __name__ == "__main__":
 
-    # t1 = MyThread(1)
-    # t2 = MyThread(2)
-    # t1.start()
-    # t2.start()
+    t1 = MyThread(1)
+    t2 = MyThread(2)
+    t1.start()
+    t1.join()
+    t2.start()
 
-    tasks = []
-    for idx in range(10):
-        t = MyThread(idx)
-        tasks.append(t)
-    for tsk in tasks:
-        tsk.start()
+    # tasks = []
+    # for idx in range(10):
+    #     t = MyThread(idx)
+    #     tasks.append(t)
+    # for tsk in tasks:
+    #     tsk.start()

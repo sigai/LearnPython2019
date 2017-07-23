@@ -10,6 +10,7 @@ import time
 num = 0
 lock = threading.Lock()
 
+
 def run(n):
     lock.acquire()
     global num
@@ -24,4 +25,11 @@ for i in range(2000):
 #     t.join()
 # hello("t1")
 # hello("t2")
+
+while True:
+    time.sleep(0.1)
+    if threading.active_count() == 1:
+        break
+    else:
+        continue
 print(num)
