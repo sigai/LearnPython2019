@@ -124,3 +124,30 @@ Like regular semaphores, bounded semaphores manage a counter representing
 the number of release() calls minus the number of acquire() calls, plus an
 initial value. The acquire() method blocks if necessary until it can return
 without making the counter negative. If not given, value defaults to 1.
+
+#events
+Event类实例化Event对象. Event实例管理一个标识(`self._flag`), 用set方法可以将其设置为True, clear方法可以将其设置为False. wait方法可以阻塞线程运行,直到标识变为True. 标识初始值为False.
+Event是一个简易的同步对象. Event对象代表一个内部标识, 并且线程们可以等待标识被设定, 或者线程他们自己设定或清空标识.
+`event = threading.Event()`
+*客户线程可以等待直到标识被设定*
+`event.wait()`
+*服务线程能够设置或重置标识.*
+`event.set()`
+`event.clear()`
+如果标识是设置状态(True), wait方法不会执行任何操作(等于pass). 如果标识被清除了(False), wait方法会一直阻塞直到标识被再次设定(True). 任何数量的线程都可以等待同一个Event.
+
+#queue
+queue.Queue()
+queue.LifoQueue()
+queue.PriorityQueue()
+put(item, block=True, timeout=None)
+put_nowait()
+get(block=True, timeout=None)
+get_nowait()
+qsize()
+empty()
+full()
+task_done()
+join()
+
+
