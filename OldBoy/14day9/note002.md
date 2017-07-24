@@ -9,7 +9,7 @@
 
 CPU > 内存 > 硬盘
 
-Pycharm中多线程如果没结束, 手动结束的话 左边的红色停止键会变成骷髅头.
+Pycharm中多线程如果没结束, 手动结束的话, 左边的红色停止键会变成骷髅头.
 ##threading.Thread
 `__init__(self, group=None, target=None, name=None,args=(), kwargs=None, *, daemon=None)`
 This constructor should always be called with keyword arguments. Arguments are:
@@ -32,7 +32,7 @@ If a subclass overrides the constructor, it must make sure to invoke
 the base class constructor (Thread.__init__()) before doing anything
 else to the thread.
 
-##join() 
+##join()
 等待线程结束
 Wait until the thread terminates.
 
@@ -55,7 +55,7 @@ join() raises a RuntimeError if an attempt is made to join the current
 thread as that would cause a deadlock. It is also an error to join() a
 thread before it has been started and attempts to do so raises the same
 exception.
-##setDeamon() 
+##setDeamon()
 设置为守护线程
 A boolean value indicating whether this thread is a daemon thread.
 
@@ -66,7 +66,7 @@ the main thread default to daemon = False.
 
 The entire Python program exits when no alive non-daemon threads are
 left.
-##current_thread() 
+##current_thread()
 Return the current Thread object, corresponding to the caller's thread of control.
 If the caller's thread of control was not created through the threading
 module, a dummy thread object with limited functionality is returned.
@@ -91,7 +91,7 @@ threads that have not yet been started.
 Mutex
 A lock object is a synchronization primitive.  To create a lock,
 call threading.Lock().  Methods are:
- 
+
 acquire() -- lock the lock, possibly blocking until it can be obtained
 release() -- unlock of the lock
 locked() -- test whether the lock is currently locked
@@ -124,5 +124,3 @@ Like regular semaphores, bounded semaphores manage a counter representing
 the number of release() calls minus the number of acquire() calls, plus an
 initial value. The acquire() method blocks if necessary until it can return
 without making the counter negative. If not given, value defaults to 1.
-
-

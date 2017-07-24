@@ -4,17 +4,24 @@ __author__ = "Sigai"
 
 import paramiko
 
-#私钥位置
+# 指定私钥位置
+private_key = paramiko.RSAKey.from_private_key_file("id_rsa")
 
-private_key = paramiko.RSAKey.from_private_key_file("/Users/fangtiansheng/.ssh/id_rsa")
+# 创建SSHClient实例
 ssh = paramiko.SSHClient()
+
+# 设置允许不在know_hosts文件的主机连接
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect(hostname="192.168.44.143",port=22,username="f",pkey=private_key)
-stdin,stdout,stderr = ssh.exec_command("df")
-result = stdout.read().decode()
-print(result)
-stdin,stdout,stderr = ssh.exec_command("ifconfig")
-result = stdout.read().decode()
+
+# 用私钥连接已经有该主机公钥的主机的用户
+ssh.connect(hostname="192.168.1.127",port=22,username="fang",pkey=private_key)
+
+# 执行命令
+stdin,stdout,stderr = ssh.exec_command("df;ifconfig")
+res, err = stdout.read().decode(), stderr.read().decode()
+
+result = res if res else err
 print(result)
 
+# 关闭连接
 ssh.close()
