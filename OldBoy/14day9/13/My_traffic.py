@@ -37,7 +37,6 @@ def car(name):
             print("[%s] start to go"%name)
 
 
-
 tri_light = threading.Thread(target=light, args=())
 tri_light.start()
 car1 = threading.Thread(target=car, args=("Tesla",))

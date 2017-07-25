@@ -23,4 +23,5 @@ for idx in range(50):
     t.start()
 
 t.join()
+t.join()
 print("cost, ", time.time()-start_time)

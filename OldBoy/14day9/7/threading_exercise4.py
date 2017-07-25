@@ -26,8 +26,11 @@ if __name__ == "__main__":
     t1 = MyThread(1)
     t2 = MyThread(2)
     t1.start()
-    t1.join()
+    # t1.join()
+    # t1.join() # 一个线程可以被join多次
+    # t2.join() # 在线程start之前join会出发异常
     t2.start()
+    threading.current_thread().join()   # 当前线程中join自己会死锁, 触发Runtime异常
 
     # tasks = []
     # for idx in range(10):

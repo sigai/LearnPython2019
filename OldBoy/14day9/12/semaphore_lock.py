@@ -7,7 +7,7 @@ import threading, time
 
 def run(n):
     semaphore.acquire()
-    time.sleep(1)
+    time.sleep(2)
     print("%s thread is running!"%n)
     semaphore.release()
 
