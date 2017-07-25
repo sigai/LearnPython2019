@@ -86,6 +86,7 @@ BoundedSemaphore：在调用release()函数时，会检查，增加的计数是�
 
 
 #events
+事件
 Event类实例化Event对象. Event实例管理一个标识(`self._flag`), 用set方法可以将其设置为True, clear方法可以将其设置为False. wait方法可以阻塞线程运行,直到标识变为True. 标识初始值为False.
 Event是一个简易的同步对象. Event对象代表一个内部标识, 并且线程们可以等待标识被设定, 或者线程他们自己设定或清空标识.
 `event = threading.Event()`
@@ -123,3 +124,5 @@ task_done()
 表明前一个队列任务完成.
 join()
 阻塞, 直到队列的所有元素都被获取和处理.
+
+

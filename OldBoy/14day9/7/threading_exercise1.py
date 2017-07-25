@@ -14,6 +14,7 @@ for idx in range(1):
     t = threading.Thread(target=run, args=(idx,))
     t.daemon = True
     t.start()
+    print('deamon: ', t.daemon)
 c = threading.current_thread()
 print(c)
 print(type(c))
