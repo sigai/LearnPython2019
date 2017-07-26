@@ -28,5 +28,5 @@ def f(name):
 
 if __name__ == "__main__":
     info("\033[31;mMain Process Line.\033[0m")
-    p = Process(target=f,args=("Tom%s",))
+    p = Process(target=f,args=("Tom",))
     p.start()
