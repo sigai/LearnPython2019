@@ -22,10 +22,11 @@ def Bar(arg):
 # print(__name__)
 
 if __name__ == "__main__":
-    pool = Pool(processes=3)#允许进程池同时放入3个进程
-    print("主进程PID:",os.getpid())
+    pool = Pool(processes=3, )    # 允许进程池同时放入3个进程
+
+    print("主进程PID:", os.getpid())
     for i in range(10):
-        pool.apply_async(func=Foo,args=(i,),callback=Bar)# 回调
+        pool.apply_async(func=Foo,args=(i,),callback=Bar)   # 回调
         # pool.apply_async(func=Foo,args=(i,))# 并行
         # pool.apply(func=Foo,args=(i,))# 串行
 

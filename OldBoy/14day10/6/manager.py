@@ -7,7 +7,7 @@ from multiprocessing import Manager, Process
 import os
 
 
-def f(d,l):
+def f(d, l):
     d[os.getpid()] = os.getpid()
     l.append(os.getpid())
     print(l)
@@ -19,8 +19,8 @@ if __name__ == "__main__":
         l = manager.list(range(5))
         p_list = []
 
-        for  i in range(10):
-            p = Process(target=f,args=(d,l))
+        for i in range(10):
+            p = Process(target=f, args=(d,l))
             p.start()
             p_list.append(p)
 
