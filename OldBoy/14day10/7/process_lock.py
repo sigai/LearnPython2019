@@ -5,7 +5,8 @@ __author__ = "Sigai"
 
 from multiprocessing import Process, Lock
 
-def f(i):
+
+def f(l, i):
     l.acquire()
     print("*"*i)
     l.release()
@@ -13,6 +14,6 @@ def f(i):
 if __name__ == "__main__":
     l = Lock()
 
-    for num in range(10):
-        p = Process(target=f,args=(num,))
+    for num in range(1,10):
+        p = Process(target=f,args=(l,num))
         p.start()

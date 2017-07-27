@@ -4,7 +4,7 @@ __author__ = "Sigai"
 
 '''多进程，每个进程带一个线程'''
 
-import multiprocessing
+from multiprocessing import Process
 import time, threading
 
 
@@ -20,7 +20,7 @@ def run(name):
     t = threading.Thread(target=thread_run)
     t.start()
 
-
-for i in range(10):
-    p = multiprocessing.Process(target=run, args=("Process no:%s" % i,))
-    p.start()
+if __name__ == '__main__':
+    for i in range(10):
+        p = Process(target=run, args=("Process no:%s" % i,))
+        p.start()

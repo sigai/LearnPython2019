@@ -13,7 +13,6 @@ def f(d,l):
     print(l)
 
 
-
 if __name__ == "__main__":
     with Manager() as manager:
         d = manager.dict()
