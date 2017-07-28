@@ -89,7 +89,7 @@ apply_async(func=None,args=None,callback=None)
 创建一个进程池, 执行用Pool类提交的任务.
 `class multiprocessing.pool.Pool([processes[, initializer[, initargs[, maxtasksperchild[, context]]]]])`
 A process pool object which controls a pool of worker processes to which jobs can be submitted. It supports asynchronous results with timeouts and callbacks and has a parallel map implementation.
-进程池对象控制一个池子的可以执行任务的工作进程. 进程池对象支持异步超时和回调, 还有并行映射实现.
+进程池对象控制一个池子的可以执行任务的工作进程. 进程池对象支持异步,超时和回调, 还有并行映射实现.
 processes is the number of worker processes to use. If processes is None then the number returned by os.cpu_count() is used.
 processes参数设定的是工作进程能使用的进程数量. 如果processes参数是None, 会自动调用os.cpu_count方法返回的数值.
 If initializer is not None then each worker process will call initializer(\*initargs) when it starts.
