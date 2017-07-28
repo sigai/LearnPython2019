@@ -5,8 +5,8 @@ __author__ = "Sigai"
 import gevent, time
 from urllib import request
 from gevent import monkey
-
 monkey.patch_all()#将当前程序所有IO操作做上标记
+
 
 def getUrl(url):
     print("Get: %s"%url)
@@ -27,8 +27,13 @@ print("同步串行打开网页 耗时：",time.time()-time_start)
 async_time = time.time()
 
 gevent.joinall([
+    gevent.spawn(getUrl,"http://www.gevent.org/"),
+    gevent.spawn(getUrl,"http://www.iplaysoft.com/"),
+    gevent.spawn(getUrl,"http://www.ipc.me/"),
     gevent.spawn(getUrl,"http://jandan.net/"),
     gevent.spawn(getUrl,"http://www.solidot.org/"),
     gevent.spawn(getUrl,"http://www.iplaysoft.com/"),
 ])
+
+
 print("异步并行打开网页 耗时：",time.time()-async_time)
