@@ -2,11 +2,13 @@
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 
+
 def consumer(name):
     print("--->start eating baozi")
     while True:
         new_baozi = yield
         print("[%s] is eating baozi [%s]"%(name,new_baozi))
+
 
 def producer():
     r = con1.__next__()
