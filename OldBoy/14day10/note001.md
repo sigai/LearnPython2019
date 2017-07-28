@@ -31,10 +31,10 @@ qsize
 'empty', 'full', 'get', 'get_nowait', 'join', 'put', 'put_nowait', 'qsize', 'task_done'
 进程队列方法
 'cancel_join_thread', Prevent join_thread() from blocking. In particular, this prevents the background thread from being joined automatically when the process exits – see join_thread().
-停止join_thread方法的阻塞. 特别是, 这个方法能阻止后台线程在进程退出的时候被自动join-见join_thread方法(就是进程退出的时候不用等后台线程结束了). 
-这个方法叫allow_exit_without_flush这个名字可能更恰当一些. 这个方法可能导致进程队列中的数据丢失的时候, 你也肯定不需要去用这个方法. 只有一种情况, 当你需要让当前进程马上退出不等待队列数据更新到下层的管道中, 并且可能丢失的数据你也不关心的时候. 
+停止join_thread方法的阻塞. 特别是, 这个方法能阻止后台线程在进程退出的时候被自动join-见join_thread方法(就是进程退出的时候不用等后台线程结束了).
+这个方法叫allow_exit_without_flush这个名字可能更恰当一些. 这个方法可能导致进程队列中的数据丢失的时候, 你也肯定不需要去用这个方法. 只有一种情况, 当你需要让当前进程马上退出不等待队列数据更新到下层的管道中, 并且可能丢失的数据你也不关心的时候.
 'close', 表明当前进程不会再向该队列中put数据了. 后台线程在更新管道数据之后会马上退出. 当进程队列被垃圾回收时, 队列这个方法会立即被调用.
-'empty', 'full', 'get', 'get_nowait', 
+'empty', 'full', 'get', 'get_nowait',
 'join_thread', join后台线程(等待后台线程运行结束). 这个方法只能在close方法被调用之后被调用. 该方法可以一直阻塞, 直到后台线程退出, 以保证所有的数据都更新到了管道里.
 默认如果进程不是进程队列的创建者, 在退出的时候线程就会join(等待运行结束)进程队列的后台线程. 进程可以调用cancel_join_thread方法让join_thread方法不执行.
 'put', 'put_nowait', 'qsize'
@@ -44,13 +44,13 @@ pipe([duplex])方法返回一对儿代表pipe两端的连接对象.
 如果duplex(双相)参数是True(默认), 那么管道就是双向的(两端皆可收发). 否则, 连接1只能用来收信, 连接2只能发信.
 管道两端连接对象可用的方法:
 'close', 关闭连接. 管道被垃圾回收的时候该方法自动执行.
-'closed', 
+'closed',
 'fileno', 返回文件描述符或者连接使用的处理器.
 'poll([timeout])', 返回管道中是否有可读的数据. 如果timeout参数没有指定, 方法会立即返回结果. 如果timeout参数是一个数值, 则指定了会阻塞的最长时间的秒数. 如果timeout参数被指定为None, 表示永远阻塞.
 注意, 用multiprocessing.connection.wait方法的多端连接对象可以poll立即返回结果.
-'readable', 
+'readable',
 'recv', 返回另一端用send方法发送过来的对象. 方法会一直阻塞直到接收到数据. 如果收不到数据, 或者另一端关闭会触发EOFError异常.
-'recv_bytes', 'recv_bytes_into', 
+'recv_bytes', 'recv_bytes_into',
 'send', 发送对象到连接的另一端, 另一端用recv方法接收. 发送的对象必须是可以pickle序列化的. 过大的pickle文件可能触发ValueError异常(大约32MB以上).
 'send_bytes', 'writable'
 Changed in version 3.3: Connection objects themselves can now be transferred between processes using Connection.send() and Connection.recv().
@@ -70,6 +70,7 @@ Manager支持with语句创建对象.
 
 #进程锁
 一加上进程锁, 程序就变成串行的了.
+终端打印的时候, 保证输出结果不会混乱.
 
 #进程池
 新建一个进程是克隆一份与父进程一样的资源, 启用的进程越多, 开销越大, 所以需要进程池, 限制同时运行的进程数量.
@@ -78,18 +79,17 @@ close关闭进程池, 标记进程池的状态, 进程池处理器根据这个�
 join等待进程池中的进程结束, 断言进程池已经关闭后, 等待进程池中的进程结束.
 close应该是禁止新的进程加入进程, 此时进程池只许出不许进, 我党当年游击到一个村子, 封锁村子, 放明暗哨各两个, 全村许进不许出, 完美封锁消息, 此处效果类似. 视频里讲错了, 学生提出的应该是对的.
 
-apply 同步  syn·chro·nous
-apply_async 异步 a·syn·chro·nous
+apply 同步串行  syn·chro·nous
+apply_async 异步并行 a·syn·chro·nous
 
 apply_async(func=None,args=None,callback=None)
 回调函数由主调进程执行
 
 [官方文档](https://docs.python.org/3.6/library/multiprocessing.html#module-multiprocessing.pool):
-One can create a pool of processes which will carry out tasks submitted to it with the Pool class.
-创建一个进程池, 执行Pool类提交的任务.
+创建一个进程池, 执行用Pool类提交的任务.
 `class multiprocessing.pool.Pool([processes[, initializer[, initargs[, maxtasksperchild[, context]]]]])`
 A process pool object which controls a pool of worker processes to which jobs can be submitted. It supports asynchronous results with timeouts and callbacks and has a parallel map implementation.
-进程池对象控制一个池子的可以执行任务的工作进程. 进程池对象支持同步超时和回调, 还有并行映射实现.
+进程池对象控制一个池子的可以执行任务的工作进程. 进程池对象支持异步超时和回调, 还有并行映射实现.
 processes is the number of worker processes to use. If processes is None then the number returned by os.cpu_count() is used.
 processes参数设定的是工作进程能使用的进程数量. 如果processes参数是None, 会自动调用os.cpu_count方法返回的数值.
 If initializer is not None then each worker process will call initializer(\*initargs) when it starts.
@@ -103,5 +103,3 @@ Note that the methods of the pool object should only be called by the process wh
 
 #协程
 coroutine
-
-

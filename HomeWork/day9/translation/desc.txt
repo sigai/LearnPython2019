@@ -1,0 +1,8609 @@
+{
+ "1394bus.sys": {
+  "en": "VAYU UI Application"
+ },
+ "1394ohci.sys": {
+  "en": "Reflector Driver API"
+ },
+ "aaclient.dll": {
+  "en": "Microsoft Chinese Handwriting Recognizer"
+ },
+ "Accessibility.dll": {
+  "en": "Remote Desktop Configuration service"
+ },
+ "Accessibility.ni.dll": {
+  "en": "TPM WMI Provider"
+ },
+ "accessibilitycpl.dll": {
+  "en": "Microsoft UI Automation Core"
+ },
+ "ACCTRES.dll": {
+  "en": "Lexmark PSSD In-Box Print Processor"
+ },
+ "AcGenral.dll": {
+  "en": "Microsoft Virtual Disk Service proxy stub"
+ },
+ "AcLayers.dll": {
+  "en": "Microsoft Volume Shadow Copy Service Tracing Library"
+ },
+ "aclui.dll": {
+  "en": "Flash Config Enrollee"
+ },
+ "acpi.sys": {
+  "en": "Math Input Panel Accessory"
+ },
+ "acpipmi.sys": {
+  "en": "RemoteApp and Desktop Connection Component"
+ },
+ "acppage.dll": {
+  "en": "Math Input Control"
+ },
+ "AcRes.dll": {
+  "en": "Tablet PC Input Panel Helper"
+ },
+ "acspecfc.dll": {
+  "en": "TPM WMI Manager"
+ },
+ "ActionCenter.dll": {
+  "en": "Windows Ribbon Framework"
+ },
+ "ActionCenterCPL.dll": {
+  "en": "UPnP Device Host ISAPI Extension"
+ },
+ "ActionQueue.dll": {
+  "en": "Microsoft Volume Shadow Copy Service event class"
+ },
+ "activeds.dll": {
+  "en": "WIA Extension Host for thunking APIs from 32-bit to 64-bit process"
+ },
+ "actxprxy.dll": {
+  "en": "WMI Copy Extension Driver"
+ },
+ "acwow64.dll": {
+  "en": "Math Recognizer"
+ },
+ "AcXtrnal.dll": {
+  "en": "Remote Desktop Connection"
+ },
+ "adammigrate.dll": {
+  "en": "Windows Remote Desktop Services Performance Objects"
+ },
+ "AdapterTroubleshooter.exe": {
+  "en": "Microsoft TAPI3 Terminal Manager"
+ },
+ "AddInProcess.exe": {
+  "en": "Windows Time Zone Utility"
+ },
+ "AddInUtil.exe": {
+  "en": "UPnP Device Host Container"
+ },
+ "admparse.dll": {
+  "en": "Microsoft Volume Shadow Copy Requestor Writer Services API DLL"
+ },
+ "admwprox.dll": {
+  "en": "Launch Connect to a Wireless Network Wizard"
+ },
+ "adp94xx.sys": {
+  "en": "WSMan HTTP Configuration File"
+ },
+ "adpahci.sys": {
+  "en": "WSMAN Automation"
+ },
+ "adprovider.dll": {
+  "en": "Windows Update client proxy stub"
+ },
+ "adpu320.sys": {
+  "en": "Still Image Devices client DLL"
+ },
+ "adsiis.dll": {
+  "en": "WIA Tracing Driver"
+ },
+ "adsldp.dll": {
+  "en": "API Helper DLL"
+ },
+ "adsldpc.dll": {
+  "en": "WCN EAP Authenticator Proxy"
+ },
+ "adsmsext.dll": {
+  "en": "WMI Performance Service Adapter"
+ },
+ "adsnt.dll": {
+  "en": "Windows Management Provider"
+ },
+ "adtschema.dll": {
+  "en": "WMI SDK Provider Framework"
+ },
+ "advapi32.dll": {
+  "en": "The Managed Object Discovery (MOF) Compiler"
+ },
+ "advpack.dll": {
+  "en": "Windows Update WUDriver Stub"
+ },
+ "adwsmigrate.dll": {
+  "en": "Windows Update Application Launcher"
+ },
+ "aeevts.dll": {
+  "en": "Universal Serial Bus Driver"
+ },
+ "aeinv.dll": {
+  "en": "Config Function Discovery Provider DLL"
+ },
+ "aelupsvc.dll": {
+  "en": "Config Registrar Service"
+ },
+ "aepdu.dll": {
+  "en": "WMI Performance Reverse Adapter"
+ },
+ "aepic.dll": {
+  "en": "Windows Management Instrumentation"
+ },
+ "afd.sys": {
+  "en": "WMI SDK Provider Framework"
+ },
+ "agilevpn.sys": {
+  "en": "The Managed Object Format (MOF) Compiler"
+ },
+ "AGP440.sys": {
+  "en": "The Managed Object Function (MOF) Compiler"
+ },
+ "agrsm64.sys": {
+  "en": "16-bit Emulation on NT64"
+ },
+ "alg.exe": {
+  "en": "Image Enhancement dll"
+ },
+ "aliide.sys": {
+  "en": "Compressed (zipped) Folders"
+ },
+ "alink.dll": {
+  "en": "AppId Policy Engine API Module"
+ },
+ "AltTab.dll": {
+  "en": "AppId Policy Engine API Module"
+ },
+ "amdide.sys": {
+  "en": "Outlook MS Search Connector"
+ },
+ "amdk8.sys": {
+  "en": "Microsoft Windows Search Filter Host"
+ },
+ "amdpcom32.dll": {
+  "en": "Lexmark WIA Microdriver DLL"
+ },
+ "amdpcom64.dll": {
+  "en": "NSI User-mode interface DLL"
+ },
+ "amdppm.sys": {
+  "en": "Microsoft SI PSI parser for MPEG2 based networks"
+ },
+ "amdsata.sys": {
+  "en": "MS-Setup Setup Exe"
+ },
+ "amdsbs.sys": {
+  "en": "SQM Client"
+ },
+ "amdxata.sys": {
+  "en": "Microsoft Windows BITS Managed Library"
+ },
+ "amstream.dll": {
+  "en": "SUA Subsystem Client DLL"
+ },
+ "amxread.dll": {
+  "en": "SUA Subsystem Client DLL"
+ },
+ "apds.dll": {
+  "en": "Microsoft Search Proxy"
+ },
+ "api-ms-win-core-console-l1-1-0.dll": {
+  "en": "Microsoft Windows Search Indexer"
+ },
+ "api-ms-win-core-datetime-l1-1-0.dll": {
+  "en": "USB Performance Objects DLL"
+ },
+ "api-ms-win-core-debug-l1-1-0.dll": {
+  "en": "Network Store Information RPC interface"
+ },
+ "api-ms-win-core-delayload-l1-1-0.dll": {
+  "en": "WSMan Resource DLL"
+ },
+ "api-ms-win-core-errorhandling-l1-1-0.dll": {
+  "en": "Microsoft System Wow32"
+ },
+ "api-ms-win-core-fibers-l1-1-0.dll": {
+  "en": "XPS Viewer"
+ },
+ "api-ms-win-core-file-l1-1-0.dll": {
+  "en": "Microsoft Windows BITS Managed Folders"
+ },
+ "api-ms-win-core-handle-l1-1-0.dll": {
+  "en": "Microsoft Windows BITS Managed Folders"
+ },
+ "api-ms-win-core-heap-l1-1-0.dll": {
+  "en": "Microsoft Search Protocol Handler"
+ },
+ "api-ms-win-core-interlocked-l1-1-0.dll": {
+  "en": "Microsoft Search Connector"
+ },
+ "api-ms-win-core-io-l1-1-0.dll": {
+  "en": "SSDP Client API DLL"
+ },
+ "api-ms-win-core-libraryloader-l1-1-0.dll": {
+  "en": "Multi-User Windows USER API Client DLL"
+ },
+ "api-ms-win-core-localization-l1-1-0.dll": {
+  "en": "Microsoft Ux Theme Library"
+ },
+ "api-ms-win-core-localregistry-l1-1-0.dll": {
+  "en": "WSMan Service"
+ },
+ "api-ms-win-core-memory-l1-1-0.dll": {
+  "en": "WSMAN WMI Provider"
+ },
+ "api-ms-win-core-misc-l1-1-0.dll": {
+  "en": "Winsock Network Diagnostic Helper Class"
+ },
+ "api-ms-win-core-namedpipe-l1-1-0.dll": {
+  "en": "Winsock Net shell helper DLL for winsock"
+ },
+ "api-ms-win-core-processenvironment-l1-1-0.dll": {
+  "en": "Web Transfer Protocols API"
+ },
+ "api-ms-win-core-processthreads-l1-1-0.dll": {
+  "en": "Wireless Network Policy Management Snap-in"
+ },
+ "api-ms-win-core-profile-l1-1-0.dll": {
+  "en": "Windows Wireless LAN 802.11 MSM DLL"
+ },
+ "api-ms-win-core-rtlsupport-l1-1-0.dll": {
+  "en": "Windows NT Remote Access Perfmon Counter dll"
+ },
+ "api-ms-win-core-string-l1-1-0.dll": {
+  "en": "Dynamic Interface Manager"
+ },
+ "api-ms-win-core-synch-l1-1-0.dll": {
+  "en": "Routing Table Manager"
+ },
+ "api-ms-win-core-sysinfo-l1-1-0.dll": {
+  "en": "Column List Box"
+ },
+ "api-ms-win-core-threadpool-l1-1-0.dll": {
+  "en": "WMPMDE Service DLL"
+ },
+ "api-ms-win-core-util-l1-1-0.dll": {
+  "en": "Windows Socket 2.0 Helper for Windows NT"
+ },
+ "api-ms-win-security-base-l1-1-0.dll": {
+  "en": "Windows Update Client API"
+ },
+ "api-ms-win-security-lsalookup-l1-1-0.dll": {
+  "en": "Windows Media Center Recording Objects"
+ },
+ "api-ms-win-security-sddl-l1-1-0.dll": {
+  "en": "Windows Wireless LAN 802.11 Client Side Helper API"
+ },
+ "api-ms-win-service-core-l1-1-0.dll": {
+  "en": "Windows Wireless LAN 802.11 MSM Security Module DLL"
+ },
+ "api-ms-win-service-management-l1-1-0.dll": {
+  "en": "IP Routing Protocol Priority DLL"
+ },
+ "api-ms-win-service-management-l2-1-0.dll": {
+  "en": "Microsoft RRAS Server Migration Lib"
+ },
+ "api-ms-win-service-winsvc-l1-1-0.dll": {
+  "en": "Routing Interface Manager"
+ },
+ "apihex86.dll": {
+  "en": "Registry Editor Manager"
+ },
+ "apilogen.dll": {
+  "en": "Registry Editor Utility"
+ },
+ "apircl.dll": {
+  "en": "Presentation Framework dll"
+ },
+ "apisetschema.dll": {
+  "en": "Credential Vault Client Library"
+ },
+ "appcmd.exe": {
+  "en": "Windows Security Center ISV Proxy Stub"
+ },
+ "apphelp.dll": {
+  "en": "Session Viewer Window Hook DLL"
+ },
+ "Apphlpdm.dll": {
+  "en": "WPC Settings Library"
+ },
+ "appid.sys": {
+  "en": "x86 Performance Counter Host"
+ },
+ "appidcertstorecheck.exe": {
+  "en": "Performance Counters for Windows Native DLL"
+ },
+ "appidpolicyconverter.exe": {
+  "en": "Windows Power Shell"
+ },
+ "appinfo.dll": {
+  "en": "IIS Web Admin Service"
+ },
+ "AppLaunch.exe": {
+  "en": "Protected Storage default provider"
+ },
+ "appmgmts.dll": {
+  "en": "Software Licensing UI API"
+ },
+ "appmgr.dll": {
+  "en": "Windows Security Center API"
+ },
+ "apss.dll": {
+  "en": "Send Mail"
+ },
+ "arc.sys": {
+  "en": "Performance Logs and Alerts Migration"
+ },
+ "arcsas.sys": {
+  "en": "Microsoft Performance Counter Migration Lib"
+ },
+ "ARP.exe": {
+  "en": "Unload PerfMon Counters"
+ },
+ "ARPPRODUCTICON.exe": {
+  "en": "Tree View OCX"
+ },
+ "asferror.dll": {
+  "en": "Microsoft PowerShell EventLog Message Dll"
+ },
+ "asp.dll": {
+  "en": "IIS Thread Pool Library"
+ },
+ "AspNetMMCExt.dll": {
+  "en": "Protected storage server"
+ },
+ "aspnet_filter.dll": {
+  "en": "Software Protection Platform WMI provider"
+ },
+ "aspnet_isapi.dll": {
+  "en": "Windows Security Center ISV API"
+ },
+ "aspnet_regiis.exe": {
+  "en": "System Event Notification Service"
+ },
+ "aspnet_regsql.exe": {
+  "en": "Performance Logs and Alerts Hook"
+ },
+ "aspnet_state.exe": {
+  "en": "Load and Unload Performance Counters"
+ },
+ "aspnet_wp.exe": {
+  "en": "802.3 Media Specific Module"
+ },
+ "asycfilt.dll": {
+  "en": "Microsoft PowerShell Crimson log Message Dll"
+ },
+ "asyncmac.sys": {
+  "en": "Crypto SIP provider for signing and verifying PowerShell script files"
+ },
+ "at.exe": {
+  "en": "WAS App Hosting library"
+ },
+ "atapi.sys": {
+  "en": "Webhost Client IPM Wrapper"
+ },
+ "ataport.sys": {
+  "en": "Remote Access Device DLL for modems PADs and switches"
+ },
+ "AtBroker.exe": {
+  "en": "Microsoft Connection Manager Configuration Dll"
+ },
+ "athrx.sys": {
+  "en": "Microsoft Connection Manager Monitor"
+ },
+ "atidxx32.dll": {
+  "en": "Microsoft Connection Manager Phonebook"
+ },
+ "atidxx64.dll": {
+  "en": "Connection Manager Admin API Helper for Setup"
+ },
+ "atikmdag.sys": {
+  "en": "Remote Assistance Contact List"
+ },
+ "atinavrr.sys": {
+  "en": "Windows Sockets Helper DLL for PGM"
+ },
+ "atiumd64.dll": {
+  "en": "Windows Health Center WSC Interop"
+ },
+ "atiumd6a.dll": {
+  "en": "Scripted Diagnostics Execution Engine"
+ },
+ "atiumdag.dll": {
+  "en": "WebHost Protocol Manager (the worker process plug-in)"
+ },
+ "atiumdva.dll": {
+  "en": "Remote Access Media DLL for COM ports"
+ },
+ "atl.dll": {
+  "en": "Microsoft Connection Manager Auto-Download"
+ },
+ "atmfd.dll": {
+  "en": "Native Code Xps Services Library"
+ },
+ "atmlib.dll": {
+  "en": "Microsoft Connection Manager Profile Installer"
+ },
+ "attrib.exe": {
+  "en": "Windows Remote Assistance"
+ },
+ "audiodev.dll": {
+  "en": "Windows Remote Assistance SD Server"
+ },
+ "audiodg.exe": {
+  "en": "Remote Procedure Call Runtime"
+ },
+ "AudioEng.dll": {
+  "en": "Scripted Diagnostics Native Host"
+ },
+ "AUDIOKSE.dll": {
+  "en": "Microsoft Shell Extension for Windows Script Host"
+ },
+ "AudioSes.dll": {
+  "en": "CNG Key Isolation Service"
+ },
+ "audiosrv.dll": {
+  "en": "Microsoft Windows Based Script Host"
+ },
+ "audit.exe": {
+  "en": "Identity Store"
+ },
+ "auditpol.exe": {
+  "en": "Net Logon Services DLL"
+ },
+ "auditpolmsg.dll": {
+  "en": "SetupAPI 32-bit Surrogate"
+ },
+ "AuthFWGP.dll": {
+  "en": "Windows Shell Services Dll"
+ },
+ "AuthFWSnapIn.Resources.dll": {
+  "en": "Windows Desktop Gadgets"
+ },
+ "AuthFWWizFwk.Resources.dll": {
+  "en": "Server Service Core DLL"
+ },
+ "authui.dll": {
+  "en": "Microsoft Windows Portable Device Provider"
+ },
+ "authz.dll": {
+  "en": "NET System Frame work"
+ },
+ "autochk.exe": {
+  "en": "Windows Script Component Runtime"
+ },
+ "autoconv.exe": {
+  "en": "Microsoft Windows Script Controller"
+ },
+ "autofmt.exe": {
+  "en": "Microsoft Digest Access"
+ },
+ "autoplay.dll": {
+  "en": "TLS SSL Security Provider"
+ },
+ "AuxiliaryDisplayClassInstaller.dll": {
+  "en": "ICS Unattend Utility"
+ },
+ "AuxiliaryDisplayServices.dll": {
+  "en": "Sidebar drop target Dll"
+ },
+ "avc.sys": {
+  "en": "Smart Card Common Dialog"
+ },
+ "avcstrm.sys": {
+  "en": "Microsoft Windows Sync Infrastructure stub"
+ },
+ "AVerFx2hbtv64.sys": {
+  "en": "Microsoft Windows Contacts Sync Provider"
+ },
+ "avicap32.dll": {
+  "en": "Tablet PC Input Panel Text Services Framework"
+ },
+ "avifil32.dll": {
+  "en": "Microsoft Script Runtime"
+ },
+ "avrt.dll": {
+  "en": "Microsoft Script Controller"
+ },
+ "azroles.dll": {
+  "en": "Kerberos Security Package"
+ },
+ "azroleui.dll": {
+  "en": "Windows Setup API"
+ },
+ "AzSqlExt.dll": {
+  "en": "Windows Shell Common Dll"
+ },
+ "b57nd60a.sys": {
+  "en": "Windows Sidebar Unattend Action"
+ },
+ "basebrd.dll": {
+  "en": "SMB Helper Class for Network Diagnostic Framework"
+ },
+ "basecsp.dll": {
+  "en": "Microsoft Windows sync infrastructure proxy stub"
+ },
+ "basesrv.dll": {
+  "en": "Microsoft Windows System Restore Client Library"
+ },
+ "batmeter.dll": {
+  "en": "Microsoft Chinese Handwriting Recognizer"
+ },
+ "batt.dll": {
+  "en": "Netio Migration Plugin"
+ },
+ "battc.sys": {
+  "en": "Netio Unattend Generic Command"
+ },
+ "bcdboot.exe": {
+  "en": "ApiSet Schema DLL"
+ },
+ "bcdedit.exe": {
+  "en": "Microsoft SNMP Manager API"
+ },
+ "bcdprov.dll": {
+  "en": "Speech TIP"
+ },
+ "bcdsrv.dll": {
+  "en": "Direct Show Stream Buffer Filter"
+ },
+ "bckgRes.dll": {
+  "en": "Host Process for Windows Sync"
+ },
+ "bckgzm.exe": {
+  "en": "Quarantine Agent Proxy"
+ },
+ "BCMWL664.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "bcrypt.dll": {
+  "en": "NPS SDO Helper Component"
+ },
+ "bcryptprimitives.dll": {
+  "en": "Network Configuration Objects"
+ },
+ "BdaSup.sys": {
+  "en": "SNMP Service"
+ },
+ "BDATunePIA.dll": {
+  "en": "Speech Desktop Proxy"
+ },
+ "BDATunePIA.ni.dll": {
+  "en": "Property Pages for Storage Devices"
+ },
+ "BdeHdCfg.exe": {
+  "en": "Stream Buffer IO DLL"
+ },
+ "BdeHdCfgLib.dll": {
+  "en": "Network List Manager Snapin"
+ },
+ "bderepair.dll": {
+  "en": "NPS Datastore server"
+ },
+ "beep.sys": {
+  "en": "NPS XML Datastore Access"
+ },
+ "BFE.dll": {
+  "en": "NPS SDO Helper Component"
+ },
+ "bfsvc.exe": {
+  "en": "Microsoft Build Engine dll"
+ },
+ "biocpl.dll": {
+  "en": "Microsoft Build Tasks dll"
+ },
+ "BioCredProv.dll": {
+  "en": "XML Resources"
+ },
+ "BitLockerToGo.exe": {
+  "en": "Visual Basic Devices"
+ },
+ "BitLockerWizard.exe": {
+  "en": "NET System Frame work"
+ },
+ "bitsadmin.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "bitsigd.dll": {
+  "en": "NET System Frame work"
+ },
+ "bitsperf.dll": {
+  "en": "NET System Frame work"
+ },
+ "bitsprx2.dll": {
+  "en": "Visual Basic Compiler Resources"
+ },
+ "bitsprx3.dll": {
+  "en": "Net BT Unattend Generic Command"
+ },
+ "bitsprx4.dll": {
+  "en": "Active Accessibility Core Component"
+ },
+ "bitsprx5.dll": {
+  "en": "Microsoft Build Utilities dll"
+ },
+ "bitsprx6.dll": {
+  "en": "Microsoft Visual Basic Compatibility Data dll"
+ },
+ "blackbox.dll": {
+  "en": "MS Build exe"
+ },
+ "blbdrive.sys": {
+  "en": "NET Windows Frame work"
+ },
+ "bootcfg.exe": {
+  "en": "NET System Frame work"
+ },
+ "bootres.dll": {
+  "en": "Microsoft NET Service Support"
+ },
+ "bootstr.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "BOOTVID.dll": {
+  "en": "Microsoft Visual Basic Script Resources"
+ },
+ "bowser.sys": {
+  "en": "FWP IPsec User-Mode API"
+ },
+ "BrFiltLo.sys": {
+  "en": "IEEE 802.1X supplicant library"
+ },
+ "BrFiltUp.sys": {
+  "en": "Microsoft JScript dll"
+ },
+ "bridge.sys": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "bridgemigplugin.dll": {
+  "en": "Microsoft NET Engine Devices"
+ },
+ "BrmfRsmg.exe": {
+  "en": "NET System Frame work"
+ },
+ "browcli.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "browser.dll": {
+  "en": "System Web dll"
+ },
+ "browseui.dll": {
+  "en": "NET System Frame work"
+ },
+ "BrSerIb.sys": {
+  "en": "Ndis Cap Notify Object"
+ },
+ "BrSerId.sys": {
+  "en": "Windows Filtering Platform Netsh Helper"
+ },
+ "BrSerWdm.sys": {
+  "en": "ps plugin wkr dll"
+ },
+ "BrUsbMdm.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "BrUsbSer.sys": {
+  "en": "Find Network Printers COM Component"
+ },
+ "BrUsbSIb.sys": {
+  "en": "Print api DLL"
+ },
+ "bthci.dll": {
+  "en": "NET System Frame work"
+ },
+ "bthenum.sys": {
+  "en": "Microsoft NET Runtime Object Remoting"
+ },
+ "BthMigPlugin.dll": {
+  "en": "System Security dll"
+ },
+ "bthmodem.sys": {
+  "en": "NET Windows Frame work"
+ },
+ "BthMtpContextHandler.dll": {
+  "en": "Network List Manager Module"
+ },
+ "bthpan.sys": {
+  "en": "Network List Manager Proxy"
+ },
+ "BthpanContextHandler.dll": {
+  "en": "NT Layer DLL"
+ },
+ "bthport.sys": {
+  "en": "Common Property Sheet User Interface DLL"
+ },
+ "BTHPRINT.sys": {
+  "en": "Change Printing Settings"
+ },
+ "bthserv.dll": {
+  "en": "Print UI Objects DLL"
+ },
+ "BTHUSB.sys": {
+  "en": "NET Windows Frame work"
+ },
+ "BWContextHandler.dll": {
+  "en": "Microsoft NET Runtime Soap Serialization Library"
+ },
+ "bxnd60a.sys": {
+  "en": "NET System Frame work"
+ },
+ "bxvbda.sys": {
+  "en": "System Web Mobile dll"
+ },
+ "cabinet.dll": {
+  "en": "Network List Manager Sysprep Module"
+ },
+ "cabview.dll": {
+  "en": "Network Location Awareness 2"
+ },
+ "cachhttp.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "cacls.exe": {
+  "en": "Shell extensions for sharing"
+ },
+ "calc.exe": {
+  "en": "Active Accessibility Resource DLL"
+ },
+ "capisp.dll": {
+  "en": "Client Side Rendering Print Provider"
+ },
+ "CardGames.dll": {
+  "en": "Windows Network Service Performance Objects DLL"
+ },
+ "CasPol.exe": {
+  "en": "Windows Performance Data Helper DLL"
+ },
+ "caspol.resources.dll": {
+  "en": "PNRP Name Space Provider"
+ },
+ "catsrv.dll": {
+  "en": "Resource and Performance Monitor"
+ },
+ "catsrvut.dll": {
+  "en": "Microsoft Samples"
+ },
+ "CbsApi.dll": {
+  "en": "IIS Worker Process"
+ },
+ "CbsCore.dll": {
+  "en": "QoS Winsock2 Helper DLL"
+ },
+ "CbsMsg.dll": {
+  "en": "In-proc COM object used by clients of CSC API"
+ },
+ "CbsProvider.dll": {
+  "en": "WPC Filtering Service"
+ },
+ "cbva.dll": {
+  "en": "Performance Counters"
+ },
+ "cca.dll": {
+  "en": "Windows System Performance Objects DLL"
+ },
+ "cdd.dll": {
+  "en": "Performance Logs and Alerts"
+ },
+ "cdfs.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "cdosys.dll": {
+  "en": "Resource Monitor"
+ },
+ "cdrom.sys": {
+  "en": "Device Manager MMC Snapin"
+ },
+ "certcli.dll": {
+  "en": "Direct Show Editing"
+ },
+ "certCredProvider.dll": {
+  "en": "Windows NT Helper"
+ },
+ "certenc.dll": {
+  "en": "Shell extensions for sharing"
+ },
+ "CertEnroll.dll": {
+  "en": "WPC Administrator Override"
+ },
+ "CertEnrollUI.dll": {
+  "en": "Windows Disk Performance Objects DLL"
+ },
+ "certmgr.dll": {
+  "en": "Windows System Process Performance Objects DLL"
+ },
+ "CertPolEng.dll": {
+  "en": "Branch Cache Client Library"
+ },
+ "certreq.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "certutil.exe": {
+  "en": "Performance Monitor"
+ },
+ "cewmdm.dll": {
+  "en": "IIS Application Host Helper Service"
+ },
+ "cfgbkend.dll": {
+  "en": "Microsoft Traffic Control 1.0 DLL"
+ },
+ "cfgmgr32.dll": {
+  "en": "Windows Remote Assistance COM Server"
+ },
+ "change.exe": {
+  "en": "Remote Access AutoDial Helper"
+ },
+ "charmap.exe": {
+  "en": "Remote Access Dialer"
+ },
+ "Chess.dll": {
+  "en": "Microsoft Connection Manager Utility Lib"
+ },
+ "Chess.exe": {
+  "en": "Windows Security Configuration Editor Client Engine"
+ },
+ "chkdsk.exe": {
+  "en": "Microsoft Windows Scan Profiles"
+ },
+ "chkntfs.exe": {
+  "en": "Microsoft VBScript Editor"
+ },
+ "ChkrRes.dll": {
+  "en": "Microsoft DispEx Editor"
+ },
+ "chkrzm.exe": {
+  "en": "WebDAV 7.5 For IIS 7.5 Simple Property Store"
+ },
+ "choice.exe": {
+  "en": "Image Mastering API v2"
+ },
+ "CHxReadingStringIME.dll": {
+  "en": "Microsoft Korean Image"
+ },
+ "ci.dll": {
+  "en": "RAS Configuration Objects"
+ },
+ "cic.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "CIDAEMON.exe": {
+  "en": "Microsoft Windows Scan Settings Profile and Scanning implementation"
+ },
+ "cimwin32.dll": {
+  "en": "Microsoft JScript Configuration"
+ },
+ "cipher.exe": {
+  "en": "Microsoft Console Based Script Host"
+ },
+ "circlass.sys": {
+  "en": "Software Licensing Library"
+ },
+ "CISVC.exe": {
+  "en": "Internet Information Services WMI Provider"
+ },
+ "Classpnp.sys": {
+  "en": "Microsoft Korean IME"
+ },
+ "clb.dll": {
+  "en": "Native Code Configuration Reader"
+ },
+ "clbcatq.dll": {
+  "en": "IIS RSCA (Runtime State and Control API) implementation"
+ },
+ "cleanmgr.exe": {
+  "en": "IW3Control Proxy Stub"
+ },
+ "clfs.sys": {
+  "en": "HTTP Server SNMP Agent"
+ },
+ "clfsw32.dll": {
+  "en": "Windows NT BASE API Client DLL"
+ },
+ "cliconfg.exe": {
+  "en": "Security Support Provider Interface"
+ },
+ "clip.exe": {
+  "en": "Default Location Control Panel"
+ },
+ "clusapi.dll": {
+  "en": "Media Foundation Protected Pipeline EXE"
+ },
+ "CmBatt.sys": {
+  "en": "Windows Media Player Launcher"
+ },
+ "cmd.exe": {
+  "en": "Windows Media Player Extension"
+ },
+ "cmdial32.dll": {
+  "en": "Windows Media DRM for Network Devices Registration DLL"
+ },
+ "cmdide.sys": {
+  "en": "Media Foundation DV Decoder"
+ },
+ "cmdkey.exe": {
+  "en": "DMC Component"
+ },
+ "cmdl32.exe": {
+  "en": "Windows Installer International Messages"
+ },
+ "cmiadapter.dll": {
+  "en": "Windows NT BASE API Client DLL"
+ },
+ "cmicryptinstall.dll": {
+  "en": "Security Support Provider Interface"
+ },
+ "cmipnpinstall.dll": {
+  "en": "Microsoft TTS Engine Frontend"
+ },
+ "cmisetup.dll": {
+  "en": "Media Foundation Proxy DLL"
+ },
+ "cmiv2.dll": {
+  "en": "Windows Media Player System Preparation DLL"
+ },
+ "cmlua.dll": {
+  "en": "Audio System FX Control Panel Extension"
+ },
+ "cmmon32.exe": {
+  "en": "Windows Media DRM for Network Devices DLL"
+ },
+ "cmncliM.dll": {
+  "en": "Media Foundation H264 Encoder"
+ },
+ "cmstp.exe": {
+  "en": "WAMREG Proxy Stub"
+ },
+ "cmutil.dll": {
+  "en": "iTV Data Filters"
+ },
+ "CNBBR273.dll": {
+  "en": "Windows Volume Tracking"
+ },
+ "CNBBR274.dll": {
+  "en": "Default Location Control Panel"
+ },
+ "CNBJOP78.dll": {
+  "en": "Media Foundation DLL"
+ },
+ "CNBUI4.dll": {
+  "en": "RR installer"
+ },
+ "CNBUR4.dll": {
+  "en": "Windows Media Player Preparation"
+ },
+ "cng.sys": {
+  "en": "Windows Media Player Encoding Module"
+ },
+ "cngaudit.dll": {
+  "en": "Media Foundation Direct Show wrapper DLL"
+ },
+ "CntrtextMig.dll": {
+  "en": "Media Foundation MJPEG Decoder"
+ },
+ "colbact.dll": {
+  "en": "Media Foundation Playback API DLL"
+ },
+ "COLORCNV.dll": {
+  "en": "Multi Language Support DLL"
+ },
+ "colorui.dll": {
+  "en": "MSXML 3.0 SP11"
+ },
+ "comcat.dll": {
+  "en": "MSXML 6.0 SP3"
+ },
+ "comctl32.dll": {
+  "en": "Microsoft TTS Engine DecWrp"
+ },
+ "comdlg32.dll": {
+  "en": "Windows Firewall Remote APIs Server"
+ },
+ "comp.exe": {
+  "en": "NET System Frame work"
+ },
+ "compact.exe": {
+  "en": "asp net Support exe"
+ },
+ "CompatProvider.dll": {
+  "en": "asp net reg sql exe"
+ },
+ "compbatt.sys": {
+  "en": "Visual C# Editor Information"
+ },
+ "CompMgmtLauncher.exe": {
+  "en": "Media Foundation ReadWrite DLL"
+ },
+ "compobj.dll": {
+  "en": "Message Queuing ISAPI Extension"
+ },
+ "CompositeBus.sys": {
+  "en": "XML Resources"
+ },
+ "ComputerDefaults.exe": {
+  "en": "Microsoft TTS Engine Common"
+ },
+ "comrepl.dll": {
+  "en": "Microsoft TTS Engine Resources"
+ },
+ "comres.dll": {
+  "en": "Microsoft Fax API Support DLL"
+ },
+ "ComSvcConfig.exe": {
+  "en": "asp net compiler exe"
+ },
+ "comsvcs.dll": {
+  "en": "asp net reg browsers exe"
+ },
+ "comuid.dll": {
+  "en": "Microsoft NET Frame work CAS"
+ },
+ "conhost.exe": {
+  "en": "Microsoft Resource File To COFF Object Conversion Utility Error Messages"
+ },
+ "connect.dll": {
+  "en": "NET Frame work Install Tool"
+ },
+ "consent.exe": {
+  "en": "Microsoft NET Security Module"
+ },
+ "console.dll": {
+  "en": "System Globalization dll"
+ },
+ "control.exe": {
+  "en": "NET System Frame work"
+ },
+ "convert.exe": {
+  "en": "Mig System XML helper DLL"
+ },
+ "CORPerfMonExt.dll": {
+  "en": "Windows Easy Transfer Migration"
+ },
+ "corpol.dll": {
+  "en": "Microsoft Magnification API"
+ },
+ "CPFilters.dll": {
+  "en": "Windows Media Player Folder Sharing Executable"
+ },
+ "crashdmp.sys": {
+  "en": "Windows Media Secure Content Provider"
+ },
+ "crcdisk.sys": {
+  "en": "Windows Media Network Plugin Manager DLL"
+ },
+ "credssp.dll": {
+  "en": "Microsoft JScript Editor"
+ },
+ "credui.dll": {
+  "en": "Microsoft NET Program Register Tool"
+ },
+ "crtdll.dll": {
+  "en": "System Configuration dll"
+ },
+ "crypt32.dll": {
+  "en": "Windows Easy Transfer Autoplay"
+ },
+ "cryptbase.dll": {
+  "en": "Windows Easy Transfer Application"
+ },
+ "cryptdlg.dll": {
+  "en": "Windows Media Player Rich Preview Handler"
+ },
+ "cryptdll.dll": {
+  "en": "Windows Media Player API"
+ },
+ "cryptext.dll": {
+  "en": "DRM Migration DLL"
+ },
+ "cryptnet.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "cryptsp.dll": {
+  "en": "Multimedia Realtime Runtime"
+ },
+ "cryptsvc.dll": {
+  "en": "Microsoft NET Resources"
+ },
+ "cryptui.dll": {
+  "en": "Microsoft COM Program Registry Tool"
+ },
+ "csc.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "csc.sys": {
+  "en": "Windows Easy Transfer Migration"
+ },
+ "cscapi.dll": {
+  "en": "Windows Easy Transfer Post Migration Application"
+ },
+ "cscdll.dll": {
+  "en": "Microsoft Windows SideShow Control Panel"
+ },
+ "cscobj.dll": {
+  "en": "Windows Media Player Resources"
+ },
+ "cscomp.dll": {
+  "en": "DRMv2 Client DLL"
+ },
+ "cscompui.dll": {
+  "en": "Windows Media DRM SDK DLL"
+ },
+ "cscript.exe": {
+  "en": "General Audio Resources"
+ },
+ "cscsvc.dll": {
+  "en": "Sensor API Resources"
+ },
+ "cscui.dll": {
+  "en": "Active Accessibility text support"
+ },
+ "csrsrv.dll": {
+  "en": "Microsoft Synchronization Framework Registration"
+ },
+ "csrss.exe": {
+  "en": "Synchronization Framework"
+ },
+ "ctfmon.exe": {
+  "en": "Windows Synchronization Provider Framework"
+ },
+ "ctl3d32.dll": {
+  "en": "Policy Storage dll"
+ },
+ "cttune.exe": {
+  "en": "Active Accessibility Event Hooks Library"
+ },
+ "Culture.dll": {
+  "en": "Microsoft NET Services Installation Utility"
+ },
+ "CustomMarshalers.dll": {
+  "en": "Samsung Printer Driver"
+ },
+ "CustomMarshalers.ni.dll": {
+  "en": "Protocol Support handler"
+ },
+ "cvtres.exe": {
+  "en": "Open Location and Other Sensors"
+ },
+ "d2d1.dll": {
+  "en": "Diagnostics Troubleshooting Wizard"
+ },
+ "d3d10.dll": {
+  "en": "Microsoft Tablet PC Input Service"
+ },
+ "d3d10core.dll": {
+  "en": "Windows Synchronization Metadata Store"
+ },
+ "d3d10level9.dll": {
+  "en": "System Information"
+ },
+ "d3d10warp.dll": {
+  "en": "Windows IPsec SPD Client DLL"
+ },
+ "d3d10_1.dll": {
+  "en": "Remote Desktop Configuration service"
+ },
+ "d3d10_1core.dll": {
+  "en": "Microsoft NET Services Installation Utility"
+ },
+ "d3d11.dll": {
+  "en": "Windows Remote Desktop Session Host Server SDK APIs"
+ },
+ "d3d8.dll": {
+  "en": "Microsoft Tablet PC InkEdit Control"
+ },
+ "d3d8thk.dll": {
+  "en": "Microsoft Tablet PC Journal Reader Platform Component"
+ },
+ "d3d9.dll": {
+  "en": "Microsoft Tablet PC Real Time Stylus Platform Component"
+ },
+ "D3DCompiler_33.dll": {
+  "en": "Remote Sessions CPL Extension"
+ },
+ "D3DCompiler_34.dll": {
+  "en": "Input Setting DLL"
+ },
+ "D3DCompiler_35.dll": {
+  "en": "MSCAND UI Server DLL"
+ },
+ "D3DCompiler_36.dll": {
+  "en": "Remote Desktop Session Host Server Remote Connections Manager"
+ },
+ "D3DCompiler_37.dll": {
+  "en": "Microsoft Table Driven Text Input Processor"
+ },
+ "D3DCompiler_38.dll": {
+  "en": "Configuration Backend Interface"
+ },
+ "D3DCompiler_39.dll": {
+  "en": "Remote Desktop PnP Redirected Device Co-Installer"
+ },
+ "D3DCompiler_40.dll": {
+  "en": "Remote Desktop PnP Redirected Device Co-Installer"
+ },
+ "D3DCompiler_41.dll": {
+  "en": "Windows Journal File Filter"
+ },
+ "D3DCompiler_42.dll": {
+  "en": "Windows Journal Viewer Module"
+ },
+ "D3DCompiler_43.dll": {
+  "en": "Windows Journal Viewer Module"
+ },
+ "d3dcsx_42.dll": {
+  "en": "Windows Journal Document Module"
+ },
+ "d3dcsx_43.dll": {
+  "en": "NB Mapping TIP Dynamic Link Library"
+ },
+ "d3dim.dll": {
+  "en": "Custom error handler"
+ },
+ "d3dim700.dll": {
+  "en": "IIS CertObj Module"
+ },
+ "d3dramp.dll": {
+  "en": "Czech Programmer Keyboard Layout"
+ },
+ "d3dx10.dll": {
+  "en": "Anywhere access client"
+ },
+ "d3dx10_33.dll": {
+  "en": "Remote Desktop Services ActiveX Client"
+ },
+ "d3dx10_34.dll": {
+  "en": "RDPSRAPI COM Objects"
+ },
+ "d3dx10_35.dll": {
+  "en": "RDP Display Driver"
+ },
+ "d3dx10_36.dll": {
+  "en": "Table Text Service Migration DLL"
+ },
+ "d3dx10_37.dll": {
+  "en": "Digitizer to Monitor Mapping Tool"
+ },
+ "d3dx10_38.dll": {
+  "en": "Digitizer Calibration Tool"
+ },
+ "d3dx10_39.dll": {
+  "en": "Handwriting Recognition Error Reporting Wizard"
+ },
+ "d3dx10_40.dll": {
+  "en": "Tablet PC Input Panel Accessory"
+ },
+ "d3dx10_41.dll": {
+  "en": "Microsoft Tablet Input Band"
+ },
+ "d3dx10_42.dll": {
+  "en": "Tablet PC Input Panel Resources"
+ },
+ "d3dx10_43.dll": {
+  "en": "Tablet PC Input Panel User Interface"
+ },
+ "d3dx11_42.dll": {
+  "en": "Input Personalization Search Plugin"
+ },
+ "d3dx11_43.dll": {
+  "en": "Windows Journal Document Module"
+ },
+ "d3dx9_24.dll": {
+  "en": "Tablet PC Input Panel On-Screen Keyboard"
+ },
+ "d3dx9_25.dll": {
+  "en": "Microsoft Tablet PC Buttons Component"
+ },
+ "d3dx9_26.dll": {
+  "en": "Microsoft Tablet PC Extended Buttons Component"
+ },
+ "d3dx9_27.dll": {
+  "en": "Microsoft Tablet PC Flicks and Pen Feedback Component"
+ },
+ "d3dx9_28.dll": {
+  "en": "Takes ownership of a file"
+ },
+ "d3dx9_29.dll": {
+  "en": "Microsoft Windows Telephony API Client DLL"
+ },
+ "d3dx9_30.dll": {
+  "en": "Local Session Manager Service"
+ },
+ "d3dx9_31.dll": {
+  "en": "Remote App and Desktop Connection Component"
+ },
+ "d3dx9_32.dll": {
+  "en": "MsCtf Monitor DLL"
+ },
+ "d3dx9_33.dll": {
+  "en": "DLL Interface to TermDD Device Driver"
+ },
+ "d3dx9_34.dll": {
+  "en": "TS Security Filter Driver"
+ },
+ "d3dx9_35.dll": {
+  "en": "Workstation Library"
+ },
+ "d3dx9_36.dll": {
+  "en": "Terminal Server Sysprep"
+ },
+ "d3dx9_37.dll": {
+  "en": "Workstation utility support DLL"
+ },
+ "d3dx9_38.dll": {
+  "en": "RDP Miniport"
+ },
+ "d3dx9_39.dll": {
+  "en": "Microsoft Pen and Touch Input Component"
+ },
+ "d3dx9_40.dll": {
+  "en": "Microsoft Gesture Recognizer"
+ },
+ "d3dx9_41.dll": {
+  "en": "Windows Remote Desktop Services Performance Objects"
+ },
+ "d3dx9_42.dll": {
+  "en": "RDP Direct3D Remoting DLL"
+ },
+ "d3dx9_43.dll": {
+  "en": "Registry Configuration APIs"
+ },
+ "d3dxof.dll": {
+  "en": "Microsoft TAPI3"
+ },
+ "dao360.dll": {
+  "en": "Lithuanian Standard Keyboard Layout"
+ },
+ "dataclen.dll": {
+  "en": "US IBM Arabic 238_L Keyboard Layout"
+ },
+ "DataSvcUtil.exe": {
+  "en": "IE 7.0 Unattended Install Utility"
+ },
+ "davclnt.dll": {
+  "en": "Internet Browser"
+ },
+ "davhlpr.dll": {
+  "en": "http redirection"
+ },
+ "dbgeng.dll": {
+  "en": "Microsoft IEAK Shared UI DLL"
+ },
+ "dbghelp.dll": {
+  "en": "IP restriction module"
+ },
+ "dbnmpntw.dll": {
+  "en": "IIS MMC Snap-in utility"
+ },
+ "dc21x4vm.sys": {
+  "en": "US Multinational Keyboard Layout"
+ },
+ "dciman32.dll": {
+  "en": "Background Intelligent Transfer Service 3.0 Proxy"
+ },
+ "dcomcnfg.exe": {
+  "en": "Sorbian Standard Keyboard Layout"
+ },
+ "DDACLSys.dll": {
+  "en": "Greek Polytonic Keyboard Layout"
+ },
+ "DDORes.dll": {
+  "en": "Object Control Viewer"
+ },
+ "ddraw.dll": {
+  "en": "Internet Explorer UI Engine"
+ },
+ "ddrawex.dll": {
+  "en": "Internet Explorer Snap-in Extension to Group Policy"
+ },
+ "Defrag.exe": {
+  "en": "Internet Explorer Peer Objects"
+ },
+ "defragsvc.dll": {
+  "en": "IIS CertObj Module"
+ },
+ "devenum.dll": {
+  "en": "Bulgarian Phonetic Keyboard Layout"
+ },
+ "DeviceCenter.dll": {
+  "en": "Thai Kedmanee (non-Shift Lock) Keyboard Layout"
+ },
+ "DeviceDisplayObjectProvider.exe": {
+  "en": "Ukrainian (Enhanced) Keyboard Layout"
+ },
+ "DeviceEject.exe": {
+  "en": "Georgian (Ergonomic) Keyboard Layout"
+ },
+ "DevicePairing.dll": {
+  "en": "IEAK Global Policy Template Parser"
+ },
+ "DevicePairingWizard.exe": {
+  "en": "Web Site Monitor"
+ },
+ "DeviceProperties.exe": {
+  "en": "ADs IIS Provider DLL"
+ },
+ "devmgr.dll": {
+  "en": "NET System Frame work"
+ },
+ "devobj.dll": {
+  "en": "Active Server Pages"
+ },
+ "devrtl.dll": {
+  "en": "Realtek 8101E 8168 8169 NDIS 6.20 64-bit Driver"
+ },
+ "dfdll.dll": {
+  "en": "IISUI Object Module"
+ },
+ "DFDWiz.exe": {
+  "en": "IIS Admin Program"
+ },
+ "dfrgui.exe": {
+  "en": "IIS UIHelper Module"
+ },
+ "dfsc.sys": {
+  "en": "ABO compatibility layer"
+ },
+ "dfscli.dll": {
+  "en": "Metadata and Admin Service"
+ },
+ "dfshim.dll": {
+  "en": "Internet Info Server Admin Client API Stubs"
+ },
+ "DfsShlEx.dll": {
+  "en": "Application Host Admin Proxy"
+ },
+ "dfsvc.exe": {
+  "en": "ADs IIS Extension DLL"
+ },
+ "dhcpcmonitor.dll": {
+  "en": "MSWC Browser Capabilities"
+ },
+ "dhcpcore.dll": {
+  "en": "CGI handler"
+ },
+ "dhcpcore6.dll": {
+  "en": "IIS MMC Snapin Module"
+ },
+ "dhcpcsvc.dll": {
+  "en": "Services IIS Admin Extension DLL"
+ },
+ "dhcpcsvc6.dll": {
+  "en": "MSWC IIS Logging Object"
+ },
+ "DHCPQEC.dll": {
+  "en": "IIS Co Admin DLL"
+ },
+ "DiagCpl.dll": {
+  "en": "IIS Catalog DLL"
+ },
+ "diagER.dll": {
+  "en": "IIS Admin Com API Proxy dll"
+ },
+ "diagnostic.dll": {
+  "en": "Application Server Command Line Admin Tool"
+ },
+ "DiagPackage.dll": {
+  "en": "Application Server Command Administration Interface"
+ },
+ "diagperf.dll": {
+  "en": "IIS Component Registration"
+ },
+ "dialer.exe": {
+  "en": "W3 Service Performance Counters"
+ },
+ "diantz.exe": {
+  "en": "Microsoft Korean IME"
+ },
+ "diasymreader.dll": {
+  "en": "Microsoft Internet Information Services Helper library"
+ },
+ "difxapi.dll": {
+  "en": "Microsoft IIS Common Logging Interface DLL"
+ },
+ "dimaint.sys": {
+  "en": "WAM Registration DLL"
+ },
+ "dimsjob.dll": {
+  "en": "IIS RunTime Library"
+ },
+ "dinotify.exe": {
+  "en": "Latvia Keyboard Layout"
+ },
+ "dinput.dll": {
+  "en": "Persian Keyboard Layout"
+ },
+ "dinput8.dll": {
+  "en": "IIS Migration Plugin"
+ },
+ "DirectDB.dll": {
+  "en": "IIS Resource DLL"
+ },
+ "discache.sys": {
+  "en": "WebDAV 7.5 For IIS 7.5"
+ },
+ "disk.sys": {
+  "en": "Multi-User Windows IMM32 API Client DLL"
+ },
+ "diskcopy.dll": {
+  "en": "Common Internet Information Service Performance Counters"
+ },
+ "Diskdump.sys": {
+  "en": "IIS MetaBase DLL"
+ },
+ "diskpart.exe": {
+  "en": "Native IIS Configuration Navigators"
+ },
+ "diskperf.exe": {
+  "en": "IIS Setup"
+ },
+ "Dism.exe": {
+  "en": "Lithuania Keyboard Layout"
+ },
+ "DismCore.dll": {
+  "en": "Vietnamese Keyboard Layout"
+ },
+ "DismHost.exe": {
+  "en": "ASP NET setup custom actions"
+ },
+ "dispci.dll": {
+  "en": "IIS Restart API Proxy dll"
+ },
+ "dispex.dll": {
+  "en": "WebDAV 7.5 IIS 7.5 Simple Lock Store"
+ },
+ "Display.dll": {
+  "en": "Windows Installer"
+ },
+ "DisplaySwitch.exe": {
+  "en": "Asynchronous Thread Queue"
+ },
+ "djoin.exe": {
+  "en": "Microsoft Internet Information Services RPC helper library"
+ },
+ "dllhost.exe": {
+  "en": "Configuration Validation Module"
+ },
+ "dllhst3g.exe": {
+  "en": "IIS Library"
+ },
+ "dmband.dll": {
+  "en": "Tajik Keyboard Layout"
+ },
+ "dmcompos.dll": {
+  "en": "Turkmen Keyboard Layout"
+ },
+ "dmdlgs.dll": {
+  "en": "Tatar Cyrillic Keyboard Layout"
+ },
+ "dmdskmgr.dll": {
+  "en": "Bengali Keyboard Layout"
+ },
+ "dmdskres.dll": {
+  "en": "Gujarati Keyboard Layout"
+ },
+ "dmime.dll": {
+  "en": "Tamil Keyboard Layout"
+ },
+ "DmiProvider.dll": {
+  "en": "Telugu Keyboard Layout"
+ },
+ "dmloader.dll": {
+  "en": "Greenlandic Keyboard Layout"
+ },
+ "dmocx.dll": {
+  "en": "Uyghur (Legacy) Keyboard Layout"
+ },
+ "dmscript.dll": {
+  "en": "Inuktitut Latin Keyboard Layout"
+ },
+ "dmstyle.dll": {
+  "en": "Canadian Multilingual Keyboard Layout"
+ },
+ "dmsynth.dll": {
+  "en": "Bosnian (Cyrillic) Keyboard Layout"
+ },
+ "dmusic.dll": {
+  "en": "Punjabi Gurmukhi Keyboard Layout"
+ },
+ "dnsapi.dll": {
+  "en": "Oriya Keyboard Layout"
+ },
+ "dnscmmc.dll": {
+  "en": "Sesotho sa Leboa Keyboard Layout"
+ },
+ "dnsext.dll": {
+  "en": "Bashkir Keyboard Layout"
+ },
+ "dnsrslvr.dll": {
+  "en": "Igbo Keyboard Layout"
+ },
+ "docprop.dll": {
+  "en": "Mongolian (Mongolian Script) Keyboard Layout"
+ },
+ "doskey.exe": {
+  "en": "Serbian (Cyrillic) Keyboard Layout"
+ },
+ "dot3api.dll": {
+  "en": "Irish Keyboard Layout"
+ },
+ "dot3dlg.dll": {
+  "en": "Arabic 2 Keyboard Layout"
+ },
+ "dot3gpclnt.dll": {
+  "en": "Czech 101 Keyboard Layout"
+ },
+ "dot3gpui.dll": {
+  "en": "German IBM Keyboard Layout"
+ },
+ "dot3svc.dll": {
+  "en": "Western Armenian Keyboard Layout"
+ },
+ "Dot4.sys": {
+  "en": "Macedonian (FYROM) - Standard Keyboard Layout"
+ },
+ "Dot4Prt.sys": {
+  "en": "Maltese 48-key Keyboard Layout"
+ },
+ "Dot4Scan.sys": {
+  "en": "Wolof Keyboard Layout"
+ },
+ "Dot4usb.sys": {
+  "en": "Latin-American Spanish Keyboard Layout"
+ },
+ "DpiScaling.exe": {
+  "en": "Azerbaijan Cyrillic Keyboard Layout"
+ },
+ "dplaysvr.exe": {
+  "en": "Windows Service Diagnostic Tool"
+ },
+ "dplayx.dll": {
+  "en": "Italian 142 Keyboard Layout"
+ },
+ "dpmodemx.dll": {
+  "en": "Russia(Typewriter) Keyboard Layout"
+ },
+ "dpnaddr.dll": {
+  "en": "Turkish F Keyboard Layout"
+ },
+ "dpnet.dll": {
+  "en": "Lithuanian Keyboard Layout"
+ },
+ "dpnhpast.dll": {
+  "en": "Georgian (QWERTY) Keyboard Layout"
+ },
+ "dpnhupnp.dll": {
+  "en": "Sami Extended Norway Keyboard Layout"
+ },
+ "dpnlobby.dll": {
+  "en": "Swiss German Keyboard Layout"
+ },
+ "dpnsvr.exe": {
+  "en": "Portuguese Keyboard Layout"
+ },
+ "dps.dll": {
+  "en": "Uzbek Cyrillic Keyboard Layout"
+ },
+ "dpwsockx.dll": {
+  "en": "Spanish Alernate Keyboard Layout"
+ },
+ "dpx.dll": {
+  "en": "Polish Keyboard Layout"
+ },
+ "driverquery.exe": {
+  "en": "Slovak(QWERTY) Keyboard Layout"
+ },
+ "drmk.sys": {
+  "en": "Latvia-QWERTY Keyboard Layout"
+ },
+ "drmkaud.sys": {
+  "en": "Sorbian Extended Keyboard Layout"
+ },
+ "drmmgrtn.dll": {
+  "en": "Hindi Keyboard Layout"
+ },
+ "drmv2clt.dll": {
+  "en": "Maori Keyboard Layout"
+ },
+ "drprov.dll": {
+  "en": "United Kingdom Keyboard Layout"
+ },
+ "drt.dll": {
+  "en": "Serbian (Latin) Keyboard Layout"
+ },
+ "DrUpdate.dll": {
+  "en": "Dvorak US English Keyboard Layout"
+ },
+ "drvinst.exe": {
+  "en": "Hungarian 101-key Keyboard Layout"
+ },
+ "drvstore.dll": {
+  "en": "Romanian (Standard) Keyboard Layout"
+ },
+ "dsdmo.dll": {
+  "en": "Thai Pattachote Keyboard Layout"
+ },
+ "DShowRdpFilter.dll": {
+  "en": "Bengali - Inscript (Legacy) Keyboard Layout"
+ },
+ "dskquota.dll": {
+  "en": "Inuktitut Naqittaut Keyboard Layout"
+ },
+ "dskquoui.dll": {
+  "en": "Uyghur Keyboard Layout"
+ },
+ "dsound.dll": {
+  "en": "Canadian Multilingual Standard Keyboard Layout"
+ },
+ "dsprop.dll": {
+  "en": "Windows Wireless LAN 802.11 MSM Security Module DLL"
+ },
+ "dsquery.dll": {
+  "en": "Sami Extended Finland-Sweden Keyboard Layout"
+ },
+ "dsrole.dll": {
+  "en": "Greek IBM 220 Latin Keyboard Layout"
+ },
+ "dssenh.dll": {
+  "en": "Thai Pattachote (non-ShiftLock) Keyboard Layout"
+ },
+ "dsuiext.dll": {
+  "en": "Greek IBM 319 Latin Keyboard Layout"
+ },
+ "dswave.dll": {
+  "en": "Microsoft Timed Interactive Multimedia Extensions to HTML"
+ },
+ "dtsh.dll": {
+  "en": "Sinhala - Wij 9 Keyboard Layout"
+ },
+ "DU.dll": {
+  "en": "Divehi Typewriter Keyboard Layout"
+ },
+ "dui70.dll": {
+  "en": "Belgian Dutch Keyboard Layout"
+ },
+ "Dumpata.sys": {
+  "en": "Arabic French 102 Keyboard Layout"
+ },
+ "dumpfve.sys": {
+  "en": "Bengali (Inscript) Keyboard Layout"
+ },
+ "duser.dll": {
+  "en": "Bulgarian Keyboard Layout"
+ },
+ "DVDMaker.exe": {
+  "en": "Dvorak Left-Hand US English Keyboard Layout"
+ },
+ "dvdplay.exe": {
+  "en": "Bulgarian (Phonetic Traditional) Keyboard Layout"
+ },
+ "dvdupgrd.exe": {
+  "en": "Dvorak Right-Hand US English Keyboard Layout"
+ },
+ "dw20.exe": {
+  "en": "Finnish-Swedish with Sami Keyboard Layout"
+ },
+ "dwm.exe": {
+  "en": "JP Japanese Keyboard Layout for (NEC PC-9800)"
+ },
+ "dwmapi.dll": {
+  "en": "Iphlpsvc Migration Plugin"
+ },
+ "dwmcore.dll": {
+  "en": "Brazilian Keyboard Layout"
+ },
+ "dwmredir.dll": {
+  "en": "Request filtering handler"
+ },
+ "DWrite.dll": {
+  "en": "Microsoft IME Authorization"
+ },
+ "DWWIN.exe": {
+  "en": "Microsoft Feeds Manager"
+ },
+ "dxapi.sys": {
+  "en": "Microsoft Information Card IE Helper"
+ },
+ "dxdiag.exe": {
+  "en": "IIS Web Server Core"
+ },
+ "dxdiagn.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "dxg.sys": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "dxgi.dll": {
+  "en": "JP Japanese Keyboard Layout for IBM 5576-002 003"
+ },
+ "dxgkrnl.sys": {
+  "en": "Belgian Keyboard Layout"
+ },
+ "dxgmms1.sys": {
+  "en": "Croatian Slovenian Keyboard Layout"
+ },
+ "dxmasf.dll": {
+  "en": "IIS custom logging module"
+ },
+ "DXP.dll": {
+  "en": "DirectX Media Image DirectX Transforms"
+ },
+ "DxpTaskSync.dll": {
+  "en": "Microsoft HTML Application host"
+ },
+ "dxtmsft.dll": {
+  "en": "Fast CGI handler"
+ },
+ "dxtrans.dll": {
+  "en": "Http cache provider"
+ },
+ "dxva2.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "e1e6032e.sys": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "E1G6032E.sys": {
+  "en": "Microsoft IIS Plugin DLL"
+ },
+ "e1k60x64.sys": {
+  "en": "Wireless WAN Connection Flows"
+ },
+ "e1q60x64.sys": {
+  "en": "Static compression module"
+ },
+ "e1y60x64.sys": {
+  "en": "Url Authorization Module"
+ },
+ "eapp3hst.dll": {
+  "en": "DirectX Media DirectX Transform Core"
+ },
+ "eappcfg.dll": {
+  "en": "Microsoft HTML Editing Component"
+ },
+ "eapphost.dll": {
+  "en": "Hostable web core"
+ },
+ "eappprxy.dll": {
+  "en": "Intel Wireless WiFi Link Driver"
+ },
+ "EAPQEC.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "eapsvc.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "eFE5b32e.sys": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "efsadu.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "efscore.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "efslsaext.dll": {
+  "en": "JP Japanese Keyboard Layout for (NEC PC-9800 on PC98-NX)"
+ },
+ "efssvc.dll": {
+  "en": "IIS PowerShell provider"
+ },
+ "efsutil.dll": {
+  "en": "NET System Frame work"
+ },
+ "ehchsime.dll": {
+  "en": "KO Hangeul Keyboard Layout for 101(Type C)"
+ },
+ "ehCIR.dll": {
+  "en": "IIS certmap authentication provider"
+ },
+ "ehdebug.dll": {
+  "en": "anonymous authentication provider"
+ },
+ "ehdrop.dll": {
+  "en": "iSCSI Discovery api"
+ },
+ "ehepgres.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "ehexthost.exe": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "ehexthost32.exe": {
+  "en": "Image Mastering File System Imaging API v2"
+ },
+ "ehglid.dll": {
+  "en": "Static file handler"
+ },
+ "ehiExtens.dll": {
+  "en": "Windows Internet Explorer"
+ },
+ "ehiProxy.dll": {
+  "en": "KO Hangeul Keyboard Layout for 101 (Type A)"
+ },
+ "ehiProxy.ni.dll": {
+  "en": "basic authentication provider"
+ },
+ "ehiUserXp.dll": {
+  "en": "SSPI authentication provider"
+ },
+ "ehiVidCtl.dll": {
+  "en": "iSCSI Discovery tool"
+ },
+ "ehiwmp.dll": {
+  "en": "iSCSI Discovery api"
+ },
+ "ehiWUapi.dll": {
+  "en": "MS iSCSI Initiator WMI Provider"
+ },
+ "ehjpnime.dll": {
+  "en": "Bulgarian (Typewriter) Keyboard Layout"
+ },
+ "ehmsas.exe": {
+  "en": "Dutch Keyboard Layout"
+ },
+ "ehPresenter.dll": {
+  "en": "Polish Programmer Keyboard Layout"
+ },
+ "ehprivjob.exe": {
+  "en": "Slovak Keyboard Layout"
+ },
+ "ehrec.exe": {
+  "en": "Thai Kedmanee Keyboard Layout"
+ },
+ "ehRecObj.dll": {
+  "en": "Macedonian (FYROM) Keyboard Layout"
+ },
+ "ehrecvr.exe": {
+  "en": "Devanagari Keyboard Layout"
+ },
+ "ehReplay.dll": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "ehres.dll": {
+  "en": "Marathi Keyboard Layout"
+ },
+ "ehsched.exe": {
+  "en": "KO Hangeul Keyboard Layout for 103"
+ },
+ "ehshell.dll": {
+  "en": "Czech Keyboard Layout"
+ },
+ "ehshell.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ehshell.ni.dll": {
+  "en": "Romanian (Legacy) Keyboard Layout"
+ },
+ "ehSSO.dll": {
+  "en": "Albania Keyboard Layout"
+ },
+ "EhStorAPI.dll": {
+  "en": "Eastern Armenian Keyboard Layout"
+ },
+ "EhStorAuthn.exe": {
+  "en": "Georgian Keyboard Layout"
+ },
+ "EhStorPwdDrv.dll": {
+  "en": "Maltese 47-key Keyboard Layout"
+ },
+ "EhStorShell.dll": {
+  "en": "Malayalam Keyboard Layout Keyboard Layout"
+ },
+ "ehtrace.dll": {
+  "en": "Mongolian Keyboard Layout"
+ },
+ "ehtray.exe": {
+  "en": "Arabic English 101 Keyboard Layout"
+ },
+ "ehui.dll": {
+  "en": "Danish Keyboard Layout"
+ },
+ "ehuihlp.dll": {
+  "en": "Norwegian Keyboard Layout"
+ },
+ "ehvid.exe": {
+  "en": "Russian Keyboard Layout"
+ },
+ "els.dll": {
+  "en": "Swedish Keyboard Layout"
+ },
+ "ELSCore.dll": {
+  "en": "Sorbian Standard (Legacy) Keyboard Layout"
+ },
+ "elslad.dll": {
+  "en": "F?roese Keyboard Layout"
+ },
+ "elsTrans.dll": {
+  "en": "Kazak Cyrillic Keyboard Layout"
+ },
+ "elxstor.sys": {
+  "en": "Assamese (Inscript) Keyboard Layout"
+ },
+ "encapi.dll": {
+  "en": "Tibetan (PRC) Keyboard Layout"
+ },
+ "EncDec.dll": {
+  "en": "United Kingdom Extended Keyboard Layout"
+ },
+ "EncDump.dll": {
+  "en": "Lao Standard Keyboard Layout"
+ },
+ "energy.dll": {
+  "en": "File cache provider"
+ },
+ "EP0LVR1O.dll": {
+  "en": "URI cache provider"
+ },
+ "EP0LVRA9.dll": {
+  "en": "GZIP Compression DLL"
+ },
+ "EP0NMF7A.dll": {
+  "en": "Home Networking Configuration Manager"
+ },
+ "EP0NOE02.dll": {
+  "en": "Microsoft IME Configuration"
+ },
+ "eqossnap.dll": {
+  "en": "Digest authentication provider"
+ },
+ "errdev.sys": {
+  "en": "HTTP Logging module"
+ },
+ "es.dll": {
+  "en": "Failed requests event buffering module"
+ },
+ "esent.dll": {
+  "en": "Cambodian Standard Keyboard Layout"
+ },
+ "esentprf.dll": {
+  "en": "Sinhala Keyboard Layout"
+ },
+ "esentutl.exe": {
+  "en": "token cache provider"
+ },
+ "esscli.dll": {
+  "en": "Microsoft IME provider"
+ },
+ "eudcedit.exe": {
+  "en": "Directory Listing handler"
+ },
+ "evbda.sys": {
+  "en": "Windows Media Player Configuration"
+ },
+ "eventcls.dll": {
+  "en": "IIS PowerShell provider"
+ },
+ "eventcreate.exe": {
+  "en": "AD certmap authentication provider"
+ },
+ "EventLogMessages.dll": {
+  "en": "ETW tracing support module"
+ },
+ "EventViewer.resources.dll": {
+  "en": "JP Japanese Keyboard Layout for Fujitsu FMV oyayubi-shift keyboard"
+ },
+ "eventvwr.exe": {
+  "en": "IIS ISAPI Handler"
+ },
+ "evntwin.exe": {
+  "en": "ISAPI filter module"
+ },
+ "evr.dll": {
+  "en": "Spanish Keyboard Layout"
+ },
+ "exfat.sys": {
+  "en": "Hungarian Keyboard Layout"
+ },
+ "expand.exe": {
+  "en": "JP Japanese Keyboard Layout Stub driver"
+ },
+ "explorer.exe": {
+  "en": "Ukrainian Keyboard Layout"
+ },
+ "ExplorerFrame.dll": {
+  "en": "Kannada Keyboard Layout"
+ },
+ "expsrv.dll": {
+  "en": "Divehi Phonetic Keyboard Layout"
+ },
+ "ExtExport.exe": {
+  "en": "Yoruba Keyboard Layout"
+ },
+ "extrac32.exe": {
+  "en": "Windows NT System Setup"
+ },
+ "fastfat.sys": {
+  "en": "Down level module DLL"
+ },
+ "fastprox.dll": {
+  "en": "German Keyboard Layout"
+ },
+ "Faultrep.dll": {
+  "en": "KBDHEB Keyboard Layout"
+ },
+ "fc.exe": {
+  "en": "Icelandic Keyboard Layout"
+ },
+ "fdBth.dll": {
+  "en": "Turkish Q Keyboard Layout"
+ },
+ "fdc.sys": {
+  "en": "Belarusian Keyboard Layout"
+ },
+ "fde.dll": {
+  "en": "Nepali Keyboard Layout"
+ },
+ "fdeploy.dll": {
+  "en": "Hausa Keyboard Layout"
+ },
+ "fdPnp.dll": {
+  "en": "Microsoft Fax Server Extended COM Client Interface"
+ },
+ "fdprint.dll": {
+  "en": "Microsoft Connection Manager Migration Lib"
+ },
+ "fdProxy.dll": {
+  "en": "Unicode Normalization DLL"
+ },
+ "fdSSDP.dll": {
+  "en": "Greek Keyboard Layout"
+ },
+ "fdWCN.dll": {
+  "en": "Language Monitor"
+ },
+ "fdWNet.dll": {
+  "en": "Italian Keyboard Layout"
+ },
+ "feclient.dll": {
+  "en": "Urdu Keyboard Layout"
+ },
+ "fet6x64.sys": {
+  "en": "Estonia Keyboard Layout"
+ },
+ "fileinfo.sys": {
+  "en": "Pashto (Afghanistan) Keyboard Layout"
+ },
+ "filemgmt.dll": {
+  "en": "Yoruba Keyboard Layout"
+ },
+ "filetrace.sys": {
+  "en": "Microsoft Fax Resource DLL"
+ },
+ "filter.dll": {
+  "en": "NET System Frame work"
+ },
+ "find.exe": {
+  "en": "NET Windows Frame work"
+ },
+ "findstr.exe": {
+  "en": "UI Automation Client dll"
+ },
+ "finger.exe": {
+  "en": "UI Automation Client side Providers dll"
+ },
+ "FirewallAPI.dll": {
+  "en": "MB Version update tool"
+ },
+ "FirewallControlPanel.dll": {
+  "en": "BDA Tuning Model Primary Interop Assembly"
+ },
+ "fixmapi.exe": {
+  "en": "Event Viewer Snapin Launcher"
+ },
+ "FlickLearningWizard.exe": {
+  "en": "API Tracing Manifest Read Library"
+ },
+ "flpydisk.sys": {
+  "en": "Application Compatibility Client Library"
+ },
+ "fltLib.dll": {
+  "en": "Audio Ks Endpoint"
+ },
+ "fltMC.exe": {
+  "en": "SMC Native dll"
+ },
+ "fltMgr.sys": {
+  "en": "flt manager"
+ },
+ "fms.dll": {
+  "en": "UI Plug-In"
+ },
+ "FntCache.dll": {
+  "en": "UI Automation Client side Providers dll"
+ },
+ "FolderProvider.dll": {
+  "en": "Getting Started"
+ },
+ "fontext.dll": {
+  "en": "Windows Media Center Store Database Layer"
+ },
+ "fontsub.dll": {
+  "en": "MIG wini32 resources"
+ },
+ "fontview.exe": {
+  "en": "API Tracing Log Engine"
+ },
+ "forfiles.exe": {
+  "en": "Application Compatibility Database Installer"
+ },
+ "form.dll": {
+  "en": "Audio Session"
+ },
+ "framebuf.dll": {
+  "en": "Windows Cryptographic Primitives Library (Wow64)"
+ },
+ "framedyn.dll": {
+  "en": "Perfmon Counter Access"
+ },
+ "framedynos.dll": {
+  "en": "Uni Driver User Interface"
+ },
+ "FreeCell.exe": {
+  "en": "Microsoft Distributed Transaction Coordinator OLE Transactions Interface Proxy DLL"
+ },
+ "fsdepends.sys": {
+  "en": "Windows NT Image Helper"
+ },
+ "fsquirt.exe": {
+  "en": "Device Information Set DLL"
+ },
+ "fsutil.exe": {
+  "en": "Microsoft IME Module"
+ },
+ "fs_rec.sys": {
+  "en": "Eap Peer Config"
+ },
+ "fthsvc.dll": {
+  "en": "Microsoft EAP Host Peer Client DLL"
+ },
+ "ftp.exe": {
+  "en": "Media Center Event Trace Module"
+ },
+ "fundisc.dll": {
+  "en": "Microsoft Fax Transport Provider"
+ },
+ "fusion.dll": {
+  "en": "Background Intelligent Transfer Service Proxy"
+ },
+ "fveapi.dll": {
+  "en": "Microsoft TTS Engine Localization"
+ },
+ "fveRecover.dll": {
+  "en": "Background Intelligent Transfer Service Proxy"
+ },
+ "fvevol.sys": {
+  "en": "Windows Command Processor"
+ },
+ "fwcfg.dll": {
+  "en": "Configuration Manager DLL"
+ },
+ "FWPKCLNT.sys": {
+  "en": "Driver Installation Module"
+ },
+ "FWPUCLNT.dll": {
+  "en": "Microsoft Third Party Software Program"
+ },
+ "FXSAPI.dll": {
+  "en": "Background Intelligent Transfer Service 2.5 Proxy"
+ },
+ "FXSCOMEX.dll": {
+  "en": "Media Center Debugging Support"
+ },
+ "FXSCOVER.exe": {
+  "en": "Media Center Rendering Engine"
+ },
+ "FXSDRV.dll": {
+  "en": "Background Intelligent Transfer Service 2.0 Proxy"
+ },
+ "FXSEXT32.dll": {
+  "en": "Background Intelligent Transfer Service 4.0 Proxy"
+ },
+ "FXSMON.dll": {
+  "en": "Microsoft Distributed Transaction Coordinator Helper APIs DLL"
+ },
+ "FXSOCM.dll": {
+  "en": "WMI DC and DP functionality"
+ },
+ "FXSRESM.dll": {
+  "en": "Device Management Run Time Library"
+ },
+ "FXSST.dll": {
+  "en": "Microsoft IME Library"
+ },
+ "FXSSVC.exe": {
+  "en": "Microsoft EAPHost Peer service"
+ },
+ "FXST30.dll": {
+  "en": "Extensible Storage Engine Performance Monitoring Library for Microsoft Windows"
+ },
+ "FXSTIFF.dll": {
+  "en": "Media Center Module"
+ },
+ "FXSUI.dll": {
+  "en": "Function Discovery Bluetooth Provider Dll"
+ },
+ "GAGP30KX.sys": {
+  "en": "Font Management Services"
+ },
+ "gameux.dll": {
+  "en": "Windows Font Folder"
+ },
+ "GameUXLegacyGDFs.dll": {
+  "en": "Windows Font Folder"
+ },
+ "gcdef.dll": {
+  "en": "Games Explorer"
+ },
+ "gdi32.dll": {
+  "en": "Windows Home Group"
+ },
+ "GdiPlus.dll": {
+  "en": "Microsoft Pinyin IME TIP"
+ },
+ "getmac.exe": {
+  "en": "JP Japanese Keyboard Layout for (NEC PC-9800 Windows 95)"
+ },
+ "GettingStarted.exe": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "getuname.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "glu32.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "gpapi.dll": {
+  "en": "MUI Callback for font registry settings"
+ },
+ "gpedit.dll": {
+  "en": "Software installation Service"
+ },
+ "gpprefcl.dll": {
+  "en": "Software installation Service"
+ },
+ "gpprnext.dll": {
+  "en": "HID Service"
+ },
+ "gpresult.exe": {
+  "en": "Microsoft HTML Executable"
+ },
+ "gpsvc.dll": {
+  "en": "DNS Cache Unattend Generic Command"
+ },
+ "gptext.dll": {
+  "en": "Sort Version Windows 6.0"
+ },
+ "gpupdate.exe": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "grpconv.exe": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "gzip.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hal.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hbaapi.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hcproviders.dll": {
+  "en": "Legacy GDF resource DLL"
+ },
+ "hcw72ADFilter.sys": {
+  "en": "DCI Manager"
+ },
+ "hcw72ATV.sys": {
+  "en": "Group Policy Client API"
+ },
+ "hcw72DTV.sys": {
+  "en": "Hid User Library"
+ },
+ "HCW85BDA.sys": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hcw85cir.sys": {
+  "en": "KO Hangeul Keyboard Layout for 101(Type B)"
+ },
+ "hdaudbus.sys": {
+  "en": "NET System Frame work"
+ },
+ "HdAudio.sys": {
+  "en": "Microsoft NET Service Support"
+ },
+ "hdwwiz.exe": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "Hearts.exe": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "help.exe": {
+  "en": "GDI Client DLL"
+ },
+ "HelpPane.exe": {
+  "en": "Font Subsetting DLL"
+ },
+ "HelpPaneProxy.dll": {
+  "en": "Language Pack"
+ },
+ "hgcpl.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hh.exe": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hhsetup.dll": {
+  "en": "NET System Frame work"
+ },
+ "hid.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "hidbatt.sys": {
+  "en": "System Identity Model dll"
+ },
+ "hidbth.sys": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hidclass.sys": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hidir.sys": {
+  "en": "Windows NT Open Type Type 1 Font Driver"
+ },
+ "hidparse.sys": {
+  "en": "JP Japanese NEC PC-9800 Keyboard Layout"
+ },
+ "hidserv.dll": {
+  "en": "HBA API data interface dll for HBA_API_Rev_2-18_2002MAR1.doc"
+ },
+ "hidusb.sys": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hlink.dll": {
+  "en": "32-bit Setup Launcher Resource"
+ },
+ "hmmapi.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "hnetcfg.dll": {
+  "en": "NET System Frame work"
+ },
+ "HOSTNAME.exe": {
+  "en": "System Service Model Web dll"
+ },
+ "hotplug.dll": {
+  "en": "System Service Model dll"
+ },
+ "HotStartUserAgent.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "hp6000nt.dll": {
+  "en": "System Web Abstractions dll"
+ },
+ "hp6500nt.dll": {
+  "en": "System Work flow Services dll"
+ },
+ "hp8000at.dll": {
+  "en": "System Web Extensions dll"
+ },
+ "HPBMIAPI.dll": {
+  "en": "System Web Mobile dll"
+ },
+ "HPBMINI.dll": {
+  "en": "System Web dll"
+ },
+ "HPBOID.dll": {
+  "en": "System Web Routing dll"
+ },
+ "HPBOIDPS.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "HPBPRO.dll": {
+  "en": "System Runtime Serialization dll"
+ },
+ "HPBPROPS.dll": {
+  "en": "NET System Frame work"
+ },
+ "hpc309at.dll": {
+  "en": "NET System Frame work"
+ },
+ "HPCDMCLH.dll": {
+  "en": "System Web Abstractions dll"
+ },
+ "hpf3lw73.dll": {
+  "en": "System Web Dynamic Data Design dll"
+ },
+ "hpotiop1.dll": {
+  "en": "System Web Mobile dll"
+ },
+ "hpotscl1.dll": {
+  "en": "System Web Regular Expressions dll"
+ },
+ "hpowiav1.dll": {
+  "en": "System Web Routing dll"
+ },
+ "HpSAMD.sys": {
+  "en": "NET System Frame work"
+ },
+ "hpz3lw71.dll": {
+  "en": "NET System Frame work"
+ },
+ "HPZ3LWN7.dll": {
+  "en": "System Runtime Serialization dll"
+ },
+ "hpz3rw71.dll": {
+  "en": "System Security dll"
+ },
+ "hpzc3w71.dll": {
+  "en": "Lexmark WIA Microdriver DLL"
+ },
+ "HPZEVW71.dll": {
+  "en": "System Service Model dll"
+ },
+ "HPZIDR12.dll": {
+  "en": "System Web Dynamic Data dll"
+ },
+ "HPZINW12.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "HPZIPM12.dll": {
+  "en": "System Web Extensions Design dll"
+ },
+ "HPZIPR12.dll": {
+  "en": "NET System Frame work"
+ },
+ "HPZIPT12.dll": {
+  "en": "System Work flow Component Model dll"
+ },
+ "HPZISN12.dll": {
+  "en": "System Work flow Runtime dll"
+ },
+ "HPZUIW71.dll": {
+  "en": "UI Automation Client dll"
+ },
+ "HPZUIWN7.dll": {
+  "en": "System Security dll"
+ },
+ "hpzurw72.dll": {
+  "en": "System Service Model Install dll"
+ },
+ "http.sys": {
+  "en": "System Service Model Web dll"
+ },
+ "httpapi.dll": {
+  "en": "System Web Dynamic Data dll"
+ },
+ "htui.dll": {
+  "en": "NET System Frame work"
+ },
+ "hwpolicy.sys": {
+  "en": "System Web Extensions Design dll"
+ },
+ "hwrreg.exe": {
+  "en": "System Windows Presentation dll"
+ },
+ "i8042prt.sys": {
+  "en": "Media Center Interop DLL"
+ },
+ "ias.dll": {
+  "en": "System Work flow Runtime dll"
+ },
+ "iashlpr.dll": {
+  "en": "UI Automation Provider dll"
+ },
+ "IasMigPlugin.dll": {
+  "en": "System Service Model Install dll"
+ },
+ "iasnap.dll": {
+  "en": "System Service Model dll"
+ },
+ "iassam.dll": {
+  "en": "System Web Dynamic Data Design dll"
+ },
+ "iassdo.dll": {
+  "en": "NET System Frame work"
+ },
+ "iaStorV.sys": {
+  "en": "NET Windows Frame work"
+ },
+ "icacls.exe": {
+  "en": "System Web Extensions dll"
+ },
+ "icardagt.exe": {
+  "en": "System Work flow Activities dll"
+ },
+ "icardie.dll": {
+  "en": "System Work flow Component Model dll"
+ },
+ "iccvid.dll": {
+  "en": "System Work flow Services dll"
+ },
+ "icfupgd.dll": {
+  "en": "UI Automation Provider dll"
+ },
+ "icm32.dll": {
+  "en": "UI Automation Types dll"
+ },
+ "icmp.dll": {
+  "en": "Windows Base dll"
+ },
+ "IconCodecService.dll": {
+  "en": "Windows Presentation Foundation WindowsForms Integration Library"
+ },
+ "icsunattend.exe": {
+  "en": "Shim Engine DLL"
+ },
+ "idndl.dll": {
+  "en": "Windows Compatibility DLL"
+ },
+ "IDStore.dll": {
+  "en": "Microsoft NET Frame work v1.0 compatibility"
+ },
+ "ie4uinit.exe": {
+  "en": "Audit Policy MMC SnapIn Messages"
+ },
+ "ieakeng.dll": {
+  "en": "Application Identity APIs Dll"
+ },
+ "ieaksie.dll": {
+  "en": "Offline Files Migration Plugin"
+ },
+ "ieakui.dll": {
+  "en": "Bluetooth Uninstall Device Task"
+ },
+ "ieapfltr.dll": {
+  "en": "UI Automation Types dll"
+ },
+ "iecompat.dll": {
+  "en": "Windows Presentation Foundation WindowsForms Library"
+ },
+ "iedkcs32.dll": {
+  "en": "MB Version update tool"
+ },
+ "iedvtool.dll": {
+  "en": "Application Compatibility Resource File"
+ },
+ "IEExec.exe": {
+  "en": "Audit Policy Group Policy Editor Extension"
+ },
+ "ieframe.dll": {
+  "en": "Audit Policy GP Module"
+ },
+ "IEHost.dll": {
+  "en": "Compatibility Tab Shell Extension Library"
+ },
+ "ieinstal.exe": {
+  "en": "Audio Engine"
+ },
+ "ielowutil.exe": {
+  "en": "Bluetooth Uninstall Device Task"
+ },
+ "iepeers.dll": {
+  "en": "Microsoft CDO for Windows Library"
+ },
+ "ieproxy.dll": {
+  "en": "Microsoft Component Category Manager Library"
+ },
+ "iernonce.dll": {
+  "en": "Ole resource dll"
+ },
+ "iertutil.dll": {
+  "en": "SAM Library DLL"
+ },
+ "iesetup.dll": {
+  "en": "Microsoft HTML Help"
+ },
+ "IEShims.dll": {
+  "en": "802.3 UI Helper"
+ },
+ "iesysprep.dll": {
+  "en": "Event Collector Configuration API"
+ },
+ "ieui.dll": {
+  "en": "Windows Explorer"
+ },
+ "ieUnatt.exe": {
+  "en": "Explorer Frame"
+ },
+ "iexplore.exe": {
+  "en": "Microsoft Fax Server COM Client Interface"
+ },
+ "iexpress.exe": {
+  "en": "NET FX Open Type CFF Rasterizer"
+ },
+ "ifmon.dll": {
+  "en": "Ole resource dll"
+ },
+ "ifsutil.dll": {
+  "en": "Microsoft IME Component"
+ },
+ "ifsutilx.dll": {
+  "en": "Direct Show ASF Support"
+ },
+ "igd10umd32.dll": {
+  "en": "Perflib Event Messages"
+ },
+ "igd10umd64.dll": {
+  "en": "Microsoft Windows DXP Sync"
+ },
+ "igdkmd64.sys": {
+  "en": "Event Collector Command Line Utility"
+ },
+ "igdumd32.dll": {
+  "en": "Microsoft Fax API Support DLL"
+ },
+ "igdumd64.dll": {
+  "en": "Windows Explorer"
+ },
+ "iirsp.sys": {
+  "en": "Windows Media Center API Publisher Policy"
+ },
+ "iisreqs.dll": {
+  "en": "Windows Media Center API Publisher Policy"
+ },
+ "iisres.dll": {
+  "en": "Microsoft Component Category Manager Library"
+ },
+ "iisreset.exe": {
+  "en": "Microsoft IME Support"
+ },
+ "iisrstap.dll": {
+  "en": "Direct Show Runtime"
+ },
+ "iissetup.exe": {
+  "en": "802.3 Auto con figuration API"
+ },
+ "IKEEXT.dll": {
+  "en": "Module for managing TV ratings"
+ },
+ "ilasm.exe": {
+  "en": "Explorer Frame"
+ },
+ "imagehlp.dll": {
+  "en": "Microsoft Fax Server COM Client Interface"
+ },
+ "imageres.dll": {
+  "en": "Microsoft Fax API Support DLL"
+ },
+ "ImagingDevices.exe": {
+  "en": "Presentation Build Tasks dll"
+ },
+ "ImagingEngine.dll": {
+  "en": "Windows Media Center API Publisher Policy"
+ },
+ "imapi.dll": {
+  "en": "Presentation Build Tasks dll"
+ },
+ "imapi2.dll": {
+  "en": "NET FX Open Type CFF Rasterizer"
+ },
+ "imapi2fs.dll": {
+  "en": "Presentation Font Cache exe"
+ },
+ "IMCCPHR.exe": {
+  "en": "NET Windows Frame work"
+ },
+ "imecfm.dll": {
+  "en": "SM Diagnostics dll"
+ },
+ "IMEPADSM.dll": {
+  "en": "SM Svc Host exe"
+ },
+ "IMEPADSV.exe": {
+  "en": "NET System Frame work"
+ },
+ "IMETIP.dll": {
+  "en": "System Configuration dll"
+ },
+ "imgutil.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "IMJP10K.dll": {
+  "en": "System Data Entity Design dll"
+ },
+ "IMJPAPI.dll": {
+  "en": "Presentation Build Tasks dll"
+ },
+ "IMJPCLST.dll": {
+  "en": "Presentation Core dll"
+ },
+ "IMJPDSVR.exe": {
+  "en": "NET System Frame work"
+ },
+ "imjpmig.dll": {
+  "en": "SM Diagnostics dll"
+ },
+ "imjpuexc.exe": {
+  "en": "SM Svc Host exe"
+ },
+ "imkrapi.dll": {
+  "en": "Sonic CD DVD Burn Engine"
+ },
+ "imkrmig.dll": {
+  "en": "System Configuration dll"
+ },
+ "imm32.dll": {
+  "en": "NET System Frame work"
+ },
+ "ImSCCore.dll": {
+  "en": "NET System Frame work"
+ },
+ "IMTCCAC.dll": {
+  "en": "System Data Entity Design dll"
+ },
+ "imtcmig.dll": {
+  "en": "NET System Frame work"
+ },
+ "inetcomm.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "inetinfo.exe": {
+  "en": "System Work flow Activities dll"
+ },
+ "InetMgr.exe": {
+  "en": "NET Windows Frame work"
+ },
+ "inetmib1.dll": {
+  "en": "System Identity Model dll"
+ },
+ "inetpp.dll": {
+  "en": "System Identity Model dll"
+ },
+ "inetppui.dll": {
+  "en": "NET System Frame work"
+ },
+ "INETRES.dll": {
+  "en": "System Management Automation"
+ },
+ "InfDefaultInstall.exe": {
+  "en": "Microsoft Public Language Library"
+ },
+ "infocard.exe": {
+  "en": "Background Intelligent Transfer Service 3.0 Proxy"
+ },
+ "InkDiv.dll": {
+  "en": "System Data Services dll"
+ },
+ "InkEd.dll": {
+  "en": "System Deployment dll"
+ },
+ "InkObj.dll": {
+  "en": "DNS Client API DLL"
+ },
+ "InkWatson.exe": {
+  "en": "NET System Frame work"
+ },
+ "input.dll": {
+  "en": "System IO Log dll"
+ },
+ "InputPersonalization.exe": {
+  "en": "System IO Log dll"
+ },
+ "inseng.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "InstallUtil.exe": {
+  "en": "MS Build exe"
+ },
+ "InstallUtil.resources.dll": {
+  "en": "System Management Automation"
+ },
+ "InstallUtilLib.dll": {
+  "en": "Protected Storage COM interfaces"
+ },
+ "intelide.sys": {
+  "en": "NET System Frame work"
+ },
+ "intelppm.sys": {
+  "en": "System Deployment dll"
+ },
+ "IntlProvider.dll": {
+  "en": "NET System Frame work"
+ },
+ "iologmsg.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "IPBusEnum.dll": {
+  "en": "System IO Log dll"
+ },
+ "ipconfig.exe": {
+  "en": "System Management Automation"
+ },
+ "ipfltdrv.sys": {
+  "en": "NET System Frame work"
+ },
+ "IPHLPAPI.dll": {
+  "en": "MS Build exe"
+ },
+ "iphlpsvc.dll": {
+  "en": "Microsoft Public Language Library"
+ },
+ "IphlpsvcMigPlugin.dll": {
+  "en": "NAP Client Configuration"
+ },
+ "IPMIDrv.sys": {
+  "en": "NAP Client provider"
+ },
+ "ipnat.sys": {
+  "en": "Presentation Framework Royale dll"
+ },
+ "ipnathlp.dll": {
+  "en": "Presentation UI dll"
+ },
+ "iprtprio.dll": {
+  "en": "Reach Framework dll"
+ },
+ "iprtrmgr.dll": {
+  "en": "Microsoft NET Program Register Tool"
+ },
+ "ipsecsnp.dll": {
+  "en": "Microsoft NET Program Register Tool"
+ },
+ "IPSECSVC.dll": {
+  "en": "Microsoft SrpUx SnapIn"
+ },
+ "ir32_32.dll": {
+  "en": "System Globalization dll"
+ },
+ "ir41_qc.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "ir41_qcx.dll": {
+  "en": "System Component Model Data Annotations dll"
+ },
+ "ir50_32.dll": {
+  "en": "Presentation Framework Luna dll"
+ },
+ "ir50_qc.dll": {
+  "en": "Presentation Framework dll"
+ },
+ "ir50_qcx.dll": {
+  "en": "Presentation UI dll"
+ },
+ "irda.sys": {
+  "en": "Reach Framework dll"
+ },
+ "irenum.sys": {
+  "en": "Reach Framework dll"
+ },
+ "irftp.exe": {
+  "en": "Presentation UI dll"
+ },
+ "isapi.dll": {
+  "en": "System Globalization dll"
+ },
+ "isapnp.sys": {
+  "en": "NET System Frame work"
+ },
+ "iscsicli.exe": {
+  "en": "System Component Model Data Annotations dll"
+ },
+ "iscsicpl.dll": {
+  "en": "NET System Frame work"
+ },
+ "iscsicpl.exe": {
+  "en": "NET Windows Frame work"
+ },
+ "iscsiexe.dll": {
+  "en": "NET System Frame work"
+ },
+ "iscsilog.dll": {
+  "en": "System Data Services Client dll"
+ },
+ "isoburn.exe": {
+  "en": "System Data Services dll"
+ },
+ "ISymWrapper.dll": {
+  "en": "System Identity Model Selectors dll"
+ },
+ "itircl.dll": {
+  "en": "System Net dll"
+ },
+ "itss.dll": {
+  "en": "Microsoft NET Runtime Object Remoting"
+ },
+ "iTVData.dll": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "ixsso.dll": {
+  "en": "Microsoft Visual Basic Compatibility Data dll"
+ },
+ "iyuv_32.dll": {
+  "en": "Windows USB Class Driver BETA"
+ },
+ "JNTFiltr.dll": {
+  "en": "System Data Linq dll"
+ },
+ "JNWDRV.dll": {
+  "en": "VAYU UI Application"
+ },
+ "jnwdui.dll": {
+  "en": "System Data Services Client dll"
+ },
+ "jnwmon.dll": {
+  "en": "NET System Frame work"
+ },
+ "jnwppr.dll": {
+  "en": "NET System Frame work"
+ },
+ "journal.dll": {
+  "en": "System Printing dll"
+ },
+ "Journal.exe": {
+  "en": "Microsoft NET Runtime Soap Serialization Library"
+ },
+ "jscript.dll": {
+  "en": "VAYU UI Application"
+ },
+ "jsdbgui.dll": {
+  "en": "Microsoft NET Runtime Soap Serialization Library"
+ },
+ "jsdebuggeride.dll": {
+  "en": "USB Consumer IR Driver coinstaller for eHome"
+ },
+ "JSProfilerCore.dll": {
+  "en": "System Data Linq dll"
+ },
+ "jsprofilerui.dll": {
+  "en": "NET System Frame work"
+ },
+ "jsproxy.dll": {
+  "en": "System Data Services Design dll"
+ },
+ "k57nd60a.sys": {
+  "en": "System Identity Model Selectors dll"
+ },
+ "kbd101.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "kbd101a.dll": {
+  "en": "Microsoft NET Runtime Object Remoting"
+ },
+ "kbd103.dll": {
+  "en": "Microsoft NET Runtime Soap Serialization Library"
+ },
+ "kbd106.dll": {
+  "en": "Microsoft Visual Basic Compatibility Data dll"
+ },
+ "KBDA1.dll": {
+  "en": "System Runtime Serialization dll"
+ },
+ "KBDAL.dll": {
+  "en": "VAYU UI Application"
+ },
+ "KBDBGPH.dll": {
+  "en": "Microsoft Visual Basic Compatibility Data dll"
+ },
+ "KBDBGPH1.dll": {
+  "en": "Microsoft NET Runtime Object Remoting"
+ },
+ "KBDBHC.dll": {
+  "en": "Microsoft Build Utilities v3.5 dll"
+ },
+ "kbdclass.sys": {
+  "en": "System Identity Model Selectors dll"
+ },
+ "KBDDA.dll": {
+  "en": "Microsoft Group Policy Management Reporting"
+ },
+ "KBDDV.dll": {
+  "en": "Microsoft Media Center Bml"
+ },
+ "KBDFA.dll": {
+  "en": "Interactive TV Platform"
+ },
+ "KBDFR.dll": {
+  "en": "Media Center Component Model"
+ },
+ "kbdhid.sys": {
+  "en": "System Deployment dll"
+ },
+ "KBDMONMO.dll": {
+  "en": "Windows Media Center Sports Portal"
+ },
+ "KBDNEPR.dll": {
+  "en": "System Printing dll"
+ },
+ "KBDPASH.dll": {
+  "en": "System Identity Model Selectors dll"
+ },
+ "KBDPO.dll": {
+  "en": "Microsoft Group Policy Management Reporting"
+ },
+ "KBDRU.dll": {
+  "en": "Microsoft Build Utilities v3.5 dll"
+ },
+ "KBDSP.dll": {
+  "en": "Windows USB Class Driver BETA"
+ },
+ "KBDTUF.dll": {
+  "en": "Microsoft Media Center ITVVM"
+ },
+ "KBDUGHR1.dll": {
+  "en": "Windows Media Center Sports Portal"
+ },
+ "KBDUS.dll": {
+  "en": "Media Center API"
+ },
+ "KBDUSL.dll": {
+  "en": "Interactive TV Platform"
+ },
+ "KBDUSR.dll": {
+  "en": "Media Center Component Model"
+ },
+ "KBDUSX.dll": {
+  "en": "Media Center API"
+ },
+ "kd1394.dll": {
+  "en": "Microsoft Power Shell Console Host"
+ },
+ "kdcom.dll": {
+  "en": "Microsoft Security Application Id Policy Management Policy Manager"
+ },
+ "kerberos.dll": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "kernel32.dll": {
+  "en": "SCSI Tape Driver"
+ },
+ "KernelBase.dll": {
+  "en": "Visual Basic Database"
+ },
+ "keyiso.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "keymgr.dll": {
+  "en": "Microsoft Vsa Vb Code DOM Processor dll"
+ },
+ "KMSVC.dll": {
+  "en": "Microsoft Visual C++ Metadata"
+ },
+ "korwbrkr.dll": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "KrnlProv.dll": {
+  "en": "Microsoft Windows PowerShell Management Commands"
+ },
+ "ks.sys": {
+  "en": "Microsoft Power Shell Editor"
+ },
+ "ksecdd.sys": {
+  "en": "Microsoft Power Shell Editor"
+ },
+ "ksecpkg.sys": {
+  "en": "SCSI Tape Driver"
+ },
+ "ksthunk.sys": {
+  "en": "Microsoft Security Application Id Policy Management Cmdlets"
+ },
+ "ksuser.dll": {
+  "en": "Microsoft Visual Basic Vsa dll"
+ },
+ "ktmw32.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "l160x64.sys": {
+  "en": "Microsoft Vsa dll"
+ },
+ "L1C62x64.sys": {
+  "en": "Microsoft Vsa Vb Code DOM Processor dll"
+ },
+ "L1E62x64.sys": {
+  "en": "HP PCL 3 Render"
+ },
+ "l2gpstore.dll": {
+  "en": "Microsoft Windows PowerShell Utility Commands"
+ },
+ "label.exe": {
+  "en": "Microsoft Power Shell Editor"
+ },
+ "LangCleanupSysprepAction.dll": {
+  "en": "Microsoft Security Application Id Policy Management Policy Manager"
+ },
+ "LAPRXY.dll": {
+  "en": "ATAPI Tape Driver"
+ },
+ "licmgr10.dll": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "linkinfo.dll": {
+  "en": "Visual Basic Runtime Library"
+ },
+ "ListSvc.dll": {
+  "en": "Microsoft Visual C++ Metadata"
+ },
+ "lltdio.sys": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "lmhsvc.dll": {
+  "en": "Microsoft Vsa dll"
+ },
+ "lmmib2.dll": {
+  "en": "Add In Process exe"
+ },
+ "loadmxf.exe": {
+  "en": "PC SC Driver for STC Serial Reader"
+ },
+ "loadperf.dll": {
+  "en": "SCM USB Smart Card Reader"
+ },
+ "localspl.dll": {
+  "en": "Promise SuperTrak EX Series Driver for Windows"
+ },
+ "LocationApi.dll": {
+  "en": "Serial Imaging Device Driver"
+ },
+ "Locator.exe": {
+  "en": "Flatbed Scanner Still Image Devices DLL"
+ },
+ "locdrv.dll": {
+  "en": "SUA Subsystem Console Session Manager"
+ },
+ "lodctr.exe": {
+  "en": "SUA Subsystem Console Session Manager"
+ },
+ "logagent.exe": {
+  "en": "SCSI Tape Driver"
+ },
+ "logman.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "logoff.exe": {
+  "en": "HP ccom Application"
+ },
+ "logoncli.dll": {
+  "en": "PC SC Driver for SCR111 - Serial Smart Card Reader"
+ },
+ "LogonUI.exe": {
+  "en": "Application Control Policies Group Policy Editor Extension"
+ },
+ "LogProvider.dll": {
+  "en": "SCSI Scanner Driver"
+ },
+ "lpk.dll": {
+  "en": "USB Scanner Driver"
+ },
+ "lpksetup.exe": {
+  "en": "Web Service Based Scan Device Driver"
+ },
+ "lpq.exe": {
+  "en": "NET System Frame work"
+ },
+ "lpr.exe": {
+  "en": "System Web dll"
+ },
+ "lpremove.exe": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "lsasrv.dll": {
+  "en": "HP Doc Event Dialogs"
+ },
+ "lsass.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "lsi_fc.sys": {
+  "en": "HP ccom Application"
+ },
+ "lsi_sas.sys": {
+  "en": "Presentation Framework Aero dll"
+ },
+ "lsi_sas2.sys": {
+  "en": "HP ccom Application"
+ },
+ "lsi_scsi.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "lsm.exe": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "lsmproxy.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ltmdm64.sys": {
+  "en": "Presentation Framework Classic dll"
+ },
+ "ltotape.sys": {
+  "en": "Sentinel v3.5 Client dll"
+ },
+ "luafv.sys": {
+  "en": "Microsoft S3 Emulated Device Cap Driver"
+ },
+ "LXKPTPRC.dll": {
+  "en": "Media Center Extensibility Host"
+ },
+ "lz32.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Magnification.dll": {
+  "en": "Presentation Framework Classic dll"
+ },
+ "Magnify.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Mahjong.dll": {
+  "en": "The metadata wrapper for VSA VB Engine"
+ },
+ "Mahjong.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "makecab.exe": {
+  "en": "The metadata wrapper for VSA VB Engine"
+ },
+ "manage-bde.exe": {
+  "en": "Presentation Framework Classic dll"
+ },
+ "mapi32.dll": {
+  "en": "Windows Presentation Foundation Host Proxy"
+ },
+ "mapistub.dll": {
+  "en": "Add In Util exe"
+ },
+ "markup.dll": {
+  "en": "Media Center Interop DLL"
+ },
+ "mblctr.exe": {
+  "en": "The metadata wrapper for VSA VB Engine"
+ },
+ "mcbuilder.exe": {
+  "en": "HP Doc Event Dialogs"
+ },
+ "mcd.sys": {
+  "en": "HP ccom Application"
+ },
+ "mcGlidHost.exe": {
+  "en": "Presentation Framework Aero dll"
+ },
+ "mciavi32.dll": {
+  "en": "HP ccom Application"
+ },
+ "mcicda.dll": {
+  "en": "Presentation Framework Aero dll"
+ },
+ "mciqtz32.dll": {
+  "en": "Microsoft Audit Policy SnapIn"
+ },
+ "mciseq.dll": {
+  "en": "Xaml Viewer v0300 exe"
+ },
+ "McrMgr.dll": {
+  "en": "asp net compiler exe"
+ },
+ "McrMgr.exe": {
+  "en": "Media Center Interop DLL"
+ },
+ "mcstore.ni.dll": {
+  "en": "Media Center Interop DLL"
+ },
+ "mcstoredb.dll": {
+  "en": "iTV Music Application"
+ },
+ "mcstoredb.ni.dll": {
+  "en": "NET System Frame work"
+ },
+ "mctadmin.exe": {
+  "en": "Media Center Interop DLL"
+ },
+ "mctres.dll": {
+  "en": "Windows Media Center"
+ },
+ "mcupdate.exe": {
+  "en": "Windows Update Standalone Installer"
+ },
+ "mcupdate_AuthenticAMD.dll": {
+  "en": "Microsoft IE Remote shell"
+ },
+ "mcupdate_GenuineIntel.dll": {
+  "en": "Microsoft IE hosting interface"
+ },
+ "Mcx2Dvcs.dll": {
+  "en": "NET Frame work Install Tool"
+ },
+ "Mcx2Filter.dll": {
+  "en": "Microsoft JScript Compiler"
+ },
+ "Mcx2Prov.exe": {
+  "en": "Media Center Interop DLL"
+ },
+ "mdminst.dll": {
+  "en": "Media Center Interop DLL"
+ },
+ "MdRes.exe": {
+  "en": "WCN EAP PEER Proxy"
+ },
+ "MdSched.exe": {
+  "en": "Media Center Interop DLL"
+ },
+ "MediaMetadataHandler.dll": {
+  "en": "Function Discovery WSD Scanner Proxy Dll"
+ },
+ "MediaPlayer-DLMigPlugin.dll": {
+  "en": "Windows NET Device Class Co-Installer for Wireless WAN"
+ },
+ "megasas.sys": {
+  "en": "Microsoft IE Execute shell"
+ },
+ "MegaSR.sys": {
+  "en": "IE Remoting Interface"
+ },
+ "memtest.exe": {
+  "en": "Microsoft JScript Editor"
+ },
+ "metadata.dll": {
+  "en": "Microsoft JScript Editor"
+ },
+ "mf.dll": {
+  "en": "Rule Wizard"
+ },
+ "mf.sys": {
+  "en": "Microsoft Windows PowerShell Background Intelligent Transfer Commands"
+ },
+ "mfAACEnc.dll": {
+  "en": "Microsoft Build Engine dll"
+ },
+ "mfc40.dll": {
+  "en": "Microsoft NET Frame work CAS Management"
+ },
+ "mfc40u.dll": {
+  "en": "CS com pmgd dll"
+ },
+ "mfc42.dll": {
+  "en": "Data Svc Util exe"
+ },
+ "mfc42u.dll": {
+  "en": "Windows Media Center MXF Loader"
+ },
+ "mfc80.dll": {
+  "en": "Windows Media Center In-band Guide Loader Objects"
+ },
+ "mfc80CHS.dll": {
+  "en": "Media Center Sidebar Gadget Control"
+ },
+ "mfc80CHT.dll": {
+  "en": "Windows Media Center Guide Store"
+ },
+ "mfc80DEU.dll": {
+  "en": "Microsoft JScript Compiler"
+ },
+ "mfc80ENU.dll": {
+  "en": "Microsoft Build Conversion v3.5 dll"
+ },
+ "mfc80ESP.dll": {
+  "en": "Microsoft Build Engine dll"
+ },
+ "mfc80FRA.dll": {
+  "en": "Com Svc Config exe"
+ },
+ "mfc80ITA.dll": {
+  "en": "Data Svc Util exe"
+ },
+ "mfc80JPN.dll": {
+  "en": "Com Svc Config exe"
+ },
+ "mfc80KOR.dll": {
+  "en": "Windows Media Center MXF Loader"
+ },
+ "mfc80u.dll": {
+  "en": "Media Center Player Interop"
+ },
+ "mfcm80.dll": {
+  "en": "Windows Media Center In-band Guide Loader Objects"
+ },
+ "mfcm80u.dll": {
+  "en": "Microsoft Build Engine dll"
+ },
+ "mfcsubs.dll": {
+  "en": "IE Remoting Interface"
+ },
+ "mfds.dll": {
+  "en": "Microsoft Build Conversion v3.5 dll"
+ },
+ "mfdvdec.dll": {
+  "en": "asp net reg sql exe"
+ },
+ "mferror.dll": {
+  "en": "Com Svc Config exe"
+ },
+ "mfh264enc.dll": {
+  "en": "Data Svc Util exe"
+ },
+ "mfmjpegdec.dll": {
+  "en": "IR service"
+ },
+ "mfplat.dll": {
+  "en": "Media Center Sidebar Gadget Control"
+ },
+ "MFPlay.dll": {
+  "en": "Windows Media Center Guide Store"
+ },
+ "mfpmp.exe": {
+  "en": "Media Center Player Interop"
+ },
+ "mfps.dll": {
+  "en": "Microsoft Build Engine dll"
+ },
+ "mfreadwrite.dll": {
+  "en": "Microsoft Build Framework dll"
+ },
+ "mfvdsp.dll": {
+  "en": "MB Version update tool"
+ },
+ "MFWMAAEC.dll": {
+  "en": "Microsoft Build Tasks v3.5 dll"
+ },
+ "mgmtapi.dll": {
+  "en": "Microsoft Build Utilities dll"
+ },
+ "Microsoft-Windows-HomeGroupDiagnostic.NetListMgr.Interop.dll": {
+  "en": "Microsoft Build Utilities v3.5 dll"
+ },
+ "microsoft-windows-kernel-processor-power-events.dll": {
+  "en": "IIS PowerShell provider"
+ },
+ "Microsoft.Build.Conversion.v3.5.dll": {
+  "en": "Microsoft JScript dll"
+ },
+ "Microsoft.Build.Engine.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "Microsoft.Build.Framework.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "Microsoft.Build.Tasks.v3.5.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "Microsoft.Build.Utilities.dll": {
+  "en": "Microsoft Build Framework dll"
+ },
+ "Microsoft.Build.Utilities.v3.5.dll": {
+  "en": "Microsoft Build Tasks v3.5 dll"
+ },
+ "Microsoft.GroupPolicy.Reporting.dll": {
+  "en": "Microsoft Build Tasks dll"
+ },
+ "Microsoft.GroupPolicy.Reporting.Resources.dll": {
+  "en": "Microsoft Build Utilities v3.5 dll"
+ },
+ "Microsoft.Ink.dll": {
+  "en": "IIS PowerShell provider"
+ },
+ "Microsoft.Interop.Security.AzRoles.dll": {
+  "en": "Microsoft Build Tasks dll"
+ },
+ "Microsoft.JScript.dll": {
+  "en": "Microsoft JScript dll"
+ },
+ "Microsoft.ManagementConsole.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "Microsoft.ManagementConsole.Resources.dll": {
+  "en": "Microsoft Build Framework dll"
+ },
+ "Microsoft.MediaCenter.dll": {
+  "en": "Kyocera WIA Error Handler"
+ },
+ "Microsoft.MediaCenter.ITVVM.dll": {
+  "en": "Canon Device Dependent Informations for Scanner Library"
+ },
+ "Microsoft.MediaCenter.ni.dll": {
+  "en": "Microsoft Power Shell PowerShell"
+ },
+ "Microsoft.MediaCenter.Shell.dll": {
+  "en": "Microsoft Power Shell PowerShell"
+ },
+ "Microsoft.MediaCenter.Shell.ni.dll": {
+  "en": "Microsoft Security Application Id Policy Management Xml Helper"
+ },
+ "Microsoft.MediaCenter.Sports.ni.dll": {
+  "en": "Microsoft Security Application Id Policy Management Xml Helper"
+ },
+ "Microsoft.MediaCenter.UI.dll": {
+  "en": "Microsoft Transactions Bridge dll"
+ },
+ "Microsoft.MediaCenter.UI.ni.dll": {
+  "en": "Microsoft Build Utilities dll"
+ },
+ "Microsoft.PowerShell.Commands.Management.dll": {
+  "en": "Microsoft Build Utilities dll"
+ },
+ "Microsoft.PowerShell.Commands.Management.Resources.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "Microsoft.PowerShell.Commands.Utility.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "Microsoft.PowerShell.Commands.Utility.Resources.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "Microsoft.PowerShell.ConsoleHost.dll": {
+  "en": "Microsoft Windows PowerShell GraphicalHost"
+ },
+ "Microsoft.PowerShell.ConsoleHost.Resources.dll": {
+  "en": "Microsoft Power Shell Security dll"
+ },
+ "Microsoft.PowerShell.Editor.Resources.dll": {
+  "en": "Microsoft Power Shell Security dll"
+ },
+ "Microsoft.PowerShell.Security.dll": {
+  "en": "Microsoft DTC Insert Layer"
+ },
+ "Microsoft.PowerShell.Security.Resources.dll": {
+  "en": "Microsoft Transactions Bridge dll"
+ },
+ "Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.dll": {
+  "en": "Microsoft Data Entity Build Tasks dll"
+ },
+ "Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizardMicrosoft.VisualC.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "Microsoft.Tpm.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "Microsoft.Transactions.Bridge.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "Microsoft.Transactions.Bridge.Dtc.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "Microsoft.VisualBasic.Compatibility.Data.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "Microsoft.VisualBasic.Compatibility.dll": {
+  "en": "Microsoft Security Application Id Policy Management Policy Model"
+ },
+ "Microsoft.VisualBasic.dll": {
+  "en": "Microsoft Security Application Id Policy Management Policy Model"
+ },
+ "Microsoft.VisualBasic.ni.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Microsoft.VisualBasic.resources.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "Microsoft.VisualBasic.Vsa.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "Microsoft.VisualC.ni.dll": {
+  "en": "Lexmark WIA Microdriver DLL"
+ },
+ "Microsoft.VisualC.STLCLR.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "Microsoft.Vsa.dll": {
+  "en": "Lexmark WIA Microdriver DLL"
+ },
+ "Microsoft.Vsa.Vb.CodeDOMProcessor.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "Microsoft.Web.Administration.dll": {
+  "en": "DRS Dynamic Link Library"
+ },
+ "Microsoft.Web.Management.AspnetClient.dll": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "Microsoft.Web.Management.dll": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "Microsoft.Windows.Smc.dll": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "Microsoft.WSMan.Management.resources.dll": {
+  "en": "Control Panel UI Resource DLL"
+ },
+ "midimap.dll": {
+  "en": "Windows Portable Device Composite Driver"
+ },
+ "migcore.dll": {
+  "en": "MTP core protocol component"
+ },
+ "MigSetup.exe": {
+  "en": "Windows Portable Device Media Transfer Protocol Driver"
+ },
+ "migstore.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "MIGUIControls.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "miguiresource.dll": {
+  "en": "Control Panel UI Resource DLL"
+ },
+ "migwiz.exe": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "mimefilt.dll": {
+  "en": "Structured Query"
+ },
+ "MineSweeper.dll": {
+  "en": "Structured Query"
+ },
+ "MineSweeper.exe": {
+  "en": "Microsoft Search Proxy"
+ },
+ "mip.exe": {
+  "en": "Windows Portable Device File System Driver"
+ },
+ "mlang.dll": {
+  "en": "Bluetooth transport layer for MTP driver"
+ },
+ "mmc.exe": {
+  "en": "IP transport layer for MTP driver"
+ },
+ "mmcbase.dll": {
+  "en": "Usbscan transport layer for MTP driver"
+ },
+ "MMCEx.dll": {
+  "en": "Windows Speech Library"
+ },
+ "MMCFxCommon.dll": {
+  "en": "Reach Framework dll"
+ },
+ "mmci.dll": {
+  "en": "UI Automation Client side Providers dll"
+ },
+ "mmcico.dll": {
+  "en": "Windows Base dll"
+ },
+ "mmcndmgr.dll": {
+  "en": "Virtual Machine Bus Resource DLL"
+ },
+ "mmcshext.dll": {
+  "en": "Microsoft VM Bus Video Device Display Driver"
+ },
+ "mmcss.dll": {
+  "en": "Virtual Machine Integration Component Service Resource DLL"
+ },
+ "MMDevAPI.dll": {
+  "en": "DRS Dynamic Link Library"
+ },
+ "mmres.dll": {
+  "en": "UPnP Device Host"
+ },
+ "mobsync.exe": {
+  "en": "Microsoft Tablet PC Component"
+ },
+ "modem.sys": {
+  "en": "Presentation Native v0300 dll"
+ },
+ "MODEMCSA.sys": {
+  "en": "Windows Speech Library"
+ },
+ "modemui.dll": {
+  "en": "UI Automation Provider dll"
+ },
+ "modrqflt.dll": {
+  "en": "Windows Presentation Foundation WindowsForms Integration Library"
+ },
+ "mofcomp.exe": {
+  "en": "Windows Hypervisor Interface Driver"
+ },
+ "mofinstall.dll": {
+  "en": "Microsoft VM Bus Video Device Miniport Driver"
+ },
+ "monitor.sys": {
+  "en": "Virtual Machine Integration Component Time Sync Provider Library"
+ },
+ "MonitorSnapIn.dll": {
+  "en": "UPnP Device Host"
+ },
+ "montr_ci.dll": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "moricons.dll": {
+  "en": "WinFX Open Type CFF Rasterizer"
+ },
+ "mouclass.sys": {
+  "en": "Presentation UI dll"
+ },
+ "mouhid.sys": {
+  "en": "Windows Presentation Foundation Terminal Server Print Wrapper"
+ },
+ "mountmgr.sys": {
+  "en": "UI Automation Types dll"
+ },
+ "mountvol.exe": {
+  "en": "VM Bus User Mode Pipe DLL"
+ },
+ "MP3DMOD.dll": {
+  "en": "Microsoft VM Bus HID Miniport"
+ },
+ "MP43DECD.dll": {
+  "en": "Hyper-V Integration Components Coinstaller"
+ },
+ "MP4SDECD.dll": {
+  "en": "System Work flow Activities dll"
+ },
+ "MpAsDesc.dll": {
+  "en": "Lexmark WIA Microdriver DLL"
+ },
+ "MpClient.dll": {
+  "en": "Microsoft NET Frame work v1.0 compatibility"
+ },
+ "MpCmdRun.exe": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "MpCommu.dll": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "MpEvMsg.dll": {
+  "en": "Control Panel UI Plug-in"
+ },
+ "MPG4DECD.dll": {
+  "en": "MS Search Vista Platform"
+ },
+ "mpio.sys": {
+  "en": "Microsoft Windows Search Indexer"
+ },
+ "mpnotify.exe": {
+  "en": "Microsoft Windows Search Migration Plugin"
+ },
+ "MpOAV.dll": {
+  "en": "Windows USB Class Driver BETA"
+ },
+ "mpr.dll": {
+  "en": "Virtual NDIS6 Miniport"
+ },
+ "mprapi.dll": {
+  "en": "Presentation Font Cache exe"
+ },
+ "mprdim.dll": {
+  "en": "Presentation Framework Classic dll"
+ },
+ "mprmsg.dll": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "MpRTP.dll": {
+  "en": "Xerox Work Centre Pro"
+ },
+ "mpsdrv.sys": {
+  "en": "Control Panel UI Plug-in"
+ },
+ "MPSSVC.dll": {
+  "en": "Microsoft Windows Search Filter Host"
+ },
+ "MpSvc.dll": {
+  "en": "Microsoft Windows Search Indexer"
+ },
+ "mpvis.dll": {
+  "en": "Microsoft Windows SideShow class driver"
+ },
+ "mqac.sys": {
+  "en": "Virtual NDIS5 Miniport"
+ },
+ "mqad.dll": {
+  "en": "NET FX Open Type CFF Rasterizer"
+ },
+ "mqbkup.exe": {
+  "en": "Presentation Framework Aero dll"
+ },
+ "mqise.dll": {
+  "en": "Presentation Framework Luna dll"
+ },
+ "mqoa.dll": {
+  "en": "Presentation Framework Royale dll"
+ },
+ "mqqm.dll": {
+  "en": "Windows Presentation Foundation Host"
+ },
+ "mqrt.dll": {
+  "en": "WSD Scan Driver DLL"
+ },
+ "mqsec.dll": {
+  "en": "Virtual Machine Storage Filter Resource DLL"
+ },
+ "mqsnap.dll": {
+  "en": "Virtual Machine Bus"
+ },
+ "mqsvc.exe": {
+  "en": "System Work flow Runtime dll"
+ },
+ "mqtgsvc.exe": {
+  "en": "ViXS XCode Memory Init Library (x64)"
+ },
+ "mqtrig.dll": {
+  "en": "Add In Process exe"
+ },
+ "mqutil.dll": {
+  "en": "Media Center Interop DLL"
+ },
+ "MRINFO.exe": {
+  "en": "WIA Scanner Driver"
+ },
+ "mrxdav.sys": {
+  "en": "Presentation Framework dll"
+ },
+ "mrxsmb.sys": {
+  "en": "Web Services for Devices API DLL"
+ },
+ "mrxsmb10.sys": {
+  "en": "Hyper-V Integration Components Coinstaller"
+ },
+ "mrxsmb20.sys": {
+  "en": "Storage VSC Driver"
+ },
+ "msaatext.dll": {
+  "en": "Hyper-V VM Bus Coinstaller"
+ },
+ "MSAC3ENC.dll": {
+  "en": "ViXS XCode AVStream Driver Front-End Library (x64)"
+ },
+ "msacm32.dll": {
+  "en": "XNA Common Controller Driver"
+ },
+ "msacm32.drv": {
+  "en": "Add In Process exe"
+ },
+ "msadce.dll": {
+  "en": "Media Center Interop DLL"
+ },
+ "msadcf.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "msadco.dll": {
+  "en": "Windows Presentation Foundation Host Library"
+ },
+ "msadcs.dll": {
+  "en": "Web Services Print Device Driver"
+ },
+ "msadds.dll": {
+  "en": "Virtual Storage Filter Driver"
+ },
+ "msader15.dll": {
+  "en": "WDF:UMDF USBCCID User-Mode Driver"
+ },
+ "msado15.dll": {
+  "en": "System Work flow Component Model dll"
+ },
+ "msadomd.dll": {
+  "en": "ViXS XCode Support Library (x64)"
+ },
+ "msador15.dll": {
+  "en": "NET System Frame work"
+ },
+ "msadox.dll": {
+  "en": "Visual Basic Runtime Library"
+ },
+ "msadrh15.dll": {
+  "en": "iTV Music Application"
+ },
+ "msahci.sys": {
+  "en": "Image Enhancement dll"
+ },
+ "MSASCui.exe": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msasn1.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "MSBuild.exe": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "MSBuild.resources.dll": {
+  "en": "WIA Scanner Driver dll for PIXUS MP"
+ },
+ "MSCAND20.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "mscat32.dll": {
+  "en": "Canon Device Dependent Informations for Scanner Library"
+ },
+ "msclmd.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "mscms.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msconfig.exe": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "mscordacwks.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "mscordbc.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "mscordbi.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "mscoree.dll": {
+  "en": "WIA Scanner Driver dll for PIXUS MP"
+ },
+ "mscorees.dll": {
+  "en": "WIA Scanner Driver dll for PIXUS MP"
+ },
+ "mscorie.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "mscorier.dll": {
+  "en": "Canon Device Dependent Informations for Scanner Library"
+ },
+ "mscories.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "mscorjit.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "mscorld.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "mscorlib.dll": {
+  "en": "Epson WIA Module"
+ },
+ "mscorlib.ni.dll": {
+  "en": "Epson WIA Module"
+ },
+ "mscorlib.Resources.dll": {
+  "en": "Epson WIA Module"
+ },
+ "mscormmc.dll": {
+  "en": "Kyocera WIA Error Handler"
+ },
+ "mscorpe.dll": {
+  "en": "Kyocera WIA Driver"
+ },
+ "mscorrc.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "mscorsec.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "mscorsn.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "mscorsvc.dll": {
+  "en": "TPM Management"
+ },
+ "mscorsvw.exe": {
+  "en": "Image Enhancement dll"
+ },
+ "mscortim.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "mscorwks.dll": {
+  "en": "Epson WIA Module"
+ },
+ "msctf.dll": {
+  "en": "Hewlett-Packard WIA minidriver"
+ },
+ "MsCtfMonitor.dll": {
+  "en": "Kyocera WIA Driver"
+ },
+ "msctfui.dll": {
+  "en": "Canon Device Dependent Informations for Scanner Library"
+ },
+ "msdadc.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "msdaenum.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "msdaer.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msdaora.dll": {
+  "en": "Windows Application"
+ },
+ "msdaosp.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "msdaps.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msdarem.dll": {
+  "en": "Epson WIA Module"
+ },
+ "msdart.dll": {
+  "en": "Kyocera WIA Driver"
+ },
+ "msdasc.dll": {
+  "en": "Kyocera WIA Error Handler"
+ },
+ "msdasql.dll": {
+  "en": "Canon Device Dependent Informations for Scanner Library"
+ },
+ "msdasqlr.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "msdatl3.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msdatt.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msdaurl.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "msdbg2.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msdelta.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msdmo.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "msdri.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msdrm.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msdsm.sys": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msdt.exe": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msdtc.exe": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msdtcprx.dll": {
+  "en": "Microsoft Search Protocol Handler"
+ },
+ "msdtcstp.dll": {
+  "en": "Bluetooth RFCOMM Driver"
+ },
+ "msdtctm.dll": {
+  "en": "Interactive TV Platform Managed"
+ },
+ "msdtcuiu.dll": {
+  "en": "User Mode Bus Enumerator"
+ },
+ "msdv.sys": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msexch40.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msfeeds.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msfeedsbs.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msfeedssync.exe": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msfs.sys": {
+  "en": "Outlook MS Search Connector"
+ },
+ "msftedit.dll": {
+  "en": "System Runtime Serialization dll"
+ },
+ "msg.exe": {
+  "en": "Remote Desktop Session Host Server Printer Redirection Driver"
+ },
+ "mshidkmdf.sys": {
+  "en": "User Mode Bus Driver Interface Dll"
+ },
+ "mshta.exe": {
+  "en": "Generic pass through driver"
+ },
+ "mshtml.dll": {
+  "en": "USB Common Class Generic Parent Driver"
+ },
+ "mshtmled.dll": {
+  "en": "Microsoft Trusted Audio Drivers"
+ },
+ "mshtmler.dll": {
+  "en": "USB Audio Class Driver"
+ },
+ "mshwkorrIME.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msi.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "MsiCofire.dll": {
+  "en": "Performance Monitor DLL"
+ },
+ "msidcrl30.dll": {
+  "en": "Image Enhancement dll"
+ },
+ "msident.dll": {
+  "en": "Small Form Factor SD Protocol Driver"
+ },
+ "msidle.dll": {
+  "en": "Sony DPP Printer Ui Driver"
+ },
+ "msidntld.dll": {
+  "en": "QLogic Fibre Channel Stor Miniport Driver"
+ },
+ "msieftp.dll": {
+  "en": "SM Svc Host exe"
+ },
+ "msiexec.exe": {
+  "en": "Microsoft Trusted Audio Drivers"
+ },
+ "msihnd.dll": {
+  "en": "Audio System FX Control Panel Extension"
+ },
+ "msiltcfg.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msimg32.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msimsg.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msimtf.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "msinfo32.exe": {
+  "en": "Microsoft Visual Basic Compatibility dll"
+ },
+ "MsiProvider.dll": {
+  "en": "SiS RAID Stor Miniport Driver"
+ },
+ "msisadrv.sys": {
+  "en": "Sony DPP Printer Uni Driver"
+ },
+ "msiscsi.sys": {
+  "en": "Microsoft Watchdog Timer Driver"
+ },
+ "msisip.dll": {
+  "en": "Audio System FX Control Panel Extension"
+ },
+ "msjet40.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msjetoledb40.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msjint40.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msjro.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msjter40.dll": {
+  "en": "WIA Scanner Compiler"
+ },
+ "msjtes40.dll": {
+  "en": "Small Form Factor MMC Protocol Driver"
+ },
+ "mskssrv.sys": {
+  "en": "Sony DPP Language Monitor"
+ },
+ "msls31.dll": {
+  "en": "e-STUDIO Series XPS Printer Driver x64"
+ },
+ "MsMpCom.dll": {
+  "en": "QLogic iSCSI Storport Miniport Driver"
+ },
+ "msmpeg2adec.dll": {
+  "en": "Microsoft NET Assembly Registration Utility"
+ },
+ "MSMPEG2ENC.dll": {
+  "en": "Client Interface"
+ },
+ "msmpeg2vdec.dll": {
+  "en": "Communication Module"
+ },
+ "MsMpLics.dll": {
+  "en": "AntiMalware Realtime Monitor"
+ },
+ "MsMpRes.dll": {
+  "en": "Windows Defender User Interface"
+ },
+ "msnetobj.dll": {
+  "en": "License Module"
+ },
+ "msoe.dll": {
+  "en": "PC SC Driver for STC Serial Reader"
+ },
+ "msoeacct.dll": {
+  "en": "SCM USB Smart Card Reader"
+ },
+ "MSOERES.dll": {
+  "en": "Promise SuperTrak EX Series Driver for Windows"
+ },
+ "msoert2.dll": {
+  "en": "RAM Disk Driver"
+ },
+ "msoobe.exe": {
+  "en": "Definition Update Descriptions"
+ },
+ "msorcl32.dll": {
+  "en": "Microsoft Malware Protection Command Line Utility"
+ },
+ "mspaint.exe": {
+  "en": "IOfficeAntiVirus Module"
+ },
+ "mspatcha.dll": {
+  "en": "Service Module"
+ },
+ "mspbde40.dll": {
+  "en": "COM Utility"
+ },
+ "mspclock.sys": {
+  "en": "Windows Defender Resource Module"
+ },
+ "mspqm.sys": {
+  "en": "PC SC Driver for SCR111 - Serial Smart Card Reader"
+ },
+ "MSPVWCTL.dll": {
+  "en": "Application Control Policies Group Policy Editor Extension"
+ },
+ "msra.exe": {
+  "en": "SCSI Scanner Driver"
+ },
+ "msrating.dll": {
+  "en": "Serial Imaging Device Driver"
+ },
+ "msrd2x40.dll": {
+  "en": "Web Service Based Scan Device Driver"
+ },
+ "msrd3x40.dll": {
+  "en": "SUA Subsystem Console Session Manager"
+ },
+ "msrle32.dll": {
+  "en": "SCSI Tape Driver"
+ },
+ "msrpc.sys": {
+  "en": "SCSI Tape Driver"
+ },
+ "msscntrs.dll": {
+  "en": "ATAPI Tape Driver"
+ },
+ "msscp.dll": {
+  "en": "EHCI eUSB Miniport Driver"
+ },
+ "msshooks.dll": {
+  "en": "USB 1.1 and 2.0 Port Driver"
+ },
+ "mssign32.dll": {
+  "en": "USB Mass Storage Class Driver"
+ },
+ "mssip32.dll": {
+  "en": "Volume Shadow Copy Driver"
+ },
+ "mssitlb.dll": {
+  "en": "USB Scanner Driver"
+ },
+ "mssmbios.sys": {
+  "en": "SUA Subsystem Console Session Manager"
+ },
+ "mssphtb.dll": {
+  "en": "System Web dll"
+ },
+ "mssprxy.dll": {
+  "en": "SCSI Tape Driver"
+ },
+ "mssrch.dll": {
+  "en": "SCSI Tape Driver"
+ },
+ "mssvp.dll": {
+  "en": "Visual Basic Database"
+ },
+ "msswch.dll": {
+  "en": "Default Hub Driver for USB"
+ },
+ "mstape.sys": {
+  "en": "UHCI USB Miniport Driver"
+ },
+ "mstask.dll": {
+  "en": "USB Video Class Driver"
+ },
+ "mstee.sys": {
+  "en": "VIA RAID DRIVER FOR AMD-X86-64"
+ },
+ "mstext40.dll": {
+  "en": "Flatbed Scanner Still Image Devices DLL"
+ },
+ "mstime.dll": {
+  "en": "NET System Frame work"
+ },
+ "mstsc.exe": {
+  "en": "SCSI Tape Driver"
+ },
+ "mstscax.dll": {
+  "en": "SCSI Tape Driver"
+ },
+ "MSTTSLoc.dll": {
+  "en": "SCSI Tape Driver"
+ },
+ "mstvcapn.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msutb.dll": {
+  "en": "OHCI USB Miniport Driver"
+ },
+ "msv1_0.dll": {
+  "en": "USB Printer driver"
+ },
+ "msvbvm60.dll": {
+  "en": "VHD Miniport Driver"
+ },
+ "msvcirt.dll": {
+  "en": "Com Svc Config exe"
+ },
+ "msvcm80.dll": {
+  "en": "System Identity Model Selectors dll"
+ },
+ "msvcm90.dll": {
+  "en": "System IO Log dll"
+ },
+ "msvcp60.dll": {
+  "en": "System Service Model Install dll"
+ },
+ "msvcp80.dll": {
+  "en": "System Service Model Was Hosting dll"
+ },
+ "msvcp90.dll": {
+  "en": "Canon Inkjet WIA Driver"
+ },
+ "msvcr80.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msvcr90.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msvcrt.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msvcrt20.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msvcrt40.dll": {
+  "en": "Brother MFC WIA minidriver(for 64Bit)"
+ },
+ "msvfw32.dll": {
+  "en": "System Identity Model dll"
+ },
+ "msvidc32.dll": {
+  "en": "System Runtime Serialization dll"
+ },
+ "MSVidCtl.dll": {
+  "en": "System Service Model dll"
+ },
+ "mswmdm.dll": {
+  "en": "System Service Model dll"
+ },
+ "mswsock.dll": {
+  "en": "TPM Device Driver"
+ },
+ "mswstr10.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msxactps.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msxbde40.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msxml3.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msxml3r.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "msxml6.dll": {
+  "en": "SUA Subsystem Client DLL"
+ },
+ "msxml6r.dll": {
+  "en": "SUA Subsystem Server"
+ },
+ "msyuv.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "MTConfig.sys": {
+  "en": "System Printing dll"
+ },
+ "mtxclu.dll": {
+  "en": "USB Consumer IR Driver for eHome"
+ },
+ "mtxex.dll": {
+  "en": "Microsoft Transactions Bridge dll"
+ },
+ "MuiUnattend.exe": {
+  "en": "Service Model Installer Resource Library"
+ },
+ "mup.sys": {
+  "en": "SM Diagnostics dll"
+ },
+ "MXDWDRV.dll": {
+  "en": "SM Diagnostics dll"
+ },
+ "mxdwdui.dll": {
+  "en": "Microsoft Service Moniker Helper"
+ },
+ "MXEAgent.dll": {
+  "en": "SUA Subsystem Driver"
+ },
+ "mycomput.dll": {
+  "en": "SUA Subsystem support DLL"
+ },
+ "mydocs.dll": {
+  "en": "Microsoft NET Services Support Infrastructure"
+ },
+ "NapiNSP.dll": {
+  "en": "Windows USB Class Driver BETA"
+ },
+ "napipsec.dll": {
+  "en": "Windows Card Space User Interface Agent"
+ },
+ "NAPSTAT.exe": {
+  "en": "WCF Generic Command for Vista Setup"
+ },
+ "Narrator.exe": {
+  "en": "Microsoft Service Moniker Helper"
+ },
+ "Narrator.resources.dll": {
+  "en": "HP Print Preview"
+ },
+ "NaturalLanguage6.dll": {
+  "en": "HP Print Preview"
+ },
+ "NBMapTIP.dll": {
+  "en": "Proxy stub dll for HPBPro Module"
+ },
+ "nbtstat.exe": {
+  "en": "SUA Subsystem Nonconsole Session Manager"
+ },
+ "nci.dll": {
+  "en": "NET System Frame work"
+ },
+ "ncobjapi.dll": {
+  "en": "Microsoft NET Services Native Thunks"
+ },
+ "NCProv.dll": {
+  "en": "Windows Ribbon Framework Resources"
+ },
+ "ncrypt.dll": {
+  "en": "Windows Card Space"
+ },
+ "ncsi.dll": {
+  "en": "Service Model related event descriptions"
+ },
+ "ndfapi.dll": {
+  "en": "NET System Frame work"
+ },
+ "ndis.sys": {
+  "en": "HP Print Resource Download Module"
+ },
+ "ndiscap.sys": {
+  "en": "HP Print Resource Download Module"
+ },
+ "ndismigplugin.dll": {
+  "en": "DMC Component"
+ },
+ "ndistapi.sys": {
+  "en": "HP Desk Jet Imaging DLL"
+ },
+ "ndisuio.sys": {
+  "en": "HP Resource Manager for Windows"
+ },
+ "ndiswan.sys": {
+  "en": "Language Monitor"
+ },
+ "ndproxy.sys": {
+  "en": "Default Hub Driver for USB"
+ },
+ "net.exe": {
+  "en": "Default Hub Driver for USB"
+ },
+ "net1.exe": {
+  "en": "Matter horn Image Enhancement Module"
+ },
+ "netapi32.dll": {
+  "en": "HP Resource Manager for Windows"
+ },
+ "netbios.dll": {
+  "en": "HP PCL 3 Render"
+ },
+ "netbios.sys": {
+  "en": "HP Print Processor"
+ },
+ "NetBridge.dll": {
+  "en": "HP Print Processor"
+ },
+ "netbt.sys": {
+  "en": "Matter horn Image Enhancement Module"
+ },
+ "netbtugc.exe": {
+  "en": "HP Resource Manager for Windows"
+ },
+ "netcenter.dll": {
+  "en": "SCSI Tape Driver"
+ },
+ "netcfg.exe": {
+  "en": "System Printing dll"
+ },
+ "netcfgx.dll": {
+  "en": "HP Print Preview"
+ },
+ "netdiagfx.dll": {
+  "en": "HP Desk Jet Imaging DLL"
+ },
+ "netevent.dll": {
+  "en": "Language Monitor"
+ },
+ "netfxperf.dll": {
+  "en": "HP Print Processor"
+ },
+ "netio.sys": {
+  "en": "HP Print Processor"
+ },
+ "netiohlp.dll": {
+  "en": "HP Print Processor"
+ },
+ "netiomig.dll": {
+  "en": "HP Print Processor"
+ },
+ "netjoin.dll": {
+  "en": "HP Desk Jet Imaging DLL"
+ },
+ "netlogon.dll": {
+  "en": "HP PCL 3 Render"
+ },
+ "netman.dll": {
+  "en": "Romanian Keyboard Layout"
+ },
+ "netmsg.dll": {
+  "en": "DMC Component"
+ },
+ "netplwiz.dll": {
+  "en": "HP PCL 3 Render"
+ },
+ "Netplwiz.exe": {
+  "en": "String resource file"
+ },
+ "netprof.dll": {
+  "en": "String resource file"
+ },
+ "netprofm.dll": {
+  "en": "Kyocera Printer Mini-Driver"
+ },
+ "NetProj.exe": {
+  "en": "Microsoft Fax Printer Driver UI"
+ },
+ "netr28ux.sys": {
+  "en": "HP Print Processor"
+ },
+ "netr28x.sys": {
+  "en": "HP Resource Manager for Windows"
+ },
+ "netr7364.sys": {
+  "en": "VAYU UI Application"
+ },
+ "netsh.exe": {
+  "en": "VAYU UI Application"
+ },
+ "netshell.dll": {
+  "en": "Language Monitor"
+ },
+ "NETSTAT.exe": {
+  "en": "KONICA MINOLTA Printer Driver"
+ },
+ "netutils.dll": {
+  "en": "Kyocera Printer Mini-Driver"
+ },
+ "netw5v64.sys": {
+  "en": "Kyocera Printer Mini-Driver"
+ },
+ "networkexplorer.dll": {
+  "en": "String resource file"
+ },
+ "networkitemfactory.dll": {
+  "en": "Microsoft Fax Wizard UI"
+ },
+ "networkmap.dll": {
+  "en": "Matter horn Image Enhancement Module"
+ },
+ "newdev.dll": {
+  "en": "Language Monitor"
+ },
+ "newdev.exe": {
+  "en": "USB Consumer IR Driver coinstaller for eHome"
+ },
+ "nfrd960.sys": {
+  "en": "US Multinational Keyboard Layout"
+ },
+ "nfsclnt.exe": {
+  "en": "HP PCL 3 Render"
+ },
+ "nfsrc.dll": {
+  "en": "Kyocera Printer Mini-Driver"
+ },
+ "ngen.exe": {
+  "en": "Kyocera Printer Mini-Driver"
+ },
+ "nlaapi.dll": {
+  "en": "String resource file"
+ },
+ "nlasvc.dll": {
+  "en": "Lexmark PCL Plug-in Renderer"
+ },
+ "nlhtml.dll": {
+  "en": "OKI MICROLINE Printer Driver"
+ },
+ "nlscoremig.dll": {
+  "en": "OKI MICROLINE Printer Driver"
+ },
+ "NlsData0001.dll": {
+  "en": "PCL Unidrv Printer Driver UI Plugin"
+ },
+ "NlsData0002.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "NlsData0003.dll": {
+  "en": "PS Printer Driver UI Plugin"
+ },
+ "NlsData0007.dll": {
+  "en": "Samsung Printer Driver"
+ },
+ "NlsData0009.dll": {
+  "en": "Ricoh WIA Scanner UI Extension DLL"
+ },
+ "NlsData000a.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "NlsData000c.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "NlsData000d.dll": {
+  "en": "SBP-2 Protocol Driver"
+ },
+ "NlsData001a.dll": {
+  "en": "Event Resource Module"
+ },
+ "NlsData0021.dll": {
+  "en": "PCL Unidrv Printer Driver Rendering Plugin"
+ },
+ "NlsData0022.dll": {
+  "en": "PCL Unidrv Printer Driver UI Plugin"
+ },
+ "NlsData0026.dll": {
+  "en": "Windows Update Vista Web Control"
+ },
+ "NlsData002a.dll": {
+  "en": "Samsung UI Plug-In DLL for Inbox Driver"
+ },
+ "NlsData003e.dll": {
+  "en": "Ricoh WIA Scanner UI Extension DLL"
+ },
+ "NlsData0045.dll": {
+  "en": "Ricoh WIA Scanner UI Extension DLL"
+ },
+ "NlsData004b.dll": {
+  "en": "WIA Scanner Driver"
+ },
+ "NlsData004c.dll": {
+  "en": "WIA Scanner Driver for IS450"
+ },
+ "NlsData0414.dll": {
+  "en": "Secure Digital Bus Driver"
+ },
+ "NlsData0416.dll": {
+  "en": "File Risk Estimation"
+ },
+ "NlsLexicons0001.dll": {
+  "en": "ACPI ALS Sensor Lower Filter Driver"
+ },
+ "NlsLexicons0002.dll": {
+  "en": "SiS AHCI Stor-Miniport Driver"
+ },
+ "NlsLexicons0007.dll": {
+  "en": "Gemplus Serial Smart Card Reader Driver"
+ },
+ "NlsLexicons0009.dll": {
+  "en": "Lexmark Post Script Rendering Plug-In"
+ },
+ "NlsLexicons000a.dll": {
+  "en": "Microsoft Fax Exchange Command Extension"
+ },
+ "NlsLexicons000c.dll": {
+  "en": "Microsoft Fax API Support DLL"
+ },
+ "NlsLexicons0010.dll": {
+  "en": "Microsoft Fax TIFF library"
+ },
+ "NlsLexicons0019.dll": {
+  "en": "Sharp Printer Driver"
+ },
+ "NlsLexicons001d.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "NlsLexicons0026.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "NlsLexicons0039.dll": {
+  "en": "ACPI ALS Sensor Driver"
+ },
+ "NlsLexicons004a.dll": {
+  "en": "PC SC IFD handler for Card Man 4000"
+ },
+ "NlsLexicons004c.dll": {
+  "en": "SCM PCMCIA Smart Card Reader"
+ },
+ "NlsLexicons004e.dll": {
+  "en": "Lexmark Post Script In-Box UI Plug-In"
+ },
+ "NlsLexicons0414.dll": {
+  "en": "Lexmark PCL-XL Printer Driver"
+ },
+ "NlsLexicons0416.dll": {
+  "en": "Microsoft Fax Printer Driver"
+ },
+ "NlsLexicons0816.dll": {
+  "en": "Samsung PCL Rendering Plug-In DLL for Inbox Driver"
+ },
+ "NlsLexicons0c1a.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "NlsModels0011.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "normaliz.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "normalization.dll": {
+  "en": "Small Form Factor Disk Driver"
+ },
+ "notepad.exe": {
+  "en": "PC SC IFD handler for Card Man 4040"
+ },
+ "npfs.sys": {
+  "en": "Lexmark PCL Plug-in UI"
+ },
+ "npmproxy.dll": {
+  "en": "PS Printer Driver Rendering Plugin"
+ },
+ "nshhttp.dll": {
+  "en": "Lexmark PCL Plug-in UI"
+ },
+ "nshwfp.dll": {
+  "en": "Microsoft Fax Resource DLL"
+ },
+ "nsi.dll": {
+  "en": "Samsung Rendering Plug-In DLL for Inbox Driver"
+ },
+ "nsiproxy.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "nsisvc.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "nslookup.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntdll.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntdsapi.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntevt.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntfs.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntkrnlpa.exe": {
+  "en": "DRM ActiveX Network Object"
+ },
+ "ntlanman.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntmarta.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntoskrnl.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntprint.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ntshrui.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "null.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "nvd3dum.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "nvd3dumx.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "nvlddmkm.sys": {
+  "en": "Lexmark PCL Plug-in Renderer"
+ },
+ "nvm62x64.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "nvraid.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "nvstor.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "nvwgf2um.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "nvwgf2umx.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "NV_AGP.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "nwifi.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "occache.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ocsetup.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbc32.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbcad32.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbcbcp.dll": {
+  "en": "NET System Frame work"
+ },
+ "odbcconf.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbcconf.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbccp32.dll": {
+  "en": "Tty Printer Driver"
+ },
+ "odbccu32.dll": {
+  "en": "Hp Missile API Module"
+ },
+ "odbcint.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbcji32.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbcjt32.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "odbctrac.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "oeimport.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "offfilt.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ogldrv.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ohci1394.sys": {
+  "en": "Fuji Xerox PCL Mini Printer Driver"
+ },
+ "ole2.dll": {
+  "en": "TTYUI Text Only Driver"
+ },
+ "ole2disp.dll": {
+  "en": "TTYUI Text Only Driver"
+ },
+ "ole2nls.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "ole32.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "oleacc.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "oleaut32.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "olecli32.dll": {
+  "en": "Presentation Framework Classic dll"
+ },
+ "oledb32.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "oledb32r.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "oledlg.dll": {
+  "en": "OKI9IBM Driver"
+ },
+ "oleprn.dll": {
+  "en": "Hp Missile API Module"
+ },
+ "olepro32.dll": {
+  "en": "IEEE-1284.4-1999 Run-time library (kernel)"
+ },
+ "olesvr32.dll": {
+  "en": "Dot4Net Module"
+ },
+ "olethk32.dll": {
+  "en": "PML Run-time library"
+ },
+ "OmdBase.dll": {
+  "en": "SNMP Network Interface (Windows)"
+ },
+ "OmdProject.dll": {
+  "en": "Hp Missile API Module"
+ },
+ "onex.dll": {
+  "en": "SNMP Network Interface (Windows)"
+ },
+ "onexui.dll": {
+  "en": "HP Settings"
+ },
+ "OobeFldr.dll": {
+  "en": "French Keyboard Layout"
+ },
+ "oobeldr.exe": {
+  "en": "HP Desk Jet"
+ },
+ "OpcServices.dll": {
+  "en": "HP Desk Jet"
+ },
+ "openfiles.exe": {
+  "en": "HP Print Processor"
+ },
+ "opengl32.dll": {
+  "en": "PmlDrv Module"
+ },
+ "OptionalFeatures.exe": {
+  "en": "SNMP Network Interface (Windows)"
+ },
+ "osbaseln.dll": {
+  "en": "TTYUI Text Only Driver"
+ },
+ "osk.exe": {
+  "en": "Language Monitor"
+ },
+ "OSProvider.dll": {
+  "en": "HP Generic Bitmaps"
+ },
+ "p2phost.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "p2pnetsh.dll": {
+  "en": "Hewlett-Packard Corporation Desk Jet Services"
+ },
+ "p2psvc.dll": {
+  "en": "HP Print Processor"
+ },
+ "pacer.sys": {
+  "en": "HP Laser Jet Services String Table"
+ },
+ "packager.dll": {
+  "en": "HP Generic Bitmaps"
+ },
+ "padrs404.dll": {
+  "en": "HP Doc Event Dialogs"
+ },
+ "padrs411.dll": {
+  "en": "HP Print Preview"
+ },
+ "padrs804.dll": {
+  "en": "HP Generic Bitmaps"
+ },
+ "parport.sys": {
+  "en": "VAYU UI Application"
+ },
+ "partmgr.sys": {
+  "en": "Dialogs for Document Event"
+ },
+ "PATHPING.exe": {
+  "en": "HP Settings"
+ },
+ "pcalua.exe": {
+  "en": "RSCA Application Host Extension"
+ },
+ "pcasvc.dll": {
+  "en": "Hewlett-Packard Vista Inbox Printer Driver"
+ },
+ "pcaui.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pci.sys": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "pciide.sys": {
+  "en": "HP Print Preview"
+ },
+ "pciidex.sys": {
+  "en": "HP Laser Jet Generic String Table"
+ },
+ "PCLXL.dll": {
+  "en": "HP Print Preview"
+ },
+ "pcmcia.sys": {
+  "en": "VAYU UI Application"
+ },
+ "pcw.sys": {
+  "en": "Matter horn Image Enhancement Module"
+ },
+ "pcwum.dll": {
+  "en": "Matter horn Image Enhancement Module"
+ },
+ "pdh.dll": {
+  "en": "IIS RSCA implementation"
+ },
+ "pdm.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "PEAuth.sys": {
+  "en": "Epson Printer Driver"
+ },
+ "PeerDist.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "PeerDistSvc.dll": {
+  "en": "HP Print Processor"
+ },
+ "PenIMC.dll": {
+  "en": "HP Laser Jet Generic String Table"
+ },
+ "penusa.dll": {
+  "en": "VAYU UI Application"
+ },
+ "PerfCounter.dll": {
+  "en": "VAYU UI Application"
+ },
+ "perfctrs.dll": {
+  "en": "Language Monitor"
+ },
+ "perfdisk.dll": {
+  "en": "HP Doc Event Dialogs"
+ },
+ "perfhost.exe": {
+  "en": "RSCA Application Host Extension"
+ },
+ "perfmon.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "perfos.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "perfproc.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "perftrack.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "perfts.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "peverify.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PhotoAcq.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PhotoBase.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PhotoMetadataHandler.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PhotoViewer.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "photowiz.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "pid.dll": {
+  "en": "RAS Diagnostics Helper Classes"
+ },
+ "pidgenx.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pifmgr.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "PING.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PINTLCSA.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "Pipeline.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PJLMON.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PkgMgr.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "pla.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PlaySndSrv.dll": {
+  "en": "HP ccom Application"
+ },
+ "pmcsnap.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pngfilt.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pnidui.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pnpmem.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pnpts.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pnpui.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "PnPutil.exe": {
+  "en": "Epson Printer Driver"
+ },
+ "PNPXAssoc.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "pnrpnsp.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "PolicMan.dll": {
+  "en": "USB STI device accessing module for Brother MFC"
+ },
+ "Policy.1.0.Microsoft.Interop.Security.AzRoles.dll": {
+  "en": "EPSON SIDM Printer Rendering Plug-in"
+ },
+ "Policy.1.2.Microsoft.Interop.Security.AzRoles.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "polstore.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "poqexec.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "PortableDeviceApi.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "PortableDeviceConnectApi.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "PortableDeviceSyncProvider.dll": {
+  "en": "EPSON Laser Printer Driver"
+ },
+ "PortableDeviceTypes.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "portcls.sys": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "posix.exe": {
+  "en": "Peer-to-Peer Grouping"
+ },
+ "PostMig.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "powercfg.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "powercpl.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "powershell.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "powershell_ise.exe": {
+  "en": "Epson Printer Driver"
+ },
+ "powrprof.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "ppcrlconfig.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "PresentationBuildTasks.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "PresentationCFFRasterizer.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "PresentationCore.dll": {
+  "en": "EPSON 24Pin Printer Driver"
+ },
+ "PresentationCore.ni.dll": {
+  "en": "Epson Uni-Mini Driver 1.0"
+ },
+ "PresentationFontCache.exe": {
+  "en": "EPSON Print Processor ESC P"
+ },
+ "PresentationFramework.Aero.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationFramework.Aero.ni.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationFramework.Classic.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationFramework.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationFramework.Luna.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationFramework.ni.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationFramework.Royale.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationHost.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationHostDLL.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationHostProxy.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationNative_v0300.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationSettings.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PresentationUI.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "prevhost.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "print.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PrintBrm.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PrintBrmEngine.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PrintBrmUi.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "printfilterpipelinesvc.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PrintIsolationHost.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "PrintIsolationProxy.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "printui.dll": {
+  "en": "EPSON Laser Printer Driver(ESC Page)"
+ },
+ "printui.exe": {
+  "en": "EPSON Print Processor ESC Page"
+ },
+ "prnfldr.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "prnntfy.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "prntvpt.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "processr.sys": {
+  "en": "EPSON Printer Driver"
+ },
+ "profapi.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "profsvc.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "propsys.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "proquota.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "provsvc.dll": {
+  "en": "EPSON Laser Printer Driver"
+ },
+ "PS5UI.dll": {
+  "en": "EPSON Laser Printer Driver(ESC Page)"
+ },
+ "psapi.dll": {
+  "en": "EPSON Print Processor ESC Page-S"
+ },
+ "psbase.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PSCRIPT5.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PSHED.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "psisdecd.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "psr.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pstorec.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pstorsvc.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "psxdll.dll": {
+  "en": "EPSON Laser Printer Driver(ESC Page)"
+ },
+ "psxdllsvr.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "psxdrv.sys": {
+  "en": "EPSON Laser Printer Driver"
+ },
+ "psxrun.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "psxss.exe": {
+  "en": "EPSON Printer Driver"
+ },
+ "puiapi.dll": {
+  "en": "EPSON Printer Driver"
+ },
+ "PurblePlace.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "PurblePlace.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pwrshmsg.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "pwrshsip.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "QAGENT.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "QAGENTRT.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qappsrv.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qasf.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qcap.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qdv.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qdvd.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qedit.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qedwipes.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ql2300.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ql40xx.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qmgr.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qmgrprxy.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qprocess.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "quartz.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Query.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "query.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "QUTIL.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qwave.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qwavedrv.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "qwinsta.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RacEngn.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "racpldlg.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "radardt.dll": {
+  "en": "EPSON 9Pin Printer Driver"
+ },
+ "ramdisk.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasacd.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasadhlp.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasapi32.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasauto.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasautou.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rascfg.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "raschap.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasdiag.dll": {
+  "en": "EPSON 9Pin 24Pin Printer Driver"
+ },
+ "rasdial.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasdlg.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasgcw.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasl2tp.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasman.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasmans.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RasMigPlugin.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RASMM.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasphone.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasplap.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rasppp.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "raspppoe.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "raspptp.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rassstp.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rastapi.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rastls.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdbss.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdpbus.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RDPCDD.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdpclip.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdpcore.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdpdd.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdpdr.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RDPENCDD.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RDPREFMP.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdpshell.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdpwd.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rdyboost.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ReachFramework.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ReachFramework.resources.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ReAgent.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ReAgentc.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "recdisc.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "recover.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "recovery.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "redirect.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "reg.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "regapi.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RegAsm.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RegCtrl.dll": {
+  "en": "Canon API MP Low Level Driver"
+ },
+ "regedit.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "regedt32.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "regidle.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "regini.exe": {
+  "en": "Epson Printer Driver"
+ },
+ "RegisterIEPKEYs.exe": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "RegisterMCEApp.exe": {
+  "en": "Canon Inbox Render Plug-in"
+ },
+ "regsvc.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RegSvcs.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "regsvr32.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rekeywiz.exe": {
+  "en": "Note pad"
+ },
+ "RelPost.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "remotepg.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "repair-bde.exe": {
+  "en": "Epson Printer Driver"
+ },
+ "repdrvfs.dll": {
+  "en": "OEM Customization Sample"
+ },
+ "replace.exe": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "RESAMPLEDMO.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "reset.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "resmon.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "resutils.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rfcomm.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rgb9rast.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "riched20.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "riched32.dll": {
+  "en": "Epson Printer Driver"
+ },
+ "RMActivate.exe": {
+  "en": "OEM UI Test Module"
+ },
+ "RMActivate_ssp_isv.exe": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "rmcast.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RmClient.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RNDISMP.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rndismpx.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Robocopy.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rootmdm.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ROUTE.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rpchttp.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RpcNs4.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rpcrt4.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RpcRtRemote.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rpcss.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rrinstaller.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rsaenh.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rshx32.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rspndr.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RstrtMgr.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rstrui.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Rt64win7.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rtffilt.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RTL8187B.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RTL8187Se.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RTL85n64.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Rtnic64.sys": {
+  "en": "IEEE 802.1X supplicant UI library"
+ },
+ "rtscom.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rtutils.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "runas.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rundll32.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "RunLegacyCPLElevated.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "runonce.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "rwinsta.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "samcli.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "samlib.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SampleRes.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "samsrv.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sapi.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sapisvr.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbdrop.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbe.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SBEServer.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbp2port.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbscmp20_mscorlib.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbs_iehost.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbs_microsoft.jscript.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbs_mscordbi.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbs_system.configuration.install.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbs_system.data.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbs_system.enterpriseservices.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sbs_wminet_utils.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sc.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scansetting.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SCardDlg.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SCardSvr.dll": {
+  "en": "System Deployment dll"
+ },
+ "scecli.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scesrv.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scfilter.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "schannel.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "schedsvc.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "schtasks.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scksp.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scripto.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scrobj.dll": {
+  "en": "Lexmark Communication System"
+ },
+ "scrrun.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scsiport.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "scsiscan.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdautoplay.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdbinst.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdbus.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdclt.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdcpl.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdengin2.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdhcinst.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdiageng.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdiagnhost.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdiagschd.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdohlp.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sdrsvc.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SearchFilterHost.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SearchFolder.dll": {
+  "en": "System Web Dynamic Data dll"
+ },
+ "SearchIndexer.exe": {
+  "en": "System Web Extensions dll"
+ },
+ "SearchProtocolHost.exe": {
+  "en": "Microsoft Protection Service Driver"
+ },
+ "secdrv.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SecEdit.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sechost.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "seclogon.dll": {
+  "en": "Quarantine Client WMI Provider"
+ },
+ "secproc_ssp_isv.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "secur32.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "security.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sendmail.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "Sens.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "SensApi.dll": {
+  "en": "Windows Firewal ICF Settings Upgrade"
+ },
+ "SensorsApi.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "serenum.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "serial.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "serialui.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sermouse.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "serscan.sys": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ServiceModelEvents.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ServiceModelInstallRC.dll": {
+  "en": "NET System Frame work"
+ },
+ "ServiceModelReg.exe": {
+  "en": "System Web Routing dll"
+ },
+ "ServiceMonikerSupport.dll": {
+  "en": "Microsoft Protection Service"
+ },
+ "services.exe": {
+  "en": "Windows Firewall GPO Helper dll"
+ },
+ "serwvdrv.dll": {
+  "en": "Windows Firewall Helper Class"
+ },
+ "SessEnv.dll": {
+  "en": "Windows PowerShell ISE"
+ },
+ "sethc.exe": {
+  "en": "NVIDIA Force RAID Driver"
+ },
+ "SetIEInstalledDate.exe": {
+  "en": "NVIDIA Compatible Vista WDDM D3D Driver Version 185.93"
+ },
+ "setspn.exe": {
+  "en": "NVIDIA Compatible D3D10 Driver Version 185.93"
+ },
+ "setup.exe": {
+  "en": "PCMCIA Bus Driver"
+ },
+ "setupapi.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "setupcl.exe": {
+  "en": "KS Proxy Plugin"
+ },
+ "setupcln.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "setupSNK.exe": {
+  "en": "Windows Firewall Control Panel"
+ },
+ "setupugc.exe": {
+  "en": "Presentation Build Tasks dll"
+ },
+ "setup_wm.exe": {
+  "en": "Unidrv Printer Driver Resource DLL"
+ },
+ "setx.exe": {
+  "en": "NVIDIA Force Sata Performance Driver"
+ },
+ "sfc.dll": {
+  "en": "NVIDIA Windows Kernel Mode Driver Version 185.93"
+ },
+ "sfc.exe": {
+  "en": "NVIDIA Compatible D3D10 Driver Version 185.93"
+ },
+ "sfc_os.dll": {
+  "en": "PCMCIA Bus Driver"
+ },
+ "sffdisk.sys": {
+  "en": "KS Proxy Plugin"
+ },
+ "sffp_mmc.sys": {
+  "en": "KS Proxy Plugin"
+ },
+ "sffp_sd.sys": {
+  "en": "KS Proxy Plugin"
+ },
+ "sfloppy.sys": {
+  "en": "KS Proxy Plugin"
+ },
+ "shacct.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "shadow.exe": {
+  "en": "KS Proxy Plugin"
+ },
+ "shdocvw.dll": {
+  "en": "Rendering Plug-In"
+ },
+ "shell32.dll": {
+  "en": "Rendering Plug-In"
+ },
+ "shellbrd.dll": {
+  "en": "NVIDIA Force RAID Driver"
+ },
+ "shellstyle.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "shfolder.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "shfusion.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ShFusRes.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "shgina.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "shimeng.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "shimgvw.dll": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "shlwapi.dll": {
+  "en": "Intel 10 Gigabit Adapter NDIS 6.x driver"
+ },
+ "shrpubw.exe": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "shsetup.dll": {
+  "en": "Rendering Plug-In"
+ },
+ "shsvcs.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "shunimpl.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "shutdown.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "ShvlRes.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "shvlzm.exe": {
+  "en": "KS Proxy Plugin"
+ },
+ "shwebsvc.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "sidebar.exe": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "sigverif.exe": {
+  "en": "EAP Generic UI"
+ },
+ "sisraid2.sys": {
+  "en": "Brother Color Inkjet Printer Driver"
+ },
+ "sisraid4.sys": {
+  "en": "OEM Customization Sample"
+ },
+ "skchui.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "slc.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "slcext.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "slui.exe": {
+  "en": "Driver for Neterion 10 GigE PCI-X Adapters"
+ },
+ "slwga.dll": {
+  "en": "IBM Serve RAID Controller Driver"
+ },
+ "SmartcardCredentialProvider.dll": {
+  "en": "PCL4 Driver"
+ },
+ "smb.sys": {
+  "en": "PCL5e Printer Driver"
+ },
+ "smclib.sys": {
+  "en": "PJL Language monitor"
+ },
+ "SMdiagnostics.dll": {
+  "en": "Windows Compatibility DLL"
+ },
+ "smi2smir.exe": {
+  "en": "Unidrv Printer Driver"
+ },
+ "smiengine.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "smipi.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "SmiProvider.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "SmSerl64.sys": {
+  "en": "KS Proxy Plugin"
+ },
+ "smss.exe": {
+  "en": "Microsoft XPS Document Writer"
+ },
+ "SMSvcHost.exe": {
+  "en": "PCL5e Printer Driver"
+ },
+ "SndVol.exe": {
+  "en": "PCL-XL Printer Driver"
+ },
+ "SndVolSSO.dll": {
+  "en": "Post Script Driver User Interface"
+ },
+ "SnippingTool.exe": {
+  "en": "Norwegian with Sami Keyboard Layout"
+ },
+ "snmp.exe": {
+  "en": "Uni Driver User Interface"
+ },
+ "snmpapi.dll": {
+  "en": "Microsoft Build Framework dll"
+ },
+ "snmpsmir.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "snmptrap.exe": {
+  "en": "KS Proxy Plugin"
+ },
+ "softpub.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "Solitaire.exe": {
+  "en": "KS Proxy Plugin"
+ },
+ "SonicMCEBurnEngine.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "sonydcam.sys": {
+  "en": "Macrovision Plugin"
+ },
+ "sort.exe": {
+  "en": "Microsoft Authorization Manager Publisher Policy"
+ },
+ "SortServer2003Compat.dll": {
+  "en": "Presentation Core dll"
+ },
+ "SortWindows6Compat.dll": {
+  "en": "Post Script Printer Driver"
+ },
+ "SOS.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "SoundRecorder.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "spbcd.dll": {
+  "en": "WMI Net Utils dll"
+ },
+ "spcmsg.dll": {
+  "en": "Microsoft Resource File To COFF Object Conversion Utility Errors Warnings Messages"
+ },
+ "SpeechUX.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "SpeechUXRes.dll": {
+  "en": "Macrovision Plugin"
+ },
+ "sperror.dll": {
+  "en": "PNPX Association Dll"
+ },
+ "spfileq.dll": {
+  "en": "Microsoft Tablet PC API Publisher Policy"
+ },
+ "SpiderSolitaire.exe": {
+  "en": "OEM UI Test Module"
+ },
+ "SPInf.dll": {
+  "en": "KO Hangeul Keyboard Layout Stub driver"
+ },
+ "spinstall.exe": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "spldr.sys": {
+  "en": "Visual Basic Compiler Resources"
+ },
+ "splwow64.exe": {
+  "en": "Assembly Linker Error Warning Messages"
+ },
+ "spnet.dll": {
+  "en": "Microsoft Resource File To COFF Object Conversion Utility"
+ },
+ "spoolss.dll": {
+  "en": "KS Proxy Plugin"
+ },
+ "spoolsv.exe": {
+  "en": "KS Proxy Plugin"
+ },
+ "spopk.dll": {
+  "en": "Microsoft Authorization Manager Publisher Policy"
+ },
+ "spp.dll": {
+  "en": "Presentation Core dll"
+ },
+ "sppc.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sppcext.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sppcomapi.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sppcommdlg.dll": {
+  "en": "Microsoft ASP NET Support DLL"
+ },
+ "sppobjs.dll": {
+  "en": "Microsoft Globalization Support"
+ },
+ "sppsvc.exe": {
+  "en": "Microsoft NET Runtime Debugging Services"
+ },
+ "sppuinotify.dll": {
+  "en": "Microsoft NET Runtime Execution Engine"
+ },
+ "sppwinob.dll": {
+  "en": "Microsoft NET Runtime IE resources"
+ },
+ "spreview.exe": {
+  "en": "Unmanaged code to assist CLR Admin tool"
+ },
+ "spsreng.dll": {
+  "en": "Microsoft Common Language Runtime native compiler"
+ },
+ "spsys.sys": {
+  "en": "Microsoft performance counter extension for NET Runtime"
+ },
+ "SPTIP.dll": {
+  "en": "Microsoft NET Frame work v1.0 compatibility"
+ },
+ "spwinsat.dll": {
+  "en": "WMI Provider"
+ },
+ "spwizeng.dll": {
+  "en": "Microsoft COM Runtime Fusion Assembly Viewer"
+ },
+ "spwizimg.dll": {
+  "en": "NET System Frame work"
+ },
+ "spwizui.dll": {
+  "en": "Microsoft NET Runtime Soap Serialization Library"
+ },
+ "sqlceoledb30.dll": {
+  "en": "Microsoft NET Runtime Execution Engine"
+ },
+ "sqlceqp30.dll": {
+  "en": "Microsoft NET IE SECURITY REGISTRATION"
+ },
+ "sqlcese30.dll": {
+  "en": "Microsoft NET Runtime Common Language Runtime - WorkStation"
+ },
+ "sqloledb.dll": {
+  "en": "Microsoft Unicode Normalization"
+ },
+ "sqlsrv32.dll": {
+  "en": "Microsoft NET Frame work v1.0 compatibility"
+ },
+ "sqlunirl.dll": {
+  "en": "Canon Inkjet Printer Driver"
+ },
+ "sqlwid.dll": {
+  "en": "Microsoft NET Frame work v1.0 compatibility"
+ },
+ "sqlxmlx.dll": {
+  "en": "NET System Frame work"
+ },
+ "sqmapi.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "srchadmin.dll": {
+  "en": "Microsoft NET Runtime Object Remoting"
+ },
+ "srclient.dll": {
+  "en": "System Security dll"
+ },
+ "srcore.dll": {
+  "en": "WF Services Reg exe"
+ },
+ "srdelayed.exe": {
+  "en": "Add In Process exe"
+ },
+ "srrstr.dll": {
+  "en": "Visual C# Compiler Error Warning Messages"
+ },
+ "srv.sys": {
+  "en": "Assembly Linker command line tool"
+ },
+ "srv2.sys": {
+  "en": "NET System Frame work"
+ },
+ "srvcli.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "srvnet.sys": {
+  "en": "System Data Linq dll"
+ },
+ "srvsvc.dll": {
+  "en": "Visual Basic Command Line Compiler"
+ },
+ "sscore.dll": {
+  "en": "System Windows Presentation dll"
+ },
+ "ssdpapi.dll": {
+  "en": "NET System Frame work"
+ },
+ "ssdpsrv.dll": {
+  "en": "System Service Model Web dll"
+ },
+ "sspicli.dll": {
+  "en": "Add In Util exe"
+ },
+ "sstpsvc.dll": {
+  "en": "Data Svc Util exe"
+ },
+ "stdprov.dll": {
+  "en": "Microsoft Data Entity Build Tasks dll"
+ },
+ "stexstor.sys": {
+  "en": "NET Windows Frame work"
+ },
+ "sti.dll": {
+  "en": "System Data Entity Design dll"
+ },
+ "StikyNot.exe": {
+  "en": "System Data Services Client dll"
+ },
+ "sti_ci.dll": {
+  "en": "Visual Basic Compiler Resources"
+ },
+ "stobject.dll": {
+  "en": "NDIS 6.0 Miniport Driver for SiS191 SiS190 Ethernet Device"
+ },
+ "storage.dll": {
+  "en": "System Web Mobile dll"
+ },
+ "storport.sys": {
+  "en": "System Work flow Services dll"
+ },
+ "Storprop.dll": {
+  "en": "Visual C# Command Line Compiler"
+ },
+ "StorSvc.dll": {
+  "en": "Data Svc Util exe"
+ },
+ "storvsc.sys": {
+  "en": "System Component Model Data Annotations dll"
+ },
+ "stream.sys": {
+  "en": "NET System Frame work"
+ },
+ "streamci.dll": {
+  "en": "NET System Frame work"
+ },
+ "StructuredQuery.dll": {
+  "en": "NET System Frame work"
+ },
+ "subst.exe": {
+  "en": "Sentinel v3.5 Client dll"
+ },
+ "sud.dll": {
+  "en": "Broadcom NetLink Gigabit Ethernet NDIS6.x Unified Driver"
+ },
+ "svchost.exe": {
+  "en": "Atheros L1 Gigabit Ethernet 10 100 1000Base-T Adapter"
+ },
+ "swenum.sys": {
+  "en": "Atheros AR8121 AR8113 AR8114 PCI-E Ethernet Controller(NDIS6.20)"
+ },
+ "swprv.dll": {
+  "en": "Performance Monitor DLL"
+ },
+ "sxs.dll": {
+  "en": "NDIS 6.0 miniport driver"
+ },
+ "sxshared.dll": {
+  "en": "Microsoft Data Entity Build Tasks dll"
+ },
+ "SxsMigPlugin.dll": {
+  "en": "Atheros AR8121 AR8113 AR8114 PCI-E Ethernet Controller(NDIS6.20)"
+ },
+ "sxsstore.dll": {
+  "en": "Windows Firewall with Advanced Security Group Policy Editor Extension"
+ },
+ "sxstrace.exe": {
+  "en": "Microsoft Build Utilities v3.5 dll"
+ },
+ "SyncCenter.dll": {
+  "en": "Microsoft Build Framework dll"
+ },
+ "synceng.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "SyncHost.exe": {
+  "en": "Atheros L1c PCI-E Gigabit Ethernet Controller"
+ },
+ "SyncInfrastructureps.dll": {
+  "en": "Atheros L2 Fast Ethernet Controller ndis miniport driver"
+ },
+ "Syncreg.dll": {
+  "en": "IIS Worker Process Http.sys Interface"
+ },
+ "syncui.dll": {
+  "en": "NDIS 6.2 miniport driver"
+ },
+ "sysclass.dll": {
+  "en": "Atheros L1c PCI-E Gigabit Ethernet Controller"
+ },
+ "SysFxUI.dll": {
+  "en": "Atheros L2 Fast Ethernet Controller ndis miniport driver"
+ },
+ "sysglobl.dll": {
+  "en": "Microsoft Windows Firewall SnapIn"
+ },
+ "syskey.exe": {
+  "en": "Microsoft Build Engine dll"
+ },
+ "sysmain.dll": {
+  "en": "Microsoft Build Tasks v3.5 dll"
+ },
+ "sysntfy.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "sysprep.exe": {
+  "en": "System Web Dynamic Data Design dll"
+ },
+ "syssetup.dll": {
+  "en": "System Data Services dll"
+ },
+ "System.AddIn.Contract.dll": {
+  "en": "Loopback Network Driver"
+ },
+ "System.AddIn.dll": {
+  "en": "NVIDIA MCP Networking Function Driver"
+ },
+ "System.ComponentModel.DataAnnotations.dll": {
+  "en": "Ralink 802.11 USB Wireless Adapter Driver"
+ },
+ "System.configuration.dll": {
+  "en": "Remote NDIS USB Driver"
+ },
+ "System.Configuration.Install.dll": {
+  "en": "Wizard Frame work"
+ },
+ "System.Configuration.ni.dll": {
+  "en": "Windows Firewall API"
+ },
+ "System.Configuration.resources.dll": {
+  "en": "Microsoft ASP NET ISAPI Shim DLL"
+ },
+ "System.Core.dll": {
+  "en": "Microsoft ASP NET Performance Counter DLL"
+ },
+ "System.Core.ni.dll": {
+  "en": "NET System Frame work"
+ },
+ "System.Data.DataSetExtensions.dll": {
+  "en": "System Net dll"
+ },
+ "System.Data.dll": {
+  "en": "Miniport Driver for Marvell Yukon Ethernet Controller"
+ },
+ "System.Data.Entity.dll": {
+  "en": "Ralink 802.11n Wireless Adapter Driver"
+ },
+ "System.Data.Linq.dll": {
+  "en": "Remote NDIS Miniport"
+ },
+ "System.Data.ni.dll": {
+  "en": "Remote NDIS USB Driver"
+ },
+ "System.Data.OracleClient.dll": {
+  "en": "Windows Firewall with Advanced Security Configuration Helper"
+ },
+ "System.Data.Resources.dll": {
+  "en": "i8042 Port Driver"
+ },
+ "System.Data.Services.Client.dll": {
+  "en": "Microsoft ASP NET Support DLL"
+ },
+ "System.Data.Services.dll": {
+  "en": "Microsoft ASP NET Support DLL"
+ },
+ "System.Data.Services.resources.dll": {
+  "en": "System Data Services Design dll"
+ },
+ "System.Data.SqlXml.dll": {
+  "en": "System Web Abstractions dll"
+ },
+ "System.Data.SqlXml.ni.dll": {
+  "en": "NVIDIA MCP Networking Function Driver"
+ },
+ "system.data.sqlxml.resources.dll": {
+  "en": "Ralink 802.11 Wireless Adapter Driver"
+ },
+ "System.Deployment.dll": {
+  "en": "Remote NDIS Miniport"
+ },
+ "System.Design.dll": {
+  "en": "Realtek 10 100 X64 Driver"
+ },
+ "System.Design.ni.dll": {
+  "en": "Windows Firewall Configuration Helper"
+ },
+ "System.DirectoryServices.AccountManagement.dll": {
+  "en": "Mouse Class Driver"
+ },
+ "System.DirectoryServices.dll": {
+  "en": "Microsoft ASP NET Performance Counter DLL"
+ },
+ "System.DirectoryServices.Protocols.dll": {
+  "en": "i8042 Port Driver"
+ },
+ "System.dll": {
+  "en": "Secure Digital Host Controller Class Installer"
+ },
+ "System.Drawing.Design.dll": {
+  "en": "Battery Class Installer"
+ },
+ "System.Drawing.dll": {
+  "en": "Microsoft Display Class Installer"
+ },
+ "System.Drawing.ni.dll": {
+  "en": "Class installer for Microsoft Windows SideShow-compatible devices"
+ },
+ "System.Drawing.Resources.dll": {
+  "en": "Microsoft Monitor Class Installer"
+ },
+ "System.EnterpriseServices.dll": {
+  "en": "Microsoft CSA MSP"
+ },
+ "System.EnterpriseServices.ni.dll": {
+  "en": "Monitor Driver"
+ },
+ "System.EnterpriseServices.Resources.dll": {
+  "en": "MS Build exe"
+ },
+ "System.EnterpriseServices.Thunk.dll": {
+  "en": "Microsoft Common Language Runtime Class Library"
+ },
+ "System.EnterpriseServices.Wrapper.dll": {
+  "en": "Microsoft DV Camera and VCR Driver"
+ },
+ "System.IdentityModel.dll": {
+  "en": "Secure Digital Host Controller Class Installer"
+ },
+ "System.IdentityModel.Selectors.dll": {
+  "en": "Medium changer class driver"
+ },
+ "System.IO.Log.dll": {
+  "en": "AMD64 BXND NDIS6.0 Driver"
+ },
+ "System.IO.Log.Resources.dll": {
+  "en": "Driver Setup Class Installer for Windows Portable Devices"
+ },
+ "System.Management.Automation.dll": {
+  "en": "Windows HTTP Services"
+ },
+ "System.Management.Automation.ni.dll": {
+  "en": "Uni modem CSA Filter"
+ },
+ "System.Management.Automation.Resources.dll": {
+  "en": "MultiPath Support Bus Driver"
+ },
+ "System.Management.dll": {
+  "en": "MS Build exe"
+ },
+ "System.Management.Instrumentation.dll": {
+  "en": "Microsoft Device Specific Module"
+ },
+ "System.Management.ni.dll": {
+  "en": "ALi mini IDE Driver"
+ },
+ "System.Messaging.dll": {
+  "en": "AMD IDE Driver"
+ },
+ "System.Messaging.ni.dll": {
+  "en": "Realtek 8180 8185 Wireless Device"
+ },
+ "System.Net.dll": {
+  "en": "Atheros Extensible Wireless LAN device driver"
+ },
+ "System.Net.Resources.dll": {
+  "en": "Broadcom NetXtreme II GigE VBD"
+ },
+ "System.ni.dll": {
+  "en": "asp net reg iis exe"
+ },
+ "System.Printing.dll": {
+  "en": "Microsoft NET Frame work Global Assembly Cache Utility"
+ },
+ "system.Resources.dll": {
+  "en": "Microsoft Common Language Runtime - Performance Counter DLL"
+ },
+ "System.Runtime.Remoting.dll": {
+  "en": "Visual C# Command Line Compiler"
+ },
+ "System.Runtime.Remoting.ni.dll": {
+  "en": "Microsoft IE hosting interface"
+ },
+ "System.Runtime.Serialization.dll": {
+  "en": "Microsoft JScript Compiler"
+ },
+ "System.Runtime.Serialization.Formatters.Soap.dll": {
+  "en": "Intel Gigabit Network Connection NDIS 6 deserialized driver"
+ },
+ "System.Runtime.Serialization.ni.dll": {
+  "en": "Realtek RTL8187B NDIS Driver"
+ },
+ "System.Security.dll": {
+  "en": "Broadcom NetXtreme Gigabit Ethernet NDIS6.x Unified Driver"
+ },
+ "System.Security.ni.dll": {
+  "en": "Intel PRO 1000 Adapter NDIS 6 deserialized driver"
+ },
+ "System.Security.Resources.dll": {
+  "en": "Microsoft ASP NET State Server"
+ },
+ "System.ServiceModel.dll": {
+  "en": "Microsoft NET Frame work IL assembler"
+ },
+ "System.ServiceModel.Install.dll": {
+  "en": "CS comp mgd dll"
+ },
+ "System.ServiceModel.ni.dll": {
+  "en": "Microsoft IE Remote shell"
+ },
+ "System.ServiceModel.Resources.dll": {
+  "en": "IE Remoting Interface"
+ },
+ "System.ServiceModel.WasHosting.dll": {
+  "en": "Microsoft Common Language Runtime 64-bit setup helper"
+ },
+ "System.ServiceModel.Web.dll": {
+  "en": "Broadcom Corporation NDIS 5.1 ethernet driver"
+ },
+ "System.ServiceProcess.dll": {
+  "en": "Realtek RTL8187S PCIE NDIS Driverr"
+ },
+ "System.ServiceProcess.Resources.dll": {
+  "en": "Broadcom 802.11 Network Adapter wireless driver"
+ },
+ "System.Speech.dll": {
+  "en": "Intel PRO 1000 Adapter NDIS 6 deserialized driver"
+ },
+ "System.Transactions.dll": {
+  "en": "asp net wp exe"
+ },
+ "System.Transactions.ni.dll": {
+  "en": "Microsoft NET Services Native Thunks"
+ },
+ "System.Web.dll": {
+  "en": "Visual C# Compiler"
+ },
+ "System.Web.DynamicData.dll": {
+  "en": "Microsoft IE Execute shell"
+ },
+ "System.Web.Extensions.Design.dll": {
+  "en": "Managed Installer Object"
+ },
+ "System.Web.Extensions.dll": {
+  "en": "Microsoft Build Engine dll"
+ },
+ "System.Web.Mobile.dll": {
+  "en": "Microsoft Build Framework dll"
+ },
+ "System.Web.ni.dll": {
+  "en": "Microsoft Build Utilities dll"
+ },
+ "System.Web.RegularExpressions.dll": {
+  "en": "Microsoft NET Runtime Just-In-Time Compiler"
+ },
+ "System.Web.Resources.dll": {
+  "en": "Microsoft NET Runtime PE File Generator"
+ },
+ "System.Web.Services.dll": {
+  "en": "Microsoft NET Security resource module"
+ },
+ "System.Web.Services.ni.dll": {
+  "en": "Microsoft NET Strong Name Support"
+ },
+ "System.Web.Services.Resources.dll": {
+  "en": "NET Runtime Optimization Service"
+ },
+ "System.Windows.Forms.dll": {
+  "en": "Microsoft NTSD extension for NET Runtime"
+ },
+ "System.Windows.Forms.ni.dll": {
+  "en": "NET System Frame work"
+ },
+ "System.Windows.Forms.Resources.dll": {
+  "en": "NET System Frame work"
+ },
+ "System.Windows.Presentation.dll": {
+  "en": "Microsoft Build Tasks dll"
+ },
+ "System.Workflow.Activities.dll": {
+  "en": "Microsoft NET IE MIME Filter"
+ },
+ "System.Workflow.ComponentModel.dll": {
+  "en": "Microsoft Remote object loader"
+ },
+ "System.Workflow.Runtime.dll": {
+  "en": "Microsoft NET Runtime Just-In-Time Compiler"
+ },
+ "System.WorkflowServices.dll": {
+  "en": "Microsoft NET Security module"
+ },
+ "System.XML.dll": {
+  "en": "NET Runtime Optimization Service"
+ },
+ "System.Xml.Linq.dll": {
+  "en": "Microsoft COM Runtime Fusion Assembly Viewer Resources"
+ },
+ "System.Xml.Linq.ni.dll": {
+  "en": "System Globalization dll"
+ },
+ "System.Xml.ni.dll": {
+  "en": "System Configuration dll"
+ },
+ "System.xml.Resources.dll": {
+  "en": "System Deployment dll"
+ },
+ "systemcpl.dll": {
+  "en": "NET System Frame work"
+ },
+ "systeminfo.exe": {
+  "en": "NET Windows Frame work"
+ },
+ "SystemPropertiesAdvanced.exe": {
+  "en": "Microsoft OleAut helper APIs"
+ },
+ "SystemPropertiesComputerName.exe": {
+  "en": "Application Deployment Shell Support"
+ },
+ "SystemPropertiesHardware.exe": {
+  "en": "Microsoft NET Error Reporting Shim"
+ },
+ "SystemPropertiesPerformance.exe": {
+  "en": "Extensible Performance Counter Shim"
+ },
+ "SystemPropertiesProtection.exe": {
+  "en": "Microsoft Visual C++ Metadata"
+ },
+ "SystemPropertiesRemote.exe": {
+  "en": "Microsoft NET Runtime Debugging Services Controller"
+ },
+ "systray.exe": {
+  "en": "Certificate Enrollment Control"
+ },
+ "t2embed.dll": {
+  "en": "Microsoft Xml Lite Library"
+ },
+ "Tabbtn.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "TabbtnEx.dll": {
+  "en": "NET System Frame work"
+ },
+ "tabcal.exe": {
+  "en": "Visual Basic Command Line Compiler"
+ },
+ "TableTextService.dll": {
+  "en": "Application Deployment Support Library"
+ },
+ "TableTextServiceMig.dll": {
+  "en": "Event Log Messages dll"
+ },
+ "TabTip.exe": {
+  "en": "Microsoft JScript dll"
+ },
+ "TabTip32.exe": {
+  "en": "Microsoft Vsa dll"
+ },
+ "takeown.exe": {
+  "en": "Portable Device Connection API Components"
+ },
+ "tape.sys": {
+  "en": "Extended Copy Utility"
+ },
+ "tapi32.dll": {
+  "en": "Microsoft Group Policy Administrative Template Editor"
+ },
+ "tapilua.dll": {
+  "en": "NET System Frame work"
+ },
+ "TapiMigPlugin.dll": {
+  "en": "NET Windows Frame work"
+ },
+ "tapiperf.dll": {
+  "en": "Dia based Sym Reader"
+ },
+ "tapisrv.dll": {
+  "en": "Application Deployment Support Library"
+ },
+ "tapiui.dll": {
+  "en": "Assembly manager"
+ },
+ "taskeng.exe": {
+  "en": "Visual Basic Runtime Library"
+ },
+ "taskhost.exe": {
+  "en": "Microsoft NET External Data Access Support"
+ },
+ "taskkill.exe": {
+  "en": "Windows Portable Device (Parameter) Types Component"
+ },
+ "tasklist.exe": {
+  "en": "Microsoft Xml Lite Library"
+ },
+ "taskmgr.exe": {
+  "en": "Microsoft Group Policy Management Utility"
+ },
+ "taskschd.dll": {
+  "en": "Microsoft Tablet PC API"
+ },
+ "TaskScheduler.dll": {
+  "en": "Microsoft Media Center iTv Platform Low-Level Services"
+ },
+ "tbs.dll": {
+  "en": "Microsoft Media Center Playback Assembly"
+ },
+ "tcmsetup.exe": {
+  "en": "MFC Language Specific Resources"
+ },
+ "tcpip.sys": {
+  "en": "MFC Language Specific Resources"
+ },
+ "tcpipreg.sys": {
+  "en": "MFC Language Specific Resources"
+ },
+ "tcpmib.dll": {
+  "en": "MFC Language Specific Resources"
+ },
+ "tcpmon.dll": {
+  "en": "MFCDLL Shared Library - Retail Version"
+ },
+ "tcpmonui.dll": {
+  "en": "WRP Integrity API DLL"
+ },
+ "TCPSVCS.exe": {
+  "en": "WSD Challenge Component"
+ },
+ "tdi.sys": {
+  "en": "Microsoft Tablet PC API"
+ },
+ "tdpipe.sys": {
+  "en": "Microsoft Media Center Managed Interop Assembly"
+ },
+ "tdtcp.sys": {
+  "en": "Microsoft Media Center Managed Interop Assembly"
+ },
+ "tdx.sys": {
+  "en": "Microsoft C Runtime Library"
+ },
+ "telnet.exe": {
+  "en": "MFC Language Specific Resources"
+ },
+ "termdd.sys": {
+  "en": "MFC Language Specific Resources"
+ },
+ "termmgr.dll": {
+  "en": "MFC Language Specific Resources"
+ },
+ "termsrv.dll": {
+  "en": "MFC Language Specific Resources"
+ },
+ "TFTP.exe": {
+  "en": "Windows Write"
+ },
+ "themecpl.dll": {
+  "en": "System Integrity Check and Repair"
+ },
+ "themeservice.dll": {
+  "en": "Function Discovery WSD Scanner Proxy Dll"
+ },
+ "themeui.dll": {
+  "en": "System Integrity Check and Repair"
+ },
+ "thumbcache.dll": {
+  "en": "Sort Version Server 2003"
+ },
+ "tifffilt.dll": {
+  "en": "Extensible Wizard Type Plugin for DUI"
+ },
+ "TipBand.dll": {
+  "en": "Extensible Wizards Manager Module"
+ },
+ "tipresx.dll": {
+  "en": "Serial Mouse Filter Driver"
+ },
+ "tiptsf.dll": {
+  "en": "Microsoft Media Center Tuners Interop"
+ },
+ "TLBREF.dll": {
+  "en": "Microsoft DTC Gateway Pluggable Protocol Layer"
+ },
+ "tlntsvr.exe": {
+  "en": "Microsoft C Runtime Library"
+ },
+ "tpcps.dll": {
+  "en": "MFCDLL Shared Library - Retail Version"
+ },
+ "tpm.sys": {
+  "en": "Windows Update Standalone Installer"
+ },
+ "TpmInit.exe": {
+  "en": "WSD Challenge Component"
+ },
+ "tquery.dll": {
+  "en": "XML Paper Specification Document IFilter"
+ },
+ "tracerpt.exe": {
+  "en": "Extensible Wizard Registration Manager Module"
+ },
+ "TRACERT.exe": {
+  "en": "Compressed (zipped) Folders"
+ },
+ "TransmogProvider.dll": {
+  "en": "Serial Mouse Filter Driver"
+ },
+ "trkwks.dll": {
+  "en": "AppId Policy Engine API Module"
+ },
+ "TrustedInstaller.exe": {
+  "en": "Microsoft C Runtime Library"
+ },
+ "tsbyuv.dll": {
+  "en": "Microsoft C Runtime Library"
+ },
+ "TSChannel.dll": {
+  "en": "MFC Managed Library - Retail Version"
+ },
+ "tscon.exe": {
+  "en": "Windows NET Device Class Co-Installer for Wireless WAN"
+ },
+ "tsddd.dll": {
+  "en": "Wireless WAN Helper Class"
+ },
+ "tsdiscon.exe": {
+  "en": "Extensible Wizards Host Process"
+ },
+ "tsgqec.dll": {
+  "en": "Extensible Wizard Type Plugin for Win32"
+ },
+ "tskill.exe": {
+  "en": "Microsoft Windows BITS Managed Library"
+ },
+ "tsmf.dll": {
+  "en": "Microsoft Media Center Tuners Interop"
+ },
+ "tssecsrv.sys": {
+  "en": "Media Center Extender Resources"
+ },
+ "tssysprep.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "TSTheme.exe": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "TSWbPrxy.exe": {
+  "en": "MFC Managed Library Retail Version"
+ },
+ "TsWpfWrp.exe": {
+  "en": "Microsoft C Runtime Library"
+ },
+ "tunnel.sys": {
+  "en": "Microsoft C Runtime Library"
+ },
+ "tvratings.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "twain.dll": {
+  "en": "Common Controls Library"
+ },
+ "twain_32.dll": {
+  "en": "Processor Class Installer"
+ },
+ "twcutlkr.dll": {
+  "en": "Kernel Streaming WOW Thunk Service"
+ },
+ "twext.dll": {
+  "en": "Bluetooth Support Service"
+ },
+ "twlaykr.dll": {
+  "en": "Windows Side By Side Ole Automation Stub"
+ },
+ "twrecc.dll": {
+  "en": "ATAPI IDE Miniport Driver"
+ },
+ "twrecj.dll": {
+  "en": "CMD PCI IDE Bus Driver"
+ },
+ "twreck.dll": {
+  "en": "Microsoft C++ Runtime Library"
+ },
+ "twunk_16.exe": {
+  "en": "Microsoft C Runtime Library"
+ },
+ "typelib.dll": {
+  "en": "Common Controls Library"
+ },
+ "tzres.dll": {
+  "en": "User Experience Controls Library"
+ },
+ "tzupd.exe": {
+  "en": "SCSI Tape Class Driver"
+ },
+ "UAGP35.sys": {
+  "en": "Bluetooth Class Installer"
+ },
+ "udfs.sys": {
+  "en": "Windows Side By Side Ole Automation Proxy"
+ },
+ "uDWM.dll": {
+  "en": "Smart Card Driver Library"
+ },
+ "uexfat.dll": {
+  "en": "ATAPI Driver Extension"
+ },
+ "UI0Detect.exe": {
+  "en": "Intel PCI IDE Driver"
+ },
+ "UIAnimation.dll": {
+  "en": "MS AHCI 1.0 Standard Driver"
+ },
+ "UIAutomationClient.dll": {
+  "en": "VIA Generic PCI IDE Bus Driver"
+ },
+ "UIAutomationClientsideProviders.dll": {
+  "en": "Windows Media Audio Decoder"
+ },
+ "UIAutomationCore.dll": {
+  "en": "WMI CMI Plugin"
+ },
+ "UIAutomationProvider.dll": {
+  "en": "WMI Snapin Helpers"
+ },
+ "UIAutomationProvider.ni.dll": {
+  "en": "Installers for for MOF files"
+ },
+ "UIAutomationTypes.dll": {
+  "en": "WMI Provider Thread and Log Library"
+ },
+ "uicom.dll": {
+  "en": "WMI SNMP MIB Compiler Semantic Error Messages"
+ },
+ "UIRibbon.dll": {
+  "en": "WMI Win32Ex Provider"
+ },
+ "UIRibbonRes.dll": {
+  "en": "WMILIB WMI support library Dll"
+ },
+ "ULIAGPKX.sys": {
+  "en": "Generic PCI IDE Bus Driver"
+ },
+ "ulib.dll": {
+  "en": "HID Mouse Filter Driver"
+ },
+ "umb.dll": {
+  "en": "Windows Media Audio 10 Encoder Transcoder"
+ },
+ "umbus.sys": {
+  "en": "WMI Standard Event Consumer - scripting"
+ },
+ "umdmxfrm.dll": {
+  "en": "WMI Snapins"
+ },
+ "umpass.sys": {
+  "en": "WMI Event Log Provider"
+ },
+ "umpnpmgr.dll": {
+  "en": "WMI Scripting"
+ },
+ "umpo.dll": {
+  "en": "WMI View Provider"
+ },
+ "umrdp.dll": {
+  "en": "WMI DFS Provider"
+ },
+ "unattend.dll": {
+  "en": "WbemPerf V2 Class Provider"
+ },
+ "UnattendProvider.dll": {
+  "en": "PCI IDE Bus Driver Extension"
+ },
+ "unbcl.dll": {
+  "en": "Windows Wireless LAN 802.11 Utility DLL"
+ },
+ "UNIDRV.dll": {
+  "en": "Windows Media CodecDSP Proxy Stub Dll"
+ },
+ "UNIDRVUI.dll": {
+  "en": "WMI Standard Event Consumer - scripting"
+ },
+ "unimdmat.dll": {
+  "en": "WMI Control"
+ },
+ "uniplat.dll": {
+  "en": "WMI ICMP Echo Provider"
+ },
+ "UNIRES.dll": {
+  "en": "WMI SNMP MIB Compiler"
+ },
+ "unlodctr.exe": {
+  "en": "WMI View Provider"
+ },
+ "unregmp2.exe": {
+  "en": "WMI Provider for Disk Quota Information"
+ },
+ "unsecapp.exe": {
+  "en": "WbemPerf V2 Instance Provider"
+ },
+ "untfs.dll": {
+  "en": "Windows Media Player Digital Media Controller Application"
+ },
+ "upnp.dll": {
+  "en": "Windows Media Player Digital Media Controller Library"
+ },
+ "upnpcont.exe": {
+  "en": "Windows Media Resizer"
+ },
+ "upnphost.dll": {
+  "en": "Windows Media Screen Encoder"
+ },
+ "url.dll": {
+  "en": "Windows Wordpad Application"
+ },
+ "urlmon.dll": {
+  "en": "Workstation Service DLL"
+ },
+ "usb8023.sys": {
+  "en": "Win32 Emulation on NT64"
+ },
+ "usb80236.sys": {
+  "en": "SQM Client"
+ },
+ "usb8023x.sys": {
+  "en": "Windows Portable Device Shell Service Object"
+ },
+ "USBAUDIO.sys": {
+  "en": "Presentation Build Tasks dll"
+ },
+ "USBCAMD2.sys": {
+  "en": "Windows Media Color Conversion"
+ },
+ "usbccgp.sys": {
+  "en": "Windows Media Screen Decoder"
+ },
+ "usbceip.dll": {
+  "en": "Windows Media Video Encoder"
+ },
+ "usbcir.sys": {
+  "en": "WordPad Search Filters"
+ },
+ "usbd.sys": {
+  "en": "16-bit Emulation on NT64"
+ },
+ "usbehci.sys": {
+  "en": "AMD64 Wow64 CPU"
+ },
+ "usbhub.sys": {
+  "en": "Windows Portable Device Shell Extension Autoplay Handler"
+ },
+ "usbmon.dll": {
+  "en": "Microsoft Windows Portable Device Status Provider"
+ },
+ "usbohci.sys": {
+  "en": "Presentation Core dll"
+ },
+ "usbport.sys": {
+  "en": "Presentation Framework dll"
+ },
+ "usbprint.sys": {
+  "en": "Presentation UI dll"
+ },
+ "usbscan.sys": {
+  "en": "WMI Performance Reverse Adapter"
+ },
+ "usbser.sys": {
+  "en": "WMI DS Provider"
+ },
+ "USBSTOR.sys": {
+  "en": "WBEM Provider for IP4 Routes"
+ },
+ "usbuhci.sys": {
+  "en": "WMI SNMP MIB Compiler Syntax Error Messages"
+ },
+ "usbui.dll": {
+  "en": "WMI SNMP MIB Repository"
+ },
+ "usbvideo.sys": {
+  "en": "WMI XML Convertor"
+ },
+ "user.exe": {
+  "en": "Windows Media Player Network Sharing Service Control Interface DLL"
+ },
+ "user32.dll": {
+  "en": "Windows Media Player Network Sharing Service Configuration Application"
+ },
+ "UserAccountControlSettings.exe": {
+  "en": "Windows Media Audio Voice Encoder"
+ },
+ "usercpl.dll": {
+  "en": "Reach Framework dll"
+ },
+ "userenv.dll": {
+  "en": "WMI Repository Migration Plugin"
+ },
+ "userinit.exe": {
+  "en": "WMI Repository Migration Plugin"
+ },
+ "usp10.dll": {
+  "en": "WMI Windows Job Object Provider"
+ },
+ "utildll.dll": {
+  "en": "WMI SNMP Class Library"
+ },
+ "Utilman.exe": {
+  "en": "WMI SNMP Thread and Log Library"
+ },
+ "uudf.dll": {
+  "en": "WMI Test Tool"
+ },
+ "UXInit.dll": {
+  "en": "Windows Media Player Media Sharing Interface DLL"
+ },
+ "uxlib.dll": {
+  "en": "Windows Media Player WMPNSS Shell Extensions"
+ },
+ "uxsms.dll": {
+  "en": "Windows Media Video Decoder"
+ },
+ "uxtheme.dll": {
+  "en": "WMI Performance Reverse Adapter"
+ },
+ "VAN.dll": {
+  "en": "WMI Repository Migration Plugin"
+ },
+ "Vault.dll": {
+  "en": "WMI DS Provider"
+ },
+ "vaultcli.dll": {
+  "en": "WMI Windows Job Object Provider"
+ },
+ "VaultCmd.exe": {
+  "en": "WMI SNMP Provider"
+ },
+ "VaultCredProvider.dll": {
+  "en": "WMI SNMP Thread and Log Library"
+ },
+ "vaultsvc.dll": {
+  "en": "Windows Media Player UI Engine"
+ },
+ "vbajet32.dll": {
+  "en": "Windows Media Player Network Sharing Service"
+ },
+ "vbc.exe": {
+  "en": "Windows Media Audio Voice Decoder"
+ },
+ "vbscript.dll": {
+  "en": "Windows Media Video DSP Components - Advanced"
+ },
+ "vdmdbg.dll": {
+  "en": "Windows Media Video 9 Encoder"
+ },
+ "vdrvroot.sys": {
+  "en": "Portable Device Enumerator"
+ },
+ "vds.exe": {
+  "en": "Windows Media Device Manager Logger"
+ },
+ "vdsbas.dll": {
+  "en": "Windows CE WMDM Service Provider"
+ },
+ "vdsdyn.dll": {
+  "en": "Windows Sound Database"
+ },
+ "vdsldr.exe": {
+  "en": "UI Automation Client side Providers dll"
+ },
+ "vdsutil.dll": {
+  "en": "UI Automation Types dll"
+ },
+ "verclsid.exe": {
+  "en": "Windows Presentation Foundation Windows Forms Database"
+ },
+ "verifier.dll": {
+  "en": "WWAN Device Interface Module"
+ },
+ "verifier.exe": {
+  "en": "Wireless WAN Connection Flows"
+ },
+ "version.dll": {
+  "en": "Wow64 Console and Win32 API Logging"
+ },
+ "vfpodbc.dll": {
+  "en": "Windows Media Device Manager Core"
+ },
+ "vfwwdm32.dll": {
+  "en": "Windows Media Device Manager Proxy Stub"
+ },
+ "vga.dll": {
+  "en": "Windows Portable Device API Components"
+ },
+ "vga.sys": {
+  "en": "UI Automation Client dll"
+ },
+ "vgapnp.sys": {
+  "en": "UI Automation Provider dll"
+ },
+ "VGX.dll": {
+  "en": "Windows Base dll"
+ },
+ "vhdmp.sys": {
+  "en": "Windows Write"
+ },
+ "viaide.sys": {
+  "en": "WWAN Auto Config Service"
+ },
+ "videoprt.sys": {
+  "en": "XPS Viewer"
+ },
+ "VIDRESZR.dll": {
+  "en": "WWan Media Manager"
+ },
+ "virtdisk.dll": {
+  "en": "Microsoft Active Directory Certificate Services Enrollment Client"
+ },
+ "vmbus.sys": {
+  "en": "Simplified Chinese Word Breaker"
+ },
+ "vmbushid.sys": {
+  "en": "WDM Provider Dynamic Property Page CoInstaller"
+ },
+ "vmci.sys": {
+  "en": "Windows System Assessment Tool"
+ },
+ "vmictimeprovider.dll": {
+  "en": "MB Version update tool"
+ },
+ "vmmouse.sys": {
+  "en": "Config Registrar Service"
+ },
+ "vms3cap.sys": {
+  "en": "WFP NDIS 6.20 Lightweight Filter Driver"
+ },
+ "vmstorfl.sys": {
+  "en": "Net shell helper DLL for winHttp"
+ },
+ "volmgr.sys": {
+  "en": "Windows Imaging Library"
+ },
+ "volmgrx.sys": {
+  "en": "Wireless WAN Profile Settings Editor"
+ },
+ "volsnap.sys": {
+  "en": "MFC Language Specific Resources"
+ },
+ "vpnikeapi.dll": {
+  "en": "Winsock Upgrade Plugin"
+ },
+ "VsaVb7rt.dll": {
+  "en": "Still Image Devices client DLL"
+ },
+ "vsmraid.sys": {
+  "en": "Windows Contacts"
+ },
+ "vssadmin.exe": {
+  "en": "Config Function Discovery Provider DLL"
+ },
+ "vssapi.dll": {
+  "en": "WCN EAP Authenticator Proxy"
+ },
+ "vsstrace.dll": {
+  "en": "WHEA Troubleshooter"
+ },
+ "VSSVC.exe": {
+  "en": "whoami - displays logged on user information"
+ },
+ "vss_ps.dll": {
+  "en": "Wim file system Driver"
+ },
+ "VSTAZL6.sys": {
+  "en": "X509 Certificate Enrollment UI"
+ },
+ "VSTBS26.sys": {
+  "en": "Windows Update Vista Web Control"
+ },
+ "VSTCNXT6.sys": {
+  "en": "Winsock2 IFS Layer"
+ },
+ "VSTDPV6.sys": {
+  "en": "Windows Update client proxy stub"
+ },
+ "vwifibus.sys": {
+  "en": "System Service Model dll"
+ },
+ "vwififlt.sys": {
+  "en": "API Helper DLL"
+ },
+ "vwifimp.sys": {
+  "en": "WCN EAP PEER Proxy"
+ },
+ "w32time.dll": {
+  "en": "Where - Lists location of files"
+ },
+ "w32tm.exe": {
+  "en": "WIA Automation Layer"
+ },
+ "w32topl.dll": {
+  "en": "Wimfltr v2 extractor"
+ },
+ "w3wp.exe": {
+  "en": "Microsoft Windows Codecs Extended Library"
+ },
+ "wab.exe": {
+  "en": "Asian OCR Module"
+ },
+ "wab32.dll": {
+  "en": "Character Segmentation for Asian OCR"
+ },
+ "wab32res.dll": {
+  "en": "Line Segmentation for Asian OCR"
+ },
+ "wabfind.dll": {
+  "en": "Layout Analysis for Asian OCR"
+ },
+ "wabimp.dll": {
+  "en": "Chinese Recognition for Asian OCR"
+ },
+ "wabmig.exe": {
+  "en": "Orientataion Detection for Asian OCR"
+ },
+ "wacompen.sys": {
+  "en": "WSMan Shell API"
+ },
+ "wanarp.sys": {
+  "en": "Ancillary Function Driver for WinSock"
+ },
+ "watchdog.sys": {
+  "en": "Winsock2 Helper DLL (TL IPv4)"
+ },
+ "WavDest.dll": {
+  "en": "Reverse Video Detection for Asian OCR"
+ },
+ "wbadmin.exe": {
+  "en": "Asian OCR API"
+ },
+ "wbemcomn.dll": {
+  "en": "Character Segmentation for Asian OCR"
+ },
+ "wbemcons.dll": {
+  "en": "Layout Analysis for Asian OCR"
+ },
+ "wbemcore.dll": {
+  "en": "Orientataion Detection for Asian OCR"
+ },
+ "wbemdisp.dll": {
+  "en": "Layout Analysis for Asian OCR"
+ },
+ "wbemess.dll": {
+  "en": "Chinese Recognition for Asian OCR"
+ },
+ "wbemprox.dll": {
+  "en": "Ancillary Function Driver for WinSock"
+ },
+ "wbemsvc.dll": {
+  "en": "Winsock2 Helper DLL (TL IPv6)"
+ },
+ "wbemtest.exe": {
+  "en": "Installers for Winsock Transport and Name Space Providers"
+ },
+ "wbengine.exe": {
+  "en": "Microsoft Windows Sockets 2.0 Service Provider"
+ },
+ "WcnApi.dll": {
+  "en": "802.11 Group Policy Client"
+ },
+ "wcncsvc.dll": {
+  "en": "Windows WLAN AutoConfig Client Side API DLL"
+ },
+ "WcnNetsh.dll": {
+  "en": "Windows Wireless LAN 802.11 MSM DLL"
+ },
+ "wcp.dll": {
+  "en": "WMI Provider Host"
+ },
+ "WcsPlugInService.dll": {
+  "en": "WMI Performance Reverse Adapter"
+ },
+ "wd.sys": {
+  "en": "Windows Management Instrumentation"
+ },
+ "wdc.dll": {
+  "en": "English Recognition for Asian OCR"
+ },
+ "Wdf01000.sys": {
+  "en": "Document Structure Processing for Asian OCR"
+ },
+ "WdfLdr.sys": {
+  "en": "Windows Tiff File Filter"
+ },
+ "wdi.dll": {
+  "en": "Windows NET Device Class Co-Installer for Wireless LAN"
+ },
+ "wdigest.dll": {
+  "en": "Wireless Network Policy Management Snap-in"
+ },
+ "wdmaud.drv": {
+  "en": "Gaelic Keyboard Layout"
+ },
+ "wdscore.dll": {
+  "en": "Windows WLAN AutoConfig Service DLL"
+ },
+ "wdsutil.dll": {
+  "en": "WMI Repository Driver"
+ },
+ "webcheck.dll": {
+  "en": "WMI Performance Reverse Adapter"
+ },
+ "WebClnt.dll": {
+  "en": "Windows Management Instrumentation"
+ },
+ "webengine.dll": {
+  "en": "Japanese Recognition for Asian OCR"
+ },
+ "webio.dll": {
+  "en": "Image Processing Module"
+ },
+ "webservices.dll": {
+  "en": "Microsoft Windows Recovery Agent DLL"
+ },
+ "wecsvc.dll": {
+  "en": "Dot11 Connection Flows"
+ },
+ "wer.dll": {
+  "en": "Wireless Preferred Networks"
+ },
+ "werconcpl.dll": {
+  "en": "Windows Wireless LAN 802.11 Client Side Helper API"
+ },
+ "wercplsupport.dll": {
+  "en": "Microsoft TAPI3 Terminal Manager"
+ },
+ "werdiagcontroller.dll": {
+  "en": "WMI Service Control Utility"
+ },
+ "WerFault.exe": {
+  "en": "WMI Service Control Utility"
+ },
+ "wermgr.exe": {
+  "en": "WMI Repository Driver"
+ },
+ "wersvc.dll": {
+  "en": "Korean Recognition for Asian OCR"
+ },
+ "werui.dll": {
+  "en": "Main OCR Module"
+ },
+ "wet.dll": {
+  "en": "Microsoft Windows Recovery Agent"
+ },
+ "wevtapi.dll": {
+  "en": "Windows Socket 32-Bit DLL"
+ },
+ "wevtfwd.dll": {
+  "en": "Microsoft Trust Verification APIs"
+ },
+ "wevtsvc.dll": {
+  "en": "Microsoft Trust Verification APIs"
+ },
+ "wevtutil.exe": {
+  "en": "Version Reporter Applet"
+ },
+ "wextract.exe": {
+  "en": "Wireless Lan Dialog Wizards"
+ },
+ "wfplwf.sys": {
+  "en": "Wlan Netsh Helper DLL"
+ },
+ "WFS.exe": {
+  "en": "WMI Standard Event Consumers"
+ },
+ "WFServicesReg.exe": {
+  "en": "WMI SDK Provider Framework"
+ },
+ "where.exe": {
+  "en": "The Managed Object Format (MOF) Compiler"
+ },
+ "whoami.exe": {
+  "en": "Non-COM WMI Event Provision APIs"
+ },
+ "wiaacmgr.exe": {
+  "en": "Multi-User Windows Server DLL"
+ },
+ "wiaaut.dll": {
+  "en": "Microsoft Trust Verification APIs"
+ },
+ "wiafbdrv.dll": {
+  "en": "Windows USB Driver User Library"
+ },
+ "wiascanprofiles.dll": {
+  "en": "Wireless LAN Helper Classes"
+ },
+ "wiaservc.dll": {
+  "en": "Windows Wireless LAN 802.11 Extensibility Framework"
+ },
+ "wiashext.dll": {
+  "en": "Wireless Profile UI"
+ },
+ "wiawow64.exe": {
+  "en": "WMI Standard Event Consumers"
+ },
+ "wimgapi.dll": {
+  "en": "WMI SDK Provider Framework"
+ },
+ "wimmount.sys": {
+  "en": "The Managed Object Format (MOF) Compiler"
+ },
+ "WimProvider.dll": {
+  "en": "Sink to receive asynchronous callbacks for WMI client application"
+ },
+ "wimserv.exe": {
+  "en": "Config Function Discovery Provider DLL"
+ },
+ "win32k.sys": {
+  "en": "WMI Reverse Performance Adapter Maintenance Utility"
+ },
+ "win32spl.dll": {
+  "en": "WIA Extension Host for thunking APIs from 32-bit to 64-bit process"
+ },
+ "Win32_Tpm.dll": {
+  "en": "WSMAN Automation"
+ },
+ "winbio.dll": {
+  "en": "WSMan Resource DLL"
+ },
+ "winbrand.dll": {
+  "en": "WIA Video"
+ },
+ "wincredprovider.dll": {
+  "en": "Utility Manager"
+ },
+ "windeploy.exe": {
+  "en": "VDS Virtual Disk Provider Version 1.0"
+ },
+ "WindowsAnytimeUpgrade.exe": {
+  "en": "Virtual Disk API DLL"
+ },
+ "WindowsAnytimeUpgradeResults.exe": {
+  "en": "Virtual Disk Service Utility Library"
+ },
+ "WindowsAnytimeUpgradeui.exe": {
+  "en": "Sink to receive asynchronous callbacks for WMI client application"
+ },
+ "WindowsBase.dll": {
+  "en": "WMI Performance Reverse Adapter Resources"
+ },
+ "WindowsBase.ni.dll": {
+  "en": "Workstation Service Client DLL"
+ },
+ "WindowsBase.resources.dll": {
+  "en": "WinRM Migration Plugin"
+ },
+ "WindowsCodecs.dll": {
+  "en": "WSMan Service"
+ },
+ "WindowsCodecsExt.dll": {
+  "en": "Windows Connect Now Wizards"
+ },
+ "WindowsFormsIntegration.dll": {
+  "en": "Windows User Experience Session Initialization Dll"
+ },
+ "WinFax.dll": {
+  "en": "View Available Networks"
+ },
+ "winhlp32.exe": {
+  "en": "Virtual Disk Service"
+ },
+ "winhttp.dll": {
+  "en": "Microsoft Virtual Disk Service proxy stub"
+ },
+ "winhv.sys": {
+  "en": "WMI Reverse Performance Adapter Maintenance Utility"
+ },
+ "wininet.dll": {
+  "en": "WMI MSI Provider"
+ },
+ "WininetPlugin.dll": {
+  "en": "WinRM Migration Plugin"
+ },
+ "wininit.exe": {
+  "en": "WSMAN Automation"
+ },
+ "winipsec.dll": {
+  "en": "WIA Video"
+ },
+ "WinLGDep.dll": {
+  "en": "Uniscribe Unicode script processor"
+ },
+ "winload.exe": {
+  "en": "CCA Direct Show Filter"
+ },
+ "winlogon.exe": {
+  "en": "Extension CLSID Verification Host"
+ },
+ "WinMail.exe": {
+  "en": "Virtual Disk Service Loader"
+ },
+ "WinMgmt.exe": {
+  "en": "Windows USB Redirection Policy Manager"
+ },
+ "winmm.dll": {
+  "en": "Command Line Interface for Microsoft Volume Shadow Copy Service"
+ },
+ "winnsi.dll": {
+  "en": "Microsoft Volume Shadow Copy Requestor Writer Services API DLL"
+ },
+ "winprint.dll": {
+  "en": "Microsoft Volume Shadow Copy Service proxy stub"
+ },
+ "winresume.exe": {
+  "en": "PortableDevice WIA Compatibility Driver"
+ },
+ "winrnr.dll": {
+  "en": "WMDM Service Provider for Windows Portable Devices"
+ },
+ "winrs.exe": {
+  "en": "Windows System Assessment Tool API"
+ },
+ "winrshost.exe": {
+  "en": "WSMan HTTP Configuration File"
+ },
+ "WinSAT.exe": {
+  "en": "Windows Portable Device WCN Wizard"
+ },
+ "WinSATAPI.dll": {
+  "en": "Winsock Network Diagnostic Helper Class"
+ },
+ "WinSCard.dll": {
+  "en": "Winsock Net shell helper DLL for winsock"
+ },
+ "winsetup.dll": {
+  "en": "Microsoft Volume Shadow Copy Service event class"
+ },
+ "winshfhc.dll": {
+  "en": "Microsoft Volume Shadow Copy Service Tracing Library"
+ },
+ "winspool.drv": {
+  "en": "Thai Word Breaker"
+ },
+ "WINSRPC.dll": {
+  "en": "WMDM Service Provider for Windows Portable Devices"
+ },
+ "winsrv.dll": {
+  "en": "Windows System Assessment Tool API"
+ },
+ "winsta.dll": {
+  "en": "Windows Portable Device WMDRM Component"
+ },
+ "wintrust.dll": {
+  "en": "WSMan HTTP Configuration File"
+ },
+ "winusb.dll": {
+  "en": "Windows Portable Device WCN Wizard"
+ },
+ "winusb.sys": {
+  "en": "Windows Socket 2.0 Helper for Windows NT"
+ },
+ "winver.exe": {
+  "en": "Windows Socket 2.0 32-Bit DLL"
+ },
+ "wisptis.exe": {
+  "en": "WMI Commandline Utility"
+ },
+ "wkscli.dll": {
+  "en": "Windows Image Acquisition RPC client DLL"
+ },
+ "wksprt.exe": {
+  "en": "Windows Picture Acquisition Wizard"
+ },
+ "wkssvc.dll": {
+  "en": "Still Image Class Installer"
+ },
+ "wlanapi.dll": {
+  "en": "Windows Update Agent"
+ },
+ "wlancfg.dll": {
+  "en": "Microsoft DTC Insert Layer"
+ },
+ "WLanConn.dll": {
+  "en": "SM Svc Host exe"
+ },
+ "wlandlg.dll": {
+  "en": "WCN Netsh Helper DLL"
+ },
+ "wlanext.exe": {
+  "en": "Web DAV Client DLL"
+ },
+ "wlanhlp.dll": {
+  "en": "Web DAV Service DLL"
+ },
+ "wlaninst.dll": {
+  "en": "WMI Win32 Provider"
+ },
+ "WlanMM.dll": {
+  "en": "WIA Tracing"
+ },
+ "wlanmsm.dll": {
+  "en": "Imaging Devices Shell Folder UI"
+ },
+ "wlanpref.dll": {
+  "en": "Windows Update"
+ },
+ "wlansec.dll": {
+  "en": "Windows Card Space"
+ },
+ "wlansvc.dll": {
+  "en": "SM Diagnostics dll"
+ },
+ "wlanui.dll": {
+  "en": "System Identity Model Selectors dll"
+ },
+ "wlanutil.dll": {
+  "en": "Kernel Mode Driver Framework Loader"
+ },
+ "Wldap32.dll": {
+  "en": "Windows NT WebDav Minirdr"
+ },
+ "wlgpclnt.dll": {
+  "en": "Windows Web Services Runtime"
+ },
+ "wlrmdr.exe": {
+  "en": "Windows Update Client API"
+ },
+ "WlS0WndH.dll": {
+  "en": "Still Image Devices Service"
+ },
+ "wlsrvc.dll": {
+  "en": "WIA Scanner Default UI"
+ },
+ "WMADMOD.dll": {
+  "en": "WIA TWAIN compatibility layer"
+ },
+ "WMADMOE.dll": {
+  "en": "Com Svc Config exe"
+ },
+ "WMALFXGFXDSP.dll": {
+  "en": "Microsoft Transactions Bridge dll"
+ },
+ "WMASF.dll": {
+  "en": "System Identity Model dll"
+ },
+ "wmdmps.dll": {
+  "en": "Kernel Mode Driver Framework Runtime"
+ },
+ "wmdrmdev.dll": {
+  "en": "DAV Helper DLL"
+ },
+ "wmdrmsdk.dll": {
+  "en": "Web Transfer Protocols API"
+ },
+ "wmerror.dll": {
+  "en": "Filtering Platform Helper Class"
+ },
+ "wmi.dll": {
+  "en": "Windows Update Client User Experience"
+ },
+ "wmiacpi.sys": {
+  "en": "Windows Start-Up Application"
+ },
+ "WMIADAP.exe": {
+  "en": "WinLogon Software SAS Library"
+ },
+ "WmiApRpl.dll": {
+  "en": "Windows NT Multiple Provider Notification Application"
+ },
+ "WmiApSrv.exe": {
+  "en": "Windows Logon Application"
+ },
+ "WMIC.exe": {
+  "en": "Windows Update WUDriver Stub"
+ },
+ "wmidx.dll": {
+  "en": "Windows Update Application Launcher"
+ },
+ "wmilib.sys": {
+  "en": "Microsoft Contacts Import Tool"
+ },
+ "WMIMigrationPlugin.dll": {
+  "en": "Microsoft Contacts Importer Exporter"
+ },
+ "WMINet_Utils.dll": {
+  "en": "Microsoft Windows Codecs Library"
+ },
+ "WmiPerfClass.dll": {
+  "en": "WinInet Helper Class"
+ },
+ "WmiPrvSD.dll": {
+  "en": "WinLogon IPC Client"
+ },
+ "WmiPrvSE.exe": {
+  "en": "Windows Notifications Dynamic Link Library"
+ },
+ "WMIsvc.dll": {
+  "en": "Windows logon reminder"
+ },
+ "wmiutils.dll": {
+  "en": "Table Recognition for Asian OCR"
+ },
+ "wmlaunch.exe": {
+  "en": "Windows Update client proxy stub"
+ },
+ "WMM2CLIP.dll": {
+  "en": "Find People"
+ },
+ "WMNetMgr.dll": {
+  "en": "Microsoft Contacts DLL"
+ },
+ "wmp.dll": {
+  "en": "waitfor - wait send a signal over a network"
+ },
+ "wmpcm.dll": {
+  "en": "Watchdog Driver"
+ },
+ "wmpconfig.exe": {
+  "en": "System Runtime Serialization dll"
+ },
+ "WMPDMC.exe": {
+  "en": "Windows Theme API"
+ },
+ "WmpDui.dll": {
+  "en": "Windows Time Service"
+ },
+ "wmpdxm.dll": {
+  "en": "Computer Chooser Dialog"
+ },
+ "wmpeffects.dll": {
+  "en": "TPM WMI Provider"
+ },
+ "wmpenc.exe": {
+  "en": "Unified Background Process Manager DLL"
+ },
+ "WMPEncEn.dll": {
+  "en": "Unattended Setup Generic Command For Domain Join"
+ },
+ "WMPhoto.dll": {
+  "en": "UPnP Device Host Container"
+ },
+ "wmplayer.exe": {
+  "en": "Universal Serial Bus Camera Driver"
+ },
+ "wmploc.dll": {
+  "en": "Windows Biometric Service"
+ },
+ "wmpmde.dll": {
+  "en": "System Service Model Install dll"
+ },
+ "wmpnetwk.exe": {
+  "en": "Windows Shell Theme Service Dll"
+ },
+ "wmpnscfg.exe": {
+  "en": "Greek IBM 220 Keyboard Layout"
+ },
+ "wmpnssci.dll": {
+  "en": "Timeout pauses command processing"
+ },
+ "WMPNSSUI.dll": {
+  "en": "TPM WMI Provider"
+ },
+ "wmpps.dll": {
+  "en": "User Account Control Settings"
+ },
+ "wmprph.exe": {
+  "en": "Windows Ribbon Framework Resources"
+ },
+ "wmpshare.exe": {
+  "en": "UPnP Device Host ISAPI Extension"
+ },
+ "wmpshell.dll": {
+  "en": "SSDP Service DLL"
+ },
+ "WMPSideShowGadget.exe": {
+  "en": "System IO Log dll"
+ },
+ "wmpsrcwp.dll": {
+  "en": "Netio Unattend Generic Command"
+ },
+ "wmsgapi.dll": {
+  "en": "Microsoft Thumbnail Cache"
+ },
+ "WMSPDMOD.dll": {
+  "en": "Time Date Control UI Language Change plugin"
+ },
+ "WMSPDMOE.dll": {
+  "en": "TPM Initialization Wizard"
+ },
+ "WMSvc.exe": {
+  "en": "User Account Control Settings"
+ },
+ "WMVCORE.dll": {
+  "en": "UCM Helper Class"
+ },
+ "WMVDECOD.dll": {
+  "en": "UPnP Control Point API"
+ },
+ "WMVENCOD.dll": {
+  "en": "UPnP Device Host Container"
+ },
+ "WMVSDECD.dll": {
+  "en": "USB CEIP Task"
+ },
+ "WMVSENCD.dll": {
+  "en": "Offline Files Migration Plugin"
+ },
+ "WMVXENCD.dll": {
+  "en": "USB UI Dll"
+ },
+ "wordpad.exe": {
+  "en": "Terminates Processes"
+ },
+ "WordpadFilter.dll": {
+  "en": "Windows Task Manager"
+ },
+ "wow32.dll": {
+  "en": "Task Scheduler Engine"
+ },
+ "wow64.dll": {
+  "en": "Task Scheduler Proxy"
+ },
+ "wow64cpu.dll": {
+  "en": "FWP IPsec Kernel Mode API"
+ },
+ "wow64win.dll": {
+  "en": "TDI Translation Driver"
+ },
+ "Wpc.dll": {
+  "en": "Microsoft Telnet Server Helper"
+ },
+ "wpccpl.dll": {
+  "en": "Microsoft Telnet Client"
+ },
+ "WpdFs.dll": {
+  "en": "USB Performance Objects DLL"
+ },
+ "WpdMtp.dll": {
+  "en": "Host Process for Windows Tasks"
+ },
+ "WpdMtpDr.dll": {
+  "en": "Lists the current running tasks"
+ },
+ "WpdMtpUS.dll": {
+  "en": "Task Scheduler COM API"
+ },
+ "wpdshext.dll": {
+  "en": "Scheduler Service Client DLL"
+ },
+ "WPDShextAutoplay.exe": {
+  "en": "Task Scheduler Service"
+ },
+ "WPDShServiceObj.dll": {
+  "en": "Network Configuration Objects"
+ },
+ "WPDSp.dll": {
+  "en": "Microsoft Telnet Client"
+ },
+ "wpd_ci.dll": {
+  "en": "Microsoft Telnet Server Helper"
+ },
+ "wpfgfx_v0300.dll": {
+  "en": "Microsoft TAPI3 Terminal Manager"
+ },
+ "wpnpinst.exe": {
+  "en": "Microsoft RDP Device redirector"
+ },
+ "write.exe": {
+  "en": "Event Trace Helper Library"
+ },
+ "wrpint.dll": {
+  "en": "Distributed Link Tracking Client"
+ },
+ "ws2help.dll": {
+  "en": "XDSCodec and Encypter Decrypter Tagger Filters"
+ },
+ "ws2ifsl.sys": {
+  "en": "Modem Device Driver"
+ },
+ "ws2_32.dll": {
+  "en": "Offline Files Migration Plugin"
+ },
+ "WsatConfig.exe": {
+  "en": "Uni modem Service Provider AT Mini Driver"
+ },
+ "WsatConfig.resources.dll": {
+  "en": "Uni modem Serial Wave driver"
+ },
+ "wscapi.dll": {
+  "en": "User control panel"
+ },
+ "wscinterop.dll": {
+  "en": "NSI User-mode interface DLL"
+ },
+ "wscript.exe": {
+  "en": "TSTheme Server Module"
+ },
+ "wscsvc.dll": {
+  "en": "TBS Service"
+ },
+ "WSDApi.dll": {
+  "en": "Microsoft Narrator Text Renderer"
+ },
+ "WSDMon.dll": {
+  "en": "Microsoft Tunnel Interface Driver"
+ },
+ "WSDPrint.sys": {
+  "en": "Windows Time Zone Utility"
+ },
+ "WSDScan.sys": {
+  "en": "Modem Class Installer"
+ },
+ "WSearchMigPlugin.dll": {
+  "en": "Add Remove Modems"
+ },
+ "wsecedit.dll": {
+  "en": "Uni modem AT Mini Driver Platform Driver for Windows NT"
+ },
+ "wshbth.dll": {
+  "en": "Multi-User Windows USER API Client DLL"
+ },
+ "wshcon.dll": {
+  "en": "Userinit Logon Application"
+ },
+ "wshelper.dll": {
+  "en": "Personalization CPL"
+ },
+ "wshext.dll": {
+  "en": "Windows KTM Win32 Client DLL"
+ },
+ "wship6.dll": {
+  "en": "Windows Modules Installer"
+ },
+ "wshirda.dll": {
+  "en": "Previous Versions property page"
+ },
+ "wshqos.dll": {
+  "en": "Unmanaged BCL"
+ },
+ "wshrm.dll": {
+  "en": "Windows Modem Properties"
+ },
+ "WSHTCPIP.dll": {
+  "en": "Legacy Non-Pnp Modem Device Driver"
+ },
+ "WSManHTTPConfig.exe": {
+  "en": "Uni modem Tranform Module"
+ },
+ "wsmprovhost.exe": {
+  "en": "User control panel"
+ },
+ "WsmSvc.dll": {
+  "en": "NSI Proxy"
+ },
+ "wsnmp32.dll": {
+  "en": "Network Store Interface RPC server"
+ },
+ "wsock32.dll": {
+  "en": "User-mode Power Service"
+ },
+ "wsqmcons.exe": {
+  "en": "Standard application verifier provider dll"
+ },
+ "wtsapi32.dll": {
+  "en": "AVI Capture window class"
+ },
+ "wtv2dvrms.dll": {
+  "en": "Video For Windows MCI driver"
+ },
+ "WTVConverter.exe": {
+  "en": "Microsoft Video for Windows DLL"
+ },
+ "wuapi.dll": {
+  "en": "ActiveX control for streaming video"
+ },
+ "wuapp.exe": {
+  "en": "Microsoft Volume Shadow Copy Service software provider"
+ },
+ "wuauclt.exe": {
+  "en": "Virtual WiFi Bus Driver"
+ },
+ "wuaueng.dll": {
+  "en": "Virtual WiFi Miniport Driver"
+ },
+ "wucltux.dll": {
+  "en": "Network Store Information RPC interface"
+ },
+ "WUDFCoinstaller.dll": {
+  "en": "DirectX API Driver"
+ },
+ "WUDFHost.exe": {
+  "en": "Version Checking and File Installation Libraries"
+ },
+ "WUDFPf.sys": {
+  "en": "Microsoft AVI File support library"
+ },
+ "WUDFPlatform.dll": {
+  "en": "Microsoft RLE Compressor"
+ },
+ "WUDFRd.sys": {
+  "en": "Microsoft Video 1 Compressor"
+ },
+ "WUDFSvc.dll": {
+  "en": "Video Port Driver"
+ },
+ "WUDFx.dll": {
+  "en": "Microsoft Volume Shadow Copy Service software provider"
+ },
+ "wudriver.dll": {
+  "en": "Virtual WiFi Filter Driver"
+ },
+ "wups.dll": {
+  "en": "Chinese Traditional Word Breaker"
+ },
+ "wups2.dll": {
+  "en": "Microsoft Windows Sockets 2.0 Service Provider"
+ },
+ "wusa.exe": {
+  "en": "VDS Dynamic Volume Provider Version 2.1.0.1"
+ },
+ "wuwebv.dll": {
+  "en": "Remote App Logon Application"
+ },
+ "WWanAPI.dll": {
+  "en": "RDP Clip Monitor"
+ },
+ "wwaninst.dll": {
+  "en": "RDP Encoder Mirror Driver"
+ },
+ "wwanmm.dll": {
+  "en": "Tablet PC Tablet Input Panel Resources Per Input Language"
+ },
+ "wwanprotdim.dll": {
+  "en": "Input Personalization System Event Log messages"
+ },
+ "wwansvc.dll": {
+  "en": "Input Personalization Proxy Stub"
+ },
+ "wwapi.dll": {
+  "en": "Windows Journal Note Writer Driver Graphics DLL"
+ },
+ "wzcdlg.dll": {
+  "en": "Windows Journal Print Processor DLL"
+ },
+ "X3DAudio1_0.dll": {
+  "en": "Microsoft Wave MSP"
+ },
+ "X3DAudio1_1.dll": {
+  "en": "Microsoft Windows Phone Dialer"
+ },
+ "X3DAudio1_2.dll": {
+  "en": "Microsoft Windows Phone And Modem Lua Elevation Dll"
+ },
+ "X3DAudio1_3.dll": {
+  "en": "Microsoft Windows Telephony Performance Monitor"
+ },
+ "X3DAudio1_4.dll": {
+  "en": "Microsoft Windows Telephony API UI DLL"
+ },
+ "X3DAudio1_5.dll": {
+  "en": "Microsoft Windows Telephony Server"
+ },
+ "X3DAudio1_6.dll": {
+  "en": "Microsoft Windows TAPI Migration Plugin Dll"
+ },
+ "X3DAudio1_7.dll": {
+  "en": "Microsoft Windows Telephony Sysprep Work"
+ },
+ "XactEngine2_0.dll": {
+  "en": "Taskbar Control Panel"
+ },
+ "XactEngine2_1.dll": {
+  "en": "TCP IP Driver"
+ },
+ "XactEngine2_10.dll": {
+  "en": "Windows Animation Manager"
+ },
+ "XactEngine2_2.dll": {
+  "en": "TCP IP Arp Command"
+ },
+ "XactEngine2_3.dll": {
+  "en": "TCP IP Finger Command"
+ },
+ "XactEngine2_4.dll": {
+  "en": "Host name APP"
+ },
+ "XactEngine2_5.dll": {
+  "en": "Multicast Information"
+ },
+ "XactEngine2_6.dll": {
+  "en": "Netio Helper DLL"
+ },
+ "XactEngine2_7.dll": {
+  "en": "TCP IP Netstat Command"
+ },
+ "XactEngine2_8.dll": {
+  "en": "TCP IP Route Command"
+ },
+ "XactEngine2_9.dll": {
+  "en": "UDF File System Driver"
+ },
+ "XactEngine3_0.dll": {
+  "en": "Windows Ribbon Framework"
+ },
+ "XactEngine3_1.dll": {
+  "en": "WinSAT Sysprep Plugin"
+ },
+ "XactEngine3_2.dll": {
+  "en": "System Preparation Tool"
+ },
+ "XactEngine3_3.dll": {
+  "en": "Windows NT System Setup"
+ },
+ "XactEngine3_4.dll": {
+  "en": "My System CPL"
+ },
+ "Xactengine3_5.dll": {
+  "en": "System Indexer Cache Driver"
+ },
+ "xactengine3_6.dll": {
+  "en": "Speech UX Tutorial"
+ },
+ "xactengine3_7.dll": {
+  "en": "Speech UX Configuration"
+ },
+ "XAPOFX1_0.dll": {
+  "en": "Speech Recognition"
+ },
+ "XAPOFX1_1.dll": {
+  "en": "Speech API"
+ },
+ "XAPOFX1_2.dll": {
+  "en": "Microsoft Speech Migration Plugin"
+ },
+ "XAPOFX1_3.dll": {
+  "en": "Microsoft Speech Recognition Engine"
+ },
+ "XAPOFX1_4.dll": {
+  "en": "Microsoft Speech Recognition Engine Extensions"
+ },
+ "XAPOFX1_5.dll": {
+  "en": "Microsoft Speech Recognition Locale Handlers"
+ },
+ "XAudio2_0.dll": {
+  "en": "VGA 16 Colour Display Driver"
+ },
+ "XAudio2_1.dll": {
+  "en": "VGA Super VGA Video Driver"
+ },
+ "XAudio2_2.dll": {
+  "en": "Sticky Notes Search DLL"
+ },
+ "XAudio2_3.dll": {
+  "en": "Sticky Notes"
+ },
+ "XAudio2_4.dll": {
+  "en": "Systray shell service object"
+ },
+ "XAudio2_5.dll": {
+  "en": "Microsoft Storage Migration Plug-in"
+ },
+ "XAudio2_6.dll": {
+  "en": "Storage Services"
+ },
+ "XAudio2_7.dll": {
+  "en": "Microsoft Storage Port Driver"
+ },
+ "xcbdaVx64.sys": {
+  "en": "Microsoft Ux Theme Library"
+ },
+ "xchalVx64.sys": {
+  "en": "Virtual Disk Service Basic Provider"
+ },
+ "xcopy.exe": {
+  "en": "Remote App Shell"
+ },
+ "XInput1_1.dll": {
+  "en": "Property Pages for Storage Devices"
+ },
+ "XInput1_2.dll": {
+  "en": "Direct Show Stream Buffer Filter Resouces"
+ },
+ "XInput1_3.dll": {
+  "en": "Direct Show Stream Buffer Filter"
+ },
+ "XInput9_1_0.dll": {
+  "en": "Proxystub for sync host"
+ },
+ "xmllite.dll": {
+  "en": "Microsoft Windows Sync Infrastructure proxy stub"
+ },
+ "xnacc.sys": {
+  "en": "Microsoft Tablet PC Component"
+ },
+ "xolehlp.dll": {
+  "en": "Input Personalization Settings Migration Plugin"
+ },
+ "XpsGdiConverter.dll": {
+  "en": "Task Scheduler interface DLL"
+ },
+ "XpsPrint.dll": {
+  "en": "Windows Journal Note Writer Driver UI DLL"
+ },
+ "XpsRasterService.dll": {
+  "en": "Math Input Control"
+ },
+ "xpsrchvw.exe": {
+  "en": "Microsoft SI PSI parser for MPEG2 based networks"
+ },
+ "xpsservices.dll": {
+  "en": "VDS Dynamic Volume Provider Version 2.1.0.1"
+ },
+ "XPSSHHDR.dll": {
+  "en": "Remote Desktop Services Logon Error Redirector"
+ },
+ "XPSSVCS.dll": {
+  "en": "Remote Desktop Programs WMI provider"
+ },
+ "xwizard.exe": {
+  "en": "RDP Encoder Miniport"
+ },
+ "xwizards.dll": {
+  "en": "Input Personalization Server"
+ },
+ "yk62x64.sys": {
+  "en": "Personalize Handwriting Recognition UI"
+ },
+ "zipfldr.dll": {
+  "en": "Microsoft Chinese Handwriting Recognizer"
+ },
+ "_isdel.exe": {
+  "en": "Windows Journal Port Monitor DLL"
+ },
+ "_setup.dll": {
+  "en": "Microsoft Tablet PC Ink Divider Platform Component"
+ }
+}
