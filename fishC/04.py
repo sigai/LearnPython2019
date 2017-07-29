@@ -101,7 +101,7 @@ class Uzimaki(object):
         return rank[0]
 
 
-# Uzimaki(10, 100).display_spiral()
+# Uzimaki(day10, 100).display_spiral()
 # Uzimaki(4, 4).neighbors(14)
 # Uzimaki(4, 4).get_prime_neighbors(14)
 if __name__ == '__main__':

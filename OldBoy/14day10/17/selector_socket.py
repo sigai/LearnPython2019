@@ -4,32 +4,36 @@ __author__ = "Sigai"
 
 import selectors
 import socket
-
+'''
+这里讲的不是很仔细 需要复习复习
+'''
 sel = selectors.DefaultSelector()
 
-def accept(sock,mask):
-    conn, addr = sock.accept()
-    #print("accepted",conn,"from",addr,"mask",mask)
-    conn.setblocking(False)
-    sel.register(conn,selectors.EVENT_READ,read)
 
-def read(conn,mask):
+def accept(sock, mask):
+    conn, addr = sock.accept()
+    # print("accepted",conn,"from",addr,"mask",mask)
+    conn.setblocking(False)
+    sel.register(conn, selectors.EVENT_READ, read)
+
+
+def read(conn, mask):
     data = conn.recv(1024)
     if data:
-        #print("echoing",repr(data))
+        # print("echoing",repr(data))
         conn.send(data)
     else:
-        print("closing",conn)
+        print("closing", conn)
         sel.unregister(conn)
         conn.close()
 
 
 sock = socket.socket()
-sock.bind(("0.0.0.0",10000))
+sock.bind(("0.0.0.0", 10000))
 sock.listen(100)
 sock.setblocking(False)
 
-sel.register(sock,selectors.EVENT_READ,accept)
+sel.register(sock, selectors.EVENT_READ, accept)
 
 while True:
     events = sel.select()

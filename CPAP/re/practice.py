@@ -40,7 +40,7 @@ print(p12.group())
 p13 = re.search(r'<type \'(\w+)\'>', "<type 'int'>")
 print(p13.group(1))
 
-p14 = re.findall(r'(1[012]+?)','10, 11, 12, 13')
+p14 = re.findall(r'(1[012]+?)','day10, 11, 12, 13')
 print(p14)
 
 p15 = re.match(r'(\d{4}-\d{6}-\d{5})|(\d{4}-\d{4}-\d{4}-\d{4})','1231-111111-11111')

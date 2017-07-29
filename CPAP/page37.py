@@ -3,7 +3,7 @@ import re
 
 
 
-data = 'Thu Mar 10 17:01:17 2118::frllzis@eanfltevk.com::4676346077-7-9'
+data = 'Thu Mar day10 17:01:17 2118::frllzis@eanfltevk.com::4676346077-7-9'
 
 r1 = '\d+-\d+-\d+'
 r2 = '.+\d+-\d+-\d+'

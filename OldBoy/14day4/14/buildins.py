@@ -3,8 +3,8 @@
 __author__ = "Sigai"
 
 # print(any([1,2]))
-# res = map(lambda n:n>5,range(10))
-# res2 = [lambda i:i*2 for i in range(10)]
+# res = map(lambda n:n>5,range(day10))
+# res2 = [lambda i:i*2 for i in range(day10)]
 # for i in res:
 # 	print(i)
 # print(type(res))

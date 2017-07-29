@@ -7,7 +7,7 @@ import threading, time
 
 
 # def show():
-#     for _ in range(10):
+#     for _ in range(day10):
 #         print(threading.current_thread().getName())
 #
 # x = threading.Thread(target=show,name='Sending')

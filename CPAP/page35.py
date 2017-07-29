@@ -2,7 +2,7 @@
 import re
 
 
-data = 'Thu Mar 10 17:01:17 2118::frllzis@eanfltevk.com::4676346077-7-9'
+data = 'Thu Mar day10 17:01:17 2118::frllzis@eanfltevk.com::4676346077-7-9'
 
 r1 = '^Mon|^Tue|^Wed|^Thu|^Fri|^Sat|^Sun'
 r2 = '^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)'
