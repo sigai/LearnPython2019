@@ -150,6 +150,7 @@ https://docs.python.org/3.6/library/selectors.html
 This module allows high-level and efficient I/O multiplexing, built upon the
 `select` module primitives.
 
+`selectors.DefaultSelector()`
 Choose the best implementation, roughly:
    epoll|kqueue|devpoll > poll > select.
 select() also can't accept a FD > FD_SETSIZE (usually around 1024)
@@ -168,7 +169,7 @@ A selector can use various implementations (select(), poll(), epoll()...)
 depending on the platform. The default `Selector` class uses the most
 efficient implementation on the current platform.
 
-###register
+###SelectSelector.register(self, fileobj, events, data=None)
 Register a file object.
 
 Parameters:
@@ -192,7 +193,7 @@ OSError may or may not be raised
 视频中出现的`OSError: [Errno 98] Address already in use`异常的原因和解决方法:
 
 因为socket默认不支持地址复用，如果要复用需要显示设定，即在绑定前调用setsockop函数, 让套接字允许地址重用：socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
+这个貌似不太好使啊....
 
 更改Linux文件描述符的限制命令:
 ulimit -SHn 65535

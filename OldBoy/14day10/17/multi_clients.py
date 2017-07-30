@@ -4,12 +4,11 @@ __author__ = "Sigai"
 
 import socket
 
-messages = ["梁晓桐最美",
-            ]
+messages = ["Hello World",]
 
-server_addr = ("192.168.44.143",10000)
+server_addr = ("localhost",9999)
 
-socks = [socket.socket(socket.AF_INET, socket.SOCK_STREAM) for i in range(3000)]
+socks = [socket.socket(socket.AF_INET, socket.SOCK_STREAM) for i in range(2)]
 
 for s in socks:
     s.connect(server_addr)
