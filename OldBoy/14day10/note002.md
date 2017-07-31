@@ -8,7 +8,7 @@
 第（2）种方式，由于要涉及到线程的同步，有可能会面临死锁等问题。
 第（3）种方式，在写应用程序代码时，逻辑比前面两种都复杂。
 综合考虑各方面因素，一般普遍认为第（3）种方式是大多数网络服务器采用的方式
- 
+
 看图说话讲事件驱动模型
 
 在UI编程中，常常要对鼠标点击进行相应，首先如何获得鼠标点击呢？
@@ -56,7 +56,7 @@
 Select\Poll\Epoll异步IO　
 http://www.cnblogs.com/alex3714/p/4372426.html　
 
-番外篇 http://www.cnblogs.com/alex3714/articles/5876749.html 
+番外篇 http://www.cnblogs.com/alex3714/articles/5876749.html
 
 
 
@@ -123,25 +123,25 @@ IMPORTANT NOTICE
 On Windows, only sockets are supported; on Unix, all file descriptors.
 
 `select(rlist, wlist, xlist[, timeout]) -> (rlist, wlist, xlist)`
-    
+
 Wait until one or more file descriptors are ready for some kind of I/O.
 The first three arguments are sequences of file descriptors to be waited for:
 rlist -- wait until ready for reading
 wlist -- wait until ready for writing
-xlist -- wait for an ``exceptional condition''
+xlist -- wait for an ''exceptional condition''
 If only one kind of condition is required, pass [] for the other lists.
 A file descriptor is either a socket or file object, or a small integer
 gotten from a fileno() method call on one of those.
-    
+
 The optional 4th argument specifies a timeout in seconds; it may be
 a floating point number to specify fractions of seconds.  If it is absent
 or None, the call will never time out.
-    
+
 The return value is a tuple of three lists corresponding to the first three
 arguments; each contains the subset of the corresponding file descriptors
 that are ready.
-    
-> IMPORTANT NOTICE 
+
+> IMPORTANT NOTICE
 On Windows, only sockets are supported; on Unix, all file
 descriptors can be used.
 
@@ -198,5 +198,6 @@ OSError may or may not be raised
 更改Linux文件描述符的限制命令:
 ulimit -SHn 65535
 
+##并发和并行
 
-
+并发和并行一直是容易混淆的概念。并发通常指有多个任务需要同时进行，并行则是同一时刻有多个任务执行。用上课来举例就是，并发情况下是一个老师在同一时间段辅助不同的人功课。并行则是好几个老师分别同时辅助多个学生功课。简而言之就是一个人同时吃三个馒头还是三个人同时分别吃一个的情况，吃一个馒头算一个任务。

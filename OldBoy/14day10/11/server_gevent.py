@@ -36,7 +36,7 @@ def handle_request(conn):
         print(ex)
         pass
     finally:
-        conn.close()
+        conn.close()    # 关闭实例链接
 
 
 if __name__ == '__main__':

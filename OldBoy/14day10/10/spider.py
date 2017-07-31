@@ -2,10 +2,10 @@
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 
+from gevent import monkey; monkey.patch_all()#将当前程序所有IO操作做上标记
 import gevent, time
 from urllib import request
-from gevent import monkey
-monkey.patch_all()#将当前程序所有IO操作做上标记
+
 
 
 def getUrl(url):

@@ -104,29 +104,20 @@ Note that the methods of the pool object should only be called by the process wh
 #协程
 coroutine 协程是一种用户态的轻量级线程。
 
-Coroutines are a general control structure whereby flow control is cooperatively passed between two different routines without returning. The 'yield' statement in Python is a good example. It creates a coroutine.
-Python中的yield语句是个很好的例子, yield创建的就是一个协程.
+协程是一个通用的控制结构, 控制流程在两个不同的程序之间来回切换而不需要返回. Python中的yield语句是个很好的例子, yield创建的就是一个协程.
 
 IO操作就切换协程, 最终达成全程都是计算操作的效果.
 
 ##greenlet
 greenlet是封装的协程, 需要自己管理切换
+`greenlet(run=None, parent=None) -> greenlet`
+创建一个新的greenlet对象(并没有开始运行).
+
 `switch(*args, **kwargs)`
-Switch execution to this greenlet.
-切换执行当前的greenlet对象        
-If this greenlet has never been run, then this greenlet
-will be switched to using the body of self.run(*args, **kwargs).
+
+切换执行当前的greenlet对象
 如果当前greenlet对象没有运行过, 那么这个greenlet对象会切换执行自己的run方法.   
-If the greenlet is active (has been run, but was switch()'ed
-out before leaving its run function), then this greenlet will
-be resumed and the return value to its switch call will be
-None if no arguments are given, the given argument if one
-argument is given, or the args tuple and keyword args dict if
-multiple arguments are given.
-如果当前greenlet对象是激活状态(也就是运行过, 但是在run函数执行结束之前被switch出去了.), 那么, 这个greenlet对象会被重启并且会把返回值给这次switch调用, 如果没有参数, 返回值为None; 如果有一个参数, 会返回这个参数; 如果有多个参数, 会返回元组参数和关键字参数.
-If the greenlet is dead, or is the current greenlet then this
-function will simply return the arguments using the same rules as
-above.
+如果当前greenlet对象是激活状态(也就是运行了, 但是在run函数执行结束之前被switch出去了), 那么, 这个greenlet对象会被重启并且会把返回值给这次switch调用, 如果没有参数, 返回值为None; 如果有一个参数, 会返回这个参数; 如果有多个参数, 会返回元组参数和关键字参数.
 如果这个greenlet对象已经执行完毕, 或者就是当前执行的greenlet, 这个方法会简单的根据上面的规则返回参数.
 
 感觉就像玩DOTA的时候, 地图载入或者等待其他人的时候, 切换出去聊QQ一样呢.
@@ -143,29 +134,21 @@ gevent包里也有各种自己的类型socket, queue, pool等等.
 各种飘逸的并发
 http://blog.csdn.net/handsomekang/article/details/39826729
 ##`spawn(function, *args, **kwargs)`
-Create a new Greenlet object and schedule it to run function(*args, **kwargs). This can be used as gevent.spawn or Greenlet.spawn.
 创建一个新的`greenlet`对象, 并安排它去执行`function(*args, **kwargs)`, 还可以只用`gevent.spawn()`或者`greenlet.spwan()`方法.
-The arguments are passed to Greenlet.__init__().
 参数会传递给`greenlet`的初始化方法.
 
 ##`joinall(greenlets, timeout=None, raise_error=False, count=None)`
-Wait for the greenlets to finish.
+
 等待`greenlet`对象执行结束.
-Parameters:	
+
 参数列表:
-    greenlets – A sequence (supporting len()) of greenlets to wait for.
     `greenlets`: 需要等待的`greenlets`对象序列.
-    timeout (float) – If given, the maximum number of seconds to wait.
     `timeout`(浮点数): 如果指定, 表示等待的最大秒数.
-Returns:	
 返回值:
-    A sequence of the greenlets that finished before the timeout (if any) expired.
     返回在超时(如果有的话)之前执行完成的`greenlets`对象的序列.
 
 ##`sleep(seconds=0, ref=True)`
-Put the current greenlet to sleep for at least seconds.
 至少让当前的`greenlet`对象`sleep`几秒.
-seconds may be specified as an integer, or a float if fractional seconds are desired.
 `seconds`参数如果需要的话,必须指定为一个整数或者小数
 > Tip In the current implementation, a value of 0 (the default) means to yield execution to any other runnable greenlets, but this greenlet may be scheduled again before the event loop cycles (in an extreme case, a greenlet that repeatedly sleeps with 0 can prevent greenlets that are ready to do I/O from being scheduled for some (small) period of time); a value greater than 0, on the other hand, will delay running this greenlet until the next iteration of the loop.
 > 提示: 在当前实现中, 默认的值0, 意味着会`yield`(切换)到其他任何可执行的greenlet对象, 但是那个`greenlet`对象在事件循环周期之前, 可能再次被安排执行. (一个极端的例子, `greenlet`对象重复的`sleep` 0 可能打断别的`greenlet`对象一段时间, 那些准备去执行IO操作的`greenlet`对象.) 另一方便, 如果参数大于0, 就会延迟本`greenlet`直到下一次循环迭代.
@@ -173,6 +156,11 @@ If ref is False, the greenlet running sleep() will not prevent gevent.wait() fro
 如果`ref`参数为`False`, `greenlet`执行`sleep`就不会阻止`gevent.wait`方法退出.
 
 ##Monkey patching
+Patching **should be done as early as possible** in the lifecycle of the
+program. For example, the main module (the one that tests against
+`__main__`or is otherwise the first imported) should begin with
+this code, ideally before any other imports
+
 The example above used gevent.socket for socket operations. If the standard socket module was used the example would have taken 3 times longer to complete because the DNS requests would be sequential (serialized). Using the standard socket module inside greenlets makes gevent rather pointless, so what about existing modules and packages that are built on top of socket (including the standard library modules like urllib)?
 
 That’s where monkey patching comes in. The functions in gevent.monkey carefully replace functions and classes in the standard socket module with their cooperative counterparts. That way even the modules that are unaware of gevent can benefit from running in a multi-greenlet environment.
@@ -200,5 +188,3 @@ Tip Each operating system thread has its own Hub. This makes it possible to use 
 The event loop provided by libev uses the fastest polling mechanism available on the system by default. Please read the libev documentation for more information.
 
 The Libev API is available under the gevent.core module. Note that the callbacks supplied to the libev API are run in the Hub greenlet and thus cannot use the synchronous gevent API. It is possible to use the asynchronous API there, like gevent.spawn() and gevent.event.Event.set().
-
-

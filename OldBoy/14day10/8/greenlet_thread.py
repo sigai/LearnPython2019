@@ -20,6 +20,6 @@ def test2():
     print(78)
 
 
-gr1 = greenlet(test1)
+gr1 = greenlet(test1)   # 创建greenlet对象, 创建协程(没有开始运行)
 gr2 = greenlet(test2)
 gr1.switch()    # 1.greenlet对象第一次switch执行自己的run方法
