@@ -22,7 +22,8 @@ channel.queue_declare(queue='hello')
 # subscribe前, 需要声明一个回调函数来处理收到的消息
 # 传递的消息都是bytes格式的
 def callback(ch, method, properties, body):
-    print(" [x] Received %r" % body)
+    print(ch, method, properties, sep='\n')
+    print(" [x] Received %s" % body.decode('utf-8'))    # 网络传输 都是bytes格式
 
 # subscribe
 channel.basic_consume(callback,
