@@ -16,7 +16,7 @@ channel.queue_declare(queue='hello')
 # Producer只能发送消息到exchange, 默认为空即可发送到指定queue, routing_key就是queue的名字
 channel.basic_publish(exchange='',
                       routing_key='hello',
-                      body='Hello World!3')
+                      body='Hello World!')
 print(" [x] Sent 'Hello World!'")
 
 # 关闭连接

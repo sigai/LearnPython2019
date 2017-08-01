@@ -3,7 +3,7 @@
 __author__ = "Sigai"
 
 import pika
-
+import time
 
 # connection是一个TCP连接Producer和Consumer通过TCP连接到RabbitMQ Server
 # 实例化一个ConnectionParameters对象, 传递给连接适配器创建连接.
@@ -22,12 +22,15 @@ channel.queue_declare(queue='hello')
 # subscribe前, 需要声明一个回调函数来处理收到的消息
 # 传递的消息都是bytes格式的
 def callback(ch, method, properties, body):
+    print(" [x] Starting to Receive")
+    time.sleep(3)
     print(" [x] Received %r" % body)
 
 # subscribe
 channel.basic_consume(callback,
                       queue='hello',
-                      no_ack=True)
+                      no_ack=True,     # 是否返回通知 True就是不通知 消息发出去就从队列删除
+                      )
 
 print(' [*] Waiting for messages. To exit press CTRL+C')
 

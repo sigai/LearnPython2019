@@ -102,7 +102,7 @@ synchronous IO和asynchronous IO的区别
 - A synchronous I/O operation causes the requesting process to be blocked until that I/O operation completes;
 - An asynchronous I/O operation does not cause the requesting process to be blocked;
 
-两者的区别就在于synchronous IO做”IO operation”的时候会将process阻塞。按照这个定义，之前所述的blocking IO，non-blocking IO，IO multiplexing都属于synchronous IO。
+两者的区别就在于synchronous IO做"IO operation"的时候会将process阻塞。按照这个定义，之前所述的blocking IO，non-blocking IO，IO multiplexing都属于synchronous IO。
 
 有人会说，non-blocking IO并没有被block啊。这里有个非常“狡猾”的地方，定义中所指的”IO operation”是指真实的IO操作，就是例子中的recvfrom这个system call。non-blocking IO在执行recvfrom这个system call的时候，如果kernel的数据没有准备好，这时候不会block进程。但是，当kernel中数据准备好的时候，recvfrom会将数据从kernel拷贝到用户内存中，这个时候进程是被block了，在这段时间内，进程是被block的。
 
@@ -111,89 +111,81 @@ synchronous IO和asynchronous IO的区别
 
 #I/O 多路复用之select、poll、epoll详解
 
+用系统的libevent.so实现的.
 http://www.cnblogs.com/alex3714/p/4372426.html
 
 异步IO, 系统支持的不好, 用的很少, 用的epoll比较多, Python3中支持异步IO的模块`asyncio`.
 
 ##select
 https://docs.python.org/3.6/library/select.html
-This module supports asynchronous I/O on multiple file descriptors.
+这个模块支持多文件描述符的异步IO操作.
 
-IMPORTANT NOTICE
-On Windows, only sockets are supported; on Unix, all file descriptors.
-
+重要提示
+在windows系统上, 只支持sockets, 在Unix系统支持所有的文件描述符.
 `select(rlist, wlist, xlist[, timeout]) -> (rlist, wlist, xlist)`
 
-Wait until one or more file descriptors are ready for some kind of I/O.
-The first three arguments are sequences of file descriptors to be waited for:
-rlist -- wait until ready for reading
-wlist -- wait until ready for writing
-xlist -- wait for an ''exceptional condition''
-If only one kind of condition is required, pass [] for the other lists.
-A file descriptor is either a socket or file object, or a small integer
-gotten from a fileno() method call on one of those.
-
-The optional 4th argument specifies a timeout in seconds; it may be
-a floating point number to specify fractions of seconds.  If it is absent
-or None, the call will never time out.
-
-The return value is a tuple of three lists corresponding to the first three
-arguments; each contains the subset of the corresponding file descriptors
-that are ready.
-
-> IMPORTANT NOTICE
-On Windows, only sockets are supported; on Unix, all file
-descriptors can be used.
+select方法会等到一个或这多个文件描述符准备好某种IO操作.
+前三个参数是要等待的文件描述符的序列:
+rlist: 等待读操作
+wlist: 等待写操作
+xlist: 等待异常
+如果只需要一种条件的话, 其他参数需要传递空列表[].
+文件描述符是socket或者文件对象, 或者fileno()方法返回的整数, 其中之一.
+可选的第四个参数指定超时的时间, 单位为秒.
+如果指定的是分数的秒数, 可能是浮点数. 如果没有指定参数, 或者为None, 调用就永远不会超时.
+返回值是三个列表的元组, 与前三个参数一致; 每个返回的列表中包含相应的准备状态的文件描述符.
 
 ##selector
 https://docs.python.org/3.6/library/selectors.html
-This module allows high-level and efficient I/O multiplexing, built upon the
-`select` module primitives.
+
+这个模块支持高级的高效的IO多路复用, 基于select模块实现.
 
 `selectors.DefaultSelector()`
-Choose the best implementation, roughly:
-   epoll|kqueue|devpoll > poll > select.
-select() also can't accept a FD > FD_SETSIZE (usually around 1024)
+
+自动选择最好的实现, 大体上:
+`epoll|kqueue|devpoll > poll > select`
+select方法不支持文件描述符的数量大于默认设置的数量(默认FD_SETSIZE大约为1024).
 
 ###BaseSelector
-Selector abstract base class.
 
-A selector supports registering file objects to be monitored for specific
-I/O events.
-
-A file object is a file descriptor or any object with a `fileno()` method.
-An arbitrary object can be attached to the file object, which can be used
-for example to store context information, a callback, etc.
-
-A selector can use various implementations (select(), poll(), epoll()...)
-depending on the platform. The default `Selector` class uses the most
-efficient implementation on the current platform.
+Selector的抽象基类.
+selector对象支持注册要监控特定IO事件的文件对象.
+文件对象是文件描述符或者任何有fileno方法的对象. 任意对象都能被附加到文件对象, 文件对象可以用来存储上下文信息, 回调函数, 等等.
+selector能用多种方式实现(select, poll, epoll...), 具体视操作系统而定, selector类会默认用当前系统最高效的实现.
 
 ###SelectSelector.register(self, fileobj, events, data=None)
-Register a file object.
+注册文件对象
+参数:
+文件对象: 文件对象或者文件描述符
+事件: 要监控的事件(EVENT_READ|EVENT_WRITE的位掩码)
+data: 附加的数据
+返回值:
+SelectorKey实例
 
-Parameters:
-fileobj -- file object or file descriptor
-events  -- events to monitor (bitwise mask of EVENT_READ|EVENT_WRITE)
-data    -- attached data
-
-Returns:
-SelectorKey instance
-
-Raises:
-ValueError if events is invalid
-KeyError if fileobj is already registered
-OSError if fileobj is closed or otherwise is unacceptable to
-      the underlying system call (if a system call is made)
-
-Note:
-OSError may or may not be raised
+异常:
+events参数无效会触发ValueError异常
+fileobj文件对象已经被注册会触发KeyError异常
+如果fileobj已经关闭, 或者无法接受系统调用(如果已经调用)会触发OSError异常.
+注意:
+OSError异常可能触发, 也可能不会触发.
 
 #补充
 视频中出现的`OSError: [Errno 98] Address already in use`异常的原因和解决方法:
 
 因为socket默认不支持地址复用，如果要复用需要显示设定，即在绑定前调用setsockop函数, 让套接字允许地址重用：socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 这个貌似不太好使啊....
+进一步设置（并发连接量大需要设置）
+`# vi  /etc/sysctl.conf`
+
+```
+
+net.ipv4.tcp_syncookies = 1    # 这一行配置文件里如果有就不用添加了  
+net.ipv4.tcp_tw_reuse = 1  
+net.ipv4.tcp_tw_recycle = 1  
+net.ipv4.tcp_fin_timeout = 5  
+```
+最后输入下面的命令，让内核参数生效：
+`# /sbin/sysctl -p`
 
 更改Linux文件描述符的限制命令:
 ulimit -SHn 65535
