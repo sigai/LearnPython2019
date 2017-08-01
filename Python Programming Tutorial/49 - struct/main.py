@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 '''主要作用就是对python基本类型值与用python字符串格式表示的C struct类型间的转化'''

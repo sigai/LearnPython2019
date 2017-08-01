@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 '''老子的爱姬太快了,还需要sleep一下才能看到效果'''

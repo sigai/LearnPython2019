@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 from gevent import monkey; monkey.patch_all()

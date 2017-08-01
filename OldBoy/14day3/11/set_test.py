@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
 list_1 = [1,4,5,7,3,6,7,9,3,6]

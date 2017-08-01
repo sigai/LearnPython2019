@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 '''多继承，这个例子很好，一点都不无聊'''

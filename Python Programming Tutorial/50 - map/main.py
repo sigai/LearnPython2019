@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 '''map内置函数第一个参数接收一个函数名，第二个参数接收一个可迭代对象'''

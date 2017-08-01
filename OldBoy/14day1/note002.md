@@ -154,7 +154,7 @@ else:
 ```
 在 python 中，while … else 在循环条件为 false 时执行 else 语句块：
 ```
-#!/usr/bin/python
+#!/usr/bin/env python
 
 count = 0
 while count < 5:
