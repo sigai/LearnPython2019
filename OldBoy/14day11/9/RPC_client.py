@@ -20,7 +20,7 @@ class FibonacciRpcClient(object):
         self.callback_queue = result.method.queue
 
         # 声明收取消息和处理消息的方式
-        self.channel.basic_consume(self.on_response,    # 回调函数, 处理返回的消息
+        self.channel.basic_consume(self.on_response,    # 回调函数, 处理返回的消息, 收到消息就执行回调函数
                                    no_ack=True,
                                    queue=self.callback_queue)
 
