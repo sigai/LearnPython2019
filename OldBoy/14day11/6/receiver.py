@@ -23,7 +23,7 @@ channel.queue_declare(queue='hello', durable=True)
 # 传递的消息都是bytes格式的
 def callback(ch, method, properties, body):
     print(" [x] Starting to Receive")
-    time.sleep(30)
+    time.sleep(body.count('.'))     # 通过字符串中的.的数量来决定计算的复杂度，每个.都会消耗1s，即sleep(1)。
     print(" [x] Received %r" % body)
     ch.basic_ack(delivery_tag=method.delivery_tag)
 
