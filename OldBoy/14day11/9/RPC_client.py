@@ -3,7 +3,7 @@
 __author__ = "Sigai"
 import pika
 import uuid
-
+import time
 
 # 将整个RPC过程打包成一个类
 class FibonacciRpcClient(object):
@@ -48,7 +48,9 @@ class FibonacciRpcClient(object):
                                    body=str(n))
         # 如果返回结果为空, 则一直询问结果
         while self.response is None:
-            self.connection.process_data_events()   # 收取消息
+            print(self.response)
+            time.sleep(0.5)
+            self.connection.process_data_events(time_limit=None)   # 执行连接里的数据事件操作, 这里是收取消息
         # 有结果返回给call方法
         return int(self.response)
 

@@ -112,13 +112,11 @@ routingkey必须是225个字节内的由`.`号分割的字符表, routingkey有�
 思考题:
 ```
 
-Will "*" binding catch a message sent with an empty routing key?
+`*`能匹配空routingkey么?
 不能
-Will "#.*" catch a message with a string ".." as a key?
-能, 一个`.`都能
-Will it catch a message with a single word key?
-能
-How different is "a.*.#" from "a.#"?
+`#.*`能匹配`..`么, 能匹配单个单词么?
+能, 一个`.`都能, 能
+"a.*.#"跟"a.#"有什么不同
 前者能匹配至少两个字段, 后面能匹配最少一个字段a
 ```
 
@@ -126,3 +124,39 @@ How different is "a.*.#" from "a.#"?
 Remote Procedure Call Protocol远程过程调用协议，它是一种通过网络从远程计算机程序上请求服务，而不需要了解底层网络技术的协议。
 snmp
 uuid模块(universally unique identifiers)
+`connection.process_data_events(time_limit=0)`
+这个方法会确保数据事件都能执行. 阻塞连接和阻塞通道环境中, 如果回调函数没有调用过, 该方法会分发计时器和通道回调函数. 程序会阻塞.
+time_limit参数: 浮点类型, 设置处理任务的时间上限. 实际的阻塞时间由底层的IO粒度决定, 参数值为0, 表示尽快返回, None表示无时间限制, 该方法会一直阻塞, 直到IO操作执行动作事件完成. 默认为0, 为了向后兼容.
+
+客户端接口 Client interface
+回调函数队列 Callback queue
+消息属性 Message properties:
+AMQP 预定义了14个属性。它们中的绝大多很少会用到。以下几个是平时用的比较多的：
+1. delivery_mode: 持久化一个Message（通过设定值为2）。其他任意值都是非持久化。
+2. content_type: 描述mime-type 的encoding。比如设置为JSON编码：设置该property为application/json。
+3. reply_to: 一般用来指明用于回调的queue（Commonly used to name a callback queue）。
+4. correlation_id: 在请求中关联处理RPC响应（correlate RPC responses with requests）。
+相关id Correlation id
+首先, 为每个client创建唯一的callback queue, 然后, 对于每个request，都设置唯一的一个值，在收到响应后，通过这个值就可以判断是否是自己的响应。如果不是自己的响应，就不去处理。
+
+RPC工作流程：
+
+当客户端启动时，它创建了匿名的exclusive callback queue.
+客户端的RPC请求时将同时设置两个properties： reply_to设置为callback queue；correlation_id设置为每个request一个独一无二的值.
+请求将被发送到an rpc_queue queue.
+RPC端或者说server一直在等待那个queue的请求。当请求到达时，它将通过在reply_to指定的queue回复一个message给client。
+client一直等待callback queue的数据。当message到达时，它将检查correlation_id的值，如果值和它request发送时的一致那么就将返回响应。
+
+现版本的优缺点:
+现在这个设计并不是唯一的，但是这个实现有以下优势：
+1. 如何RPC server太慢，你可以扩展它:启动另外一个RPC server。
+2. 在client端， 无所进行加锁能同步操作，他所作的就是发送请求等待响应。
+我们的code还是挺简单的，并没有尝试去解决更复杂和重要的问题，比如：
+1. 如果没有server在运行，client需要怎么做？
+2. RPC应该设置超时机制吗?
+3. 如果server运行出错并且抛出了异常，需要将这个问题转发到client吗？
+4. 需要边界检查吗？
+
+#ProtoBuf
+一种轻便高效的结构化数据存储格式，可以用于结构化数据串行化，或者说序列化。它很适合做数据存储或 RPC 数据交换格式。可用于通讯协议、数据存储等领域的语言无关、平台无关、可扩展的序列化结构数据格式。目前提供了 C++、Java、Python 三种语言的 API。
+它可以作为RabbitMQ的Message的数据格式进行传输，由于是结构化的数据，这样就极大的方便了Consumer的数据高效处理。
