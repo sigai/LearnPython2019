@@ -133,5 +133,45 @@ Set the value of key ``name`` to ``value`` if key doesn't exist
 
 
 hash操作:
+`hdel(self, name, *keys)`:
+   Delete ``keys`` from hash ``name``
 
+`hexists(self, name, key)`:
+   Returns a boolean indicating if ``key`` exists within hash ``name``
+
+`hget(self, name, key)`:
+   Return the value of ``key`` within the hash ``name``
+
+`hgetall(self, name)`:
+   Return a Python dict of the hash's name/value pairs
+
+`hincrby(self, name, key, amount=1)`:
+   Increment the value of ``key`` in hash ``name`` by ``amount``
+
+`hincrbyfloat(self, name, key, amount=1.0)`:
+   Increment the value of ``key`` in hash ``name`` by floating ``amount``
+
+`hkeys(self, name)`:
+   Return the list of keys within hash ``name``
+
+`hlen(self, name)`:
+   Return the number of elements in hash ``name``
+
+`hset(self, name, key, value)`:
+   Set ``key`` to ``value`` within hash ``name``
+   Returns 1 if HSET created a new field, otherwise 0
+
+`hsetnx(self, name, key, value)`:
+   Set ``key`` to ``value`` within hash ``name`` if ``key`` does not
+   exist.  Returns 1 if HSETNX created a field, otherwise 0.
+
+`hmset(self, name, mapping)`:
+   Set key to value within hash ``name`` for each corresponding
+   key and value from the ``mapping`` dict.
+
+`hmget(self, name, keys, *args)`:
+   Returns a list of values ordered identically to ``keys``
+
+`hvals(self, name)`:
+   Return the list of values within hash ``name``
 
