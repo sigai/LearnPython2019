@@ -132,7 +132,7 @@ Set the value of key ``name`` to ``value`` if key doesn't exist
     返回值为key对应的新值的长度.
 
 
-hash操作:
+#hash操作:
 `hdel(self, name, *keys)`:
    Delete ``keys`` from hash ``name``
 
@@ -174,4 +174,128 @@ hash操作:
 
 `hvals(self, name)`:
    Return the list of values within hash ``name``
+`hscan(self, name, cursor=0, match=None, count=None)`:
+       
+   Incrementally return key/value slices in a hash. Also return a cursor
+   indicating the scan position.
+
+   ``match`` allows for filtering the keys by pattern
+
+   ``count`` allows for hint the minimum number of returns
+
+`hscan_iter(self, name, match=None, count=None)`:
+
+   Make an iterator using the HSCAN command so that the client doesn't
+   need to remember the cursor position.
+
+   ``match`` allows for filtering the keys by pattern
+
+   ``count`` allows for hint the minimum number of returns
+
+#list操作:
+`blpop(self, keys, timeout=0)`:
+   LPOP a value off of the first non-empty list
+   named in the ``keys`` list.
+   If none of the lists in ``keys`` has a value to LPOP, then block
+   for ``timeout`` seconds, or until a value gets pushed on to one
+   of the lists.
+   If timeout is 0, then block indefinitely.
+
+
+`brpop(self, keys, timeout=0)`:
+   RPOP a value off of the first non-empty list
+   named in the ``keys`` list.
+   If none of the lists in ``keys`` has a value to LPOP, then block
+   for ``timeout`` seconds, or until a value gets pushed on to one
+   of the lists.
+   If timeout is 0, then block indefinitely.
+
+
+`brpoplpush(self, src, dst, timeout=0)`:
+   Pop a value off the tail of ``src``, push it on the head of ``dst``
+   and then return it.
+   This command blocks until a value is in ``src`` or until ``timeout``
+   seconds elapse, whichever is first. A ``timeout`` value of 0 blocks
+   forever.
+
+
+`lindex(self, name, index)`:
+   Return the item from list ``name`` at position ``index``
+   Negative indexes are supported and will return an item at the
+   end of the list
+
+
+`linsert(self, name, where, refvalue, value)`:
+   Insert ``value`` in list ``name`` either immediately before or after
+   [``where``] ``refvalue``
+   Returns the new length of the list on success or -1 if ``refvalue``
+   is not in the list.
+
+        
+`llen(self, name)`:
+        "Return the length of the list ``name``"
+
+`lpop(self, name)`:
+        "Remove and return the first item of the list ``name``"
+
+`lpush(self, name, *values)`:
+        "Push ``values`` onto the head of the list ``name``"
+
+`lpushx(self, name, value)`:
+        "Push ``value`` onto the head of the list ``name`` if ``name`` exists"
+
+`lrange(self, name, start, end)`:
+   Return a slice of the list ``name`` between
+   position ``start`` and ``end``
+   ``start`` and ``end`` can be negative numbers just like Python slicing notation
+
+
+`lrem(self, name, count, value)`:
+   Remove the first ``count`` occurrences of elements equal to ``value``
+   from the list stored at ``name``.
+   The count argument influences the operation in the following ways:
+       count > 0: Remove elements equal to value moving from head to tail.
+       count < 0: Remove elements equal to value moving from tail to head.
+       count = 0: Remove all elements equal to value.
+
+
+`lset(self, name, index, value)`:
+        "Set ``position`` of list ``name`` to ``value``"
+        
+`ltrim(self, name, start, end)`:
+
+   Trim the list ``name``, removing all values not within the slice between ``start`` and ``end``
+   ``start`` and ``end`` can be negative numbers just like Python slicing notation
+
+
+`rpop(self, name)`:
+   "Remove and return the last item of the list ``name``"
+
+`rpoplpush(self, src, dst)`:
+   RPOP a value off of the ``src`` list and atomically LPUSH it on to the ``dst`` list.  Returns the value.
+
+
+`rpush(self, name, *values)`:
+   Push ``values`` onto the tail of the list ``name``
+
+`rpushx(self, name, value)`:
+   Push ``value`` onto the tail of the list ``name`` if ``name`` exists
+
+`sort(self, name, start=None, num=None, by=None, get=None,
+             desc=False, alpha=False, store=None, groups=False)`:
+   Sort and return the list, set or sorted set at ``name``.
+   ``start`` and ``num`` allow for paging through the sorted data
+   ``by`` allows using an external key to weight and sort the items.
+       Use an `*` to indicate where in the key the item value is located
+   ``get`` allows for returning items from external keys rather than the
+       sorted data itself.  Use an `*` to indicate where int he key
+       the item value is located
+   ``desc`` allows for reversing the sort
+   ``alpha`` allows for sorting lexicographically rather than numerically
+   ``store`` allows for storing the result of the sort into
+       the key ``store``
+   ``groups`` if set to True and if ``get`` contains at least two
+       elements, sort will return a list of tuples, each containing the
+       values fetched from the arguments to ``get``.
+
 

@@ -23,8 +23,15 @@ h = r.hlen('info2')     # 获取info2中key的个数.
 
 i = r.hdel('info2','k1') # 删除info2中的键值对k1, 返回1
 
-l = r.hexists('info', 'k1')     # 判断info是否有key为k1的键, 有返回True, 否则返回False
+j = r.hexists('info', 'k1')     # 判断info是否有key为k1的键, 有返回True, 否则返回False
 
+k = r.hincrby('info2', 'k3' )   # 默认将info2中的k3的值增加1, 返回增加后k3的值
 
+l = r.hincrbyfloat('info3', 'k4', amount=1.3)   # 将info2中的k4的值增加1.3, 返回增加后的值, 默认增加1.0
 
-print(i, sep='\n')
+m = r.hscan('info2', 0, match='*', count=2)     # 返回info2中符合匹配模式的所有键值对的字典形式加一个游标位置组成的元组
+
+n = r.hscan_iter('info2', match='*')    # 同上 返回一个迭代器, 每次迭代返回一个元组包含的键值对
+
+for i in n:
+    print(i, sep='\n')
