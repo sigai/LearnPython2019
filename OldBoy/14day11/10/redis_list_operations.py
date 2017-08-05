@@ -30,4 +30,5 @@ r = redis.Redis(host='127.0.0.1', port=6379)
 # u = r.strlen('name')        # 返回name对应值的字节bytes的长度, 跟Python字符串的len统计方法不一样. 中文一个字符为三个字节.
 # v = r.incr('count')         # 把count对应的值增加1
 # w = r.append('name', 'coolboy') # 在name的值后追加coolboy返回最终值的大小
+
 # print(w, sep="\n")

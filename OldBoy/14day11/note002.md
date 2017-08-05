@@ -130,7 +130,16 @@ Set the value of key ``name`` to ``value`` if key doesn't exist
     Returns the new length of the value at ``key``.
     把value追加到key对应的值后面. 如果key不存在, 则创建一个值为value的key.
     返回值为key对应的新值的长度.
+    
+`scan(self, cursor=0, match=None, count=None)`:
+        Incrementally return lists of key names. Also return a cursor indicating the scan position.
+        ``match`` allows for filtering the keys by pattern
+        ``count`` allows for hint the minimum number of returns
 
+`scan_iter(self, match=None, count=None)`:
+        Make an iterator using the SCAN command so that the client doesn't need to remember the cursor position.
+        ``match`` allows for filtering the keys by pattern
+        ``count`` allows for hint the minimum number of returns
 
 #hash操作:
 `hdel(self, name, *keys)`:
@@ -249,7 +258,6 @@ Set the value of key ``name`` to ``value`` if key doesn't exist
    position ``start`` and ``end``
    ``start`` and ``end`` can be negative numbers just like Python slicing notation
 
-
 `lrem(self, name, count, value)`:
    Remove the first ``count`` occurrences of elements equal to ``value``
    from the list stored at ``name``.
@@ -257,7 +265,6 @@ Set the value of key ``name`` to ``value`` if key doesn't exist
        count > 0: Remove elements equal to value moving from head to tail.
        count < 0: Remove elements equal to value moving from tail to head.
        count = 0: Remove all elements equal to value.
-
 
 `lset(self, name, index, value)`:
         "Set ``position`` of list ``name`` to ``value``"
@@ -267,13 +274,11 @@ Set the value of key ``name`` to ``value`` if key doesn't exist
    Trim the list ``name``, removing all values not within the slice between ``start`` and ``end``
    ``start`` and ``end`` can be negative numbers just like Python slicing notation
 
-
 `rpop(self, name)`:
    "Remove and return the last item of the list ``name``"
 
 `rpoplpush(self, src, dst)`:
    RPOP a value off of the ``src`` list and atomically LPUSH it on to the ``dst`` list.  Returns the value.
-
 
 `rpush(self, name, *values)`:
    Push ``values`` onto the tail of the list ``name``
@@ -298,4 +303,228 @@ Set the value of key ``name`` to ``value`` if key doesn't exist
        elements, sort will return a list of tuples, each containing the
        values fetched from the arguments to ``get``.
 
+#set操作
+`sadd(self, name, *values)`:
+        Add ``value(s)`` to set ``name``
+
+`scard(self, name)`:
+        Return the number of elements in set ``name``
+
+`sdiff(self, keys, *args)`:
+        Return the difference of sets specified by ``keys``
+
+`sdiffstore(self, dest, keys, *args)`:
+        Store the difference of sets specified by ``keys`` into a new
+        set named ``dest``.  Returns the number of keys in the new set.
+
+`sinter(self, keys, *args)`:
+        Return the intersection of sets specified by ``keys``
+
+`sinterstore(self, dest, keys, *args)`:
+        Store the intersection of sets specified by ``keys`` into a new
+        set named ``dest``.  Returns the number of keys in the new set.
+
+`sismember(self, name, value)`:
+        Return a boolean indicating if ``value`` is a member of set ``name``
+
+`smembers(self, name)`:
+        Return all members of the set ``name``
+
+`smove(self, src, dst, value)`:
+        Move ``value`` from set ``src`` to set ``dst`` atomically
+
+`spop(self, name)`:
+        Remove and return a random member of set ``name``
+
+`srandmember(self, name, number=None)`:
+        If ``number`` is None, returns a random member of set ``name``.
+        If ``number`` is supplied, returns a list of ``number`` random
+        memebers of set ``name``. Note this is only available when running
+        Redis 2.6+.
+
+`srem(self, name, *values)`:
+        Remove ``values`` from set ``name``
+
+`sunion(self, keys, *args)`:
+        Return the union of sets specified by ``keys``
+
+`sunionstore(self, dest, keys, *args)`:
+        Store the union of sets specified by ``keys`` into a new
+        set named ``dest``.  Returns the number of keys in the new set.
+
+`sscan(self, name, cursor=0, match=None, count=None)`:
+        Incrementally return lists of elements in a set. Also return a cursor
+        indicating the scan position.
+        ``match`` allows for filtering the keys by pattern
+        ``count`` allows for hint the minimum number of returns
+
+`sscan_iter(self, name, match=None, count=None)`:
+        Make an iterator using the SSCAN command so that the client doesn't
+        need to remember the cursor position.
+        ``match`` allows for filtering the keys by pattern
+        ``count`` allows for hint the minimum number of returns
+
+#有序set操作
+`zadd(self, name, *args, **kwargs)`:
+        Set any number of score, element-name pairs to the key ``name``. Pairs
+        can be specified in two ways:
+        As `*args`, in the form of: score1, name1, score2, name2, ...
+        or as `**kwargs`, in the form of: name1=score1, name2=score2, ...
+       The following example would add four values to the 'my-key' key:
+        redis.zadd('my-key', 1.1, 'name1', 2.2, 'name2', name3=3.3, name4=4.4)
+        
+
+`zcard(self, name)`:
+        Return the number of elements in the sorted set ``name``
+
+`zcount(self, name, min, max)`:
+        Returns the number of elements in the sorted set at key ``name`` with
+        a score between ``min`` and ``max``.
+
+`zincrby(self, name, value, amount=1)`:
+        Increment the score of ``value`` in sorted set ``name`` by ``amount``
+        return self.execute_command('ZINCRBY', name, amount, value)
+
+`zinterstore(self, dest, keys, aggregate=None)`:
+        Intersect multiple sorted sets specified by ``keys`` into
+        a new sorted set, ``dest``. Scores in the destination will be
+        aggregated based on the ``aggregate``, or SUM if none is provided.
+
+
+`zlexcount(self, name, min, max)`:
+        Return the number of items in the sorted set ``name`` between the
+        lexicographical range ``min`` and ``max``.
+
+`zrange(self, name, start, end, desc=False, withscores=False,
+               score_cast_func=float)`:
+        Return a range of values from sorted set ``name`` between
+        ``start`` and ``end`` sorted in ascending order.
+       ``start`` and ``end`` can be negative, indicating the end of the range.
+       ``desc`` a boolean indicating whether to sort the results descendingly
+       ``withscores`` indicates to return the scores along with the values.
+        The return type is a list of (value, score) pairs
+       ``score_cast_func`` a callable used to cast the score return value
+
+`zrangebylex(self, name, min, max, start=None, num=None)`:
+        Return the lexicographical range of values from sorted set ``name``
+        between ``min`` and ``max``.
+        If ``start`` and ``num`` are specified, then return a slice of the
+        range.
+
+`zrevrangebylex(self, name, max, min, start=None, num=None)`:
+        Return the reversed lexicographical range of values from sorted set
+        ``name`` between ``max`` and ``min``.
+        If ``start`` and ``num`` are specified, then return a slice of the
+        range.
+
+`zrangebyscore(self, name, min, max, start=None, num=None,
+                      withscores=False, score_cast_func=float)`:
+        Return a range of values from the sorted set ``name`` with scores
+        between ``min`` and ``max``.
+        If ``start`` and ``num`` are specified, then return a slice
+        of the range.
+        ``withscores`` indicates to return the scores along with the values.
+        The return type is a list of (value, score) pairs
+        `score_cast_func`` a callable used to cast the score return value
+
+```
+        
+# 当有序集合的所有成员都具有相同的分值时，有序集合的元素会根据成员的 值 （lexicographical ordering）来进行排序，而这个命令则可以返回给定的有序集合键 key 中， 元素的值介于 min 和 max 之间的成员
+# 对集合中的每个成员进行逐个字节的对比（byte-by-byte compare）， 并按照从低到高的顺序， 返回排序后的集合成员。 如果两个字符串有一部分内容是相同的话， 那么命令会认为较长的字符串比较短的字符串要大
+ 
+# 参数：
+    # name，redis的name
+    # min，左区间（值）。 + 表示正无限； - 表示负无限； ( 表示开区间； [ 则表示闭区间
+    # min，右区间（值）
+    # start，对结果进行分片处理，索引位置
+    # num，对结果进行分片处理，索引后面的num个元素
+ 
+# 如：
+    # ZADD myzset 0 aa 0 ba 0 ca 0 da 0 ea 0 fa 0 ga
+    # r.zrangebylex('myzset', "-", "[ca") 结果为：['aa', 'ba', 'ca']
+ 
+# 更多：
+    # 从大到小排序
+    # zrevrangebylex(name, max, min, start=None, num=None)
+
+```
+
+`zrank(self, name, value)`:
+        Returns a 0-based value indicating the rank of ``value`` in sorted set
+        ``name``
+
+`zrem(self, name, *values)`:
+        Remove member ``values`` from sorted set ``name``
+
+`zremrangebylex(self, name, min, max)`:
+        Remove all elements in the sorted set ``name`` between the
+        lexicographical range specified by ``min`` and ``max``.
+        Returns the number of elements removed.
+
+
+`zremrangebyrank(self, name, min, max)`:
+        Remove all elements in the sorted set ``name`` with ranks between
+        ``min`` and ``max``. Values are 0-based, ordered from smallest score
+        to largest. Values can be negative indicating the highest scores.
+        Returns the number of elements removed
+
+`zremrangebyscore(self, name, min, max)`:
+        Remove all elements in the sorted set ``name`` with scores
+        between ``min`` and ``max``. Returns the number of elements removed.
+
+`zrevrange(self, name, start, end, withscores=False,
+                  score_cast_func=float)`:
+        Return a range of values from sorted set ``name`` between
+        ``start`` and ``end`` sorted in descending order.
+        ``start`` and ``end`` can be negative, indicating the end of the range.
+        ``withscores`` indicates to return the scores along with the values
+        The return type is a list of (value, score) pairs
+        ``score_cast_func`` a callable used to cast the score return value
+
+
+`zrevrangebyscore(self, name, max, min, start=None, num=None,
+                         withscores=False, score_cast_func=float)`:
+        Return a range of values from the sorted set ``name`` with scores
+        between ``min`` and ``max`` in descending order.
+        If ``start`` and ``num`` are specified, then return a slice
+        of the range.
+        ``withscores`` indicates to return the scores along with the values.
+        The return type is a list of (value, score) pairs
+        ``score_cast_func`` a callable used to cast the score return value
+
+`zrevrank(self, name, value)`:
+        Returns a 0-based value indicating the descending rank of
+        ``value`` in sorted set ``name``
+
+`zscore(self, name, value)`:
+        Return the score of element ``value`` in sorted set ``name``
+
+`zunionstore(self, dest, keys, aggregate=None)`:
+        Union multiple sorted sets specified by ``keys`` into
+        a new sorted set, ``dest``. Scores in the destination will be
+        aggregated based on the ``aggregate``, or SUM if none is provided.
+
+#订阅发布
+PubSub类创建Publish/Subscribe对象, 实现订阅发布功能. 两个主要的方法publish和subscribe.
+比RabbitMQ简单多了.
+
+PubSub provides publish, subscribe and listen support to Redis channels.
+After subscribing to one or more channels, the listen() method will block
+until a message arrives on one of the subscribed channels. That message
+will be returned and it's safe to start listening again.
+
+`pubsub(self, **kwargs)`:
+        Return a Publish/Subscribe object. With this object, you can
+        subscribe to channels and listen for messages that get published to
+        them.
+`publish(self, channel, message)`:
+        Publish ``message`` on ``channel``.
+        Returns the number of subscribers the message was delivered to.
+
+`subscribe(self, *args, **kwargs)`:
+        Subscribe to channels. Channels supplied as keyword arguments expect
+        a channel name as the key and a callable as the value. A channel's
+        callable will be invoked automatically when a message is received on
+        that channel rather than producing a message via ``listen()`` or
+        ``get_message()``.
 
