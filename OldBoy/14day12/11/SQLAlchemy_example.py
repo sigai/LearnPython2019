@@ -7,8 +7,8 @@ from sqlalchemy import Column, Integer ,String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("mysql+pymysql://fangtiansheng:liandan713824@127.0.0.1/oldboydb",
-                       encoding='utf-8',
+engine = create_engine("mysql+pymysql://fangtiansheng:liandan713824@127.0.0.1/oldboydb?charset=utf8", # 支持中文
+                       encoding='utf-8', # 没什么用
                        # echo=True, # 输出信息
                        )
 

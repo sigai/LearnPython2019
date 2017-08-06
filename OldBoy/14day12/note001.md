@@ -181,7 +181,14 @@ orm英文全称object relational mapping,就是对象映射关系程序
 ORM使我们构造固化数据结构变得简单易行。
 缺点：
 无可避免的，自动化意味着映射和关联管理，代价是牺牲性能（早期，这是所有不喜欢ORM人的共同点）。现在的各种ORM框架都在尝试使用各种方法来减轻这块（LazyLoad，Cache），效果还是很显著的。
+创建连接支持中文:
 
+```
+engine = create_engine("mysql+pymysql://fangtiansheng:liandan713824@127.0.0.1/oldboydb?charset=utf8",
+                       encoding='utf-8', # 没什么用
+                       # echo=True, # 输出信息
+                       )
+```
 记录操作:
 #增加
 obj = Users(name="alex0", extra='sb')
