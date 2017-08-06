@@ -31,9 +31,9 @@ mysql 数据库安装使用
 
 #mysql管理
 `use mysql;`
-`grant ALL on *.* to '<username>'@'%' identified by '<password>';`
+`grant all on *.* to '<username>'@'%' identified by '<password>';`  设置权限, 密码
 `show grants for <username>;`
-`flush privileges;`
+`flush privileges;` 更改权限后需要更新一下才生效
 `show columns from <table>;` 同`desc`
 `creat database <db> charset 'utf8'` 创建db数据库, 支持utf-8编码
 `show create database <db>` 显示数据库创建信息
@@ -107,11 +107,191 @@ create table record(
     constraint fk_student_key foreign key (stu_id) references student (id));
 ```
 
+#连接查询
+Mysql 连接（left join, right join, inner join ,full join）
+
+我们已经学会了如果在一张表中读取数据，这是相对简单的，但是在真正的应用中经常需要从多个数据表中读取数据。
+
+本章节我们将向大家介绍如何使用 MySQL 的 JOIN 在两个或多个表中查询数据。
+
+你可以在SELECT, UPDATE 和 DELETE 语句中使用 Mysql 的 JOIN 来联合多表查询。
+
+JOIN 按照功能大致分为如下三类：
+
+INNER JOIN（内连接,或等值连接）：获取两个表中字段匹配关系的记录。
+LEFT JOIN（左连接）：获取左表所有记录，即使右表没有对应匹配的记录。
+RIGHT JOIN（右连接）： 与 LEFT JOIN 相反，用于获取右表所有记录，即使左表没有对应匹配的记录。
+##inner join
+取两个表的相同字段的数据的交集
+`select * from <table1> inner join <table2> on <table1.column1>=<table2.column2>`
+
+##left join
+取表1-表2的差集
+`select * from <table1> left join <table2> on <table1.column1>=<table2.column2>`
+
+##right join
+取表2-表1的差集, 与left join相反.
+`select * from <table1> right join <table2> on <table1.column1>=<table2.column2>`
+
+##full join
+mysql不直接支持full join.
+取表1表2字段的的合集, left join和right join的并集
+`select * from <table1> left join <table2> on <table1.column1>=<table2.column2> union select * from <table1> right join <table2> on <table1.column1>=<table2.column2>`
+
 
 增删改查表
 权限
-事务 
-索引
-python 操作mysql 
-ORM sqlachemy学习
+#事务
+MySQL 事务主要用于处理操作量大，复杂度高的数据。比如说，在人员管理系统中，你删除一个人员，你即需要删除人员的基本资料，也要删除和该人员相关的信息，如信箱，文章等等，这样，这些数据库操作语句就构成一个事务！
+
+在MySQL中只有使用了Innodb数据库引擎的数据库或表才支持事务
+事务处理可以用来维护数据库的完整性，保证成批的SQL语句要么全部执行，要么全部不执行
+事务用来管理insert,update,delete语句
+一般来说，事务是必须满足4个条件（ACID）： Atomicity（原子性）、Consistency（稳定性）、Isolation（隔离性）、Durability（可靠性）
+
+1. 事务的原子性：一组事务，要么成功；要么撤回。
+2. 稳定性 ： 有非法数据（外键约束之类），事务撤回。
+3. 隔离性：事务独立运行。一个事务处理后的结果，影响了其他事务，那么其他事务会撤回。事务的100%隔离，需要牺牲速度。
+4. 可靠性：软、硬件崩溃后，InnoDB数据表驱动会利用日志文件重构修改。可靠性和高速度不可兼得， innodb_flush_log_at_trx_commit选项 决定什么时候吧事务保存到日志里。
+
+##begin
+开始事务
+##rollback
+回滚事务, 撤销事务
+##commit
+提交事务
+
+##索引
+1. 显示索引
+    `show index from <table>;`
+2. 创建索引
+    `create index <name> on <table.column(<len>)>;`
+    `alter <table> add index <name> on (<column>);`
+3. 创建表时指定索引
+    `create <table> <column> <type> unique <name> (<column>(len));`
+4. 删除索引
+    `drop index <name> on <table>;`
+
+#python 操作mysql
+
+#ORM sqlachemy学习
+orm英文全称object relational mapping,就是对象映射关系程序
+优点：
+隐藏了数据访问细节，“封闭”的通用数据库交互，ORM的核心。他使得我们的通用数据库交互变得简单易行，并且完全不用考虑该死的SQL语句。快速开发，由此而来。
+ORM使我们构造固化数据结构变得简单易行。
+缺点：
+无可避免的，自动化意味着映射和关联管理，代价是牺牲性能（早期，这是所有不喜欢ORM人的共同点）。现在的各种ORM框架都在尝试使用各种方法来减轻这块（LazyLoad，Cache），效果还是很显著的。
+
+记录操作:
+#增加
+obj = Users(name="alex0", extra='sb')
+session.add(obj)
+
+session.add_all([
+    Users(name="alex1", extra='sb'),
+    Users(name="alex2", extra='sb'),
+])
+session.commit()
+
+#查询
+##`filter(self, *criterion)`:
+apply the given filtering criterion to a copy
+of this :class:`.Query`, using SQL expressions.
+e.g.::
+  session.query(MyClass).filter(MyClass.name == 'some name')
+Multiple criteria may be specified as comma separated; the effect
+is that they will be joined together using the :func:`.and_`
+function::
+  session.query(MyClass).\
+      filter(MyClass.name == 'some name', MyClass.id > 5)
+The criterion is any SQL expression object applicable to the
+WHERE clause of a select.   String expressions are coerced
+into SQL expression constructs via the :func:`.text` construct.
+.. seealso::
+  :meth:`.Query.filter_by` - filter on keyword expressions.
+
+##`filter_by(self, **kwargs)`:
+r"""apply the given filtering criterion to a copy
+of this :class:`.Query`, using keyword expressions.
+e.g.::
+  session.query(MyClass).filter_by(name = 'some name')
+Multiple criteria may be specified as comma separated; the effect
+is that they will be joined together using the :func:`.and_`
+function::
+  session.query(MyClass).\
+      filter_by(name = 'some name', id = 5)
+The keyword expressions are extracted from the primary
+entity of the query, or the last entity that was the
+target of a call to :meth:`.Query.join`.
+.. seealso::
+  :meth:`.Query.filter` - filter on SQL expressions.
+
+##`order_by(self, *criterion)`:
+"""apply one or more ORDER BY criterion to the query and return
+the newly resulting ``Query``
+All existing ORDER BY settings can be suppressed by
+passing ``None`` - this will suppress any ORDER BY configured
+on mappers as well.
+Alternatively, passing False will reset ORDER BY and additionally
+re-allow default mapper.order_by to take place.   Note mapper.order_by
+is deprecated.
+`group_by(self, *criterion)`:
+"""apply one or more GROUP BY criterion to the query and return
+the newly resulting :class:`.Query`
+All existing GROUP BY settings can be suppressed by
+passing ``None`` - this will suppress any GROUP BY configured
+on mappers as well.
+.. versionadded:: 1.1 GROUP BY can be cancelled by passing None,
+in the same way as ORDER BY.
+
+ret = session.query(Users).all()
+ret = session.query(Users.name, Users.extra).all()
+ret = session.query(Users).filter_by(name='alex').all()
+ret = session.query(Users).filter_by(name='alex').first()
+
+ret = session.query(Users).filter(text("id<:value and name=:name")).params(value=224, name='fred').order_by(User.id).all()
+
+ret = session.query(Users).from_statement(text("SELECT * FROM users where name=:name")).params(name='ed').all()
+#修改
+单条数据修改, 直接修改数据对象, 然后提交即可.
+多条数据修改
+session.query(Users).filter(Users.id > 2).update({"name" : "099"})
+session.query(Users).filter(Users.id > 2).update({Users.name: Users.name + "099"}, synchronize_session=False)
+session.query(Users).filter(Users.id > 2).update({"num": Users.num + 1}, synchronize_session="evaluate")
+session.commit()
+#回滚
+session.rollback()
+
+#获取所有数据
+session.query(User.name, User.password).all()
+
+#多条件查询
+session.query(User).filter(User.id>2).filter(User.name='tom').all()
+
+#统计和分组
+session.query(User).filter(User.name.like('Ra%')).count()
+
+from sqlalchemy import func
+session.query(func.count(User.name), User.name).group_by(User.name).all()
+
+#删除
+session.query(Users).filter(Users.id > 2).delete()
+session.commit()
+
+
+#连表查询
+session.query(User, Favor).filter(User.id==Favor.id).all()
+session.query(Person).join(Favor).all()
+session.query(Person).join(Favor, isouter=True).all()
+
+
+#外键
+
+#多外键
+
+#多对多外键
+
+
+#补充
+数据创建和修改分不同模块
 
