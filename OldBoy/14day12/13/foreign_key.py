@@ -46,11 +46,11 @@ session = Session_class()   # 实例化会话类, 同cursor
 # s4 = Student(name="Huang Zhong", age=76, register_date="1996-12-15")
 # s5 = Student(name="Ma Chao", age=56, register_date="1993-07-15")
 #
-# r1 = StudyRecord(day=1, status="yes",stu_id=1)
-# r2 = StudyRecord(day=2, status="yes",stu_id=1)
-# r3 = StudyRecord(day=3, status="yes",stu_id=1)
-# r4 = StudyRecord(day=1, status="yes",stu_id=1)
-# r5 = StudyRecord(day=1, status="yes",stu_id=2)
+# r1 = StudyRecord(day12=1, status="yes",stu_id=1)
+# r2 = StudyRecord(day12=2, status="yes",stu_id=1)
+# r3 = StudyRecord(day12=3, status="yes",stu_id=1)
+# r4 = StudyRecord(day12=1, status="yes",stu_id=1)
+# r5 = StudyRecord(day12=1, status="yes",stu_id=2)
 #
 # session.add_all([s1,s2,s3,s4,s5,r1,r2,r3,r4,r5])
 
