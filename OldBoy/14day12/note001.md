@@ -1,14 +1,13 @@
-macbook MySQL的 root密码toor
+macbook 和 windows MySQL的 root密码toor
+
+
 #MySQL
-数据库介绍
+数据库基础知识
 数据库(Database)是按照数据结构来组织、存储和管理数据的仓库.
 每个数据库都有一个或多个不同的API用于创建，访问，管理，搜索和复制所保存的数据。
 RDBMS即关系数据库管理系统(Relational Database Management System)
 
-hash()
-相同的数据, py2中hash都是一样的, py3中每个程序中是一样的, 不同的程序也会不一样.
 
-数据库的查找是, 二叉树的一种
 数据库: 数据库是一些关联表的集合。.
 数据表: 表是数据的矩阵。在一个数据库中的表看起来像一个简单的电子表格。
 列: 一列(数据元素) 包含了相同的数据, 例如邮政编码的数据。
@@ -17,11 +16,34 @@ hash()
 主键：主键是唯一的。一个数据表中只能包含一个主键。你可以使用主键来查询数据。
 外键：外键用于关联两个表。
 复合键：复合键（组合键）将多个列作为一个索引键，一般用于复合索引。
-索引：使用索引可快速访问数据库表中的特定信息。索引是对数据库表中一列或多列的值进行排序的一种结构。类似于书籍的目录。
+索引：使用索引可快速访问数据库表中的特定信息。索引是对数据库表中一列或多列的值进行排序的一种结构。类似于书籍的目录。数据库的查找是B+树, 二叉树的一种, hash() 相同的数据, py2中hash都是一样的, py3中每个程序中是一样的, 不同的程序也会不一样.
 参照完整性: 参照的完整性要求关系中不允许引用不存在的实体。与实体完整性是关系模型必须满足的完整性约束条件，目的是保证数据的一致性。
 
 
-mysql 数据库安装使用
+#mysql数据库安装使用
+官网下载安装
+#密码重置
+添加windows下mysql服务
+以管理员身份打开cmd,执行
+mysqld --install
+net stop mysql
+#忘记密码找回
+my.ini 的mysqld下添加
+skip-grant-tables
+#启动mysql服务
+net start mysqld
+cd C:\Program Files\MySQL\MySQL Server 5.7\bin
+mysql
+use mysql
+设置新密码
+update mysql.user
+set authentication_string=password('toor')
+  where user='root' and Host =
+  'localhost';
+flush privileges;
+5.7以前版本可用`UPDATE user SET Password=PASSWORD('newpassword') where USER='root';`更新密码
+
+使用命令
 `mysql -u<username> -p` 登陆MySQL数据库系统
 `show databases;` 显示所有数据库
 `use <database>;` 打开数据库
@@ -35,16 +57,20 @@ mysql 数据库安装使用
 `show grants for <username>;`
 `flush privileges;` 更改权限后需要更新一下才生效
 `show columns from <table>;` 同`desc`
-`creat database <db> charset 'utf8'` 创建db数据库, 支持utf-8编码
-`show create database <db>` 显示数据库创建信息
+`creat database <db> charset 'utf8';` 创建db数据库, 支持utf-8编码
+`show create database <db>;` 显示数据库创建信息
 `drop database <db>;` 删除数据库
-`show index from <db>;` 显示数据表的详细索引信息
+`show index from <table>;` 显示数据表的详细索引信息
+
 #mysql 数据类型
 三大类: 数值, 日期时间, 字符串
+数值: TINYINT(1字节), SMALLINT(2字节), MEDIUMINT(3字节), INT或INTEGER(4字节,最常用), BIGINT(8字节), FLOAT(4字节), DOUBLE(8字节), DECIMAL
+日期和时间类型: DATETIME(8字节)、DATE、TIMESTAMP、TIME和YEAR。
+字符串:CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM和SET, 常用的TEXT, CHAR, VARCHAR.
 
 #常用mysql命令
-## 创建表 
-`create table <tablename> (<column> <type>);`
+## 创建表
+`create table <tablename> (<column> <type> <not null> <auto_increment> primary_key(column));`
 示例
 
 ```
@@ -55,7 +81,7 @@ create table student(
     -> register_date date not null,
     -> primary_key (id));
 ```
-##增加记录 
+##增加记录
 `insert into <table> (<field>,...) values (<value>,...);`
 示例
 
@@ -64,36 +90,35 @@ insert into student
     -> (name, age, register_date) values
     -> ('房天生', 20, "2017-08-05");
 ```
-## 查找记录 
+## 查找记录
 `select <column>,... from <table> [where 从句][limit n][offset m];`
     where 子句
     where <条件>  精确查询
     where <column> like <match> 匹配查询
     %在字符串中匹配任意字符串.
 
-##更新记录 
+##更新记录
 `update <table> set <field>=<value>,... [where 从句];`
 
-##删除记录和表 
+##删除记录和表
 `delete from <table> [where 从句];` `drop table <table>;`
 
-##排序结果 
+##排序结果
 `select * from <table> order by <column>;`
 
-##分组结果 
+##分组结果
 `select *, function(<column>) as <name> from <table> group by <column>;`
 function: count, sum
 with roolup 统计总和
-`select coalesce(<column>, <newname>), function(<column>) as <name> from <table> group by <column> with rollup;`
+`select coalesce(<column>, <newname>) as <column>, function(<column>) as <name> from <table> group by <column> with rollup;` 加个as 就完美了
 
 ##修改表属性
-`alter table <table> add <column> <type>;` 添加字段
+`alter table <table> add <column> <type> not null;` 添加字段, not null 会自动为已存在的数据添加默认设置
 `alter table <table> drop <column>;` 删除字段
 `alter table <table> modify <column> <type>;` 修改字段类型(不能修改字段名)
 `alter table <table> change <column> <new column> <type>;` 修改字段名和字段类型
 更改的时候可以设置是否可以为空, not null和默认值default <value>, 不会对已经存在的数据更改.
 
-创建数据库
 #外键
 视频7中的问题是引号的问题, 值加引号, 表名, 字段名就不需要加引号, ` 是 mysql 的转义符，只要你不在列名、表名中使用 mysql 的保留字或中文，就不需要转义.
 
@@ -102,7 +127,7 @@ create table record(
     id int auto_increment primary key,
     day int not null,
     stu_id int(11) not null,
-    status char(32) not null default 'yes', 
+    status char(32) not null default 'yes',
     key fk_student_key (stu_id),
     constraint fk_student_key foreign key (stu_id) references student (id));
 ```
@@ -183,7 +208,7 @@ ORM使我们构造固化数据结构变得简单易行。
 无可避免的，自动化意味着映射和关联管理，代价是牺牲性能（早期，这是所有不喜欢ORM人的共同点）。现在的各种ORM框架都在尝试使用各种方法来减轻这块（LazyLoad，Cache），效果还是很显著的。
 创建连接支持中文:
 
-```
+```python
 engine = create_engine("mysql+pymysql://fangtiansheng:liandan713824@127.0.0.1/oldboydb?charset=utf8",
                        encoding='utf-8', # 没什么用
                        # echo=True, # 输出信息
@@ -301,4 +326,3 @@ session.query(Person).join(Favor, isouter=True).all()
 
 #补充
 数据创建和修改分不同模块
-
