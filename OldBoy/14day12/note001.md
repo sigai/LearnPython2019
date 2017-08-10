@@ -70,22 +70,22 @@ flush privileges;
 
 #常用mysql命令
 ## 创建表
-`create table <tablename> (<column> <type> <not null> <auto_increment> primary_key(column));`
+`create table <tablename> (<column> <type> <not null> <auto_increment> primary key (column));`
 示例
 
-```
+```sql
 create table student(
     -> id int auto_increment,
     -> name char(32) not null,
     -> age int not null,
     -> register_date date not null,
-    -> primary_key (id));
+    -> primary key (id));
 ```
 ##增加记录
 `insert into <table> (<field>,...) values (<value>,...);`
 示例
 
-```
+```sql
 insert into student
     -> (name, age, register_date) values
     -> ('房天生', 20, "2017-08-05");
@@ -120,9 +120,9 @@ with roolup 统计总和
 更改的时候可以设置是否可以为空, not null和默认值default <value>, 不会对已经存在的数据更改.
 
 #外键
-视频7中的问题是引号的问题, 值加引号, 表名, 字段名就不需要加引号, ` 是 mysql 的转义符，只要你不在列名、表名中使用 mysql 的保留字或中文，就不需要转义.
+视频7中的问题是引号的问题, 值加引号, 表名, 字段名就不需要加引号, 分隔符 \` 是 mysql 的转义符，只要你不在列名、表名中使用 mysql 的保留字或中文，就不需要转义.
 
-```
+```SQL
 create table record(
     id int auto_increment primary key,
     day int not null,
@@ -131,8 +131,19 @@ create table record(
     key fk_student_key (stu_id),
     constraint fk_student_key foreign key (stu_id) references student (id));
 ```
+视频里ALex被武佩琪坑了, 创建record表的时候没有自增id.
+参照完整性, 如果关联的表里没有关联字段的值, 被关联的表里无法添加成功的. 已经被关联的表中的数据无法被删除.
+
+#NULL值处理
+mysql三大运算符:
+is null:当列的值是NULL, 返回TRUE.
+is not null: 当列的值不为NULL, 返回TRUE.
+<=>:比较操作符, 当比较的两个值为NULL时, 返回TRUE.
+NULL与其他任何值的比较永远返回false, 所以要使用IS NULL 或 IS NOT NULL处理NULL值.
 
 #连接查询
+多表查询
+
 Mysql 连接（left join, right join, inner join ,full join）
 
 我们已经学会了如果在一张表中读取数据，这是相对简单的，但是在真正的应用中经常需要从多个数据表中读取数据。
@@ -146,10 +157,12 @@ JOIN 按照功能大致分为如下三类：
 INNER JOIN（内连接,或等值连接）：获取两个表中字段匹配关系的记录。
 LEFT JOIN（左连接）：获取左表所有记录，即使右表没有对应匹配的记录。
 RIGHT JOIN（右连接）： 与 LEFT JOIN 相反，用于获取右表所有记录，即使左表没有对应匹配的记录。
+
 ##inner join
 取两个表的相同字段的数据的交集
 `select * from <table1> inner join <table2> on <table1.column1>=<table2.column2>`
-
+等效于
+`select table1.*, table2.* from table1, table2 where <table1.column1>=<table2.column2>`
 ##left join
 取表1-表2的差集
 `select * from <table1> left join <table2> on <table1.column1>=<table2.column2>`
@@ -164,11 +177,9 @@ mysql不直接支持full join.
 `select * from <table1> left join <table2> on <table1.column1>=<table2.column2> union select * from <table1> right join <table2> on <table1.column1>=<table2.column2>`
 
 
-增删改查表
-权限
 #事务
 MySQL 事务主要用于处理操作量大，复杂度高的数据。比如说，在人员管理系统中，你删除一个人员，你即需要删除人员的基本资料，也要删除和该人员相关的信息，如信箱，文章等等，这样，这些数据库操作语句就构成一个事务！
-
+MySQL5.5 InnoDB变为默认引擘
 在MySQL中只有使用了Innodb数据库引擎的数据库或表才支持事务
 事务处理可以用来维护数据库的完整性，保证成批的SQL语句要么全部执行，要么全部不执行
 事务用来管理insert,update,delete语句
@@ -179,14 +190,15 @@ MySQL 事务主要用于处理操作量大，复杂度高的数据。比如说�
 3. 隔离性：事务独立运行。一个事务处理后的结果，影响了其他事务，那么其他事务会撤回。事务的100%隔离，需要牺牲速度。
 4. 可靠性：软、硬件崩溃后，InnoDB数据表驱动会利用日志文件重构修改。可靠性和高速度不可兼得， innodb_flush_log_at_trx_commit选项 决定什么时候吧事务保存到日志里。
 
-##begin
+`begin`
 开始事务
-##rollback
+`rollback`
 回滚事务, 撤销事务
-##commit
+`commit`
 提交事务
 
 ##索引
+单列索引和组合索引(联合唯一), 创建索引时, 应该确保会被使用. 使用索引会导致表更新的操作性能降低.
 1. 显示索引
     `show index from <table>;`
 2. 创建索引
@@ -197,7 +209,50 @@ MySQL 事务主要用于处理操作量大，复杂度高的数据。比如说�
 4. 删除索引
     `drop index <name> on <table>;`
 
+更多mysql
+http://www.cnblogs.com/wupeiqi/articles/5713323.html
+练习
+http://www.cnblogs.com/wupeiqi/articles/5729934.html
+
 #python 操作mysql
+```python
+import pymysql
+
+conn = pymysql.connect(
+    host='127.0.0.1',
+    port = 3306,
+    user='root',
+    password='toor',
+    database='oldboydb',
+    charset='utf8', # 支持中文
+
+)
+
+cursor = conn.cursor()
+
+effect_row = cursor.execute('select * from student')
+print(cursor.fetchone())
+print(cursor.fetchmany(4))
+print(cursor.fetchall())
+
+data=[
+    (r"习近平", 45, "2017-09-08"),
+    (r"彭丽媛", 40, "2018-08-07"),
+    (r"毛泽东", 99, "1980-08-03"),
+    (r"周恩来", 108, "1879-09-08"),
+    (r"朱德", 89, "1967-09-07"),
+]
+# 事务操作
+# cursor.executemany("insert into student(name, age, register_date) values (%s,%s,%s)", data)
+# conn.commit()
+
+cursor.close()
+conn.close()
+
+# 获取最新自增ID
+# new_id =cursor.lastrowid
+# print(new_id)
+```
 
 #ORM sqlachemy学习
 orm英文全称object relational mapping,就是对象映射关系程序
@@ -208,7 +263,7 @@ ORM使我们构造固化数据结构变得简单易行。
 无可避免的，自动化意味着映射和关联管理，代价是牺牲性能（早期，这是所有不喜欢ORM人的共同点）。现在的各种ORM框架都在尝试使用各种方法来减轻这块（LazyLoad，Cache），效果还是很显著的。
 创建连接支持中文:
 
-```python
+```Python
 engine = create_engine("mysql+pymysql://fangtiansheng:liandan713824@127.0.0.1/oldboydb?charset=utf8",
                        encoding='utf-8', # 没什么用
                        # echo=True, # 输出信息

@@ -7,8 +7,8 @@ import pymysql
 conn = pymysql.connect(
     host='127.0.0.1',
     port = 3306,
-    user='fangtiansheng',
-    password='liandan713824',
+    user='root',
+    password='toor',
     database='oldboydb',
     charset='utf8', # 支持中文
 

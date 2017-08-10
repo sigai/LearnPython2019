@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
-from sqlalchemy import Table, MetaData, Column, Integer, String, ForeignKey
+from sqlalchemy import Table, MetaData, Column, Integer, String
 from sqlalchemy.orm import mapper
 
 metadata = MetaData()
