@@ -266,71 +266,69 @@ ORM使我们构造固化数据结构变得简单易行。
 ```Python
 engine = create_engine("mysql+pymysql://fangtiansheng:liandan713824@127.0.0.1/oldboydb?charset=utf8",
                        encoding='utf-8', # 没什么用
-                       # echo=True, # 输出信息
+                       echo=True, # 输出信息
                        )
 ```
 记录操作:
 #增加
-obj = Users(name="alex0", extra='sb')
-session.add(obj)
+
+```python
+obj = Users(name="alex0", extra='sb')   # 新建记录对象
+session.add(obj)    # 新建操作添加到会话中
 
 session.add_all([
     Users(name="alex1", extra='sb'),
     Users(name="alex2", extra='sb'),
-])
-session.commit()
+])      # 添加多个记录数据对象
+session.commit()    # 提交
+```
 
 #查询
+
 ##`filter(self, *criterion)`:
-apply the given filtering criterion to a copy
-of this :class:`.Query`, using SQL expressions.
-e.g.::
+SQL表达式过滤
+用指定的过滤条件criterion(SQL表达式), 过滤Query, 并返回一个Query类的拷贝.
+例如:
   session.query(MyClass).filter(MyClass.name == 'some name')
-Multiple criteria may be specified as comma separated; the effect
-is that they will be joined together using the :func:`.and_`
-function::
+
+多条件查询的参数用逗号分隔, 效果跟用.and_方法获得的交集结果相同.
   session.query(MyClass).\
       filter(MyClass.name == 'some name', MyClass.id > 5)
-The criterion is any SQL expression object applicable to the
-WHERE clause of a select.   String expressions are coerced
-into SQL expression constructs via the :func:`.text` construct.
-.. seealso::
-  :meth:`.Query.filter_by` - filter on keyword expressions.
+
+criterion参数是select语句中where字句可用的任意SQL表达式对象.
+字符串表达式可以用text构造方法将其强制转换成SQL表达式.
+`.Query.filter_by`关键字表达式过滤
 
 ##`filter_by(self, **kwargs)`:
-r"""apply the given filtering criterion to a copy
-of this :class:`.Query`, using keyword expressions.
-e.g.::
+用关键字表达式过滤`.Query`类的拷贝.
+例如:
   session.query(MyClass).filter_by(name = 'some name')
-Multiple criteria may be specified as comma separated; the effect
-is that they will be joined together using the :func:`.and_`
-function::
+
+多条件查询参数用逗号分隔, 跟用`.and_`方法join之后的效果一样.
+例如
   session.query(MyClass).\
       filter_by(name = 'some name', id = 5)
-The keyword expressions are extracted from the primary
-entity of the query, or the last entity that was the
-target of a call to :meth:`.Query.join`.
-.. seealso::
-  :meth:`.Query.filter` - filter on SQL expressions.
+
+关键字表达式是查询的主要实体中提取的, 或者是`.Query.join`方法的最后实体.
+`.Query.filter`用SQL表达式过滤
+
 
 ##`order_by(self, *criterion)`:
-"""apply one or more ORDER BY criterion to the query and return
-the newly resulting ``Query``
-All existing ORDER BY settings can be suppressed by
-passing ``None`` - this will suppress any ORDER BY configured
-on mappers as well.
-Alternatively, passing False will reset ORDER BY and additionally
-re-allow default mapper.order_by to take place.   Note mapper.order_by
-is deprecated.
-`group_by(self, *criterion)`:
-"""apply one or more GROUP BY criterion to the query and return
-the newly resulting :class:`.Query`
-All existing GROUP BY settings can be suppressed by
-passing ``None`` - this will suppress any GROUP BY configured
-on mappers as well.
-.. versionadded:: 1.1 GROUP BY can be cancelled by passing None,
-in the same way as ORDER BY.
+按一个或多个ORDER BY条件参数排序查询并返回新的`Query`类结果.
 
+所有的ORDER BY设置都会无效, 如果有一个条件是`None`, 在mpper函数中也一样.
+
+另外, 如果条件参数中有`False`会重置ORDER BY, 并且使用mapper.order_by的默认设置. 注意: `mapper.order_by`不推荐使用.
+
+##`group_by(self, *criterion)`:
+按一个或多个ORDER BY条件参数排序查询并返回新的`Query`类结果.
+
+所有的GROUP BY设置都会无效, 如果有一个条件是`None`, 在mpper函数中也一样.
+
+1.1 版本开始添加, 跟ORDER BY一样, 传递`None`可以取消分组设置.
+
+例子:
+```python
 ret = session.query(Users).all()
 ret = session.query(Users.name, Users.extra).all()
 ret = session.query(Users).filter_by(name='alex').all()
@@ -339,15 +337,52 @@ ret = session.query(Users).filter_by(name='alex').first()
 ret = session.query(Users).filter(text("id<:value and name=:name")).params(value=224, name='fred').order_by(User.id).all()
 
 ret = session.query(Users).from_statement(text("SELECT * FROM users where name=:name")).params(name='ed').all()
+```
+
 #修改
 单条数据修改, 直接修改数据对象, 然后提交即可.
 多条数据修改
+`sqlalchemy.orm.query.update`
+
+```python
+def update(self, values, synchronize_session='evaluate', update_args=None):
+    执行批量更新查询.
+    更新数据库中此查询所匹配的行.
+
+        sess.query(User).filter(User.age == 25).\
+            update({User.age: User.age - 10}, synchronize_session=False)
+
+        sess.query(User).filter(User.age == 25).\
+            update({"age": User.age - 10}, synchronize_session='evaluate')
+
+       # 警告: `.Query.update`方法是一个批量操作, 为了性能, ORM会自动将其作为一个单元操作, 请sqlalchemy.orm模块下的query.update, 获得更多信息.
+```
+
+示例:
+```python
 session.query(Users).filter(Users.id > 2).update({"name" : "099"})
 session.query(Users).filter(Users.id > 2).update({Users.name: Users.name + "099"}, synchronize_session=False)
 session.query(Users).filter(Users.id > 2).update({"num": Users.num + 1}, synchronize_session="evaluate")
 session.commit()
+```
+
 #回滚
 session.rollback()
+```python
+`rollback(self)`:
+Rollback the current transaction in progress.
+
+        If no transaction is in progress, this method is a pass-through.
+
+        This method rolls back the current transaction or nested transaction
+        regardless of subtransactions being in effect.  All subtransactions up
+        to the first real transaction are closed.  Subtransactions occur when
+        :meth:`.begin` is called multiple times.
+
+        .. seealso::
+
+            :ref:`session_rollback`
+```
 
 #获取所有数据
 session.query(User.name, User.password).all()
@@ -365,19 +400,109 @@ session.query(func.count(User.name), User.name).group_by(User.name).all()
 session.query(Users).filter(Users.id > 2).delete()
 session.commit()
 
-
 #连表查询
+不需要关联关系.
 session.query(User, Favor).filter(User.id==Favor.id).all()
+需要表之间已经存在关联关系.
 session.query(Person).join(Favor).all()
 session.query(Person).join(Favor, isouter=True).all()
 
 
-#外键
+#外键, 多外键
+新建数据表类, 可以映射数据库中已经存在的表.
+`student = relationship('Student', backref="my_record")`
+这个nb，允许你在student表里通过backref字段反向查出所有它在record表里的关联项
+这个在sqlalchemy.orm.relationships 里的第120行到820注释里. 笑哭了, 太多了吧.
 
-#多外键
+```
+Provide a relationship between two mapped classes.
+This corresponds to a parent-child or associative table relationship.
+        The constructed class is an instance of
+        :class:`.RelationshipProperty`.
+
+        A typical :func:`.relationship`, used in a classical mapping::
+
+           mapper(Parent, properties={
+             'children': relationship(Child)
+           })
+
+        Some arguments accepted by :func:`.relationship` optionally accept a
+        callable function, which when called produces the desired value.
+        The callable is invoked by the parent :class:`.Mapper` at "mapper
+        initialization" time, which happens only when mappers are first used,
+        and is assumed to be after all mappings have been constructed.  This
+        can be used to resolve order-of-declaration and other dependency
+        issues, such as if ``Child`` is declared below ``Parent`` in the same
+        file::
+
+            mapper(Parent, properties={
+                "children":relationship(lambda: Child,
+                                    order_by=lambda: Child.id)
+            })
+
+        When using the :ref:`declarative_toplevel` extension, the Declarative
+        initializer allows string arguments to be passed to
+        :func:`.relationship`.  These string arguments are converted into
+        callables that evaluate the string as Python code, using the
+        Declarative class-registry as a namespace.  This allows the lookup of
+        related classes to be automatic via their string name, and removes the
+        need to import related classes at all into the local module space::
+
+            from sqlalchemy.ext.declarative import declarative_base
+
+            Base = declarative_base()
+
+            class Parent(Base):
+                __tablename__ = 'parent'
+                id = Column(Integer, primary_key=True)
+                children = relationship("Child", order_by="Child.id")
+
+        .. seealso::
+
+          :ref:`relationship_config_toplevel` - Full introductory and
+          reference documentation for :func:`.relationship`.
+
+          :ref:`orm_tutorial_relationship` - ORM tutorial introduction.
+```
+http://docs.sqlalchemy.org/en/latest/orm/relationship_api.html
+
+`class ForeignKey(DialectKWArgs, SchemaItem)`:
+Defines a dependency between two columns.
+
+    ``ForeignKey`` is specified as an argument to a :class:`.Column` object,
+    e.g.::
+
+        t = Table("remote_table", metadata,
+            Column("remote_id", ForeignKey("main_table.id"))
+        )
+
+    Note that ``ForeignKey`` is only a marker object that defines
+    a dependency between two columns.   The actual constraint
+    is in all cases represented by the :class:`.ForeignKeyConstraint`
+    object.   This object will be generated automatically when
+    a ``ForeignKey`` is associated with a :class:`.Column` which
+    in turn is associated with a :class:`.Table`.   Conversely,
+    when :class:`.ForeignKeyConstraint` is applied to a :class:`.Table`,
+    ``ForeignKey`` markers are automatically generated to be
+    present on each associated :class:`.Column`, which are also
+    associated with the constraint object.
+
+    Note that you cannot define a "composite" foreign key constraint,
+    that is a constraint between a grouping of multiple parent/child
+    columns, using ``ForeignKey`` objects.   To define this grouping,
+    the :class:`.ForeignKeyConstraint` object must be used, and applied
+    to the :class:`.Table`.   The associated ``ForeignKey`` objects
+    are created automatically.
+
+    The ``ForeignKey`` objects associated with an individual
+    :class:`.Column` object are available in the `foreign_keys` collection
+    of that column.
+
+    Further examples of foreign key configuration are in
+    :ref:`metadata_foreignkeys`.
 
 #多对多外键
 
 
 #补充
-数据创建和修改分不同模块
+项目中, 数据创建和修改应该分不同的模块.

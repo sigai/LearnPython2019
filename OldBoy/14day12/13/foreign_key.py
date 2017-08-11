@@ -24,10 +24,10 @@ class Student(Base):
 
 class StudyRecord(Base):
     __tablename__ = 'record'  # 表名
-    id = Column(Integer,primary_key= True)      #主键
+    id = Column(Integer,primary_key= True)      # 主键
     day = Column(String(32), nullable=False)       #
     status = Column(String(32), nullable=False)
-    stu_id = Column(Integer, ForeignKey('student.id'), nullable=False)       #
+    stu_id = Column(Integer, ForeignKey('student.id'), nullable=False)       # 外键关联
     student = relationship('Student', backref="my_record")  # 这个nb，允许你在student表里通过backref字段反向查出所有它在record表里的关联项
 
     def __repr__(self):

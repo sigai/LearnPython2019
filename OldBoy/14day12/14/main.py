@@ -20,4 +20,3 @@ c2 = views.Customer(name='Jon',billing_address=addr3, shipping_address=addr3)
 session.add_all([c1, c2])
 
 session.commit()
-
