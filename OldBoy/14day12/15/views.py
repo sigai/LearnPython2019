@@ -14,10 +14,13 @@ engine = create_engine("mysql+pymysql://fangtiansheng:liandan713824@127.0.0.1/ol
                        )
 Base = declarative_base()
 
+
+# 不进行表操作的情况下, 用Table建表, 否则用继承Base创建类的形式建表.
 book_m2m_author = Table('book_m2m_author', Base.metadata,
                         Column('book_id',Integer,ForeignKey('books.id')),
                         Column('author_id',Integer,ForeignKey('authors.id')),
                         )
+
 
 class Book(Base):
     __tablename__ = 'books'

@@ -502,7 +502,23 @@ Defines a dependency between two columns.
     :ref:`metadata_foreignkeys`.
 
 #多对多外键
+双向一对多, 就是多对多.
+建立第三个表, 保存关系.
+视频中book3有对应关系,book2没有任何对应关系, 所以orm会优先创建有对应关系的记录book3.
+`relationship()`:
+cascade_backrefs=True:
+          a boolean value indicating if the ``save-update`` cascade should
+          operate along an assignment event intercepted by a backref.
+          When set to ``False``, the attribute managed by this relationship
+          will not cascade an incoming transient object into the session of a
+          persistent parent, if the event is received via backref.
 
+          .. seealso::
+
+            :ref:`backref_cascade` - Full discussion and examples on how
+            the :paramref:`~.relationship.cascade_backrefs` option is used.
+
+删除数据只需要获取到数据对象,  然后调用remove(obj)方法, orm会自动删除第三张表中的关系和表中的数据.
 
 #补充
 项目中, 数据创建和修改应该分不同的模块.

@@ -8,6 +8,7 @@ from sqlalchemy.orm import sessionmaker
 Session_class = sessionmaker(bind=views.engine)  # 创建与数据库的会话session class ,注意,这里返回给session的是个class,不是实例
 s = Session_class()  # 生成session实例
 
+# 两个数据表没有关系, 关系存在第三章表里, 所以先建立哪个都一样.
 # b1 = views.Book(name="跟Alex学Python")
 # b2 = views.Book(name="跟Alex学把妹")
 # b3 = views.Book(name="跟Alex学装逼")
