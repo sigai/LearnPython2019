@@ -1,0 +1,100 @@
+body{
+	margin: 0 auto;
+}
+.container{
+	width:990px;
+	margin: 0 auto;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.hide{
+    display: none;
+}
+
+img {
+  border: 0;
+}
+
+.pg-header{
+	background-color: #337ab7;
+	height: 50px;
+	width: 100%;
+}
+.pg-header .logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:white;
+	line-height: 50px;
+	margin-left: 20px;
+}
+.pg-header .user{
+    margin: 6px 15px;
+
+}
+.pg-header .user .user-img{
+    height: 36px !important;
+    width: 36px !important;
+    border-radius: 50%;
+
+    -moz-border-radius: 50%; /* Firefox */
+    -webkit-border-radius: 50%; /* Safari 和 Chrome */
+    border-radius: 50%; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+
+}
+
+.pg-body{
+
+}
+
+.pg-body .menu{
+	width: 280px;
+	background-color: white;
+	position: absolute;
+	top: 60px;
+	left: 5px;
+	bottom: 5px;
+	background-color: #f1f1f1;
+	overflow: auto;
+}
+.pg-body .menu dl{
+	margin: 0px;
+}
+.pg-body .menu dt{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0px;
+	background-color: #337ab7;
+	padding-left: 10px;
+	color: white;
+}
+.pg-body .menu dd{
+	padding: 3px 0px;
+}
+
+.pg-body .title{
+	background-color: red;
+}
+.pg-body .body{
+    top: 60px;
+	left: 300px;
+	bottom: 5px;
+    right: 0px;
+    position: absolute;
+    overflow: scroll;
+}
+.pg-body .content{
+	border: 1px dotted #ddd;
+    overflow: hidden;
+}
+
+.pg-body .content .group{
+	border-bottom: 1px dotted #ddd;
+	margin: 10px;
+}

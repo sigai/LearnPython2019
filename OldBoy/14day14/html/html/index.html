@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html;charset=utf-8'>
+	<title>Day 9</title>
+	<link rel="shortcut icon" href="image/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+	<div class='pg-header'>
+		<div class='logo left'>
+			老男孩培训
+		</div>
+        <div class="user right">
+            <a><img src="image/default.png" class="user-img"></a>
+        </div>
+	</div>
+
+
+
+	<div class='pg-body'>
+		<div class='menu'>
+			<dl>
+				<dt>Html</dt>
+					<dd><a href="#t1">概述</a></dd>
+
+					<dd><a href="#t2">HTML文档</a>
+						<ol>
+							<li><a href="#t21">Doctype </a></li>
+							<li><a href="#t22">Meta </a></li>
+							<li><a href="#t23">Title </a></li>
+							<li><a href="#t24">Link </a></li>
+							<li><a href="#t25">Style </a></li>
+							<li><a href="#t26">Script </a></li>
+						</ol>
+					</dd>
+
+					<dd><a href="#t3">常用标签</a>
+						<ol>
+							<li><a href="#t31">各种符号 </a></li>
+							<li><a href="#t32"> p 和 br </a></li>
+							<li><a href="#t33">a 标签</a></li>
+							<li><a href="#t34">H 标签</a></li>
+							<li><a href="#t35">select </a></li>
+							<li><a href="#t36">input:checkbox </a></li>
+							<li><a href="#t37">input:redio </a></li>
+							<li><a href="#t38">input:password </a></li>
+							<li><a href="#t39">input:button </a></li>
+							<li><a href="#t310">input:file </a></li>
+							<li><a href="#t311">textarea </a></li>
+							<li><a href="#t312">label </a></li>
+							<li><a href="#t313">ul ol dl </a></li>
+							<li><a href="#t314">table </a></li>
+							<li><a href="#t315">fieldset </a></li>
+							<li><a href="#t316">form </a></li>
+							<li><a href="#t317">div </a></li>
+						</ol>
+					</dd>
+
+					<dd><a href="#t4">练习</a>
+						<ul>
+							<li><a href="#t41">注册页面</a></li>
+						</ul>
+					</dd>
+				<dt>CSS</dt>
+					<dd><a href="#t5">概述</a></dd>
+
+					<dd><a href="#t6">CSS选择器</a>
+						<ol>
+							<li><a href="#t61">标签选择器</a></li>
+							<li><a href="#t62">class选择器</a></li>
+							<li><a href="#t63">id选择器</a></li>
+							<li><a href="#t64">关联选择器</a></li>
+							<li><a href="#t65">组合选择器</a></li>
+							<li><a href="#t66">属性选择器</a></li>
+							<li><a href="http://www.w3school.com.cn/css/index.asp">更多</a></li>
+						</ol>
+					</dd>
+
+					<dd><a href="#t7">CSS常用属性</a>
+						<ol>
+							<li><a href="#t71">background</a></li>
+							<li><a href="#t72">border</a></li>
+							<li><a href="#t73">margin</a></li>
+							<li><a href="#t74">padding</a></li>
+							<li><a href="#t75">display</a></li>
+							<li><a href="#t76">cursor</a></li>
+							<li><a href="#t77">float</a></li>
+							<li><a href="#t78">position</a></li>
+							<li><a href="#t79">透明度</a></li>
+							<li><a href="#t80">改造默认样式</a></li>
+							<li><a href="http://www.w3school.com.cn/css/index.asp">更多</a></li>
+						</ol>
+					</dd>
+					<dd><a href="#">练习</a>
+						<ul>
+							<li><a href="#">布局页</a></li>
+                            <li><a href="#">登陆注册</a></li>
+                            <li><a href="#">模态对话框/加载框</a></li>
+						</ul>
+					</dd>
+				<dt>本周作业</dt>
+					<dd><a href="#homework">页面</a></dd>
+
+			</dl>
+		</div>
+        <div class="body">
+
+
+		<div class='content'>
+
+			<!--概述-->
+			<div class='group' id='t1'>
+				<h1>概述</h1>
+				<p>HTML是英文Hyper Text Mark-up Language(超文本标记语言)的缩写，他是一种制作万维网页面标准语言（标记）。相当于定义统一的一套规则，大家都来遵守他，这样就可以让浏览器根据标记语言的规则去解释它。</p>
+				<p>浏览器负责将标签翻译成用户“看得懂”的格式，呈现给用户！(例：djangomoan模版引擎)</p>
+
+				<img src="image/1.jpg">
+			</div>
+
+			<!--Html文档-->
+			<div class='group'  id='t2'>
+				<h1>HTML文档</h1>
+					<a href="image/2.png"  target='_black' >文档树</a>
+
+					<div id='t21'>
+						<h2>Doctype</h2>
+						<p>Doctype告诉浏览器使用什么样的html或xhtml规范来解析html文档</p>
+						<h5>有和无的区别</h5>
+						<ol>
+							<li>BackCompat：标准兼容模式未开启（或叫怪异模式[Quirks mode]、混杂模式）</li>
+							<li>CSS1Compat：标准兼容模式已开启（或叫严格模式[Standards mode/Strict mode]）</li>
+						</ol>
+						<p>
+							这个属性会被浏览器识别并使用，但是如果你的页面没有DOCTYPE的声明，那么compatMode默认就是BackCompat,这也就是恶魔的开始 -- 浏览器按照自己的方式解析渲染页面，那么，在不同的浏览器就会显示不同的样式。如果你的页面添加了<!DOCTYPE html>那么，那么就等同于开启了标准模式，那么浏览器就得老老实实的按照W3C的标准解析渲染页面，这样一来，你的页面在所有的浏览器里显示的就都是一个样子了。
+						</p>
+						<h5>有，用什么？</h5>
+							<p>Doctype告诉浏览器使用什么样的html或xhtml规范来解析html文档, dtd文件则包含了标记、attributes 、properties、约束规则。</p>
+						<a href="https://hsivonen.fi/doctype/">更多</a>
+						<img src="image/3.png">
+					</div>
+
+					<div id='t22'>
+						<h2>Meta(metadata information)</h2>
+						<p>提供有关页面的元信息，例：页面编码、刷新、跳转、针对搜索引擎和更新频度的描述和关键词</p>
+						<ol>
+							<li>页面编码（告诉浏览器是什么编码）</li>
+								<p>&lt meta http-equiv=“content-type” content=“text/html;charset=utf-8”&gt</p>
+							<li>刷新和跳转</li>
+								<p>&lt meta http-equiv=“Refresh” Content=“30″&gt</p>
+								<p>&lt meta http-equiv=”Refresh“ Content=”5; Url=http://www.autohome.com.cn“ /&gt</p>
+							<li>关键词</li>
+								<p>&lt meta name="keywords" content="星际2,星际老男孩,专访,F91,小色,JOY" &gt</p>
+							<li>描述</li>
+								<p>例如：cnblogs</p>
+							<li>X-UA-Compatible</li>
+								<p>微软的IE6是通过XP、Win2003等操作系统发布出来，作为占统治地位的桌面操作系统，也使得IE占据了通知地位，许多的网站开发的时候，就按照IE6的标准去开发，而IE6自身的标准也是微软公司内部定义的。到了IE7出来的时候，采用了微软公司内部标准以及部分W3C的标准，这个时候许多网站升级到IE7的时候，就比较痛苦，很多代码必须调整后，才能够正常的运行。而到了微软的IE8这个版本，基本上把微软内部自己定义的标准抛弃了，而全面的支持W3C的标准，由于基于对标准彻底的变化了，使得原先在早期IE8版本上能够访问的网站，在IE8中无法正常的访问，会出现一些排版错乱、文字重叠，显示不全等各种兼容性错误。</p>
+                                <p>       与任何早期浏览器版本相比，Internet Explorer 8 对行业标准提供了更加紧密的支持。 因此，针对旧版本的浏览器设计的站点可能不会按预期显示。 为了帮助减轻任何问题，Internet Explorer 8 引入了文档兼容性的概念，从而允许您指定站点所支持的 Internet Explorer 版本。 文档兼容性在 Internet Explorer 8 中添加了新的模式；这些模式将告诉浏览器如何解释和呈现网站。 如果您的站点在 Internet Explorer 8 中无法正确显示，则可以更新该站点以支持最新的 Web 标准（首选方式），也可以强制 Internet Explorer 8 按照在旧版本的浏览器中查看站点的方式来显示内容。 通过使用 meta 元素将 X-UA-Compatible 标头添加到网页中，可以实现这一点。</p>
+								<p>         当 Internet Explorer 8 遇到未包含 X-UA-Compatible 标头的网页时，它将使用 <!DOCTYPE> 指令来确定如何显示该网页。 如果该指令丢失或未指定基于标准的文档类型，则 Internet Explorer 8 将以 IE5 模式（Quirks 模式）显示该网页。<a href="http://msdn.microsoft.com/zh-cn/library/cc288325(v=vs.85).aspx#SetMode">更多</a></p>
+
+                                <code>  &ltmeta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /&gt</code>
+						</ol>
+					</div>
+
+					<div id='t23'>
+						<h2>Title</h2>
+						<p>网页头部信息</p>
+					</div>
+
+					<div id='t24'>
+						<h2>Link</h2>
+						<ol>
+							<li>css</li>
+								<p> &lt link rel="stylesheet" type="text/css" href="css/common.css" &gt</p>
+							<li>icon</li>
+								<p>&lt link rel="shortcut icon" href="image/favicon.ico"></p>
+						</ol>
+					</div>
+
+					<div id='t25'>
+						<h2>Style</h2>
+						<p>在页面中写样式</p>
+						例如：<br/> &lt style type="text/css" &gt <br/>
+							.bb{ <br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: red; <br/>
+							&nbsp; &nbsp;} <br/>
+
+						&lt /style&gt <br/>
+					</div>
+
+					<div id='t26'>
+						<h2>Script</h2>
+						<ol>
+							<li>引进文件</li>
+								<p> &lt script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"&gt &lt/script &gt</p>
+							<li>写js代码</li>
+								<p><p> &lt script type="text/javascript" &gt ... &lt/script &gt</p></p>
+						</ol>
+					</div>
+			</div>
+
+			<!--常用标签-->
+			<div class='group'  id='t3'>
+				<h1>常用标签</h1>
+				<p>标签一般分为两种：块级标签 和 行内标签</p>
+				<ul>
+					<li>a、span、select 等</li>
+					<li>div、h1、p 等 </li>
+				</ul>
+
+
+				<div id='t31'>
+					<h2>各种符号</h2>
+						http://www.cnblogs.com/web-d/archive/2010/04/16/1713298.html
+				</div>
+
+				<div id='t32'>
+					<h2>p 和 br</h2>
+						<p>p表示段落，默认段落之间是有间隔的！</p>
+						<p>br 是换行</p>
+				</div>
+
+				<div id='t33'>
+					<h2>a标签</h2>
+						<p> &lt a href="http://www.autohome.com.cn"&gt &lt/a&gt</p>
+						<p>1、target属性，_black表示在新的页面打开</p>
+						<p>2、锚</p>
+				</div>
+
+				<div id='t34'>
+					<h2>H 标签</h2>
+					<h1>H1</h1>
+					<h2>H2</h2>
+					<h3>H3</h3>
+					<h4>H4</h4>
+					<h5>H5</h5>
+					<h6>H6</h6>
+				</div>
+
+				<div id='t35'>
+					<h2>select 标签</h2>
+
+					<select>
+						<option value='1'>上海</option>
+						<option value='2'>北京</option>
+						<option value='3' selected='selected'>广州</option>
+					</select>
+
+					<select size='2'>
+						<option>上海</option>
+						<option>北京</option>
+						<option>广州</option>
+						<option>广州</option>
+					</select>
+
+					<select multiple="multiple" size='2'>
+						<option>上海</option>
+						<option>北京</option>
+						<option>广州</option>
+						<option>广州</option>
+					</select>
+
+					<select>
+						<optgroup label='河北省'>
+							<option>石家庄</option>
+							<option>邯郸</option>
+						</optgroup>
+						<optgroup label='山西省'>
+							<option>太原</option>
+							<option>平遥</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div id='t36'>
+					<h2>Checkbox</h2>
+					<input type='checkbox'/>
+					<input type='checkbox' checked/>
+					<input type='checkbox' checked='checked'/>
+				</div>
+
+				<div id='t37'>
+					<h2>redio</h2>
+					男<input type="radio" value="man">
+					女<input type="radio" value="male">
+					保密<input type="radio" value="no">
+					<br/><br/>
+					男<input type="radio"  name="gender" value="man">
+					女<input type="radio"  name="gender" value="male">
+					保密<input type="radio" checked="checked" name="gender" value="no">
+				</div>
+
+				<div id='t38'>
+					<h2>password</h2>
+					<input type='text'/>
+					<input type='password'/>
+				</div>
+
+				<div id='t39'>
+					<h2>button</h2>
+					<input type='button' value='button' />
+					<input type='submit' value='submit'/>
+				</div>
+
+				<div id='t310'>
+					<h2>file</h2>
+					<input type='file' value='file' />
+					<p>提交文件时： enctype='multipart/form-data' method='POST'</p>
+				</div>
+
+				<div id='t311'>
+					<h2>textarea</h2>
+					<textarea></textarea>
+					<textarea style='width:500px;height: 200px;'></textarea>
+				</div>
+
+				<div id='t312'>
+					<h2>label</h2>
+					姓名：<input id='name1' type='text' />
+					婚否：<input id='marriy1' type='checkbox' />
+					<br/>
+					<label for='name2'>姓名：<input id='name2' type='text' /></label>
+					<label for='marriy2'>婚否：<input id='marriy2' type='checkbox' /></label>
+				</div>
+
+				<div id='t313'>
+					<h2>ul ol dl</h2>
+
+					<p>ul</p>
+
+					<ul>
+						<li>ul.li</li>
+						<li>ul.li</li>
+						<li>ul.li</li>
+					</ul>
+
+					<p>ol</p>
+
+					<ol>
+						<li>ol.li</li>
+						<li>ol.li</li>
+						<li>ol.li</li>
+					</ol>
+
+					<p>dl</p>
+
+					<dl>
+						<dt>河北省</dt>
+						<dd>邯郸</dd>
+						<dd>石家庄</dd>
+						<dt>山西省</dt>
+						<dd>太原</dd>
+						<dd>平遥</dd>
+					</dl>
+				</div>
+
+				<div id='t314'>
+					<h2>table</h2>
+					<table border='1'>
+						<tr><td>1</td><td>2</td><td>3</td></tr>
+						<tr><td>1</td><td>2</td><td>3</td></tr>
+						<tr><td>1</td><td>2</td><td>3</td></tr>
+					</table>
+					<br/>
+					<br/>
+
+					<table border='1'>
+						<thead>
+							<tr><th colspan='3'>1</th></tr>
+							<tr><th>1</th><th>2</th><th>3</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>1</td><td>2</td><td>3</td></tr>
+							<tr><td>1</td><td>2</td><td>3</td></tr>
+							<tr><td>1</td><td>2</td><td>3</td></tr>
+							<tr><td rowspan='3'>1</td><td>3</td><td>3</td></tr>
+							<tr><td>3</td><td>3</td></tr>
+							<tr><td>3</td><td>3</td></tr>
+							<tr><td>3</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div id='t315'>
+					<h2>fieldset</h2>
+					<fieldset>
+						<legend>登录</legend>
+						<p>用户名：</p>
+						<p>密码：</p>
+					</fieldset>
+				</div>
+
+				<div id='t316'>
+					<h2>form 表单</h2>
+					<form method='POST' action='http://www.baidu.com'>
+						<input type='submit' value='submit'/>
+					</form>
+					<br/><br/><br/>
+					<form method='GET' action='http://www.baidu.com/s'>
+						<input type='text' name='wd'>
+						<input type='submit' value='submit'/>
+					</form>
+					<p>文件:enctype='multipart/form-data' method='POST'</p>
+				</div>
+			</div>
+
+			<!--html作业-->
+			<div class='group'  id='t4'>
+				<h2>作业</h2>
+				要求：<br/>
+				第一个页面：协议，选择【我同意】进入注册页面
+				<br/>
+				第二个页面：用户名、密码、重复密码、省份（下拉菜单）、性别、爱好（多选），使用label来修饰。
+
+				<p>对于路径：</p>
+				<ul>
+					<li>/		网站根目录</li>
+					<li>./		当前目录(相当于什么也不加)</li>
+					<li>../		父母路</li>
+					<li>../../  父目录的父目录</li>
+				</ul>
+			</div>
+
+			<hr/>
+			<div class='group'  id='t5'>
+				<h1>CSS</h1>
+				<p>css是英文Cascading Style Sheets的缩写,称为层叠样式表，用于对页面进行美化。</p>
+				<p>存在方式有三种：元素内联、页面嵌入和外部引入，比较三种方式的优缺点。</p>
+				<p>语法：style = 'key1:value1;key2:value2;' </p>
+				<ul>
+					<li>在标签中使用 style='xx:xxx;' </li>
+					<li>在页面中嵌入 &lt style type="text/css"&gt &lt/style &gt 块</li>
+					<li>引入外部css文件</li>
+				</ul>
+				<p>必要性：美工会对页面的色彩搭配和图片的美化负责，开发人员则必须知道是如何实现的。</p>
+			</div>
+
+			<div class='group'  id='t6'>
+				<div   id='t61'>
+					<h2>标签选择器</h2>
+					<p>
+						div{
+							background-color:red;
+						}
+
+						<br/>
+
+						&ltdiv &gt &lt/div&gt
+					</p>
+
+				</div>
+
+				<div  id='t62'>
+					<h2>class选择器</h2>
+					<p>
+						.bd{
+							background-color:red;
+						}
+
+						<br/>
+
+						&ltdiv class='bd'&gt &lt/div&gt
+					</p>
+				</div>
+
+				<div  id='t63'>
+					<h2>id选择器</h2>
+					<p>
+						#idselect{
+							background-color:red;
+						}
+
+						<br/>
+
+						&ltdiv id='idselect' &gt &lt/div&gt
+					</p>
+				</div>
+
+
+				<div  id='t64'>
+					<h2>关联选择器</h2>
+					<p>
+						#idselect p{
+							background-color:red;
+						}
+
+
+
+						<br/>
+
+						&ltdiv id='idselect' &gt
+							&ltp&gt &lt/p&gt
+						 &lt/div&gt
+					</p>
+				</div>
+
+				<div   id='t65'>
+					<h2>组合选择器</h2>
+					<p>
+						input,div,p{
+							background-color:red;
+						}
+
+						<br/>
+					</p>
+				</div>
+
+				<div   id='t66'>
+					<h2>属性选择器</h2>
+					<p>
+						input[type='text']{
+							width:100px;
+							height:200px;
+						}
+
+						<br/>
+					</p>
+				</div>
+			</div>
+
+			<div class='group'  id='t7'>
+				<div id='t71'>
+					<h2>background</h2>
+					<ul>
+						<li>background-color</li>
+							<div style='background-color:red;'>&nbsp</div>
+						<li>background-image</li>
+							<div style="background-image:url('image/4.gif'); height: 80px;"></div>
+						<li>background-repeat（no-repeat;repeat-x;repeat-y）</li>
+							<div style="background-image:url('image/4.gif'); height: 80px;background-repeat:no-repeat"></div>
+						<li>background-position</li>
+							<div style="background-image:url('image/5.png'); height: 80px;background-repeat:no-repeat;background-position:-105px  -112px;"></div>
+
+							<div style="background: #f8f8f8 url(image/5.png) -105px -212px no-repeat; height: 80px;"></div>
+					</ul>
+				</div>
+
+				<div id='t72'>
+					<h2>border</h2>
+					<div style='border:1px solid red; height: 10px;'></div>
+					<br/>
+					<div style='border:1px dotted red; height: 10px;'></div>
+					<br/>
+					<div style='border:1px dashed red; height: 10px;'></div>
+				</div>
+
+				<div id='t73'>
+					<h2>margin</h2>
+					<div style='border:1px solid red; height: 70px;'>
+						<div style='background-color: green; height: 50px; margin-top:20px;'></div>
+					</div>
+					<br/>
+				</div>
+
+				<div id='t74'>
+					<h2>padding</h2>
+					<div style='border:1px solid red; height: 70px;'>
+						<div style='background-color: green; height: 50px; padding-top: 20px;'></div>
+					</div>
+					<br/>
+				</div>
+
+				<div id='t75'>
+					<h2>display</h2>
+						<p><b>display:none</b></p>
+						<div>original</div>
+						<div style='display:none;'>none</div>
+						<p><b>display:block</b></p>
+						<span style='background-color: red;'>content</span>
+						<span style='display: block; background-color: red;'>content</span>
+
+
+						<p><b>display:inline</b></p>
+						<div style='background-color: red;'>content</div>
+						<div style='display:inline;background-color: red;'>content</div>
+
+					<br/>
+				</div>
+
+				<div id='t76'>
+					<h2>cursor</h2>
+						<a href="http://www.autohome.com.cn">autohome</a>
+						<input type='text' />
+						<span>老衲</span>
+
+						<ul>
+							<li>css提供的cursor值</li>
+								<p>
+									<span style='cursor:pointer;'>pointer</span> ||
+									<span style='cursor:help;'>help</span> ||
+									<span style='cursor:wait;'>wait</span> ||
+									<span style='cursor:move;'>move</span> ||
+									<span style='cursor:crosshair;'>crosshair</span>
+								</p>
+							<li>伪造超链接</li>
+								<p><span style='cursor:pointer;color:blue;'>pointer</span></p>
+							<li>自定义(一般不用)</li>
+								<p>
+									<span style='cursor:url(image/favicon.ico),auto;'>mine</span>
+								</p>
+						</ul>
+					<br/>
+				</div>
+
+				<div id='t77'>
+					<h2>浮动</h2>
+					<div style='background-color: red;'>
+						<div style='background-color: green;float: left'>left</div>
+						<div style='background-color: blue;float:right'>right</div>
+					</div>
+					<br/>
+					<br/><br/>
+					<div style='background-color: red;'>
+						<div style='background-color: green;float: left'>left</div>
+						<div style='background-color: blue;float:right'>right</div>
+						<div style='clear: both;'></div>
+					</div>
+
+				</div>
+
+				<div id='t78'>
+					<h2>position</h2>
+					http://www.cnblogs.com/canuseethat/archive/2010/09/16/1827804.html
+				</div>
+
+				<div id='t79'>
+					<h2>透明度</h2>
+					<img src="image/6.png">
+				</div>
+
+				<div id='t80'>
+					<h2>默认样式改造</h2>
+					<ul>
+						<li>首页</li>
+						<li>菜单1</li>
+						<li>菜单2</li>
+					</ul>
+
+					<!--
+					<style type="text/css">
+						.changeul{
+							margin: 0px;
+							padding-top: 0px;
+						}
+						.changeul li{
+							list-style-type: none;
+							float: left;
+							background-color: #ddd;
+						}
+						.changeul li a{
+							display: block;
+							padding: 19px 20px;
+						}
+						.changeul li a:hover{
+							background-color: red;
+						}
+					</style>
+					<ul class='changeul'>
+						<li><a href="http://www.baidu.com">首页</a></li>
+						<li><a href="http://www.baidu.com">菜单1</a></li>
+						<li><a href="http://www.baidu.com">菜单2</a></li>
+					</ul>
+					-->
+				</div>
+			</div>
+
+			<br/><br/><br/><br/><hr/>
+			<div class='group'  id='homework'>
+				<img src="image/7.png">
+			</div>
+
+		</div>
+
+        </div>
+	</div>
+</body>
+</html>
