@@ -63,6 +63,7 @@ HTTP连接是短连接
         - meta
         - br
         - input
+        - optgroup
     - 主动闭合标签
 
 标签分类2:
@@ -118,4 +119,49 @@ reset类型
 #提交方式
 GET 数据拼接到url上, 被提交到服务器端, 其实就是get拼接之后的url, 数据在请求头中
 POST 数据在请求体中
+
+#textaera标签
+多行文本框
+name属性 标签内设置默认值
+#select标签
+标签内添加option标签为选择项, option有value属性选中状态的值会被提交到后台, 和selected属性默认选中.
+optgroup标签是自闭和标签, 为选择项设置分组, optgroup标签有label属性, 设置分组名.
+select标签有name属性提交表单的时候为字典的键值, size属性设置显示选择项的数量,默认为1, multiple属性, 设置可否多选.
+
+#可提交数据的标签
+input系列标签, textaera标签, select标签
+
+#a标签
+行内标签
+可做跳转href属性设置跳转位置, url就跳转到url页面, #id(标签ID)可跳转到页面位置.(锚) 
+
+#img标签
+图片容器
+src属性设置图片位置, alt设置(alter)图片加载失败时代替图片, 显示提示信息. title属性鼠标悬浮提示文字.
+
+#ul, ol dl标签
+列表标签, 数据容器
+ul标签无序列表, ol标签有序列表, li标签定义无序列表和有序列表的列表项, dl定义列表, dt标签定义定义列表的定义项目, dd标签定义定义列表的定义的描述
+
+ol标签有属性type可以指定编号的形式.
+
+#table标签
+表格标签, 数据容器
+table标签有 border属性定义表格的边框宽度.
+thead标签定义表格的表头. 
+tr标签定义表格的行, 嵌入在thead标签和tbody标签中.
+th标签定义表头行中的列, 嵌入在thead标签的内嵌tr标签中
+td标签定义表格在行中的列, 嵌入在tbody标签的内嵌tr标签中.
+td标签有属性colspan属性, 指定单元格所占的列数, rowspan属性指定单元格所占的行数.
+
+
+#label标签
+标签标签, for属性绑定标签id, label标签被点击会激活绑定ID的标签
+
+#fieldset标签
+标签容器
+legend标签, 定义显示容器名称
+
+
+
 
