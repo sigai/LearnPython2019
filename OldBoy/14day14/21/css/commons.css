@@ -1,0 +1,11 @@
+.c1 {
+    background-color: red;
+    width:30%;
+    float: left;
+}
+
+.c2 {
+    background-color: gray;
+    width: 70%;
+    float: left;
+}

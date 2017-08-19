@@ -16,3 +16,57 @@ height: 48px;(像素)
 #第三种方法
 link标签的rel属性设置引入文件类型为stylesheet, href属性指定style样式的`.css`文件相对路径, 文件中直接写入css样式. css文件可归档到文件夹下,href指定文件即可
 
+#分号
+分隔不同的样式
+
+#边框
+border(-left, -right, -top, -bottom): 1px solid red;
+solid, dotted, double, dashed
+实线, 点虚线, 双实线, 实虚线
+上下左右都可以单独设置样式
+像素宽度, 样式实线, 颜色红色
+
+height(顶级只设置像素, 内部标签可以设置百分比)
+高度
+
+width(可以设置像素和百分比)
+宽度
+
+color
+字体颜色
+
+font-size(像素值)
+字体大小
+
+text-aligh: center;
+文本排列(居中)
+
+line-height(像素)
+设置垂直居中的范围.
+
+font-weight: bord
+字体加粗
+bord, border, 100,...900
+
+
+#float
+让标签浮动起来, 块级标签可以堆叠.
+left, right, inherit
+
+clear: both;
+
+#display
+display: block;
+display: inline;
+display: inline-block; 具有两种标签的特性(既不会占整行也可设置高度宽度边距)
+
+行内标签无法设置高度, 宽度, 边距. 不会生效.
+块级标签可以设置.
+
+display: none;
+设置标签不显示.
+
+#边距
+margin 外边距
+padding 内边距
+
