@@ -28,7 +28,7 @@ HTTP连接是短连接
 2. html标签
     - html标签(唯一)  lang属性
     - head标签(唯一)    大脑, 除title标签外都不可见
-    
+
     - a标签  href属性
     - meta标签    
         - charset属性
@@ -40,16 +40,16 @@ HTTP连接是短连接
         - description属性
         - content属性
         - X-UA-Compatible属性
-            - <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+            - <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     - title标签
     - link标签
-        - ico图标 `< link rel="shortcut icon" href="image/favicon.ico">` 
+        - ico图标 `< link rel="shortcut icon" href="image/favicon.ico">`
     - style标签
     - script标签
 
     - body标签(唯一)
         - charref图标和特殊字符表示法
-            - https://dev.w3.org/html5/html-author/charref 
+            - https://dev.w3.org/html5/html-author/charref
             - `&nbsp;` 空格 `&gt;` > `&lt;` <
         - p标签   `<p></p>`段落
         - br标签 `<br />`换行 自闭和标签
@@ -133,11 +133,11 @@ input系列标签, textaera标签, select标签
 
 #a标签
 行内标签
-可做跳转href属性设置跳转位置, url就跳转到url页面, #id(标签ID)可跳转到页面位置.(锚) 
+可做跳转href属性设置跳转位置, url就跳转到url页面, #id(标签ID)可跳转到页面位置.(锚)
 
 #img标签
 图片容器
-src属性设置图片位置, alt设置(alter)图片加载失败时代替图片, 显示提示信息. title属性鼠标悬浮提示文字.
+src属性设置图片位置, alt设置(alternative text)图片加载失败时代替图片, 显示提示信息. title属性鼠标悬浮提示文字.
 
 #ul, ol dl标签
 列表标签, 数据容器
@@ -148,12 +148,12 @@ ol标签有属性type可以指定编号的形式.
 #table标签
 表格标签, 数据容器
 table标签有 border属性定义表格的边框宽度.
-thead标签定义表格的表头. 
+thead标签定义表格的表头. tbody标签定义表格的内容
 tr标签定义表格的行, 嵌入在thead标签和tbody标签中.
 th标签定义表头行中的列, 嵌入在thead标签的内嵌tr标签中
 td标签定义表格在行中的列, 嵌入在tbody标签的内嵌tr标签中.
-td标签有属性colspan属性, 指定单元格所占的列数, rowspan属性指定单元格所占的行数.
-
+td标签有属性`colspan`属性, 指定单元格所占的列数, `rowspan`属性指定单元格所占的行数.
+span(跨越)
 
 #label标签
 标签标签, for属性绑定标签id, label标签被点击会激活绑定ID的标签
@@ -161,7 +161,3 @@ td标签有属性colspan属性, 指定单元格所占的列数, rowspan属性指
 #fieldset标签
 标签容器
 legend标签, 定义显示容器名称
-
-
-
-

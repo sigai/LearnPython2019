@@ -46,7 +46,7 @@ line-height(像素)
 
 font-weight: bord
 字体加粗
-bord, border, 100,...900
+bord, border, 100,...900, inherit, initial, lighter, normal, unset
 
 
 #float
@@ -69,4 +69,3 @@ display: none;
 #边距
 margin 外边距
 padding 内边距
-
