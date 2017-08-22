@@ -16,7 +16,7 @@ USER_DICT = {'1': {'name': 'root1', 'email': 'root1@qq.com'}, '2': {'name': 'roo
 
 def index(request):
     user = {'username': "test", }
-    return render(request, 'index.html', {'user': user})
+    return render(request, 'go-top.html', {'user': user})
 
 
 def detail(request, uid, nid):
@@ -141,4 +141,4 @@ def orm(request):
     return HttpResponse("新建用户")
 
 # def index(request):
-#     return render(request, 'index.html', {'user_dict': USER_DICT})
+#     return render(request, 'go-top.html', {'user_dict': USER_DICT})
