@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="i1">苟利国家生死以岂因祸福避趋之</div>
+<script>
+    function GetChar() {
+        var div = document.getElementById('i1');
+        var content = div.innerText;
+        var f = content.charAt(0);
+        var l = content.substring(1,content.length);
+        div.innerText = l+f;
+    }
+    setInterval('GetChar();', 100)
+</script>
+</body>
+</html>
