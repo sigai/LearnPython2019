@@ -13,7 +13,7 @@ script标签放在body标签最下位置, 可以先渲染页面, 脚本文件慢
 chrome的console里测试js代码
 
 #注释
-//单行注释
+`//`单行注释
 `/**/`多行注释
 
 #变量声明
@@ -57,3 +57,12 @@ function 函数名(参数列表){
 setInterval('func()', time)定时器函数
 alert()函数
 console.log()函数
+
+#数组
+length属性
+push()方法
+pop()方法
+unshift()方法
+shift()方法
+splice()方法
+slice()方法
