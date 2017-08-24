@@ -42,27 +42,68 @@ substring()方法
 length属性
 获取字符串长度
 
-列表
-字典
+
+
 布尔类型
 
 #控制语句
-条件语句
-for语句
+##条件语句
+if语句
+if(){}else{}
+if(){}else if(){}else{}
+`==`  字面量判断相等
+`!=`  字面量不等
+`===` 同python is 字面量和类型都相等, 即相同
+`!==` 同python is not 字面量或类型不等, 即不相同
+
+`&&`  同python的and
+`||`  同python的or
+
+
+##for语句
+for(var item in array){
+  语句体
+}
+数组, item是索引
+如果是字典, item是key
+
+for(var i=0; i<10; i++){
+  语句体
+}
+不支持字典类型
 
 #函数
-function 函数名(参数列表){
+function 函数名(形参列表){
   函数体
 }
 setInterval('func()', time)定时器函数
 alert()函数
 console.log()函数
 
-#数组
+#列表(数组)
 length属性
+数组长度
+
 push()方法
+尾部添加元素
 pop()方法
+尾部获取元素
 unshift()方法
+头部添加元素
 shift()方法
-splice()方法
+头部获取元素
+splice(start, deleteCount, val, ...)方法
+obj.splice(n,0,val) 指定位置插入元素
+obj.splice(n,1,val) 指定位置替换元素
+obj.splice(n,1)     指定位置删除元素
+
 slice()方法
+切片
+
+obj.reverse( )      反转
+obj.join(sep)       将数组元素连接起来以构建一个字符串
+obj.concat(val,..)  连接数组
+obj.sort( )         对数组元素进行排序
+
+#字典
+定义同python
