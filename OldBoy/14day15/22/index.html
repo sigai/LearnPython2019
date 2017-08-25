@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+    <style>
+        .hide{
+            display: none;
+        }
+        .item .header{
+            height: 35px;
+            background-color: blue;
+            color: white;
+            line-height: 35px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div style="width: 300px;">
+        <div class="item">
+            <div id="i1" class="header" onclick="Show(id);">菜单1</div>
+            <div class="content">
+                <div>菜单项1</div>
+                <div>菜单项2</div>
+                <div>菜单项3</div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="i2" class="header" onclick="Show('i2');">菜单2</div>
+            <div class="content hide">
+                <div>菜单项1</div>
+                <div>菜单项2</div>
+                <div>菜单项3</div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="i3" class="header" onclick="Show('i3');">菜单3</div>
+            <div class="content hide">
+                <div>菜单项1</div>
+                <div>菜单项2</div>
+                <div>菜单项3</div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="i4" class="header" onclick="Show('i4');">菜单4</div>
+            <div class="content hide">
+                <div>菜单项1</div>
+                <div>菜单项2</div>
+                <div>菜单项3</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Show(pid) {
+            var menutag = document.getElementById(pid);
+            var taglist = menutag.parentElement.parentElement.children;
+            for(var i=0;i<taglist.length;i++){
+                taglist[i].children[1].classList.add('hide');
+            }
+            menutag.nextElementSibling.classList.remove('hide');
+        }
+    </script>
+</div>
+</body>
+</html>
