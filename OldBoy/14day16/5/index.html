@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0 auto;
+        }
+
+        .pg-header {
+            height: 48px;
+            background-color: dodgerblue;
+            color: white;
+            line-height: 48px;
+        }
+
+        .pg-header .logo {
+            width: 200px;
+            background-color: olivedrab;
+            text-align: center;
+        }
+        .pg-header .icons{
+            padding:0 20px;
+            position: relative;
+            height:20px;
+            width: 20px;
+
+        }
+        .pg-header .icons:hover{
+            background-color: red;
+        }
+        .pg-header .user {
+
+            height: 48px;
+            margin-right: 100px;
+            padding: 0 21px;
+        }
+
+        .pg-header .user:hover .dropdownmenu{
+            display: block;
+        }
+        .pg-header .user:hover{
+            background-color: blue;
+        }
+
+        .pg-header .user .uhead img {
+            height: 40px;
+            margin: 4px;
+            border-radius: 50%
+        }
+
+        .pg-header .user .dropdownmenu{
+            position: absolute;
+            top: 48px;
+            right: 0px;
+            z-index: 10;
+            width: 90px;
+            display: none;
+
+        }
+        .pg-header .user .dropdownmenu a{
+            background-color: honeydew;
+            display: block;
+        }
+        .pg-body {
+            z-index: 9;
+
+        }
+
+        .pg-body .menu {
+            position: absolute;
+            top: 48px;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            background-color: lightgreen;
+
+        }
+
+        .pg-body .content {
+            position: absolute;
+            top: 48px;
+            left: 200px;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+<div class="pg-header">
+    <div class="logo left">
+        Weskysoft
+    </div>
+
+    <div class="user right" style="position: relative;">
+        <a class="uhead" href="#">
+            <img src="timg.jpg">
+        </a>
+        <div class="dropdownmenu">
+            <a href="">个人中心</a>
+            <a href="">更改密码</a>
+            <a href="">退出</a>
+        </div>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+        <span class="count">5</span>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <span>0</span>
+    </div>
+</div>
+<div class="pg-body">
+    <div class="menu left">m</div>
+    <div class="content left">
+        <div style="background-color:wheat;">
+            <div style="position: fixed;bottom: 10px;right: 10px;width: 35px;height: 30px;background-color: cornflowerblue;">
+                TOP
+            </div>
+            <p style="margin: 0">line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p>line</p>
+            <p style="margin: 0;">line</p>
+        </div>
+    </div>
+</div>
+<div class="pg-footer"></div>
+</body>
+</html>

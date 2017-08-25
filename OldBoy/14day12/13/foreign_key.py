@@ -41,7 +41,7 @@ Session_class = sessionmaker(bind=engine)   # 创建会话类, 绑定数据库�
 session = Session_class()   # 实例化会话类, 同cursor
 
 # s1 = Student(name="Zhao Yun", age=23, register_date="1998-02-15")
-# s2 = Student(name="Guan Yu", age=34, register_date="1998-03-16")
+# s2 = Student(name="Guan Yu", age=34, register_date="1998-03-14day16")
 # s3 = Student(name="Zhang Fei", age=30, register_date="1999-02-05")
 # s4 = Student(name="Huang Zhong", age=76, register_date="1996-12-15")
 # s5 = Student(name="Ma Chao", age=56, register_date="1993-07-15")
