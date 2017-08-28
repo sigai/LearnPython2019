@@ -1,0 +1,5 @@
+var d = new Date()
+console.log(d)
+console.log(d.getDate()+10)
+d.setDate(d.getDate()+10)
+console.log(d)
