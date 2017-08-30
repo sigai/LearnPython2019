@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #i1 {
+        background-color: red;
+        width: 300px;
+        height: 400px;
+    }
+</style>
+<body>
+<div id="i1" onclick="foo();">
+    行为结构样式相分离
+</div>
+<script>
+    var tag = document.getElementById('i1')
+    console.log(tag)
+        tag.onclick = function foo() {
+        console.log('split');
+    }
+
+</script>
+</body>
+</html>

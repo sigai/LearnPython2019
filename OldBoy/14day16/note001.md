@@ -160,3 +160,10 @@ html css js 解耦 DOM1写法
 
 事件绑定写在script标签里
 onmouseover, onmouseout
+
+this 类似于python的self 功能更多
+当前触发事件的标签对象
+
+1. 直接绑定
+2. 获取dom对象 动态绑定
+3. 绑定事件监听 标签的addEventListener方法

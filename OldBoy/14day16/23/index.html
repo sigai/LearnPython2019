@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="i1">
+        点我
+    </div>
+    <script>
+        var tag = document.getElementById('i1')
+
+        tag.addEventListener('click', c1, true)
+        tag.addEventListener('click', c2, true)
+        function c1() {
+            console.log("点我嘎哈")
+        }
+        function c2() {
+            console.log("别点我")
+        }
+    </script>
+</body>
+</html>
