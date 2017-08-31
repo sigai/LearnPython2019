@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="全选">
+<input type="button" value="取消">
+<input type="button" value="反选">
+<table border="1">
+    <thead>
+        <tr>
+            <th>选项</th>
+            <th>地址</th>
+            <th>端口</th>
+        </tr>
+    </thead>
+    <tbody id="tb">
+        <tr>
+            <td><input type="checkbox">1</td>
+            <td>127.0.0.1</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">2</td>
+            <td>127.0.0.2</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">3</td>
+            <td>127.0.0.3</td>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
+<script src="../jquery.js"></script>
+<script>
+    var all = $("input[value='全选']")[0];
+    all.onclick = function foo() {
+        $(":checkbox").prop('checked', true);
+    };
+    var cancle = $("input[value='取消']")[0];
+    cancle.onclick = function foo() {
+        $(":checkbox").attr('checked', false);
+    }
+    var reverse = $("input[value='反选']")[0];
+    reverse.onclick = function () {
+        $(":checkbox").each(function () {
+            if(this.checked){}
+        })
+    }
+</script>
+</body>
+</html>
