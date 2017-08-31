@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function foo() {
+        console.log(name);
+        var name = "alex";
+    }
+    function t1(age) {
+        console.log(age);
+        var age = 27;
+        console.log(age);
+        function age() {}
+        console.log(age);
+    }
+    t1(3);
+</script>
+</body>
+</html>

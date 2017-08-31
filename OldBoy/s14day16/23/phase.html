@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main{
+            background-color: red;
+            width: 300px;
+            height: 400px;
+
+        }
+        #content{
+            background-color: pink;
+            width: 150px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="content"></div>
+</div>
+<script>
+    var main = document.getElementById('main')
+    var content = document.getElementById('content')
+    main.addEventListener("click", function () {
+        console.log("Main")
+    }, false)
+    content.addEventListener("click", function () {
+        console.log("content")
+    }, false)
+
+</script>
+</body>
+</html>

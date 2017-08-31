@@ -167,3 +167,21 @@ this 类似于python的self 功能更多
 1. 直接绑定
 2. 获取dom对象 动态绑定
 3. 绑定事件监听 标签的addEventListener方法
+
+词法分析
+active object -> AO
+1. 形式参数
+2. 局部变量 (不做任何改变)
+3. 函数声明表达式
+
+函数声明表达式优先级最高
+
+执行过程会从AO中去找
+
+css完全参考手册
+
+sublime技巧
+emmet插件
+html:5 + Tab或者! + Tab
+table.c1#i1>tr*3>td*3>{value$} + Tab
+c + Tab 添加注释
