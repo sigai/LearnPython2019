@@ -33,7 +33,7 @@ first, last, eq(index)重要
 $("[name]")  具有name属性的标签
 $("[name=value]")  具有name值为value的标签
 `!=, ^=, $=, *=`
-`$("[name1][name2][name3]")`  多个属性选择器
+`$("[name1][name2][name3]")`  组合多个属性选择器
 
 #表单选择器
 :input
@@ -41,7 +41,23 @@ $("[name=value]")  具有name值为value的标签
 ##表单对象属性选择器
 :disabled
 
+#三元运算
+条件?真的结果:假的结果
+还可以简化为<!条件>
+
 #方法
 text() 方法获取对象文本内容, 有参数则设置对象文本内容.
 html() 方法
 val()  方法
+each() 方法 自动遍历jquery对象中的所有DOM对象 循环中this代表当前循环的DOM对象 $(this)转换为jquery对象
+addClass() 方法 添加class
+removeClass() 方法 删除class
+prop() 获取或者设置jquery标签对象属性
+attr() 同上
+next() 方法 当前jquery对象的下一个对象
+parent()
+siblings()  获取当前jquery对象的其他同级标签(不包含当前标签对象).
+find()  在所有的后代元素中查找
+prev()
+children()
+click() 为jquery对象绑定事件

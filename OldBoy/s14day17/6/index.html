@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .header{
+            background-color: black;
+            color: wheat;
+        }
+        .content{
+            border: 1px solid red;
+            margin: 1px;
+            min-height: 50px;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="height: 400px;width: 300px;">
+        <div class="item">
+            <div class="header">菜单一</div>
+            <div class="content">内容</div>
+        </div>
+        <div class="item">
+            <div class="header">菜单二</div>
+            <div class="content hide">内容</div>
+        </div>
+        <div class="item">
+            <div class="header">菜单三</div>
+            <div class="content hide">内容</div>
+        </div>
+        <div class="item">
+            <div class="header">菜单四</div>
+            <div class="content hide">内容</div>
+        </div>
+
+    </div>
+    <script src="../jquery.js"></script>
+    <script>
+        $(".header").click(function () {
+            $(this).next().removeClass('hide').parent().siblings().find(".content").addClass('hide');
+        });
+    </script>
+</body>
+</html>
