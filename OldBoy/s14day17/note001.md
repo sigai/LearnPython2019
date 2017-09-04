@@ -55,9 +55,19 @@ removeClass() 方法 删除class
 prop() 获取或者设置jquery标签对象属性
 attr() 同上
 next() 方法 当前jquery对象的下一个对象
+nextAll()
+nextUntil()
 parent()
 siblings()  获取当前jquery对象的其他同级标签(不包含当前标签对象).
 find()  在所有的后代元素中查找
 prev()
+prevAll()
+prevUntil()
 children()
-click() 为jquery对象绑定事件
+click() 为jquery对象绑定鼠标点击事件
+
+text()
+html()
+val()
+
+脏数据
