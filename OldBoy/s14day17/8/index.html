@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .modal{
+            position: fixed;
+            top:50%;
+            left: 50%;
+            width: 500px;
+            height: 400px;
+            margin-left: -250px;
+            margin-top: -250px;
+            background-color: #eeeeee;
+            z-index:10;
+            text-align: center;
+        }
+        .shadow{
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 9;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <a id="i1">添加</a>
+    <tr>
+        <td>127.0.0.1</td>
+        <td>21</td>
+        <td>
+            <a class="edit" href="#">编辑</a>||<a>删除</a>
+        </td>
+    </tr>
+    <tr>
+        <td>127.0.0.2</td>
+        <td>22</td>
+        <td>
+            <a class="edit" href="#">编辑</a>||<a>删除</a>
+        </td>
+    </tr>
+    <tr>
+        <td>127.0.0.3</td>
+        <td>23</td>
+        <td>
+            <a class="edit" href="#">编辑</a>||<a>删除</a>
+        </td>
+    </tr>
+</table>
+<div class="modal hide">
+    <div>
+        <p><input type="text" name="host" /></p>
+        <p><input type="text" name="port" /></p>
+        <p><input type="button" value="取消" /></p>
+        <p><input type="button" value="确定" /></p>
+    </div>
+</div>
+<div class="shadow hide"></div>
+<script src="../jquery.js"></script>
+<script>
+    $("#i1").click(function () {
+        $(".modal, .shadow").removeClass('hide')
+
+    });
+    $("input[value='取消']").click(function () {
+        $(".modal,.shadow").addClass('hide');
+        $("input[type='text']").val('')
+    });
+    $('.edit').click(function () {
+        $(".modal, .shadow").removeClass('hide');
+        var tags = $(this).parent().siblings();
+        $("input[name='host']").val($(tags[0]).text());
+        $("input[name='port']").val($(tags[1]).text());
+    })
+</script>
+</body>
+</html>
