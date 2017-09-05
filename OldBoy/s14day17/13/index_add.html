@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="i1" type="text">
+<!--<input type="button" value="添加">-->
+<input type="button" value="复制">
+<ul id="i2">
+    <li>1</li>
+    <li>2</li>
+</ul>
+<script src="../jquery.js"></script>
+<script>
+    $("input[value='添加']").click(function () {
+        var text = $(this).prev().val();
+        $('ul').append('<li>'+text+'</li>')
+    });
+    $("input[value='复制']").click(function () {
+        var text = $('#i1').val();
+        $('ul li').eq(text).clone().appendTo($('#i2'));
+    })
+</script>
+</body>
+</html>

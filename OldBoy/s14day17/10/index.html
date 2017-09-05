@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<input id="i0" type="checkbox">
+<input id="i1" type="button" value="开关">
+<div class="c1 hide">light</div>
+<script src="../jquery.js"></script>
+<script>
+    $('#i1').click(function () {
+        //if($(".c1").hasClass('hide')){
+        //    $(".c1").removeClass('hide')
+        //}else(
+        //    $(".c1").addClass('hide')
+        //)
+        $(".c1").toggleClass('hide')
+    })
+</script>
+</body>
+</html>

@@ -52,6 +52,7 @@ val()  方法
 each() 方法 自动遍历jquery对象中的所有DOM对象 循环中this代表当前循环的DOM对象 $(this)转换为jquery对象
 addClass() 方法 添加class
 removeClass() 方法 删除class
+toggleClass() 如果存在（不存在）就删除（添加）一个类。
 prop() 获取或者设置jquery标签对象属性
 attr() 同上
 next() 方法 当前jquery对象的下一个对象
@@ -69,5 +70,26 @@ click() 为jquery对象绑定鼠标点击事件
 text()
 html()
 val()
+操作input属性的时候不能用attr()方法 应该用val(), attr()方法有问题.
+
+attr() 一个参数获取相应属性设置 两个参数设置相应属性
+prop() 同attr, 专用于checkbox, radio
+removeAttr()  删除属性
+removeProp()  同上
+
+cursor: pointer; 鼠标手
+
+index() 获取索引位置
+eq() 方法
+
+append()
+prepend()
+after()
+before()
+
+empty()
+remove()
+
+css() 一个参数获得css设置, 两个参数设置相应css
 
 脏数据
