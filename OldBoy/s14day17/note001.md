@@ -1,5 +1,5 @@
 #jQuery
-类似python的模块, javascript中叫做类库
+类似python的模块, javascript中叫做`类库`
 DOM/BOM/Javascript的类库
 查找元素
   DOM
@@ -24,7 +24,7 @@ $("selector1>selector2")大于号     只找子标签
 $("selector1+selector2")加号 下一个同级标签
 $("selector1~selector2")波浪线   同级标签
 ${"selector:first"} 筛选器
-not, even(奇数), odd(偶数), last, eq(index)(根据索引0开始),
+lang, not, even(奇数), odd(偶数), last, eq(index)(根据索引0开始),
 gt(index), lt(index), lang, header(所有的h标签),  animated(动画)
 
 first, last, eq(index)重要
@@ -65,6 +65,11 @@ prev()
 prevAll()
 prevUntil()
 children()
+<<<<<<< HEAD
+click() 为jquery对象绑定事件
+
+
+=======
 click() 为jquery对象绑定鼠标点击事件
 
 text()
@@ -93,3 +98,4 @@ remove()
 css() 一个参数获得css设置, 两个参数设置相应css
 
 脏数据
+>>>>>>> f9ce0ea18108ccd3af7205b69d658d362e8bcc92
