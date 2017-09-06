@@ -98,4 +98,17 @@ remove()
 css() 一个参数获得css设置, 两个参数设置相应css
 
 脏数据
->>>>>>> f9ce0ea18108ccd3af7205b69d658d362e8bcc92
+
+scrollTop() 无参数表示获取当前对象的滚轮位置, 有参数表示设置当前对象的滚轮位置
+scrollLeft() 同上
+
+offset().left 获取对象的位置坐标.
+offset().top 获取对象的位置坐标.
+
+position() 该对象相对上级relative对象的位置, 如果没有,就是相对window的位置.
+
+
+
+
+
+
