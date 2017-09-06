@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="border: 1px solid #ddd;width: 600px;position: absolute;">
+    <div id="title" style="background-color: black; height: 38px;"></div>
+    <div style="height: 300px;"></div>
+</div>
+<script src="../jquery.js"></script>
+<script>
+    $(function(){
+        $("#title").mouseover(function () {
+            $(this).css('cursor', 'move');
+        }).mousedown(function (e) {
+            var _event = e || window.event;
+            var old_x = _event.clientX;
+            var old_y = _event.clientY;
+
+            var p_left = $(this).parent().offset().left;
+            var p_top = $(this).parent().offset().top;
+
+            $("#title").on('mousemove', function (e) {
+
+                var n_event = e || window.event;
+                var new_x = n_event.clientX;
+                var new_y = n_event.clientY;
+
+                var x = p_left + new_x - old_x;
+                var y = p_top + new_y - old_y;
+
+                $(this).parent().css('left', x+'px');
+                $(this).parent().css('top', y+'px');
+
+            })
+        }).mouseup(function () {
+            $(this).off('mousemove');
+        })
+    })
+</script>
+</body>
+</html>

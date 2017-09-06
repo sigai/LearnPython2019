@@ -101,20 +101,23 @@ css() 一个参数获得css设置, 两个参数设置相应css
 
 scrollTop() 无参数表示获取当前对象的滚轮位置, 有参数表示设置当前对象的滚轮位置
 scrollLeft() 同上
+无参数返回值为数值类型, 有参数返回值为该对象
 
 offset() 标签对象左上角在window中的坐标
-offset().left 获取对象的位置坐标.
-offset().top 获取对象的位置坐标.
+offset().left 获取对象的位置x坐标.
+offset().top 获取对象的位置y坐标.
 
 position() 该对象相对上级relative对象的位置, 如果没有,就是相对window的位置.
 
-height()  对象的高度
-innerHeight() 对象的高度边框
-outerHeight() 对象的高度边框
-outerHeight(true) 对象的高度边框
+height()  对象的高度 `height`
+innerHeight() 元素内部区域高度（包括补白、不包括边框）`height + padding*2`
+outerHeight() 元素外部高度（默认包括补白和边框）。 `height + padding*2 + border*2`
+outerHeight(true) 设置为 true 时，计算边距在内。 `height + padding*2 + border*2 + margin*2`
 纯高度, 边框, 外边距, 内边距
+width()同
 
-绑定方式
+
+#事件绑定方式
 方法绑定 click()
 bind()方法绑定 bind('click', function(){})
 unbind()解绑
@@ -122,7 +125,7 @@ unbind()解绑
 delegate()方法绑定delegate("a", click", function(){})
 undelegate()解绑
 delegate方法专用于页面新增元素的绑定
-
+*委托*
 
 on()方法绑定 所有绑定都基于on方法
 off()方法解绑
@@ -132,3 +135,5 @@ a标签的onclick自定义事件先执行
 用于提交前的表单验证 return false 可组织后续事件的发生
 
 #表单验证
+
+
