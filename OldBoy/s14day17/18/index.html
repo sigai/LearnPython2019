@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a id="i1" href="http://www.google.com">搜索</a>
+<a onclick="return aClick();" href="http://www.jandan.net">摸鱼</a>
+<script src="../jquery.js"></script>
+<script>
+    $("#i1").click(function () {
+        alert("嘎哈");
+        return false
+    });
+    function aClick() {
+        alert("要摸鱼");
+        return false
+
+    }
+</script>
+</body>
+</html>

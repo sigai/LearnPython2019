@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form id="f1" action="http://jandan.net/" method="get">
+    <p><input type="text" tex="用户名" name="n1"/></p>
+    <p><input type="text" tex="密码" name="n2"/></p>
+    <p><input type="text" tex="邮箱" name="n3"/></p>
+    <p><input type="submit" value="提交"></p>
+
+</form>
+<script src="../jquery.js"></script>
+<script>
+    $(":submit").click(function () {
+        $(".error").remove();
+        var flag = true;
+        $("#f1").find("input[type='text'],input[type='password']").each(function () {
+            var v = $(this).val();
+            var n = $(this).attr('tex');
+            if(v.length <= 0){
+                flag = false;
+                var tag = document.createElement('span');
+                tag.className = 'error';
+                tag.innerText = n + "*必填";
+                $(this).after(tag);
+            }
+        });
+        return flag;
+    })
+</script>
+</body>
+</html>
