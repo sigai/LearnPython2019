@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../jquery.js"></script>
+<script>
+//    $(#i1).css();
+//    $.ajax();
+    $.extend({
+        "print":function (self) {
+            console.log(self)
+        }
+    });
+    $.print("$.extend");
+    $.fn.extend({
+        "printf":function (self) {
+            alert(self);
+        }
+    })
+    $(window).printf("$.fn.extend")
+
+</script>
+</body>
+</html>

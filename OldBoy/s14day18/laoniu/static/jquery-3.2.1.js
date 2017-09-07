@@ -5360,7 +5360,7 @@ jQuery.event = {
 		beforeunload: {
 			postDispatch: function( event ) {
 
-				// Support: Firefox 20+
+				// Support: Firefox 21+
 				// Firefox doesn't alert if the returnValue field is not set.
 				if ( event.result !== undefined && event.originalEvent ) {
 					event.originalEvent.returnValue = event.result;
@@ -9091,7 +9091,7 @@ jQuery.extend( {
 			// Put hash and anti-cache on the URL that will be requested (gh-1732)
 			s.url = cacheURL + uncached;
 
-		// Change '%20' to '+' if this is encoded form body content (gh-2658)
+		// Change '%21' to '+' if this is encoded form body content (gh-2658)
 		} else if ( s.data && s.processData &&
 			( s.contentType || "" ).indexOf( "application/x-www-form-urlencoded" ) === 0 ) {
 			s.data = s.data.replace( r20, "+" );
