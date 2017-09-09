@@ -1,5 +1,4 @@
 #js正则
-[![GitHub commits](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/3.4.7.svg)]()
 
 test    判断字符串是否符合规定的正则表达式
 exec    匹配获取数据
