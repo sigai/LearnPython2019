@@ -46,6 +46,13 @@ BootStrap模板
 bxslider.com
 
 #WEB框架
+web框架的本质是socket
+Python3 中所有socket交换的数据都是bytes类型
+b'' bstring 标记assic字符串为bytes类型
+str.encode()方法
+bytes() 内置函数
+
+
 MVC Model View Controller
 MTV Model Template View
 实质: 数据库    模板文件    业务处理

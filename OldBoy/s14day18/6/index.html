@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../jquery.bxslider/jquery.bxslider.css">
+    <style>
+        .slider {
+            height: 340px;
+            width: 790px;
+        }
+    </style>
+</head>
+<body>
+<div class="slider">
+    <ul class="bxslider">
+        <li><img src="1.jpg"/></li>
+        <li><img src="2.jpg"/></li>
+        <li><img src="3.jpg"/></li>
+        <li><img src="4.jpg"/></li>
+    </ul>
+</div>
+<script src="../jquery.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../jquery.bxslider/jquery.bxslider.js"></script>
+<script>
+    $('.bxslider').bxSlider({
+        mode: 'fade',//淡入淡出
+        adaptiveHeight: true,//自动调整适应高度
+        auto: true,//自动轮播
+
+    });
+</script>
+</body>
+</html>
