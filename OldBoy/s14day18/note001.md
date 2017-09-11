@@ -51,7 +51,10 @@ MTV Model Template View
 实质: 数据库    模板文件    业务处理
 #Django
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 31081644bb0ad7151e653cd881d2acab5e3ff903
 基于MTV的WEB框架
 安装
 pip install django
