@@ -1,4 +1,5 @@
 #js正则
+
 test    判断字符串是否符合规定的正则表达式
 exec    匹配获取数据
 
@@ -28,10 +29,32 @@ exec 类似Python re的findall
 利用标签的自定义属性
 
 #前端框架选择
-BootStrap
-jQueryUI
-jQuery EasyUI
+BootStrap   全栈
+jQueryUI    后台
+EasyUI   后台
+
+BootStrap模板
+#BootStrap
+1. 响应式
+    @media (min-width:100px;){css}
+2. 图标 字体
+    @font-size
+3. 基本使用
+    样式写在插件的css后面 绝对生效可用!important
+
+#轮播图
+bxslider.com
 
 #WEB框架
-
+MVC Model View Controller
+MTV Model Template View
+实质: 数据库    模板文件    业务处理
 #Django
+<<<<<<< HEAD
+=======
+基于MTV的WEB框架
+安装
+pip install django
+
+
+>>>>>>> 31081644bb0ad7151e653cd881d2acab5e3ff903
