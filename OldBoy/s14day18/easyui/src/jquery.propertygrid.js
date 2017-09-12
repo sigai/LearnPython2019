@@ -17,7 +17,7 @@
 (function($){
 	var currTarget;
 	$(document).unbind('.propertygrid').bind('mousedown.propertygrid', function(e){
-		var p = $(e.target).closest('div.datagrid-view,div.combo-panel');
+		var p = $(e.target).closest('div.datagrid-Template,div.combo-panel');
 		if (p.length){return;}
 		stopEditing(currTarget);
 		currTarget = undefined;
@@ -116,7 +116,7 @@
 		return $.extend({}, $.fn.datagrid.parseOptions(target), $.parser.parseOptions(target,[{showGroup:'boolean'}]));
 	};
 	
-	// the group view definition
+	// the group Template definition
 	var groupview = $.extend({}, $.fn.datagrid.defaults.view, {
 		render: function(target, container, frozen){
 			var table = [];
@@ -395,7 +395,7 @@
 	});
 
 
-	// end of group view definition
+	// end of group Template definition
 	
 	$.fn.propertygrid.defaults = $.extend({}, $.fn.datagrid.defaults, {
 		groupHeight:21,

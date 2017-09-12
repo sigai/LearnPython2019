@@ -10,7 +10,7 @@
 (function($){
 var _1;
 $(document).unbind(".propertygrid").bind("mousedown.propertygrid",function(e){
-var p=$(e.target).closest("div.datagrid-view,div.combo-panel");
+var p=$(e.target).closest("div.datagrid-Template,div.combo-panel");
 if(p.length){
 return;
 }

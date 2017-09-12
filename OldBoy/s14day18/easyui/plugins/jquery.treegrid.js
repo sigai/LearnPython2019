@@ -135,7 +135,7 @@ $.fn.datagrid.defaults.rowEvents.click(e);
 }
 };
 function _27(t){
-return $(t).closest("div.datagrid-view").children(".datagrid-f")[0];
+return $(t).closest("div.datagrid-Template").children(".datagrid-f")[0];
 };
 function _29(_30,_31,_32,_33){
 var _34=$.data(_30,"treegrid");
