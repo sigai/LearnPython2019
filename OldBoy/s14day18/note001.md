@@ -92,6 +92,7 @@ Python magane.py makemigrations
 Python magane.py migrate
 
 命令行运行的服务会一直运行除非结束进程, pycharm中运行的可以停止.
+Pycharm运行Django项目需要设置项目然后运行项目, 而不是运行py文件.
 
 ##创建应用
 Python magane.py startapp <name>
@@ -104,6 +105,8 @@ Python magane.py startapp <name>
 - models.py             //ORM, 创建数据库表结构
 - test.py               //单元测试
 - views.py              //业务逻辑代码
+
+##初始化项目的步骤:
 
 1. 配置模板目录
 `settings.py`配置文件中的`TEMPLATES`列表添加模板路径
@@ -159,3 +162,5 @@ HttpResponse是个内容是字符串的类
 
 ##模板语言
 模板中{{}}中的内容会被render方法渲染
+
+
