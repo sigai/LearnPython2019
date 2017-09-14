@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<div>
+<ul>
+    {% for k, v in user_list.items %}
+        <li><a href="/detail/?nid={{ k }}">{{ v.user }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+</body>
+</html>

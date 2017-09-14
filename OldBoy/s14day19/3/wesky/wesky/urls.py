@@ -21,7 +21,10 @@ from cmdb import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', views.index),
+    url(r'^index/', views.Index.as_view()),
     url(r'^login/', views.login),
-    url(r'^', views.root),
+    url(r'^signup/', views.signup),
+    url(r'^home/', views.Home.as_view()),
+    url(r'^detail/', views.Detail.as_view()),
+    url(r'^$', views.root),
 ]
