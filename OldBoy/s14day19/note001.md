@@ -82,6 +82,8 @@ objects是TableName的对象列表
 models.TableName.objects.filter().first()   //登陆验证主要使用first
 models.TableName.objects.filter().count()
 
+objects.filter()是QuerySet类型
+QuerySet.query是SQL语句
 
 #模版语言
 索引一律是点号加索引的形式, 不能有括号
