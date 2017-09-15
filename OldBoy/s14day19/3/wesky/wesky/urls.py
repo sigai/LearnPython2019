@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^signup/', views.signup),
     url(r'^home/', views.Home.as_view()),
     url(r'^detail/', views.Detail.as_view()),
+    url(r'^orm/', views.Orm.as_view()),
     url(r'^$', views.root),
 ]

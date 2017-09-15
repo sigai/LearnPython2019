@@ -2,6 +2,7 @@ import os
 
 from django.shortcuts import render, HttpResponse, redirect
 from django.views import View
+from cmdb import models
 # Create your views here.
 
 
@@ -78,3 +79,17 @@ class Detail(View):
         nid = request.GET.get("nid")
         detail = USER_DICT[nid]
         return render(request, 'detail.html', {'detail': detail})
+
+class Orm(View):
+
+    def get(self, request):
+        objs = models.UserInfo.objects.all()
+        for obj in objs:
+            print(obj.username, obj.password)
+        return render(request, 'orm.html',{"objs":objs})
+
+    def post(self, request):
+        usr = request.POST.get("usr")
+        pwd = request.POST.get("pwd")
+        models.UserInfo.objects.create(username=usr, password=pwd)
+        return redirect('/orm/')

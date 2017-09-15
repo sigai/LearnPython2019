@@ -36,11 +36,52 @@ from django.view import View
 继承View实现get, post方法
 
 模板
-ORM操作
+#ORM操作
 select * from table where id > 1
 models.tb.objects.filter(id__gt = 1)
 models.tb.objects.filter(id = 1)
 models.tb.objects.filter(id__lt = 1)
+
+code first   db first
+from django.db import models
+class TableName(models.Model):
+
+  models.CharField(max_length=32)
+
+更改默认数据库在settings.py中
+https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+
+settings中INSTALLED_APPS添加应用才能识别
+makemigrations创建数据库操作py文件
+migrate进行数据库操作
+
+默认MySQLdb模块,添加__init__.py
+import pymysql
+pymysql.install_as_MySQLdb()
+
+#orm操作
+from appname import models
+
+##增
+models.TableName.objects.create()
+
+obj = models.TableName.objects()
+obj.save()
+
+#查
+models.TableName.objects.all()
+models.TableName.objects.filter()
+
+#删
+models.TableName.objects.all().delete()
+
+#改
+models.TableName.objects.all().update()
+
+objects是TableName的对象列表
+models.TableName.objects.filter().first()   //登陆验证主要使用first
+models.TableName.objects.filter().count()
+
 
 #模版语言
 索引一律是点号加索引的形式, 不能有括号

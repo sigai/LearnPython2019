@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form action="/orm/" method="post" style="display: inline-block;">
+        <input type="text" name="usr" placeholder="用户名"/>
+        <input type="text" name="pwd" placeholder="密码"/>
+        <input type="submit" value="注册">
+    </form>
+</div>
+<div>
+    <ul>
+        {% for obj in objs %}
+            <li>用户名: {{ obj.username }}, 密码: {{ obj.password }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
