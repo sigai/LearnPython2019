@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .pg-header{
+            height: 48px;
+            background-color: black;
+            color: white;
+
+        }
+        .pg-body-left{
+            position: absolute;
+            top: 48px;
+            bottom:0;
+            left:0;
+            width: 200px;
+            background-color: lightblue;
+        }
+        .pg-body-right{
+            position: absolute;
+            top: 48px;
+            right:0;
+            bottom:0;
+            left: 200px;
+            overflow: auto;
+
+        }
+        .menu{
+            display: block;
+            cursor: pointer;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-<div>
-<ul>
-    {% for k, v in user_list.items %}
-        <li><a href="/detail/?nid={{ k }}">{{ v.user }}</a></li>
-    {% endfor %}
-</ul>
+<div class="pg-header">后台管理</div>
+<div class="pg-body-left">
+    <a class="menu" href="/cmdb/user_info/">用户管理</a>
+    <a class="menu" href="/cmdb/user_group">用户组管理</a>
 </div>
+<div class="pg-body-right"></div>
 </body>
 </html>

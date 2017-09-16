@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .pg-header{
+            height: 48px;
+            background-color: black;
+            color: white;
+
+        }
+        .pg-body-left{
+            position: absolute;
+            top: 48px;
+            bottom:0;
+            left:0;
+            width: 200px;
+            background-color: lightblue;
+        }
+        .pg-body-right{
+            position: absolute;
+            top: 48px;
+            right:0;
+            bottom:0;
+            left: 200px;
+            overflow: auto;
+
+        }
+        .menu{
+            display: block;
+            cursor: pointer;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="pg-header">后台管理</div>
+<div class="pg-body-left">
+    <a class="menu" href="/cmdb/user_info/">用户管理</a>
+    <a class="menu" href="/cmdb/user_group">用户组管理</a>
+</div>
+<div class="pg-body-right">
+    <form action="/cmdb/edituser-{{ detail.id }}/" method="post">
+        <p><input type="text" name="username" value="{{ detail.username }}" placeholder="用户名"/></p>
+        <p><input type="text" name="password" value="{{ detail.password }}" placeholder="密码"/></p>
+        <input type="submit" value="提交更改"/>
+    </form>
+</div>
+</body>
+</html>

@@ -2,43 +2,53 @@ import os
 
 from django.shortcuts import render, HttpResponse, redirect
 from django.views import View
+from django.urls import reverse
 from cmdb import models
+
 # Create your views here.
 
 
 def root(request):
-    return HttpResponse("<h1>Root!</h1>")
+    return HttpResponse("<h1>CMDB Root!</h1>")
 
 
 def login(request):
     if request.method == "POST":
         usr = request.POST.get("usr")
         pwd = request.POST.get("pwd")
-        if usr == "root" and pwd == "toor":
-            return redirect("/index/")
+        obj = models.UserInfo.objects.filter(username=usr,password=pwd).first()
+        if obj:
+            return redirect("/cmdb/index/")
         else:
-            return render(request, 'login.html')
+            return redirect('/cmdb/login')
     elif request.method == "GET":
         return render(request, 'login.html')
     else:
-        return redirect("/index/")
+        return redirect("/cmdb/index/")
 
 
 def signup(request):
     if request.method == "POST":
         usr = request.POST.get("username")
         pwd = request.POST.get("password")
-        gen = request.POST.get("gender")
-        idols = request.POST.getlist("idol")
-        cities = request.POST.getlist("city")
-        file_obj = request.FILES.get("fname")
-        upload_path = os.path.join("upload", file_obj.name)
-        with open(upload_path,'wb') as f:
-            for each in file_obj.chunks():
-                f.write(each)
+        group_id = request.POST.get("usergroup")
+        # gen = request.POST.get("gender")
+        # idols = request.POST.getlist("idol")
+        # cities = request.POST.getlist("city")
+        # file_obj = request.FILES.get("fname")
+        # upload_path = os.path.join("upload", file_obj.name)
+        # with open(upload_path,'wb') as f:
+        #     for each in file_obj.chunks():
+        #         f.write(each)
+        #
+        # print(usr, pwd, gen, idols, cities, file_obj.name)
 
-        print(usr, pwd, gen, idols, cities, file_obj.name)
-        return redirect("/login/")
+        # models.UserInfo.objects.create(username=usr,password=pwd)
+
+        obj = models.UserInfo(username=usr,password=pwd,user_group_id=group_id)
+        obj.save()
+
+        return redirect("/cmdb/user_info/")
 
     elif request.method == "GET":
         return render(request, "signup.html")
@@ -71,14 +81,20 @@ USER_DICT = {
 class Index(View):
 
     def get(self, request):
-        return render(request, 'index.html', {"user_list": USER_DICT})
+        v = reverse("iindex")
+        print(v)
+        objs = models.UserInfo.objects.all()
+        return render(request, 'index.html', {"objs": objs})
+
 
 class Detail(View):
 
-    def get(self, request):
-        nid = request.GET.get("nid")
-        detail = USER_DICT[nid]
+    def get(self, request, nid):
+        # return HttpResponse(nid+uid)
+        detail = models.UserInfo.objects.filter(id=nid).first()
+
         return render(request, 'detail.html', {'detail': detail})
+
 
 class Orm(View):
 
@@ -93,3 +109,55 @@ class Orm(View):
         pwd = request.POST.get("pwd")
         models.UserInfo.objects.create(username=usr, password=pwd)
         return redirect('/orm/')
+
+
+class UserInfo(View):
+
+    def get(self, request):
+        user_list = models.UserInfo.objects.all()
+        user_group = models.UserGroup.objects.all()
+        return render(request, 'user_info.html', {"user_list":user_list,"user_group":user_group})
+
+
+
+class UserGroup(View):
+
+    def get(self, request):
+        objs = models.UserGroup.objects.all()
+        return render(request, 'user_group.html', {"objs":objs})
+
+    def post(self, request):
+        caption = request.POST.get("caption")
+
+        models.UserGroup.objects.create(caption=caption)
+        return redirect("/cmdb/user_group/")
+
+
+class UserDetail(View):
+
+    def get(self, request, nid):
+        detail = models.UserInfo.objects.filter(id=nid).first()
+        return render(request, 'userdetail.html', {"detail":detail})
+
+
+class DelUser(View):
+
+    def get(self, request, nid):
+        models.UserInfo.objects.filter(id=nid).delete()
+        return redirect("/cmdb/user_info")
+
+
+class EditUser(View):
+
+    def get(self, request, nid):
+        detail = models.UserInfo.objects.filter(id = nid).first()
+        return render(request, 'edituser.html',{"detail":detail})
+
+    def post(self, request, nid):
+        usr = request.POST.get("username")
+        pwd = request.POST.get("password")
+        obj = models.UserInfo.objects.filter(id=nid).first()
+        obj.username = usr
+        obj.password = pwd
+        obj.save()
+        return redirect("/cmdb/user_info")

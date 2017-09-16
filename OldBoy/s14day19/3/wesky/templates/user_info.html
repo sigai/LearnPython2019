@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .pg-header{
+            height: 48px;
+            background-color: black;
+            color: white;
+
+        }
+        .pg-body-left{
+            position: absolute;
+            top: 48px;
+            bottom:0;
+            left:0;
+            width: 200px;
+            background-color: lightblue;
+        }
+        .pg-body-right{
+            position: absolute;
+            top: 48px;
+            right:0;
+            bottom:0;
+            left: 200px;
+            overflow: auto;
+
+        }
+        .menu{
+            display: block;
+            cursor: pointer;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="pg-header">后台管理</div>
+<div class="pg-body-left">
+    <a class="menu" href="/cmdb/user_info/">用户管理</a>
+    <a class="menu" href="/cmdb/user_group">用户组管理</a>
+</div>
+<div class="pg-body-right">
+    <div>
+        <form action="/cmdb/signup/" method="post">
+            <p><input type="text" name="username"/></p>
+            <p><input type="text" name="password"/></p>
+            <p>
+                <select name="usergroup" id="s1">
+                    {% for group in user_group %}
+                        {% if group.uid == 2 %}
+                            <option value="{{ group.uid }}" selected="selected">{{ group.caption }}</option>
+                            {% else %}
+                            <option value="{{ group.uid }}">{{ group.caption }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </p>
+            <input type="submit" value="添加">
+        </form>
+    </div>
+    <h3>用户列表:</h3>
+    <table border="1">
+        <thead>
+            <td>编号</td>
+            <td>用户名</td>
+            <td>用户组</td>
+            <td>ctime</td>
+            <td>utime</td>
+            <td>操作</td>
+        </thead>
+        <tbody>
+            {% for row in user_list %}
+                <tr>
+                    <td><a href="/cmdb/userdetail-{{ row.id }}/">{{ row.id }}</a></td>
+                    <td>{{ row.username }}</td>
+                    <td>{{ row.user_group.caption }}</td>
+                    <td>{{ row.ctime }}</td>
+                    <td>{{ row.utime }}</td>
+                    <td>
+                        <a href="/cmdb/deluser-{{ row.id }}/">删除</a>
+                        <a href="/cmdb/edituser-{{ row.id }}/">编辑</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
