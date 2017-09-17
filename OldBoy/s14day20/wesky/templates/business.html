@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business</title>
+</head>
+<body>
+<h2>部门:</h2>
+<ul>
+    {% for obj in objs %}
+        <li>{{ obj.id }}- {{ obj.caption }} - {{ obj.code }}</li>
+    {% endfor %}
+</ul>
+<ul>
+    {% for value in values %}
+        <li>{{ value.id }}=={{ value.caption }}</li>
+    {% endfor %}
+</ul>
+<ul>
+    {% for idx, name in datas %}
+        <li>{{ idx }}  >>>  {{ name }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

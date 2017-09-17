@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+        <tr>
+            <td>主机名</td>
+            <td>IP</td>
+            <td>端口</td>
+            <td>业务名称</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in datas %}
+            <tr hid="{{ data.nid }}" bid="{{ data.business.id }}">
+                <td>{{ data.hostname }}</td>
+                <td>{{ data.ip }}</td>
+                <td>{{ data.port }}</td>
+                <td>{{ data.business.caption }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<div style="height: 10px;"></div>
+<table border="1">
+    <thead>
+        <tr>
+            <td>主机名</td>
+            <td>IP</td>
+            <td>端口</td>
+            <td>业务名称</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for value in values %}
+            <tr hid="{{ value.nid }}" bid="{{ value.business__id }}">
+                <td>{{ value.hostname }}</td>
+                <td>{{ value.ip }}</td>
+                <td>{{ value.port }}</td>
+                <td>{{ value.business__caption }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
