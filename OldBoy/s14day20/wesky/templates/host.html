@@ -51,6 +51,7 @@
             </select>
             <input type="submit" value="提交"/>
             <input type="button" value="默默提交" id="b1"/>
+            <p><span id="e1" style="color: red;"></span></p>
         </p>
         <p><input type="button" value="取消" id="cancel"/></p>
     </form>
@@ -130,10 +131,10 @@
     $(function () {
         $("input[value='添加']").click(function () {
             $(".shade, .modal").removeClass('hide')
-        })
+        });
         $("#cancel").click(function () {
             $(".shade, .modal").addClass('hide')
-        })
+        });
         $("#b1").click(function () {
             $.ajax({
                 url:"/hms/backdoor/",
@@ -144,8 +145,13 @@
                     "business_id":$("#s1").val()
                 },
                 success:function (data) {
-                    alert(data)
-                    location.reload()
+                    d = JSON.parse(data);
+                    if(d.status){
+                        location.reload()
+                    }else {
+                        $("#e1").text(d.error)
+                    }
+
                 }
             })
             }

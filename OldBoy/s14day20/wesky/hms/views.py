@@ -1,3 +1,5 @@
+import json
+
 from django.shortcuts import render, redirect, HttpResponse
 from django.views import View
 from hms import models
@@ -40,11 +42,21 @@ class Host(View):
 class Backdoor(View):
 
     def post(self, request):
-        hostname = request.POST.get("hostname")
-        ip = request.POST.get("ip")
-        port = request.POST.get("port")
-        business_id = request.POST.get("business_id")
+        res = {"status":True, "error":None,"data":None}
+        try:
+            hostname = request.POST.get("hostname")
+            ip = request.POST.get("ip")
+            port = request.POST.get("port")
+            business_id = request.POST.get("business_id")
 
-        print(hostname, ip, port, business_id)
+            if hostname and len(hostname) > 5:
+                models.Host.objects.create(hostname=hostname, ip=ip, port=port, business_id=business_id)
+            else:
+                res["status"] = False
+                res["error"] = "Too Short"
+        except Exception as e:
+            res["status"] = False
+            res["error"] = str(e)
 
-        return HttpResponse("Copy That!")
+        finally:
+            return HttpResponse(json.dumps(res))

@@ -39,12 +39,20 @@ forloop.first         //本次是否是第一次循环
 forloop.last          //本次是否是最后一次循环
 forloop.parentloop    //上层循环对象
 
-#ajax
+#$.ajax
+```javascript
 $.ajax({
-  url:"/xxx/",
-  type:"post",
-  data:{},
-  success:function(data){}
+  url:"/xxx/",      //必需。规定把请求发送到哪个 URL。
+  type:"POST",      
+  data:{},          //可选。映射或字符串值。规定连同请求发送到服务器的数据。
+  success:function(data){}      //可选。请求成功时执行的回调函数。
   })
+  
 $.get()
 $.post()
+```
+JSON.stringify()
+stringify的后缀ify/fy/ize表示使...化, 类似classify, simplify
+
+
+
