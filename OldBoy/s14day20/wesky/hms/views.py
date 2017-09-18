@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, HttpResponse
 from django.views import View
 from hms import models
 # Create your views here.
+
 
 class Business(View):
 
@@ -17,6 +18,33 @@ class Host(View):
     def get(self, request):
         datas = models.Host.objects.all()
         values = models.Host.objects.all().values('nid','hostname','ip','port', 'business_id', 'business__caption')
+        values_list = models.Host.objects.all().values_list('nid','hostname','ip','port', 'business_id', 'business__caption')
+        business_info = models.Business.objects.all()
 
 
-        return render(request, 'host.html', {"datas":datas,"values":values})
+        return render(request, 'host.html', {"datas":datas,"values":values, "values_list":values_list,"business_info":business_info})
+
+    def post(self, request):
+        hostname = request.POST.get("hostname")
+        ip = request.POST.get("ip")
+        port = request.POST.get("port")
+        business_id = request.POST.get("business_id")
+
+        print(hostname, ip, port, business_id)
+
+        models.Host.objects.create(hostname=hostname, ip=ip, port=port, business_id=business_id)
+
+        return redirect("/hms/host/")
+
+
+class Backdoor(View):
+
+    def post(self, request):
+        hostname = request.POST.get("hostname")
+        ip = request.POST.get("ip")
+        port = request.POST.get("port")
+        business_id = request.POST.get("business_id")
+
+        print(hostname, ip, port, business_id)
+
+        return HttpResponse("Copy That!")

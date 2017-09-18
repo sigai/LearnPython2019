@@ -3,11 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .shade{
+            position: fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            background-color: gray;
+            opacity:.4;
+            z-index:9;
+        }
+        .modal{
+            position: fixed;
+            height: 300px;
+            width: 400px;
+            top:50%;
+            left:50%;
+            margin-top: -200px;
+            margin-left: -200px;
+            background-color: white;
+            border: 1px solid red;
+            z-index:10;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
 </head>
 <body>
+<div class="shade hide"></div>
+<div class="modal hide">
+    <form action="{% url 'host' %}" method="post">
+        <p><input id="hn" type="text" name="hostname" placeholder="主机名"/></p>
+        <p><input id="ip" type="text" name="ip" placeholder="IP"/></p>
+        <p><input id="pt" type="text" name="port" placeholder="端口"/></p>
+        <p>
+            <label for="s1">业务线: </label>
+            <select name="business_id" id="s1">
+                {% for business in business_info %}
+                    {% if business.id == 1  %}
+                        <option value="{{ business.id }}" selected="selected">{{ business.caption }}</option>
+                    {% else %}
+                        <option value="{{ business.id }}">{{ business.caption }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <input type="submit" value="提交"/>
+            <input type="button" value="默默提交" id="b1"/>
+        </p>
+        <p><input type="button" value="取消" id="cancel"/></p>
+    </form>
+</div>
+<h1>对象</h1>
+<div><input type="button" value="添加"></div>
 <table border="1">
     <thead>
         <tr>
+            <td>序号</td>
             <td>主机名</td>
             <td>IP</td>
             <td>端口</td>
@@ -17,6 +70,7 @@
     <tbody>
         {% for data in datas %}
             <tr hid="{{ data.nid }}" bid="{{ data.business.id }}">
+                <td>{{ forloop.counter }}</td>
                 <td>{{ data.hostname }}</td>
                 <td>{{ data.ip }}</td>
                 <td>{{ data.port }}</td>
@@ -25,10 +79,11 @@
         {% endfor %}
     </tbody>
 </table>
-<div style="height: 10px;"></div>
+<h1>字典</h1>
 <table border="1">
     <thead>
         <tr>
+            <td>序号</td>
             <td>主机名</td>
             <td>IP</td>
             <td>端口</td>
@@ -38,6 +93,7 @@
     <tbody>
         {% for value in values %}
             <tr hid="{{ value.nid }}" bid="{{ value.business__id }}">
+                <td>{{ forloop.counter }}</td>
                 <td>{{ value.hostname }}</td>
                 <td>{{ value.ip }}</td>
                 <td>{{ value.port }}</td>
@@ -46,5 +102,56 @@
         {% endfor %}
     </tbody>
 </table>
+<h1>元组</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <td>序号</td>
+            <td>主机名</td>
+            <td>IP</td>
+            <td>端口</td>
+            <td>业务名称</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for value in values_list %}
+            <tr hid="{{ value.0 }}" bid="{{ value.4 }}">
+                <td>{{ forloop.revcounter0 }}</td>
+                <td>{{ value.1 }}</td>
+                <td>{{ value.2 }}</td>
+                <td>{{ value.3 }}</td>
+                <td>{{ value.5 }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<script src="/static/jquery.js"></script>
+<script>
+    $(function () {
+        $("input[value='添加']").click(function () {
+            $(".shade, .modal").removeClass('hide')
+        })
+        $("#cancel").click(function () {
+            $(".shade, .modal").addClass('hide')
+        })
+        $("#b1").click(function () {
+            $.ajax({
+                url:"/hms/backdoor/",
+                type:"POST",
+                data:{"hostname":$("#hn").val(),
+                    "ip":$("#ip").val(),
+                    "port":$("#pt").val(),
+                    "business_id":$("#s1").val()
+                },
+                success:function (data) {
+                    alert(data)
+                    location.reload()
+                }
+            })
+            }
+        )
+    })
+
+</script>
 </body>
 </html>

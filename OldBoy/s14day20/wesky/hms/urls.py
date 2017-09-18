@@ -18,6 +18,7 @@ from django.contrib import admin
 from hms import views
 
 urlpatterns = [
-    url(r'^business$', views.Business.as_view()),
-    url(r'^host$', views.Host.as_view()),
+    url(r'^business/', views.Business.as_view()),
+    url(r'^host/', views.Host.as_view(), name="host"),
+    url(r'^backdoor/', views.Backdoor.as_view()),
 ]

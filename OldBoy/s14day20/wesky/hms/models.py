@@ -9,7 +9,7 @@ class Host(models.Model):
     ip = models.GenericIPAddressField(protocol='ipv4',db_index=True)
     port = models.IntegerField()
 
-    business = models.ForeignKey(to="Business", to_field='id', )
+    business = models.ForeignKey(to="Business", to_field='id')
 
 
 class Business(models.Model):
