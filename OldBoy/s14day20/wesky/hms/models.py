@@ -17,3 +17,8 @@ class Business(models.Model):
     caption = models.CharField(max_length=32)
     code = models.CharField(max_length=32, null=True, default="SA")
 
+
+class Application(models.Model):
+
+    name = models.CharField(max_length=32)
+    r = models.ManyToManyField("Host")

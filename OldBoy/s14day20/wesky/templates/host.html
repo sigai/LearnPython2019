@@ -87,12 +87,12 @@
 <table border="1">
     <thead>
         <tr>
-            <td>序号</td>
-            <td>主机名</td>
-            <td>IP</td>
-            <td>端口</td>
-            <td>业务名称</td>
-            <td>操作</td>
+            <th>序号</th>
+            <th>主机名</th>
+            <th>IP</th>
+            <th>端口</th>
+            <th>业务名称</th>
+            <th>操作</th>
         </tr>
     </thead>
     <tbody>
@@ -112,11 +112,11 @@
 <table border="1">
     <thead>
         <tr>
-            <td>序号</td>
-            <td>主机名</td>
-            <td>IP</td>
-            <td>端口</td>
-            <td>业务名称</td>
+            <th>序号</th>
+            <th>主机名</th>
+            <th>IP</th>
+            <th>端口</th>
+            <th>业务名称</th>
         </tr>
     </thead>
     <tbody>
@@ -135,11 +135,11 @@
 <table border="1">
     <thead>
         <tr>
-            <td>序号</td>
-            <td>主机名</td>
-            <td>IP</td>
-            <td>端口</td>
-            <td>业务名称</td>
+            <th>序号</th>
+            <th>主机名</th>
+            <th>IP</th>
+            <th>端口</th>
+            <th>业务名称</th>
         </tr>
     </thead>
     <tbody>
@@ -201,16 +201,32 @@
         });
         $("#b2").click(function () {
             $.ajax({
-                url:"/hms/backdoor/",
+                url:"/hms/door/",
                 type:"POST",
                 data:$("#f1").serialize(),
                 success:function (data) {
-                    alert(data)
+                    d = JSON.parse(data);
+                    var hid = d["data"]["nid"];
+                    if(d.status){
+                        alert(data)
+                    }
                 }
-
+            })
+        });
+        $(".del").click(function () {
+            $.ajax({
+                url:"/hms/del/",
+                type:"POST",
+                data:{"hid": $(this).parent().parent().attr('hid')},
+                success:function (data) {
+                    d = JSON.parse(data);
+                    var hid = d["data"]["nid"];
+                    if(d.status){
+                        $("tr[hid='"+hid+"']").remove()
+                    }
+                }
             })
         })
-
     })
 
 </script>

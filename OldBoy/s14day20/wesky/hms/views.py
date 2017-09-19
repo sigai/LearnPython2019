@@ -60,3 +60,43 @@ class Backdoor(View):
 
         finally:
             return HttpResponse(json.dumps(res))
+
+
+class Door(View):
+
+    def post(self, request):
+        res = {"status":True, "error":None,"data":None}
+        try:
+            nid = request.POST.get("hid")
+            hostname = request.POST.get("hostname")
+            ip = request.POST.get("ip")
+            port = request.POST.get("port")
+            business_id = request.POST.get("business_id")
+
+            if hostname and len(hostname) > 5:
+                models.Host.objects.filter(nid=nid).update(hostname=hostname, ip=ip, port=port, business_id=business_id)
+                res["data"] = {"nid":nid}
+            else:
+                res["status"] = False
+                res["error"] = "Too Short"
+        except Exception as e:
+            res["status"] = False
+            res["error"] = str(e)
+
+        finally:
+            return HttpResponse(json.dumps(res))
+
+
+class Del(View):
+
+    def post(self, request):
+        res = {"status":True, "error":None,"data":None}
+        try:
+            nid = request.POST.get("hid")
+            models.Host.objects.filter(nid=nid).delete()
+            res["data"] = {"nid":nid}
+        except Exception as e:
+            res["status"] = False
+            res["error"] = str(e)
+        finally:
+            return HttpResponse(json.dumps(res))

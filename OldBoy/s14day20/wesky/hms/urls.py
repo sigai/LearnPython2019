@@ -21,4 +21,6 @@ urlpatterns = [
     url(r'^business/', views.Business.as_view()),
     url(r'^host/', views.Host.as_view(), name="host"),
     url(r'^backdoor/', views.Backdoor.as_view()),
+    url(r'^door/', views.Door.as_view()),
+    url(r'^del/', views.Del.as_view()),
 ]

@@ -43,9 +43,12 @@ forloop.parentloop    //上层循环对象
 ```javascript
 $.ajax({
   url:"/xxx/",      //必需。规定把请求发送到哪个 URL。
-  type:"POST",      
+  type:"POST",
+  dataType:"JSON",  //自动处理后端返回的json类型数据
+  traditional:true, //可处理发送列表类型数据      
   data:{},          //可选。映射或字符串值。规定连同请求发送到服务器的数据。
-  success:function(data){}      //可选。请求成功时执行的回调函数。
+  success:function(data){},      //可选。请求成功时执行的回调函数。data为json对象
+  error:function(){},            //后端未返回
   })
 
 $.get()
@@ -53,4 +56,25 @@ $.post()
 ```
 JSON.stringify()
 stringify的后缀ify/fy/ize表示使...化, 类似classify, simplify
-$.("form").serialize()
+$.("form").serialize()      //通过序列化表单值，创建 URL 编码文本字符串
+
+obj = models.TableName.objects.create()   //返回创建的TableName数据对象
+
+
+
+#多对多
+r = models.ManyToManyField(to=TableName)
+创建多对多方式:
+1. 自定义关系表       //可随便自定义
+2. 自动创建关系表      //只能创建两张表的一种关系
+
+```
+r.add(*args)
+r.remove(*args)
+r.clear(*args)
+r.set(list)
+```
+r.all() 返回TableName的数据对象的QuerySet对象
+
+
+
