@@ -47,12 +47,10 @@ $.ajax({
   data:{},          //可选。映射或字符串值。规定连同请求发送到服务器的数据。
   success:function(data){}      //可选。请求成功时执行的回调函数。
   })
-  
+
 $.get()
 $.post()
 ```
 JSON.stringify()
 stringify的后缀ify/fy/ize表示使...化, 类似classify, simplify
-
-
-
+$.("form").serialize()

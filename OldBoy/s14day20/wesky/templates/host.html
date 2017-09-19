@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        a:hover{
+            cursor: pointer;
+            color: blue;
+        }
         .shade{
             position: fixed;
             top:0;
@@ -14,7 +18,7 @@
             opacity:.4;
             z-index:9;
         }
-        .modal{
+        .modal, .edit_modal{
             position: fixed;
             height: 300px;
             width: 400px;
@@ -53,7 +57,29 @@
             <input type="button" value="默默提交" id="b1"/>
             <p><span id="e1" style="color: red;"></span></p>
         </p>
-        <p><input type="button" value="取消" id="cancel"/></p>
+        <p><input type="button" value="取消" class="cancel"/></p>
+    </form>
+</div>
+<div class="edit_modal hide">
+    <form action="{% url 'host' %}" method="post" id="f1">
+        <p><input type="text" name="hid" style="display: none"/></p>
+        <p><input type="text" name="hostname" placeholder="主机名"/></p>
+        <p><input type="text" name="ip" placeholder="IP"/></p>
+        <p><input type="text" name="port" placeholder="端口"/></p>
+        <p>
+            <label for="s2">业务线: </label>
+            <select name="business_id" id="s2">
+                {% for business in business_info %}
+                    {% if business.id == 1  %}
+                        <option value="{{ business.id }}" selected="selected">{{ business.caption }}</option>
+                    {% else %}
+                        <option value="{{ business.id }}">{{ business.caption }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <input type="button" value="默默提交" id="b2"/>
+        </p>
+        <p><input type="button" value="取消" class="cancel_edit"/></p>
     </form>
 </div>
 <h1>对象</h1>
@@ -66,16 +92,18 @@
             <td>IP</td>
             <td>端口</td>
             <td>业务名称</td>
+            <td>操作</td>
         </tr>
     </thead>
     <tbody>
         {% for data in datas %}
             <tr hid="{{ data.nid }}" bid="{{ data.business.id }}">
                 <td>{{ forloop.counter }}</td>
-                <td>{{ data.hostname }}</td>
-                <td>{{ data.ip }}</td>
-                <td>{{ data.port }}</td>
+                <td class="hostname">{{ data.hostname }}</td>
+                <td class="ip">{{ data.ip }}</td>
+                <td class="port">{{ data.port }}</td>
                 <td>{{ data.business.caption }}</td>
+                <td><a class="edit">编辑</a> | <a class="del">删除</a></td>
             </tr>
         {% endfor %}
     </tbody>
@@ -132,8 +160,25 @@
         $("input[value='添加']").click(function () {
             $(".shade, .modal").removeClass('hide')
         });
-        $("#cancel").click(function () {
+        $(".cancel").click(function () {
             $(".shade, .modal").addClass('hide')
+        });
+        $(".edit").click(function () {
+            $(".edit_modal, .shade").removeClass("hide");
+            var bid = $(this).parent().parent().attr("bid");
+            var hid = $(this).parent().parent().attr("hid");
+            var hostname = $(this).parent().parent().children(".hostname").text();
+            var ip = $(this).parent().parent().children(".ip").text();
+            var port = $(this).parent().parent().children(".port").text();
+
+            $(".edit_modal").find("input[name='hid']").val(hid);
+            $(".edit_modal").find("input[name='hostname']").val(hostname);
+            $(".edit_modal").find("input[name='ip']").val(ip);
+            $(".edit_modal").find("input[name='port']").val(port);
+            $(".edit_modal").find("#s2").val(bid);
+        });
+        $(".cancel_edit").click(function () {
+            $(".shade, .edit_modal").addClass('hide')
         });
         $("#b1").click(function () {
             $.ajax({
@@ -151,11 +196,21 @@
                     }else {
                         $("#e1").text(d.error)
                     }
-
                 }
             })
-            }
-        )
+        });
+        $("#b2").click(function () {
+            $.ajax({
+                url:"/hms/backdoor/",
+                type:"POST",
+                data:$("#f1").serialize(),
+                success:function (data) {
+                    alert(data)
+                }
+
+            })
+        })
+
     })
 
 </script>
