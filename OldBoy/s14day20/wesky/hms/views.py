@@ -129,3 +129,28 @@ class App(View):
             res["status"] = False
 
         return HttpResponse(json.dumps(res))
+
+class Delrhost(View):
+
+    def post(self, request):
+        hid = request.POST.get("hid")
+        appid = request.POST.get("appid")
+
+        obj = models.Application.objects.get(id=appid)
+        obj.r.remove(hid)
+        obj.save()
+
+        return HttpResponse("ok")
+
+class Edit(View):
+
+    def post(self,request):
+        res = {"status":True}
+        appid = request.POST.get('appid')
+        hosts = request.POST.getlist('hosts')
+        print(hosts)
+        obj = models.Application.objects.get(id=appid)
+        obj.r.set(hosts)
+        obj.save()
+
+        return HttpResponse(json.dumps(res))

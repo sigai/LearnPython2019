@@ -75,3 +75,7 @@ r.clear(*args)    //清空
 r.set(list)       //设置
 ```
 r.all() 返回TableName的数据对象的QuerySet对象
+
+select标签的multiple状态返回的是列表类型, 需要用getlist方法获取值, 并且ajax的traditional为true
+
+

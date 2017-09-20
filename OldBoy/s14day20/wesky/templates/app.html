@@ -10,8 +10,6 @@
             border: 1px solid #DDD;
             vertical-align: top;
             margin: 0 5px 5px 0;
-            padding: 0 4px 0 4px;
-            cursor: pointer;
             background: pink;
         }
         .hide{
@@ -38,6 +36,31 @@
             background-color: white;
             z-index:10;
         }
+        .edit_modal{
+            position: fixed;
+            width: 500px;
+            height: 400px;
+            top:50%;
+            left:50%;
+            margin-top: -250px;
+            margin-left: -250px;
+            background-color: white;
+            z-index:10;
+        }
+        .hosts:hover i{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        i{
+            color: red;
+            padding: 0 5px 0 5px;
+            border: 1px solid red;
+        }
+        .edit:hover{
+            color: blue;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +78,25 @@
         </p>
         <p>
             <input id="new_app" type="button" value="新建">
+            <input class=cancel_add" type="button" value="取消">
+        </p>
+    </form>
+</div>
+<div class="edit_modal hide">
+    <form id="f2">
+        <input id="appid" type="text" name="appid" style="display: none;"/>
+        <p><input type="text" name="name" style="display: block;" placeholder="应用名"/></p>
+        <p>
+            <label for="h2">配备主机:</label>
+            <select name="hosts" id="h2" multiple="multiple" size="{{ hosts.count }}" style="display:block;">
+            {% for host in hosts %}
+                <option value="{{ host.nid }}">{{ host.hostname }}</option>
+            {% endfor %}
+            </select>
+        </p>
+        <p>
+            <input id="change" type="button" value="修改">
+            <input class="cancel_edit" type="button" value="取消">
         </p>
     </form>
 </div>
@@ -64,17 +106,21 @@
         <tr>
             <th>应用</th>
             <th>主机</th>
+            <th>操作</th>
         </tr>
     </thead>
     <tbody>
         {% for obj in objs %}
         <tr>
-            <td>{{ obj.name }}</td>
+            <td appid="{{ obj.id }}">{{ obj.name }}</td>
             <td>
                 {% for host in obj.r.all %}
-                    <span class="hosts">{{ host.hostname }}</span>
+                    <span class="hosts" hid="{{ host.nid }}">
+                        {{ host.hostname }}
+                        <i>x</i></span>
                 {% endfor %}
             </td>
+            <td><a class="edit">编辑</a></td>
         </tr>
         {% endfor %}
     </tbody>
@@ -85,6 +131,7 @@
         $("input[value='新增']").click(function(){
             $(".shade,.add").removeClass("hide")
         });
+
         $("#new_app").click(function () {
             $.ajax({
                 url:"/hms/app/",
@@ -99,6 +146,56 @@
                     }else {
                         alert(data.e)
                     }
+                }
+            })
+        });
+        $("i").click(function () {
+            var hid = $(this).parent().attr("hid");
+            var appid = $(this).parent().parent().prev().attr("appid");
+            $.ajax({
+                url:"/hms/del_rhost/",
+                dataType:"JSON",
+                data:{"hid":hid,"appid":appid},
+                type:"POST",
+                success:function (data) {
+                    $(this).parent().remove()
+                }
+
+            });
+            $(this).parent().remove()
+        });
+        $(".edit").click(function () {
+            $(".edit_modal,.shade").removeClass("hide");
+            var host_list = [];
+            $(this).parent().prev().find("span").each(function () {
+                host_list.push($(this).attr("hid"))
+            });
+            var appid = $(this).parent().prev().prev().attr("appid");
+            var appname = $(this).parent().prev().prev().text();
+
+            $("#f2").find("input[name='name']").val(appname);
+            $("#h2").val(host_list)
+            $("#appid").val(appid)
+
+        });
+        $(".cancel_add").click(function () {
+            $(".add,.shade").addClass("hide")
+        });
+        $(".cancel_edit").click(function () {
+            $(".edit_modal,.shade").addClass("hide")
+        });
+        $("#change").click(function () {
+            $.ajax({
+                url:"/hms/edit/",
+                type:"POST",
+                dataType:"JSON",
+                traditional:true,
+                data:$("#f2").serialize(),
+                success:function (data) {
+                    if(data.status){
+                        location.reload()
+                    }
+                    console.log(data)
                 }
             })
         })
