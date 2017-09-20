@@ -142,14 +142,17 @@ class Delrhost(View):
 
         return HttpResponse("ok")
 
+
 class Edit(View):
 
     def post(self,request):
         res = {"status":True}
         appid = request.POST.get('appid')
         hosts = request.POST.getlist('hosts')
+        appname = request.POST.get('name')
         print(hosts)
         obj = models.Application.objects.get(id=appid)
+        obj.name = appname
         obj.r.set(hosts)
         obj.save()
 

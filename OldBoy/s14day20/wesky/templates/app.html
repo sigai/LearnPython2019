@@ -45,7 +45,7 @@
             margin-top: -250px;
             margin-left: -250px;
             background-color: white;
-            z-index:10;
+            z-index:11;
         }
         .hosts:hover i{
             background-color: red;
@@ -78,7 +78,7 @@
         </p>
         <p>
             <input id="new_app" type="button" value="新建">
-            <input class=cancel_add" type="button" value="取消">
+            <input id="cancel" type="button" value="取消"/>
         </p>
     </form>
 </div>
@@ -129,9 +129,8 @@
 <script>
     $(function () {
         $("input[value='新增']").click(function(){
-            $(".shade,.add").removeClass("hide")
+            $(".add,.shade").removeClass("hide")
         });
-
         $("#new_app").click(function () {
             $.ajax({
                 url:"/hms/app/",
@@ -174,14 +173,16 @@
             var appname = $(this).parent().prev().prev().text();
 
             $("#f2").find("input[name='name']").val(appname);
-            $("#h2").val(host_list)
-            $("#appid").val(appid)
+            $("#h2").val(host_list);
+            $("#appid").val(appid);
 
         });
-        $(".cancel_add").click(function () {
+        $("#cancel").click(function () {
+            console.log(this);
             $(".add,.shade").addClass("hide")
         });
         $(".cancel_edit").click(function () {
+            console.log(this);
             $(".edit_modal,.shade").addClass("hide")
         });
         $("#change").click(function () {
