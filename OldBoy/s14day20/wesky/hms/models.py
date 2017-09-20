@@ -22,3 +22,9 @@ class Application(models.Model):
 
     name = models.CharField(max_length=32)
     r = models.ManyToManyField("Host")
+
+
+# class HostToApp(models.Model):
+#
+#     h_obj = models.ForeignKey("Host", to_field="nid")
+#     A_obj = models.ForeignKey("Application", to_field="id")

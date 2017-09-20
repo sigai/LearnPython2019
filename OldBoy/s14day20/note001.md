@@ -69,12 +69,9 @@ r = models.ManyToManyField(to=TableName)
 2. 自动创建关系表      //只能创建两张表的一种关系
 
 ```
-r.add(*args)
-r.remove(*args)
-r.clear(*args)
-r.set(list)
+r.add(*args)      //添加
+r.remove(*args)   //删除
+r.clear(*args)    //清空
+r.set(list)       //设置
 ```
 r.all() 返回TableName的数据对象的QuerySet对象
-
-
-
