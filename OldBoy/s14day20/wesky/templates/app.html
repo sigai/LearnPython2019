@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应用</title>
+    <style>
+        .hosts{
+            height: 22px;
+            line-height: 22px;
+            border: 1px solid #DDD;
+            vertical-align: top;
+            margin: 0 5px 5px 0;
+            padding: 0 4px 0 4px;
+            cursor: pointer;
+            background: pink;
+        }
+        .hide{
+            display: none;
+        }
+        .shade{
+            position: fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            background-color: black;
+            opacity:.4;
+            z-index:9;
+        }
+        .add{
+            position: fixed;
+            width: 500px;
+            height: 400px;
+            top:50%;
+            left:50%;
+            margin-top: -250px;
+            margin-left: -250px;
+            background-color: white;
+            z-index:10;
+        }
+    </style>
+</head>
+<body>
+<div class="shade hide"></div>
+<div class="add hide">
+    <form id="f1">
+        <p><input type="text" name="name" style="display: block;" placeholder="应用名"></p>
+        <p>
+            <label for="hosts">配备主机:</label>
+            <select name="hosts" id="hosts" multiple="multiple" size="{{ hosts.count }}" style="display:block;">
+            {% for host in hosts %}
+                <option value="{{ host.nid }}">{{ host.hostname }}</option>
+            {% endfor %}
+            </select>
+        </p>
+        <p>
+            <input id="new_app" type="button" value="新建">
+        </p>
+    </form>
+</div>
+<div><input type="button" value="新增"></div>
+<table border="1">
+    <thead>
+        <tr>
+            <th>应用</th>
+            <th>主机</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for obj in objs %}
+        <tr>
+            <td>{{ obj.name }}</td>
+            <td>
+                {% for host in obj.r.all %}
+                    <span class="hosts">{{ host.hostname }}</span>
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<script src="/static/jquery.js"></script>
+<script>
+    $(function () {
+        $("input[value='新增']").click(function(){
+            $(".shade,.add").removeClass("hide")
+        });
+        $("#new_app").click(function () {
+            $.ajax({
+                url:"/hms/app/",
+                type:"POST",
+                traditional:true,
+                dataType:"JSON",
+                data:$("#f1").serialize(),
+                success:function (data) {
+                    if(data.status){
+                        alert(data.data);
+                        location.reload()
+                    }else {
+                        alert(data.e)
+                    }
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>

@@ -48,7 +48,7 @@ $.ajax({
   traditional:true, //可处理发送列表类型数据      
   data:{},          //可选。映射或字符串值。规定连同请求发送到服务器的数据。
   success:function(data){},      //可选。请求成功时执行的回调函数。data为json对象
-  error:function(){},            //后端未返回
+  error:function(){},            //后端未返回, 请求失败时的回调函数
   })
 
 $.get()

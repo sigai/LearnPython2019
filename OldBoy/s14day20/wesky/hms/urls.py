@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^backdoor/', views.Backdoor.as_view()),
     url(r'^door/', views.Door.as_view()),
     url(r'^del/', views.Del.as_view()),
+    url(r'^app/', views.App.as_view()),
 ]

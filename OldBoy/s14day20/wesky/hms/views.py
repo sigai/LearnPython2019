@@ -100,3 +100,32 @@ class Del(View):
             res["error"] = str(e)
         finally:
             return HttpResponse(json.dumps(res))
+
+
+class App(View):
+
+    def get(self, request):
+        objs = models.Application.objects.all()
+        hosts = models.Host.objects.all()
+        return render(request, 'app.html', {"objs": objs, "hosts":hosts})
+
+    def post(self, request):
+
+        res = {"status": True, "data": None, "e": None}
+        name = request.POST.get("name")
+        hosts = request.POST.getlist("hosts")
+
+        if name and hosts:
+            try:
+                new = models.Application.objects.create()
+                new.name = name
+                new.r.set(hosts)
+                new.save()
+            except Exception as e:
+                res["e"] = str(e)
+            else:
+                res["data"] = "ok"
+        else:
+            res["status"] = False
+
+        return HttpResponse(json.dumps(res))
