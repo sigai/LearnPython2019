@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from cms import views
+from hms import views
 
 urlpatterns = [
     url(r'^index/', views.Index.as_view(), name="index"),
-    url(r'^article/', views.Article.as_view(), name="article"),
 ]

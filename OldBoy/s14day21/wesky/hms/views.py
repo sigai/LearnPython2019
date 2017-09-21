@@ -8,13 +8,6 @@ from pprint import pprint
 class Index(View):
 
     def get(self, request):
-        data = reverse("cms:index")
+        data = reverse("hms:index")
 
         return render(request, 'index.html',{"data":data})
-
-
-class Article(View):
-
-    def get(self, request):
-        article = "article"
-        return render(request, 'article.html',{"article":article})
