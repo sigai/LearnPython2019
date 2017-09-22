@@ -11,10 +11,3 @@ class Index(View):
         data = reverse("cms:index")
 
         return render(request, 'index.html',{"data":data})
-
-
-class Article(View):
-
-    def get(self, request):
-        article = "article"
-        return render(request, 'article.html',{"article":article})

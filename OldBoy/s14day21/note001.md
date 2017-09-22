@@ -147,7 +147,22 @@ models.xxxField()的方法在创建时暂时没有验证功能, 需要在admin�
 - 模板语言
   for if 索引用点号 方法也用点号且不调用 keys, values, items QuerySet类型的all方法也是
   {% %} 括起来的url name values等
-  
+
+  自定义函数sample_tag:
+  app目录下建立python包templatetags
+  app需要在settings中注册
+  ```
+  from django import template
+  register = template.Library()
+  @register.sample_tag
+  def func():
+    pass
+  ```
+  {% load <filename>%}
+
+  {% func args %}  //
+
+
 - 模板继承
 
 {% block name %}{% endblock %}
@@ -164,6 +179,10 @@ models.xxxField()的方法在创建时暂时没有验证功能, 需要在admin�
 {% include Template %}
 html元素(导入可多次)
 
+`@register.filter`
+最多两个参数
+使用的时候用{{}}而simple_tag用{% %}且无参数个数限制
+做if条件
 
 #cookies和session
 
@@ -174,5 +193,3 @@ html元素(导入可多次)
 
 
 #Form验证
-
-
