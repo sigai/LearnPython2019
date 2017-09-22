@@ -3,3 +3,32 @@
     cursor: pointer;
 
 }
+
+.page{
+    /*画圆形标签的窍门: 圆形是在padding和margin中间同时是padding的内切圆也是margin的外接圆*/
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: darkgrey;
+}
+.big{
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: darkgrey;
+}
+.active{
+    color: blue;
+    background-color: white;
+    border:1px solid darkgrey;
+}

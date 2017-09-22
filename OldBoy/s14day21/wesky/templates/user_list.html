@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block base %}
+    <ul>
+        {% for i in li %}
+            <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+    <div class=".pagination">
+{#        {{ pages|safe }}#}
+        {{ pages }}
+        <input style="width: 60px;" type="text" placeholder="请输入页码">
+        <input type="button" value="GO" class="jump"/>
+    </div>
+{% endblock %}

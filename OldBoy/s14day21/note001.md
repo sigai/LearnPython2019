@@ -189,7 +189,20 @@ html元素(导入可多次)
 
 #分页
 自定义
+##xss
+前端:
+`{{ data|safe}}`
+用safe内置filter处理
+后端:
+```
+from django.utils.safestring import mark_safe
+data = mark_safe(data)
+```
 
+`javascript:void(0);`或`#`在a标签中表示什么也不做
+location.href = "/"
 
 
 #Form验证
+
+
