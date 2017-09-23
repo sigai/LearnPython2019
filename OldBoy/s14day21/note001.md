@@ -200,7 +200,9 @@ data = mark_safe(data)
 ```
 
 `javascript:void(0);`或`#`在a标签中表示什么也不做
-location.href = "/"
+`location.href = "/"`
+
+`@property` 静态属性
 
 
 #Form验证
