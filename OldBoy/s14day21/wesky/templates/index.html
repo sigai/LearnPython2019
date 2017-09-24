@@ -1,8 +1,5 @@
 {% extends 'base.html' %}
 {% load beautify %}
 {% block base %}
-{% more data %}
-
-{{ data|duplicate:10 }}
-    <div class="b">点我</div>
+{{ data }}
 {% endblock %}

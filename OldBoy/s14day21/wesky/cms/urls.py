@@ -20,4 +20,5 @@ from cms import views
 urlpatterns = [
     url(r'^index/', views.Index.as_view(), name="index"),
     url(r'^user_list/', views.UserList.as_view(), name="userlist"),
+    url(r'^login/', views.Login.as_view(), name="login"),
 ]

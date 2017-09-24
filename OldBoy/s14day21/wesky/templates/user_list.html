@@ -5,10 +5,19 @@
             <li>{{ i }}</li>
         {% endfor %}
     </ul>
+
     <div class=".pagination">
 {#        {{ pages|safe }}#}
         {{ pages }}
         <input style="width: 60px;" type="text" placeholder="请输入页码">
         <input type="button" value="GO" class="jump"/>
+        每页显示
+        <select name="npp" id="s1">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+        </select>
+        条
     </div>
+
 {% endblock %}

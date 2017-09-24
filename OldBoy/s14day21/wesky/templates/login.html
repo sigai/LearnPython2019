@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block base %}
+    <form action="/cms/login/" method="post">
+        <div>
+            <input type="text" name="usr" placeholder="用户名"/>
+        </div>
+        <div>
+            <input type="text" name="pwd" placeholder="密码"/>
+        </div>
+        <input type="submit" value="登陆"/>
+    </form>
+{% endblock %}
