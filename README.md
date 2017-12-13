@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/language-Python-orange.svg)
 [![codebeat badge](https://codebeat.co/badges/baeefd2c-908a-49f7-9dc6-6dbaaa3e39bc)](https://codebeat.co/projects/github-com-sigai-learnpython2017-master)
 [![](https://img.shields.io/badge/weibo-@Python-red.svg)](http://weibo.com/371407044)
-
+[![Build Status](https://travis-ci.org/sigai/LearnPython2017.svg?branch=master)](https://travis-ci.org/sigai/LearnPython2017)
 
 自学python
 
