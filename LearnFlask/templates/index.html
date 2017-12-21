@@ -9,6 +9,11 @@
     <p>本地时间{{ moment(current_time).format('LL') }}.</p>
     <p>{{ moment(current_time).fromNow(refresh=True) }}</p>
     <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+    {% if not known %}
+    <p>Pleased to meet you!</p>
+    {% else %}
+    <p>Happy to see you again!</p>
+    {% endif %}
 </div>
 {{ wtf.quick_form(form) }}
 {% endblock %}
