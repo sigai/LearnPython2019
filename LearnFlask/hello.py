@@ -32,35 +32,13 @@ app.config["MAIL_PASSWORD"] = os.environ.get("MAIL_PASSWORD")
 app.config["FLASKY_MAIL_SUBJECT_PREFIX"] = "[Flasky]"
 app.config["FLASKY_MAIL_SENDER"] = "Flasky Admin <vipfts@163.com>"
 app.config["FLASK_ADMIN"] = os.environ.get("FLASKY_ADMIN")
-db = SQLAlchemy(app)
+
 Bootstrap(app)
 mail = Mail(app)
 manager = Manager(app)
 moment = Moment(app)
 migrate = Migrate(app, db)
 manager.add_command("db", MigrateCommand)
-
-
-class Role(db.Model):
-    __tablename__ = "roles"
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(64), unique=True)
-
-    users = db.relationship("User", backref="role", lazy="dynamic")
-
-    def __repr__(self):
-        return "<Role %r>" % self.name
-
-
-class User(db.Model):
-    __tablename__ = "users"
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(64), unique=True, index=True)
-
-    role_id = db.Column(db.Integer, db.ForeignKey("roles.id"))
-
-    def __repr__(self):
-        return "<User %r>" % self.username
 
 
 def make_shell_context():
@@ -126,9 +104,6 @@ def baidu():
     return redirect("https://www.baidu.com")
 
 
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template('404.html'), 404
 
 
 if __name__ == '__main__':
