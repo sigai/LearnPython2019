@@ -10,6 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate, MigrateCommand
 from flask_mail import Mail, Message
 import os
+from threading import Thread
 
 
 class NameForm(Form):
@@ -69,12 +70,19 @@ def make_shell_context():
 manager.add_command("shell", Shell(make_context=make_shell_context))
 
 
+def send_async_email(app, msg):
+    with app.app_context():
+        mail.send(msg)
+
+
 def send_email(to, subject, template, **kwargs):
     msg = Message(app.config["FLASKY_MAIL_SUBJECT_PREFIX"] + subject,
                   sender=app.config["FLASKY_MAIL_SENDER"], recipients=[to,])
     msg.body = render_template(template + ".txt", **kwargs)
     msg.html = render_template(template + ".html", **kwargs)
-    mail.send(msg)
+    thr = Thread(target=send_async_email, args=[app, msg])
+    thr.start()
+    return thr
 
 
 @app.route('/', methods=["GET", "POST"])
