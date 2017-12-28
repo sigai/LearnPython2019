@@ -3,7 +3,7 @@ from flask_script import Manager, Shell
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from datetime import datetime
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from flask_sqlalchemy import SQLAlchemy
@@ -13,7 +13,7 @@ import os
 from threading import Thread
 
 
-class NameForm(Form):
+class NameForm(FlaskForm):
     name = StringField("What is your name?", validators=[DataRequired()])
     submit = SubmitField("Submit")
 

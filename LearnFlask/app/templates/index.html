@@ -4,15 +4,15 @@
 
 {% block page_content %}
 <div class="page-header">
-    <h1>{{ url_for("user", name="john") }} </h1>
+{#    <h1>{{ url_for("user", name="john") }} </h1>#}
     <p>{{ moment.lang("en") }}</p>
     <p>本地时间{{ moment(current_time).format('LL') }}.</p>
     <p>{{ moment(current_time).fromNow(refresh=True) }}</p>
-    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
-    {% if not known %}
-    <p>Pleased to meet you!</p>
+    <h1>Hello, {% if current_user.username %}{{ current_user.username }}{% else %}Stranger{% endif %}!</h1>
+    {% if current_user.is_authenticated %}
+    <p>Pleased to meet you! {{ current_user.username }}</p>
     {% else %}
-    <p>Happy to see you again!</p>
+    <p>Happy to see you Stranger!</p>
     {% endif %}
 </div>
 {{ wtf.quick_form(form) }}
