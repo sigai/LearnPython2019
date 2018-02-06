@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info</title>
+    <style>
+        .item {
+            display: none;
+            position: relative;
+            left: 10 px;
+
+        }
+    </style>
+</script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>店铺类型</th>
+            <th>宝贝编号</th>
+            <th>月度销量</th>
+            <!-- <th>价格信息</th> -->
+        </tr>
+        {% for item in items %}
+            <tr>
+                <td>
+                    {% if item.shop_type == "T" %}
+                        <img src="http://img.alicdn.com/tfs/TB1XlF3RpXXXXc6XXXXXXXXXXXX-16-16.png">
+                    {% elif item.shop_type == "C" %}
+                        <img src="http://img.alicdn.com/newrank/s_cap_1.gif">
+                    {% elif item.shop_type == "AD" %}
+                        <img src="http://img.alicdn.com/tps/TB1w_bPMVXXXXa.XpXXXXXXXXXX-26-16.png" alt="AD">
+                    {% endif %}
+                </td>
+                <td>
+                    <a href="{{item.item_link}}" onmouseover="showPic(this);", onmouseout="hidePic(this)">{{item.item_id}}</a>
+                    <img class="item" id="{{item.item_id}}" src="{{item.item_pic}}" height="250" width="250"/>
+                </td>
+                <td>{{item.sales}}</td>
+                <!-- <td>{{item.price}}</td> -->
+            </tr>
+        {% endfor %}
+    </table>
+<script type="text/javascript">
+    function showPic(atag) {
+        // atag.nextSibling.style.display = "block";
+        document.getElementById(atag.text).style.display = "block";
+        console.log("恭喜")
+    }
+    function hidePic(atag) {
+        // atag.nextSibling.style.display = "block";
+        document.getElementById(atag.text).style.display = "none";
+        console.log("恭喜")
+    }
+</script>
+</body>
+</html>
