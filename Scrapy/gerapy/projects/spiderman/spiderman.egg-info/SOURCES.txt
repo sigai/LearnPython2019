@@ -1,0 +1,13 @@
+setup.py
+spiderman/__init__.py
+spiderman/items.py
+spiderman/middlewares.py
+spiderman/pipelines.py
+spiderman/settings.py
+spiderman.egg-info/PKG-INFO
+spiderman.egg-info/SOURCES.txt
+spiderman.egg-info/dependency_links.txt
+spiderman.egg-info/entry_points.txt
+spiderman.egg-info/top_level.txt
+spiderman/spiders/__init__.py
+spiderman/spiders/spider.py
