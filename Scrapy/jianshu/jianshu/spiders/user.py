@@ -37,7 +37,7 @@ class UserSpider(scrapy.Spider):
 
             for t in self.types:
                 pages = int(item[t]) // 9
-                self.log()
+                self.log("")
 
                 for p in range(2, pages+3):
                     
