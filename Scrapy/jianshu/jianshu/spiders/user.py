@@ -5,7 +5,7 @@ from scrapy.loader import ItemLoader
 from scrapy.loader.processors import TakeFirst
 
 from jianshu.items import JianshuItem
-
+from scrapy.settings import default_settings
 
 class UserLoader(ItemLoader):
     
