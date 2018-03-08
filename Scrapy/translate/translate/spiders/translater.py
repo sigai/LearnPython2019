@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
+import json
+import re
+
 import scrapy
 from scrapy import Request
+
+from translate.items import TranslateItem
 
 class TranslaterSpider(scrapy.Spider):
     name = 'translater'
@@ -23,13 +28,32 @@ class TranslaterSpider(scrapy.Spider):
 
         sentences = []
         for j, p in enumerate(article):
-            for i, s in enumerate(p.strip().split("\n")):
+            sents = re.split(r'(\. |\n)', p.strip())
+            sents = sentscombine(sents)
+            for i, s in enumerate(sents):
                 sentences.append((hashid, j, i, s))
 
         for hashid, j, i, s in sentences:
+            if s == '\n':
+                continue
             request = Request(url.format(lang='zh-CN', s=s), meta={'j':j,'i':i, 'hashid':hashid})
             yield request
 
     def parse(self, response):
-        print(response.body.decode('utf-8'))
-        print(response.meta['hashid'], response.meta['j'], response.meta['i'])
+
+        res = json.loads(response.text)
+
+        item = TranslateItem()
+        item['agt_id'] = response.meta['hashid']
+        item['type_id'] = response.meta['j']
+        item['sentence_id'] = response.meta['i']
+        item['sentence'] = res[0][0][0]
+
+        yield item
+
+
+def sentscombine(sents):
+    while '. ' in sents:
+        i = sents.index('. ')
+        sents[i-1:i+1] = [sents[i-1] + '.']
+    return sents

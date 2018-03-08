@@ -11,4 +11,11 @@ import scrapy
 class TranslateItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    agt_id = scrapy.Field()
+
+    type_id = scrapy.Field()
+    sentence_id= scrapy.Field()
+
+    sentence = scrapy.Field()
+
+
