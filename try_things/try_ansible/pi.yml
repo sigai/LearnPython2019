@@ -1,0 +1,11 @@
+---
+# install python modules on raspberry pi
+
+- hosts: all
+  remote_user: pi
+  tasks:
+  - name: install wesky
+    pip:
+      name: wesky
+      executable: pip3
+      state: latest
