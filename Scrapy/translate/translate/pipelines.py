@@ -4,6 +4,8 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+import json
+from redis import StrictRedis
 
 
 class TranslatePipeline(object):
@@ -13,7 +15,7 @@ class TranslatePipeline(object):
         :param spider:
         :return:
         """
-        self.articles = {}
+        self.redis = StrictRedis.from_url('redis://@192.168.28.106:6379/0')
 
     def process_item(self, item, spider):
         """
@@ -27,8 +29,8 @@ class TranslatePipeline(object):
         sentence_id = item['sentence_id']
         sentence = item['sentence']
 
-        self.articles.setdefault(agt_id, list()).append((type_id, sentence_id, sentence))
-
+        sent = (agt_id, type_id, sentence_id, sentence)
+        self.redis.sadd("trans", json.dumps(sent, ensure_ascii=False, indent=4))
         return item
 
     def close_spider(self, spider):
@@ -37,34 +39,4 @@ class TranslatePipeline(object):
         :param spider:
         :return:
         """
-        self.trans = {}
-        for agt_id, sentences in self.articles.items():
-            trans = [list() for i in range(3)]
-            matrix_raw = sorted(sentences)
-            matrix = repaire_matrix(matrix_raw)
-            print(matrix)
 
-            title = ''.join(matrix[0])
-            content = ''.join(matrix[1])
-            replies = ''.join(matrix[2])
-
-            self.trans[agt_id] = {'title':title, 'content':content, 'replies':replies}
-            print(self.trans)
-
-
-def repaire_matrix(raw):
-    """
-    getback the '\n'
-    :param raw:
-    :return:
-    """
-    matrix = []
-    type_ids = {i[0] for i in raw}
-    for type_id in type_ids:
-        type_len = max([i[1] for i in raw if i[0]== type_id]) + 1
-        matrix.append(["\n" for i in range(type_len)])
-
-    for type_id, sentence_id, sentence in sorted(raw):
-        matrix[type_id][sentence_id] = sentence
-
-    return matrix

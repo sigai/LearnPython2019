@@ -6,5 +6,5 @@ import (
 
 func main() {
 	var a int16
-	fmt.Println()
+	fmt.Println(a)
 }
