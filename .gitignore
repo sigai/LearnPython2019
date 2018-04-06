@@ -6,3 +6,4 @@
 *.pyc
 Learn_Flask/venv
 wal/
+*.txt
