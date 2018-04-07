@@ -21,6 +21,6 @@ headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleW
 url = "http://download.cnet.com:/Tonatiuh/3000-2383_4-75904882.html"
 # url = "http://httpbin.org/ip"
 
-res = requests.get(url=url, headers=headers, proxies=socks_list[0])
+res = requests.get(url=url, headers=headers, proxies=socks_list[3])
 
-print(res.content)
+print(res.text)
