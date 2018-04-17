@@ -15,3 +15,4 @@ words_list = words['toplevel']['CompleteSuggestion']
 
 for word in words_list:
     print(word['suggestion']['@data'])
+

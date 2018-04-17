@@ -2,6 +2,14 @@
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from html import unescape
+from requests_html import HTML, HTMLSession
+import json
+
+chrome_options = Options()
+opener = webdriver.Chrome(chrome_options=chrome_options)
 
 
 proxies_list = [{"http":"http://104.236.54.196:8080"},
@@ -17,6 +25,5 @@ headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleW
 url = "http://download.cnet.com:/Tonatiuh/3000-2383_4-75904882.html"
 # url = "http://httpbin.org/ip"
 
-res = requests.get(url=url, headers=headers, proxies=socks_list[0])
-
-print(res.text)
+opener.get(url)
+opener.save_screenshot(url.split('/')[-1].split('.')[0] + ".png")
