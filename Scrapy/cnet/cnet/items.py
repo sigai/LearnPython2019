@@ -17,11 +17,16 @@ class SoftwareItem(scrapy.Item):
     name = scrapy.Field()
     description = scrapy.Field()
     publisher = scrapy.Field()
+    site = scrapy.Field()
+    release = scrapy.Field()
+    version = scrapy.Field()
     count = scrapy.Field()
     filename = scrapy.Field()
+    size = scrapy.Field()
     category = scrapy.Field()
     subcategory = scrapy.Field()
     os = scrapy.Field()
+    price = scrapy.Field()
 
 
 
