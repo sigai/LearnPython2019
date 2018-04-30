@@ -7,6 +7,8 @@ __author__ = "Sigai"
 from threading import Thread
 import re
 from time import sleep
+from datetime import datetime
+import random
 
 import itchat
 from itchat.content import *
@@ -26,19 +28,30 @@ CLIENT = pymongo.MongoClient(host="localhost", port=27017)
 DB = CLIENT['jb51net']
 books = DB['books']
 
-infos = books.find({"url":{"$ne": None}})
+infos = books.find({"$and":[{"url":{"$ne": None}}, {"code":{"$exists":False}}]})
 
-
+sucess = 0
 for info in tqdm(infos):
-
+    sucess += 1
+    if sucess == 10:
+        print("[*] Mission Complete.")
+        break
     bid = info['bid']
-    print(info)
+    print("\t[+] Processing:", info['book'])
     @itchat.msg_register(TEXT, isMpChat=True)
     def callback_msg(msg):
-        code = re.search(r"分享密码：(.{4})", msg.text).group(1)
+        rep = re.search(r"分享密码：(.{4})", msg.text)
+        code = rep.group(1) if rep else ""
         book = msg.text.split('\n')[0].strip()
-        res = books.update({"$and": [{'bid': bid}, {"book": book}]}, {"$set": {"code": code}})
-        print(book, code, res)
+        res = books.update({'bid': bid}, {"$set": {"code": code}})
+        if code:
+            print("\t[-] Updated of ", book, code, res)
+            if res['updatedExisting']:
+                print("\t[*] Updated", book, code)
+        else:
+            print("\t[*] Something wrong!!!")
 
     itchat.send_msg(f"下载{bid}", jb51net)
-    sleep(60 * 10)
+    w = random.randrange(1, 5)
+    print("\n[*] Watting %s min for next..." % w)
+    sleep(60 * w)
