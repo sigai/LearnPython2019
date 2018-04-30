@@ -55,3 +55,5 @@ for info in tqdm(infos):
     w = random.randrange(1, 5)
     print("\n[*] Watting %s min for next..." % w)
     sleep(60 * w)
+
+# TODO
