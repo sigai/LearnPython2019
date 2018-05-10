@@ -13,7 +13,6 @@ import random
 import itchat
 from itchat.content import *
 import pymongo
-from tqdm import tqdm
 
 itchat.auto_login(hotReload=True)
 
@@ -31,10 +30,11 @@ books = DB['books']
 infos = books.find({"$and":[{"url":{"$ne": None}}, {"code":{"$exists":False}}]})
 
 sucess = 0
-for info in tqdm(infos):
+for info in infos:
     sucess += 1
     if sucess == 10:
         print("[*] Mission Complete.")
+        itchat.logout()
         break
     bid = info['bid']
     print("\t[+] Processing:", info['book'])
@@ -45,7 +45,6 @@ for info in tqdm(infos):
         book = msg.text.split('\n')[0].strip()
         res = books.update({'bid': bid}, {"$set": {"code": code}})
         if code:
-            print("\t[-] Updated of ", book, code, res)
             if res['updatedExisting']:
                 print("\t[*] Updated", book, code)
         else:
