@@ -23,12 +23,13 @@ class ProxySpider(scrapy.Spider):
 
     def get_proxy(self, response):
         url = "http://music.163.com/api/user/getfollows/271334662?offset=0&limit=20&order=true"
+        # url = "http://music.163.com/api/user/getfolloweds?userId=1&offset=20&limit=20&order=true"
         g = self.p.findall(response.text)
         for ip, port in g:
             port = str(int(port, base=16))
             proxy = "http://%s:%s\n" % (ip, port)
             start = time.time()
-            request = scrapy.Request(url, meta={'proxy': proxy, 'ip': ip, 'port': port, 'download_timeout': 2, "start":start}, dont_filter=True)
+            request = scrapy.Request(url, meta={'proxy': proxy, 'ip': ip, 'port': port, 'download_timeout': 5, "start":start}, dont_filter=True)
             yield request
 
     def parse(self, response):

@@ -59,6 +59,8 @@ def check(item, spider):
 
 def check_proxy(proxy):
     url = "http://music.163.com/api/user/getfollows/271334662?offset=0&limit=20&order=true"
+    # url = "http://music.163.com/api/user/getfolloweds?userId=1&offset=20&limit=20&order=true"
+
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3409.2 Safari/537.36"}
     try:
