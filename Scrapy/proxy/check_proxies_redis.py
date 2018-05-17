@@ -45,11 +45,13 @@ def check(ip, port):
         red.sadd("proxies", "%s:%s"%(ip, port))
 
 proxies =[]
-with open("proxies.txt", mode='r', encoding='utf-8') as f:
-    for line in f:
-        ip, port = line.strip().split(":")
-        proxies.append((ip, port))
-
+while True:
+    proxy = red.spop("proxies")
+    if not proxy:
+        break
+    proxy = str(proxy, encoding="utf-8")
+    ip, port = proxy.split(":")
+    proxies.append((ip, port))
 
 tasks=[]
 for ip, port in proxies:
