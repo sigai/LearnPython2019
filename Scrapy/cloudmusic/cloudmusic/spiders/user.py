@@ -19,11 +19,11 @@ class UserSpider(scrapy.Spider):
     proxy = "http://" + str(red.srandmember("proxies"), encoding='utf-8').strip()
 
     def start_requests(self):
-        for i in range(100000):
+        for i in range(200000):
             user_id = str(self.red.lpop("queue"), encoding='utf-8')
 
             url = "http://music.163.com/api/user/getfollows/{userId}?offset={offset}&limit=300&order=true"
-            # url = "http://music.163.com/api/user/getfolloweds?userId={userId}?offset={offset}&limit=300&order=true"
+            # url = "http://music.163.com/api/user/getfolloweds?userId={userId}&offset={offset}&limit=300&order=true"
             offset = 0
 
             u = url.format(userId=user_id, offset=offset)
@@ -53,4 +53,3 @@ class UserSpider(scrapy.Spider):
                                  dont_filter=True)
         else:
             self.red.sadd("scraped", user_id)
-

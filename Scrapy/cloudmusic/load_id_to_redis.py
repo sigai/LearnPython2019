@@ -36,10 +36,19 @@ users = coll.find({})
 #         proxy = each.strip()
 #         red.rpush("proxies", proxy)
 
+# follows
 for user in users:
     follows = user['follows']
     user_id = user['userId']
-    if follows > 100 and not red.sismember("scraped", user_id):
+    if follows > 15 and not red.sismember("scraped", user_id):
         red.lpush("queue", user_id)
         print("[+] %s: %s"%(user_id, follows))
 
+
+# funs
+# for user in users:
+#     followeds = user['followeds']
+#     user_id = user['userId']
+#     if followeds > 30000 and not red.sismember("scraped", user_id):
+#         red.lpush("queue", user_id)
+#         print("[+] %s: %s"%(user_id, followeds))

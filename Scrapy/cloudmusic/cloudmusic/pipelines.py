@@ -9,4 +9,6 @@
 class CloudmusicPipeline(object):
     def process_item(self, item, spider):
         spider.coll.insert(dict(item))
+        user_id = item['userId']
+        spider.red.sadd("users", user_id)
         return item

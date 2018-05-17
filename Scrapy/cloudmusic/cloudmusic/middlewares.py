@@ -127,8 +127,8 @@ class CloudmusicDownloaderMiddleware(object):
                 if res['code'] == 200:
                     return response
                 elif res['code'] == -460:
-                    spider.logger.info("blocked proxy: %s"%proxy)
-                    spider.red.srem("proxies", proxy[7:])
+                    r = spider.red.srem("proxies", proxy[7:])
+                    spider.logger.info("blocked proxy: %s, delete:%s" % (proxy[7:], r))
                     request.meta['proxy'] = ""
                     return request
                 else:
@@ -146,7 +146,8 @@ class CloudmusicDownloaderMiddleware(object):
         # - return a Request object: stops process_exception() chain
         if isinstance(exception, TimeoutError):
             proxy = request.meta["proxy"]
-            spider.logger.info("got you: %s"%proxy)
+            r = spider.red.srem("proxies", proxy[7:])
+            spider.logger.info("timeout: %s, delete:%s" % (proxy[7:], r))
             request.meta['proxy'] = ""
             return  request
 
