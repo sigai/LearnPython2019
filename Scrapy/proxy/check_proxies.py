@@ -50,6 +50,9 @@ with open("proxies.txt", mode='r', encoding='utf-8') as f:
         ip, port = line.strip().split(":")
         proxies.append((ip, port))
 
+proxies = list(set(proxies))
+with open("proxies.txt", mode='w', encoding='utf-8') as f:
+    f.write("\n".join([f"{ip}:{port}" for ip, port in proxies]))
 
 tasks=[]
 for ip, port in proxies:

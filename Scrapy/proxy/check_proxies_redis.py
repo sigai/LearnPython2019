@@ -44,7 +44,7 @@ def check(ip, port):
     else:
         red.sadd("proxies", "%s:%s"%(ip, port))
 
-proxies =[]
+proxies = []
 while True:
     proxy = red.spop("proxies")
     if not proxy:
@@ -52,6 +52,7 @@ while True:
     proxy = str(proxy, encoding="utf-8")
     ip, port = proxy.split(":")
     proxies.append((ip, port))
+    print(ip, port)
 
 tasks=[]
 for ip, port in proxies:
