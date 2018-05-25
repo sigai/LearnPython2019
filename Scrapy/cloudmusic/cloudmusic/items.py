@@ -31,3 +31,4 @@ class UserItem(scrapy.Item):
     signature = scrapy.Field()
     eventCount = scrapy.Field()
     playlistCount = scrapy.Field()
+    vipRights = scrapy.Field()
