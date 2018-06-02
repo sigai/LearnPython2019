@@ -40,7 +40,7 @@ users = coll.find({})
 for user in users:
     follows = user['follows']
     user_id = user['userId']
-    if follows > 6 and not red.sismember("scraped", user_id):
+    if follows > 3 and not red.sismember("scraped", user_id):
         red.lpush("queue", user_id)
         print("[+] %s: %s"%(user_id, follows))
 
