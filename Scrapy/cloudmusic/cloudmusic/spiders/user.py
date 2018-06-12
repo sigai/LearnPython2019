@@ -19,7 +19,7 @@ class UserSpider(scrapy.Spider):
     proxy = "http://" + str(red.srandmember("proxies"), encoding='utf-8').strip()
 
     def start_requests(self):
-        for i in range(200000):
+        for i in range(1000000):
             user_id = str(self.red.lpop("queue"), encoding='utf-8')
 
             url = "http://music.163.com/api/user/getfollows/{userId}?offset={offset}&limit=300&order=true"
