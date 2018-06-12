@@ -15,10 +15,11 @@ post = WordPressPost()
 
 post.title = "_test_title"
 post.content = "_test_content"
-post.category = "dll"
+post.terms_names = {
+    "post_tag" : ["_test_tag1", "_test_tag2"],
+    "category": ["dll"]
+}
 post.post_status = "publish"
-post.custom_fields = []
-post.custom_fields.append({"_su_description":"_test_description"})
 
 wp.call(NewPost(post))
 
@@ -27,4 +28,3 @@ post = posts[0]
 print(post)
 print(dir(post))
 print(post.struct)
-print(post.custom_fields)
