@@ -38,21 +38,28 @@ for info in infos:
         break
     bid = info['bid']
     print("\t[+] Processing:", info['book'])
-    @itchat.msg_register(TEXT, isMpChat=True)
+    
+    @itchat.msg_register(SHARING, isMpChat=True)
     def callback_msg(msg):
-        rep = re.search(r"分享密码：(.{4})", msg.text)
+        #print(msg)
+        if str(msg.type) != "Sharing":
+            itchat.logout()
+
+        rep = re.search(r"网盘提取码：(.{4})\n", msg["Content"])
         code = rep.group(1) if rep else ""
         book = msg.text.split('\n')[0].strip()
-        res = books.update({'bid': bid}, {"$set": {"code": code}})
+        if "" == code:
+            code = False
+        res = books.update_one({'bid': bid}, {"$set": {"code": code}})
         if code:
             if res['updatedExisting']:
                 print("\t[*] Updated", book, code)
         else:
-            print("\t[*] Something wrong!!!")
-
-    itchat.send_msg(f"下载{bid}", jb51net)
-    w = random.randrange(1, 5)
-    print("\n[*] Watting %s min for next..." % w)
-    sleep(60 * w)
-
+            print("\t[*] There is no need share code for this book!!!")
+        
+        w = random.randrange(1, 5)
+        print("\n[*] Watting %s min for next..." % w)
+        sleep(60 * w)
+    itchat.send_msg(f"{bid}", jb51net)
+    
 # TODO
