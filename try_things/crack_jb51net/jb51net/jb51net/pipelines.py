@@ -14,5 +14,9 @@ class Jb51NetPipeline(object):
         self.table = self.db['books']
 
     def process_item(self, item, spider):
-        self.table.update({"bid": item['bid']}, {"$set": dict(item)}, upsert=True)
+        doc = self.table.find_one({"bid": item['bid']})
+        if not doc:
+            self.table.update_one({"bid": item['bid']}, {"$set": dict(item)}, upsert=True)
+        else:
+            print(item['bid'] + " exists")
         return item
