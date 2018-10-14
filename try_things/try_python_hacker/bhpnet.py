@@ -6,6 +6,8 @@ import getopt
 import socket
 import threading
 import subprocess
+from time import sleep
+from colorama import init, Fore
 
 
 #TODO: finish server_loop
@@ -38,15 +40,15 @@ def client_sender(target, port, buffer):
 			while recv_len:
 				data = client.recv(4096)
 				recv_len = len(data)
-				response += data
+				response += str(data, encoding="utf-8")
 				if recv_len < 4096:
 					break
-			print(response)
-			buffer = input("")
-			buffer += "\n"
+			print(Fore.WHITE + response, end="")
+			buffer = bytes(input(""), encoding="utf-8")
+			buffer += b"\n"
 			client.send(buffer)
-	except:
-		print("[*] Exception!, Exiting.")
+	except Exception as e:
+		print("[*] Exception!, Exiting.", e)
 		client.close()
 
 def server_loop(target, port, upload, upload_destination, execute, command):
@@ -54,12 +56,15 @@ def server_loop(target, port, upload, upload_destination, execute, command):
 		target = "0.0.0.0"
 	
 	server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 	server.bind((target, port))
 	server.listen(5)
+	print("[*] Server up!")
 	
 	while True:
 		client_socket, addr = server.accept()
-		client_thread = threading.Thread(target=cliend_handler,
+		print(f"[*] Client come in: {addr[0]}:{addr[1]}")
+		client_thread = threading.Thread(target=client_handler,
 										args=(client_socket, upload, upload_destination, execute, command))
 		client_thread.start()
 
@@ -68,7 +73,7 @@ def run_command(command):
 	try:
 		output = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
 	except:
-		output = "Failed to execute command.\n"
+		output = b"Failed to execute command.\n"
 	
 	return output
 
@@ -86,23 +91,25 @@ def client_handler(client_socket, upload, upload_destination, execute, command):
 		try:
 			with open(upload_destination, "wb") as f:
 				f.write(file_buffer)
-			client_socket.send(f"Successfully saved file to {upload_destination}")
+			client_socket.send(bytes(f"Successfully saved file to {upload_destination}", encode="utf-8"))
 		except:
-			client_socket.send(f"Failed to save file to {upload_destination}")
+			client_socket.send(bytes(f"Failed to save file to {upload_destination}", encode="utf-8"))
 	
 	if len(execute):
 		output = run_command(execute)
 		client_socket.send(output)
 	if command:
 		while True:
-			client_socket.send("<BHP:#> ")
+			client_socket.send(b"<BHP:#> ")
 			cmd_buffer = ""
 			while "\n" not in cmd_buffer:
-				cmd_buffer += client_socket.recv(1024)
+				cmd_buffer += str(client_socket.recv(1024), encoding="utf-8")
 				response = run_command(cmd_buffer)
+				print(response)
 				client_socket.send(response)
 	
 def main():
+	init()
 	listen = False
 	command = False
 	upload = False
@@ -136,6 +143,7 @@ def main():
 			port = int(a)
 		else:
 			assert False, "Unhandled Option"
+			
 	if not listen and len(target) and port > 0:
 		buffer = sys.stdin.read()
 		client_sender(target, port, buffer)
