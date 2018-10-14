@@ -4,6 +4,9 @@ __author__ = "sigai"
 import sys
 import getopt
 import socket
+import threading
+import subprocess
+
 
 #TODO: finish server_loop
 
@@ -46,9 +49,59 @@ def client_sender(target, port, buffer):
 		print("[*] Exception!, Exiting.")
 		client.close()
 
-def server_loop():
-	pass
+def server_loop(target, port, upload, upload_destination, execute, command):
+	if not len(target):
+		target = "0.0.0.0"
+	
+	server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	server.bind((target, port))
+	server.listen(5)
+	
+	while True:
+		client_socket, addr = server.accept()
+		client_thread = threading.Thread(target=cliend_handler,
+										args=(client_socket, upload, upload_destination, execute, command))
+		client_thread.start()
 
+def run_command(command):
+	command = command.strip()
+	try:
+		output = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
+	except:
+		output = "Failed to execute command.\n"
+	
+	return output
+
+def client_handler(client_socket, upload, upload_destination, execute, command):
+	if len(upload_destination):
+		file_buffer = ""
+		
+		while True:
+			data = client_socket.recv(1024)
+			if not data:
+				break
+			else:
+				file_buffer += data
+				
+		try:
+			with open(upload_destination, "wb") as f:
+				f.write(file_buffer)
+			client_socket.send(f"Successfully saved file to {upload_destination}")
+		except:
+			client_socket.send(f"Failed to save file to {upload_destination}")
+	
+	if len(execute):
+		output = run_command(execute)
+		client_socket.send(output)
+	if command:
+		while True:
+			client_socket.send("<BHP:#> ")
+			cmd_buffer = ""
+			while "\n" not in cmd_buffer:
+				cmd_buffer += client_socket.recv(1024)
+				response = run_command(cmd_buffer)
+				client_socket.send(response)
+	
 def main():
 	listen = False
 	command = False
@@ -69,17 +122,17 @@ def main():
 	for o, a in opts:
 		if o in ("-h", "--help"):
 			usage()
-		elif: o in ("-l", "--listen"):
+		elif o in ("-l", "--listen"):
 			listen = True
-		elif: o in ("-e", "--execute"):
+		elif o in ("-e", "--execute"):
 			execute = a
-		elif: o in ("-c", "--commandshell"):
+		elif o in ("-c", "--commandshell"):
 			command = True
-		elif: o in ("-u", "--upload"):
+		elif o in ("-u", "--upload"):
 			upload_destination = a
-		elif: o in ("-t", "--target"):
+		elif o in ("-t", "--target"):
 			target = a
-		elif: o in ("-p", "--port"):
+		elif o in ("-p", "--port"):
 			port = int(a)
 		else:
 			assert False, "Unhandled Option"
@@ -87,7 +140,7 @@ def main():
 		buffer = sys.stdin.read()
 		client_sender(target, port, buffer)
 	if listen:
-		server_loop()
+		server_loop(target, port, upload, upload_destination, execute, command)
 
 if __name__ == "__main__":
 	main()
