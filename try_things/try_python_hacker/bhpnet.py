@@ -3,7 +3,9 @@
 __author__ = "sigai"
 import sys
 import getopt
-#TODO: finish it
+import socket
+
+#TODO: finish server_loop
 
 def usage():
 	print("BHP Net Toll\n")
@@ -18,7 +20,35 @@ def usage():
 	print("bhhpnet.py -t 192.168.0.1 -p 5555 -l -e='cat /etc/passwd'")
 	print("echo 'ABCDEFGHI' | ./bhpnet.py -t 192.168.0.1 -p 135")
 	sys.exit()
-	
+
+def client_sender(target, port, buffer):
+	client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	try:
+		client.connect((target, port))
+		if len(buffer):
+			client.send(buffer)
+		
+		while True:
+			recv_len = 1
+			response = ""
+			
+			while recv_len:
+				data = client.recv(4096)
+				recv_len = len(data)
+				response += data
+				if recv_len < 4096:
+					break
+			print(response)
+			buffer = input("")
+			buffer += "\n"
+			client.send(buffer)
+	except:
+		print("[*] Exception!, Exiting.")
+		client.close()
+
+def server_loop():
+	pass
+
 def main():
 	listen = False
 	command = False
@@ -55,7 +85,7 @@ def main():
 			assert False, "Unhandled Option"
 	if not listen and len(target) and port > 0:
 		buffer = sys.stdin.read()
-		client_sender(buffer)
+		client_sender(target, port, buffer)
 	if listen:
 		server_loop()
 
