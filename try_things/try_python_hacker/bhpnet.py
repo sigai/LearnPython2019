@@ -26,7 +26,7 @@ def usage():
 	print("echo 'ABCDEFGHI' | ./bhpnet.py -t 192.168.0.1 -p 135")
 	sys.exit()
 
-def client_sender(target, port, buffer):
+def client_sender(target: str, port: int, buffer: bytes):
 	client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	try:
 		client.connect((target, port))
@@ -68,7 +68,7 @@ def server_loop(target, port, upload, upload_destination, execute, command):
 										args=(client_socket, upload, upload_destination, execute, command))
 		client_thread.start()
 
-def run_command(command):
+def run_command(command:str) ->bytes:
 	command = command.strip()
 	try:
 		output = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
