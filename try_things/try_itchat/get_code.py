@@ -8,6 +8,6 @@ def reply(msg):
 
 
 itchat.auto_login(hotReload=True)
-itchat.send("569324", toUserName='@8738071a310e7ffb064ceebf8402f1c0')
+itchat.send("hello", toUserName='@8738071a310e7ffb064ceebf8402f1c0')
 
 itchat.run()

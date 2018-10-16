@@ -16,9 +16,10 @@ import pymongo
 
 itchat.auto_login(hotReload=True)
 
-info = itchat.search_mps(name="脚本")
+#info = itchat.search_mps(name="脚本")
+info = itchat.get_mps()
+print(info)
 jb51net = info[0]['UserName']
-
 
 Thread(target=itchat.run, name="thread_run").start()
 
@@ -32,6 +33,7 @@ infos = books.find({"$and":[{"url":{"$ne": None}}, {"code":{"$exists":False}}]})
 sucess = 0
 for info in infos:
     sucess += 1
+    
     if sucess == 10:
         print("[*] Mission Complete.")
         itchat.logout()
@@ -60,6 +62,6 @@ for info in infos:
         w = random.randrange(1, 5)
         print("\n[*] Watting %s min for next..." % w)
         sleep(60 * w)
-    itchat.send_msg(f"{bid}", jb51net)
+    itchat.send_msg(bid, jb51net)
     
 # TODO
