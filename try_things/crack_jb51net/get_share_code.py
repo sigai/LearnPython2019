@@ -16,12 +16,13 @@ import pymongo
 
 itchat.auto_login(hotReload=True)
 
-#info = itchat.search_mps(name="脚本")
-info = itchat.get_mps()
-print(info)
-jb51net = info[0]['UserName']
+info = itchat.search_mps(name="脚本")
+#info = itchat.get_mps()
 
-Thread(target=itchat.run, name="thread_run").start()
+jb51net = info[0]['UserName']
+print(jb51net)
+t = Thread(target=itchat.run, name="thread_run")
+t.start()
 
 
 CLIENT = pymongo.MongoClient(host="localhost", port=27017)
@@ -54,7 +55,7 @@ for info in infos:
             code = False
         res = books.update_one({'bid': bid}, {"$set": {"code": code}})
         if code:
-            if res['updatedExisting']:
+            if res.modified_count == 1:
                 print("\t[*] Updated", book, code)
         else:
             print("\t[*] There is no need share code for this book!!!")
