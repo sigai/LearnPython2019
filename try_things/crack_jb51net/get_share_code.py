@@ -20,7 +20,6 @@ info = itchat.search_mps(name="脚本")
 #info = itchat.get_mps()
 
 jb51net = info[0]['UserName']
-print(jb51net)
 t = Thread(target=itchat.run, name="thread_run")
 t.start()
 
