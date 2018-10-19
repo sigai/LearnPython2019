@@ -38,12 +38,12 @@ class Book(Document):
 
 infos = Book.objects(url__ne=None, code__exists=False).limit(10)
     
-# TODO: optimize
+# TODO: test to make sure it all right.
 
 for info in infos:
     print(f"\t[+] Processing{info.bid}:", info.book)
-    itchat.send_msg(info.bid, jb51net)
-    sleep(5)
+    
+    # Need to register before sending msg
     @itchat.msg_register([TEXT, SHARING], isMpChat=True)
     def callback_msg(msg):
         print(msg.type)
@@ -58,5 +58,9 @@ for info in infos:
                 print("\t[*] Updated", info.book, code)
             else:
                 print("\t[*] There is no need share code for this book!!!")
+    
+    # Send msg after registered so the thread can auto handle replies
+    itchat.send_msg(info.bid, jb51net)
+    sleep(5)
 else:
     itchat.logout()
