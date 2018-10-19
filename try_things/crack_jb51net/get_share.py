@@ -41,7 +41,7 @@ infos = Book.objects(url__ne=None, code__exists=False).limit(10)
 # TODO: optimize
 
 for info in infos:
-    print("\t[+] Processing{info.bid}:", info.book)
+    print(f"\t[+] Processing{info.bid}:", info.book)
     itchat.send_msg(info.bid, jb51net)
     sleep(5)
     @itchat.msg_register([TEXT, SHARING], isMpChat=True)
@@ -58,3 +58,5 @@ for info in infos:
                 print("\t[*] Updated", info.book, code)
             else:
                 print("\t[*] There is no need share code for this book!!!")
+else:
+    itchat.logout()
