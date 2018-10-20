@@ -64,3 +64,4 @@ for info in infos:
     sleep(5)
 else:
     itchat.logout()
+    exit()
