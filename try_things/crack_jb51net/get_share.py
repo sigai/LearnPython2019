@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 """
@@ -36,7 +36,7 @@ class Book(Document):
     def __str__(self):
         return f"<{self.bid}: {self.book}>"
 
-infos = Book.objects(url__ne=None, code__exists=False).limit(10)
+infos = Book.objects(url__ne=None, code__exists=False).limit(2)
     
 # TODO: test to make sure it all right.
 
@@ -46,10 +46,7 @@ for info in infos:
     # Need to register before sending msg
     @itchat.msg_register([TEXT, SHARING], isMpChat=True)
     def callback_msg(msg):
-        print(msg.type)
-        if msg.type == "Text":
-            itchat.logout()
-        elif msg.type == "Sharing":
+        if msg.type == "Sharing":
             rep = re.search(r"网盘提取码：(.{4})\n", msg["Content"])
             code = rep.group(1) if rep else ""
             if code:
@@ -64,4 +61,4 @@ for info in infos:
     sleep(5)
 else:
     itchat.logout()
-    exit()
+    t.join()
