@@ -13,7 +13,7 @@ class ProxySpider(scrapy.Spider):
     pool = ConnectionPool.from_url('redis://@192.168.28.110:6379/0')
     red = StrictRedis(connection_pool=pool)
     proxy = "http://127.0.0.1:1087"
-    url = "http://www.gatherproxy.com/proxylist/country/?c=China"
+    url = "http://www.gatherproxy.com/proxylist/country/?c=United%20States"
     p = re.compile(r'"PROXY_IP":"(?P<ip>.*?)".*"PROXY_PORT":"(?P<port>.*?)"')
     items = []
 
