@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 __author__ = "Sigai"
 from pathlib import Path
@@ -14,9 +14,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import WebDriverException
 
-chrome_options = Options()
-opener = webdriver.Chrome(chrome_options=chrome_options)
-opener.implicitly_wait(10)
+opener = webdriver.Safari()
+opener.implicitly_wait(60)
 opener.maximize_window()
 
 logging.basicConfig(level=logging.DEBUG, format="[%(asctime)s]-%(name)s-%(levelname)s: %(message)s")
@@ -29,8 +28,8 @@ def signin():
     identfier.send_keys("gugetongji0910@gmail.com")
     identifierNext = opener.find_element_by_id("identifierNext")
     identifierNext.click()
+    sleep(2)
     password = opener.find_element_by_name("password")
-    # password.click()
     password.send_keys("weisitianyu")
     passwordNext = opener.find_element_by_xpath("//div[@id='passwordNext']/content/span")
     sleep(1)
@@ -59,9 +58,10 @@ def mark():
         if int(percent) == 100:
             continue
         print(opener.window_handles)
+        sleep(5)
         tr.click()
         tabs = opener.window_handles
-        opener.switch_to_window(tabs[-1])
+        opener.switch_to.window(tabs[-1])
         sleep(10)
         flag = True
         while flag:
@@ -90,13 +90,14 @@ def mark():
         else:
             opener.close()
             tabs = opener.window_handles
-            opener.switch_to_window(tabs[0])
+            opener.switch_to.window(tabs[0])
     else:
         opener.close()
 
 
 def main():
     signin()
+    sleep(5)
     mark()
 
 if __name__ == '__main__':
