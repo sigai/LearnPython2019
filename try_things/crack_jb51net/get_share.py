@@ -36,12 +36,12 @@ class Book(Document):
     def __str__(self):
         return f"<{self.bid}: {self.book}>"
 
-infos = Book.objects(url__ne=None, code__exists=False).limit(2)
+infos = Book.objects(url__ne=None, code__exists=False).limit(10)
     
 # TODO: test to make sure it all right.
 
 for info in infos:
-    print(f"\t[+] Processing{info.bid}:", info.book)
+    print(f"\t[+] Processing<{info.bid}>:", info.book)
     
     # Need to register before sending msg
     @itchat.msg_register([TEXT, SHARING], isMpChat=True)
@@ -52,7 +52,7 @@ for info in infos:
             if code:
                 info.code = code
                 info.save()
-                print("\t[*] Updated", info.book, code)
+                print("\t[*] Updated: ", info.book, code)
             else:
                 print("\t[*] There is no need share code for this book!!!")
     
