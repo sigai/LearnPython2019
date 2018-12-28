@@ -60,5 +60,4 @@ for info in infos:
     itchat.send_msg(info.bid, jb51net)
     sleep(5)
 else:
-    itchat.logout()
     t.join()
